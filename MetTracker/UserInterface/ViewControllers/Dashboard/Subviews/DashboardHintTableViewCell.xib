@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,6 +47,15 @@ You can adjust your dashboard in settings.</string>
                                     <constraint firstAttribute="height" constant="44" id="hgE-Hf-OXi"/>
                                 </constraints>
                                 <state key="normal" image="icon_close"/>
+                                <connections>
+                                    <action selector="closePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4XD-36-mwf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygp-6m-482">
+                                <rect key="frame" x="0.0" y="0.0" width="228" height="56"/>
+                                <connections>
+                                    <action selector="showSettingsPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lMA-Bz-Wcs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,9 +63,13 @@ You can adjust your dashboard in settings.</string>
                             <constraint firstItem="1ac-lt-xM6" firstAttribute="centerY" secondItem="0L2-ze-KcP" secondAttribute="centerY" id="6em-bR-CWt"/>
                             <constraint firstItem="j9Q-Lu-0GQ" firstAttribute="leading" secondItem="0L2-ze-KcP" secondAttribute="leading" constant="16" id="AYv-uz-eoG"/>
                             <constraint firstItem="1ac-lt-xM6" firstAttribute="leading" secondItem="j9Q-Lu-0GQ" secondAttribute="trailing" id="Ast-vM-Joj"/>
+                            <constraint firstItem="ygp-6m-482" firstAttribute="top" secondItem="0L2-ze-KcP" secondAttribute="top" id="L6A-wm-TWq"/>
                             <constraint firstAttribute="trailing" secondItem="1ac-lt-xM6" secondAttribute="trailing" id="LHi-Fl-Vg2"/>
                             <constraint firstItem="j9Q-Lu-0GQ" firstAttribute="top" secondItem="0L2-ze-KcP" secondAttribute="top" constant="12" id="Mw2-zP-Xgt"/>
                             <constraint firstAttribute="bottom" secondItem="j9Q-Lu-0GQ" secondAttribute="bottom" constant="12" id="NGh-fo-2QZ"/>
+                            <constraint firstItem="ygp-6m-482" firstAttribute="leading" secondItem="0L2-ze-KcP" secondAttribute="leading" id="Q6t-so-Eci"/>
+                            <constraint firstItem="1ac-lt-xM6" firstAttribute="leading" secondItem="ygp-6m-482" secondAttribute="trailing" id="a88-zr-gs9"/>
+                            <constraint firstAttribute="bottom" secondItem="ygp-6m-482" secondAttribute="bottom" id="cVb-qO-r8P"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -76,7 +89,7 @@ You can adjust your dashboard in settings.</string>
             <connections>
                 <outlet property="viewBackground" destination="0L2-ze-KcP" id="4rs-Rt-mMK"/>
             </connections>
-            <point key="canvasLocation" x="34" y="71.5"/>
+            <point key="canvasLocation" x="34" y="71"/>
         </tableViewCell>
     </objects>
     <resources>

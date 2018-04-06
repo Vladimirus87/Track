@@ -36,6 +36,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="picture" destination="dvC-ce-fSs" id="Fj6-Lk-6e5"/>
+            </connections>
         </tableViewCell>
     </objects>
     <resources>

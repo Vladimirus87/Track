@@ -156,6 +156,8 @@
 		3BF26B0B2040C0620076795D /* OnBoardingButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF26B092040C0620076795D /* OnBoardingButtonCollectionViewCell.swift */; };
 		94053E2B2073ABC300F3E297 /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */; };
 		94053E2C2073ABC300F3E297 /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */; };
+		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
+		94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AEA1812077A658007366C2 /* InfoTableViewCell.xib */; };
 		94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */; };
 		94AF93DD20764D32003A5781 /* Design+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */; };
 		94AF93DF2076549A003A5781 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DE2076549A003A5781 /* FileManager.swift */; };
@@ -316,6 +318,8 @@
 		70861099382CAD6CA326834D /* Pods-MetTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker.release.xcconfig"; sourceTree = "<group>"; };
 		94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		94AEA1812077A658007366C2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		94AF93DE2076549A003A5781 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -671,6 +675,8 @@
 				3B940A9E2033558B006ABB12 /* DashboardInfoTableViewCell.xib */,
 				3B940AA220336137006ABB12 /* DashboardQuoteTableViewCell.swift */,
 				3B940AA320336137006ABB12 /* DashboardQuoteTableViewCell.xib */,
+				94AEA1802077A658007366C2 /* InfoTableViewCell.swift */,
+				94AEA1812077A658007366C2 /* InfoTableViewCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -868,6 +874,7 @@
 				3B2AFBDE2037249200DB8E35 /* SettingsQuickAccessTableViewCell.xib in Resources */,
 				3B8B06F82032EA37009A8B8E /* Quicksand-Medium.ttf in Resources */,
 				3BF26B0A2040C0620076795D /* OnBoardingButtonCollectionViewCell.xib in Resources */,
+				94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */,
 				3BA1E53320544B000043EB16 /* SettingsUnits.plist in Resources */,
 				3B6FC2F4203AF798006A1802 /* Category2.plist in Resources */,
 				3BAF061C2035EA6B00D91FF9 /* StatisticsPeaksTableViewCell.xib in Resources */,
@@ -942,6 +949,7 @@
 				94F300172074F9320073BF65 /* CalendarMonthTableViewCell.swift in Sources */,
 				3B38BB742042EAF500E9E78B /* MTSearchObject.swift in Sources */,
 				3B50AD4320344866009EC098 /* DashboardVarViewController.swift in Sources */,
+				94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */,
 				94053E2B2073ABC300F3E297 /* Tracking+CoreDataClass.swift in Sources */,
 				3B2AFBEF203740B200DB8E35 /* SettingsNotificationsTableViewCell.swift in Sources */,
 				3B5D9B3C2038C09F00A2021A /* SettingsPersonalDataTableViewCell.swift in Sources */,
@@ -1189,10 +1197,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV23R78L97;
+				DEVELOPMENT_TEAM = T459324TD6;
 				INFOPLIST_FILE = "$(SRCROOT)/MetTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1205,10 +1213,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV23R78L97;
+				DEVELOPMENT_TEAM = T459324TD6;
 				INFOPLIST_FILE = "$(SRCROOT)/MetTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -514,6 +514,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="cup-Kx-cbC" eventType="touchUpInside" id="CqX-xe-tTF"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOt-em-k8i" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="56" y="15.5" width="303" height="25"/>
@@ -538,27 +541,31 @@
                                     <constraint firstAttribute="trailing" secondItem="JOt-em-k8i" secondAttribute="trailing" constant="16" id="rEJ-tA-tRw"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Suq-y4-a8s">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mf2-wR-hMd">
                                 <rect key="frame" x="0.0" y="76" width="375" height="591"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="djI-aj-C8d" firstAttribute="trailing" secondItem="HIJ-RK-96E" secondAttribute="trailing" id="2do-di-k8b"/>
-                            <constraint firstItem="Suq-y4-a8s" firstAttribute="top" secondItem="djI-aj-C8d" secondAttribute="bottom" id="MSt-SJ-byC"/>
+                            <constraint firstItem="mf2-wR-hMd" firstAttribute="leading" secondItem="HIJ-RK-96E" secondAttribute="leading" id="BXU-TD-teA"/>
+                            <constraint firstItem="mf2-wR-hMd" firstAttribute="top" secondItem="djI-aj-C8d" secondAttribute="bottom" id="NIb-vq-8BC"/>
                             <constraint firstItem="djI-aj-C8d" firstAttribute="leading" secondItem="HIJ-RK-96E" secondAttribute="leading" id="SrQ-iJ-Pzw"/>
-                            <constraint firstItem="HIJ-RK-96E" firstAttribute="trailing" secondItem="Suq-y4-a8s" secondAttribute="trailing" id="VCg-vV-JBd"/>
-                            <constraint firstItem="HIJ-RK-96E" firstAttribute="bottom" secondItem="Suq-y4-a8s" secondAttribute="bottom" id="qMp-WL-Epb"/>
-                            <constraint firstItem="Suq-y4-a8s" firstAttribute="leading" secondItem="HIJ-RK-96E" secondAttribute="leading" id="rmS-b1-aGq"/>
+                            <constraint firstItem="HIJ-RK-96E" firstAttribute="bottom" secondItem="mf2-wR-hMd" secondAttribute="bottom" id="Vnf-7H-mKX"/>
+                            <constraint firstItem="HIJ-RK-96E" firstAttribute="trailing" secondItem="mf2-wR-hMd" secondAttribute="trailing" id="rct-Iu-meI"/>
                             <constraint firstItem="djI-aj-C8d" firstAttribute="top" secondItem="HIJ-RK-96E" secondAttribute="top" id="wDY-Sr-ruv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HIJ-RK-96E"/>
                     </view>
+                    <connections>
+                        <outlet property="infoTitle" destination="JOt-em-k8i" id="5zK-kb-HQD"/>
+                        <outlet property="tableViewData" destination="mf2-wR-hMd" id="nQ8-05-SA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NwF-bR-Qto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3495" y="34"/>
+            <point key="canvasLocation" x="3493.5999999999999" y="33.733133433283363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mmx-7C-DwT">

@@ -10,18 +10,28 @@ import UIKit
 
 class InfoViewController: MTViewController {
 
+    @IBOutlet weak var infoTitle: MTLabel!
+    
+    @IBOutlet weak var tableViewData: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableViewData.rowHeight = UITableViewAutomaticDimension
+        tableViewData.estimatedRowHeight = 50
     }
+
+    
+    
+    @IBAction func backPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -33,3 +43,18 @@ class InfoViewController: MTViewController {
     */
 
 }
+
+
+//let tempArr = [String: String]()
+//
+//
+//extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
+//    
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//}

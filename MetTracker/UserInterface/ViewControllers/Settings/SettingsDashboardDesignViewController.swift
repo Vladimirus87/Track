@@ -14,7 +14,18 @@ class SettingsDashboardDesignViewController: MTViewController {
     @IBOutlet weak var tableViewData: UITableView!
     
     var data = ["motivational quotes", "picture", "crustanceans"]
-    var pictureData = [Design]()
+    var pictureData = [Design](){
+        didSet {
+            if pictureData.count > 0 {
+                let checked = pictureData.filter { $0.selected == true }
+                
+                if checked.count == 0 {
+                    pictureData.first?.selected = true
+                    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+                }
+            }
+        }
+    }
     
     let cellIdentifiers = ["SettingsDashboardDesignTableViewCell",
                           "SettingsPictureTableViewCell"]
@@ -164,6 +175,7 @@ extension SettingsDashboardDesignViewController: UINavigationControllerDelegate,
                 cell.getData()
                 cell.imagesCollectionView.reloadData()
             }
+            
             self.getData()
             self.tableViewData.reloadData()
             self.dismiss(animated:true, completion: nil)

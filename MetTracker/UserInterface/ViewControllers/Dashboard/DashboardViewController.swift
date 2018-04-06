@@ -18,7 +18,8 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var tableViewData: UITableView!
     @IBOutlet weak var buttonPlus: UIButton!
 
-    let themes = ["DashboardQuoteTableViewCell", "DashboardPictureTableViewCell", "DashboardCrabsTableViewCell"]
+    var themes = ["DashboardQuoteTableViewCell", "DashboardPictureTableViewCell", "DashboardCrabsTableViewCell"]
+    let dashboardHint = "DashboardHintTableViewCell"
     
     var showingThem: String {
         return themes[UserDefaults.standard.integer(forKey: "designTheme")]
@@ -31,7 +32,12 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        cellIdentifiers = ["DashboardHintTableViewCell", showingThem, "DashboardInfoTableViewCell"]
+        cellIdentifiers = [showingThem, "DashboardInfoTableViewCell"]
+        
+        if UserDefaults.standard.bool(forKey: "addHint") {
+            cellIdentifiers.insert(dashboardHint, at: 0)
+        }
+        
         
         for cellIdentifier in cellIdentifiers {
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
@@ -73,11 +79,27 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
+//        if cell is DashboardHintTableViewCell {
+//            (cell as! DashboardHintTableViewCell).delegate = self
+//        }
+        
+        
+        switch cell {
+        case is DashboardHintTableViewCell :
+            (cell as! DashboardHintTableViewCell).delegate = self
+        case is DashboardInfoTableViewCell :
+            (cell as! DashboardInfoTableViewCell).delegate = self
+            
+        default:
+            break
+        }
         
         return cell
         
     }
 
+    
+    
     // MARK: - Actions
     
 
@@ -114,3 +136,42 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
     */
 
 }
+
+
+
+
+
+extension DashboardViewController: DashboardHintTableViewCellDelegate {
+    
+    
+    
+    func closeBtnPressed() {
+        
+        UserDefaults.standard.set(false, forKey: "addHint")
+        cellIdentifiers.remove(at: 0)
+        tableViewData.reloadData()
+    }
+    
+    func showSettingsBtnPressed() {
+        
+        let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SettingsDashboardDesignViewController") as! SettingsDashboardDesignViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+
+}
+
+
+
+
+extension DashboardViewController: DashboardInfoTableViewCellDelegate {
+    func infoBtnPressed() {
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+        
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+}
+
+
+

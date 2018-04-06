@@ -8,17 +8,28 @@
 
 import UIKit
 
-class DashboardInfoTableViewCell: UITableViewCell {
+protocol DashboardInfoTableViewCellDelegate {
+    func infoBtnPressed()
+}
 
+class DashboardInfoTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var infoLbl: MTLabel!
+    
+    var delegate: DashboardInfoTableViewCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    @IBAction func infoPressed(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.infoBtnPressed()
+        }
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

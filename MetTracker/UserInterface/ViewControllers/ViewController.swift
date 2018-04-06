@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var isFirstRun = true// instead this var will use bottom var
+    
+//    var isFirstRun = true // instead this var will use bottom var
 ///Code for show OnBoardingViewController only once(with first start app)
-/*    var isFirstRun: Bool {
+    var isFirstRun: Bool {
         get { return UserDefaults.standard.value(forKey: "isFirstRun") as? Bool ?? true }
         set {
             let userDefaults = UserDefaults.standard
@@ -20,14 +21,13 @@ class ViewController: UIViewController {
             userDefaults.synchronize()
         }
     }
- */
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         DataManager.shared.loadData()
-        
+        UserDefaults.standard.set(true, forKey: "addHint")//temp
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -37,7 +37,9 @@ class ViewController: UIViewController {
             
             isFirstRun = false
             
-//            addDashBoard(pictures: [UIImage])
+            /// add in full version
+            addDashBoard(pictures: [UIImage(named: "test_picture")!, UIImage(named: "test_crabs")!, UIImage(named: "test_crabs")!, UIImage(named: "test_crabs")!])
+            UserDefaults.standard.set(true, forKey: "addHint")
             
             UserDefaults.standard.set(0, forKey: "designTheme")
             
@@ -71,11 +73,9 @@ class ViewController: UIViewController {
             let newPicture = Design(context: contex)
             newPicture.date = NSDate()
             newPicture.picturePath = rndm
-            newPicture.selected = false
-            
+            newPicture.selected = false//image != pictures.first ? false : true
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
         }
-
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
     }
     
     
