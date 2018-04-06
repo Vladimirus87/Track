@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>357</real>
+		<key>AINSWORTH CODE</key>
+		<real>11615</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>standing, moderate effort, lifting items continuously, 10 – 20 lbs, with limited walking or resting</string>
+		<key>ORDER NUMBER</key>
+		<real>3340</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>358</real>
+		<key>AINSWORTH CODE</key>
+		<real>11630</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>standing, moderate/heavy tasks (e.g., lifting more than 50 lbs, masonry, painting, paper hanging)</string>
+		<key>ORDER NUMBER</key>
+		<real>3350</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>364</real>
+		<key>AINSWORTH CODE</key>
+		<real>11793</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>walking on job, 3.5 mph, in office, brisk speed, not carrying anything</string>
+		<key>ORDER NUMBER</key>
+		<real>3360</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>365</real>
+		<key>AINSWORTH CODE</key>
+		<real>11800</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>walking, 3.0 mph, moderately and carrying light objects less than 25 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3370</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>366</real>
+		<key>AINSWORTH CODE</key>
+		<real>11810</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>walking, 3.5 mph, briskly and carrying objects less than 25 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3380</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>367</real>
+		<key>AINSWORTH CODE</key>
+		<real>11820</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>walking or walk downstairs or standing, carrying objects about 25 to 49 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3390</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>368</real>
+		<key>AINSWORTH CODE</key>
+		<real>11830</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>walking or walk downstairs or standing, carrying objects about 50 to 74 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3400</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>369</real>
+		<key>AINSWORTH CODE</key>
+		<real>11840</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>walking or walk downstairs or standing, carrying objects about 75 to 99 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3410</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>370</real>
+		<key>AINSWORTH CODE</key>
+		<real>11850</real>
+		<key>METS</key>
+		<real>8.5</real>
+		<key>NAME</key>
+		<string>walking or walk downstairs or standing, carrying objects about 100 lbs or more</string>
+		<key>ORDER NUMBER</key>
+		<real>3420</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>321</real>
+		<key>AINSWORTH CODE</key>
+		<real>11050</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>carrying heavy loads (e.g., bricks, tools)</string>
+		<key>ORDER NUMBER</key>
+		<real>3430</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>322</real>
+		<key>AINSWORTH CODE</key>
+		<real>11060</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>carrying moderate loads up stairs, moving boxes 25-49 lbs</string>
+		<key>ORDER NUMBER</key>
+		<real>3440</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>350</real>
+		<key>AINSWORTH CODE</key>
+		<real>11490</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>moving, carrying or pushing heavy objects, 75 lbs or more, only active time (e.g., desks, moving van work)</string>
+		<key>ORDER NUMBER</key>
+		<real>3450</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>347</real>
+		<key>AINSWORTH CODE</key>
+		<real>11476</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>manual or unskilled labor, general, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3460</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>348</real>
+		<key>AINSWORTH CODE</key>
+		<real>11477</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>manual or unskilled labor, general, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3470</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>352</real>
+		<key>AINSWORTH CODE</key>
+		<real>11560</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>shoveling, less than 10 lbs/minute, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3480</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>353</real>
+		<key>AINSWORTH CODE</key>
+		<real>11570</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>shoveling, 10 to 15 lbs/minute, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3490</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>355</real>
+		<key>AINSWORTH CODE</key>
+		<real>11550</real>
+		<key>METS</key>
+		<real>8.8000001907348633</real>
+		<key>NAME</key>
+		<string>shoveling, more than 16 lbs/minute, deep digging, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3500</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>310</real>
+		<key>AINSWORTH CODE</key>
+		<real>8192</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>shoveling, dirt or mud</string>
+		<key>ORDER NUMBER</key>
+		<real>3510</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>354</real>
+		<key>AINSWORTH CODE</key>
+		<real>11540</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>shoveling, digging ditches</string>
+		<key>ORDER NUMBER</key>
+		<real>3520</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>258</real>
+		<key>AINSWORTH CODE</key>
+		<real>19252</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>snow shoveling, by hand, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3530</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>259</real>
+		<key>AINSWORTH CODE</key>
+		<real>19254</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>snow shoveling, by hand, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3540</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>362</real>
+		<key>AINSWORTH CODE</key>
+		<real>11780</real>
+		<key>METS</key>
+		<real>6.3000001907348633</real>
+		<key>NAME</key>
+		<string>using heavy power tools such as pneumatic tools (e.g., jackhammers, drills)</string>
+		<key>ORDER NUMBER</key>
+		<real>3550</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>363</real>
+		<key>AINSWORTH CODE</key>
+		<real>11790</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>using heavy tools (not power) such as shovel, pick, tunnel bar, spade</string>
+		<key>ORDER NUMBER</key>
+		<real>3560</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>318</real>
+		<key>AINSWORTH CODE</key>
+		<real>11030</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>building road, driving heavy machinery</string>
+		<key>ORDER NUMBER</key>
+		<real>3570</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>319</real>
+		<key>AINSWORTH CODE</key>
+		<real>11040</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>carpentry, general, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3580</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>320</real>
+		<key>AINSWORTH CODE</key>
+		<real>11042</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>carpentry, general, heavy or vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3590</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>323</real>
+		<key>AINSWORTH CODE</key>
+		<real>11090</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>coal mining, erecting supports</string>
+		<key>ORDER NUMBER</key>
+		<real>3600</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>324</real>
+		<key>AINSWORTH CODE</key>
+		<real>11080</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>coal mining, drilling coal, rock</string>
+		<key>ORDER NUMBER</key>
+		<real>3610</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>325</real>
+		<key>AINSWORTH CODE</key>
+		<real>11110</real>
+		<key>METS</key>
+		<real>6.3000001907348633</real>
+		<key>NAME</key>
+		<string>coal mining, shoveling coal</string>
+		<key>ORDER NUMBER</key>
+		<real>3620</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>326</real>
+		<key>AINSWORTH CODE</key>
+		<real>11190</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>farming, feeding cattle, horses</string>
+		<key>ORDER NUMBER</key>
+		<real>3630</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>327</real>
+		<key>AINSWORTH CODE</key>
+		<real>11191</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>farming, hauling water for animals, general hauling water,farming, general hauling water</string>
+		<key>ORDER NUMBER</key>
+		<real>3640</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>328</real>
+		<key>AINSWORTH CODE</key>
+		<real>11192</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>farming, taking care of animals (e.g., grooming, brushing, shearing sheep, assisting with birthing, medical care, branding), general</string>
+		<key>ORDER NUMBER</key>
+		<real>3650</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>329</real>
+		<key>AINSWORTH CODE</key>
+		<real>11146</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>farming, moderate effort (e.g., feeding animals, chasing cattle by walking and/or horseback, spreading manure, harvesting crops)</string>
+		<key>ORDER NUMBER</key>
+		<real>3660</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>330</real>
+		<key>AINSWORTH CODE</key>
+		<real>11145</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>farming, vigorous effort (e.g., baling hay, cleaning barn)</string>
+		<key>ORDER NUMBER</key>
+		<real>3670</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>331</real>
+		<key>AINSWORTH CODE</key>
+		<real>11244</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>fire fighter, rescue victim, automobile accident, using pike pole</string>
+		<key>ORDER NUMBER</key>
+		<real>3680</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>332</real>
+		<key>AINSWORTH CODE</key>
+		<real>11245</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>fire fighter, raising and climbing ladder with full gear, simulated fire supression</string>
+		<key>ORDER NUMBER</key>
+		<real>3690</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>333</real>
+		<key>AINSWORTH CODE</key>
+		<real>11246</real>
+		<key>METS</key>
+		<real>9</real>
+		<key>NAME</key>
+		<string>fire fighter, hauling hoses on ground, carrying/hoisting equipment, breaking down walls etc., wearing full gear</string>
+		<key>ORDER NUMBER</key>
+		<real>3700</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>334</real>
+		<key>AINSWORTH CODE</key>
+		<real>11248</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>fishing, commercial, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3710</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>335</real>
+		<key>AINSWORTH CODE</key>
+		<real>11249</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>fishing, commercial, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3720</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>336</real>
+		<key>AINSWORTH CODE</key>
+		<real>11260</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>forestry, ax chopping, slow, 1.25 kg axe, 19 blows/min, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3730</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>337</real>
+		<key>AINSWORTH CODE</key>
+		<real>11262</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>forestry, ax chopping, fast, 1.25 kg axe, 35 blows/min, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3740</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>338</real>
+		<key>AINSWORTH CODE</key>
+		<real>11250</real>
+		<key>METS</key>
+		<real>17.5</real>
+		<key>NAME</key>
+		<string>forestry, ax chopping, very fast, 1.25 kg axe, 51 blows/min, extremely vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3750</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>339</real>
+		<key>AINSWORTH CODE</key>
+		<real>11264</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>forestry, moderate effort (e.g., sawing wood with power saw, weeding, hoeing)</string>
+		<key>ORDER NUMBER</key>
+		<real>3760</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>340</real>
+		<key>AINSWORTH CODE</key>
+		<real>11266</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>forestry, vigorous effort (e.g., barking, felling, or trimming trees, carrying or stacking logs, planting seeds, sawing lumber by hand)</string>
+		<key>ORDER NUMBER</key>
+		<real>3770</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>341</real>
+		<key>AINSWORTH CODE</key>
+		<real>11370</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>furriery</string>
+		<key>ORDER NUMBER</key>
+		<real>3780</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>342</real>
+		<key>AINSWORTH CODE</key>
+		<real>11381</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>horse, feeding, watering, cleaning stalls, implied walking and lifting loads</string>
+		<key>ORDER NUMBER</key>
+		<real>3790</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>344</real>
+		<key>AINSWORTH CODE</key>
+		<real>11380</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>horse grooming, including feeding, cleaning stalls, bathing, brushing, clipping, longeing and exercising horses</string>
+		<key>ORDER NUMBER</key>
+		<real>3800</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>346</real>
+		<key>AINSWORTH CODE</key>
+		<real>11450</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>Machine tooling, operating punch press, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3810</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>349</real>
+		<key>AINSWORTH CODE</key>
+		<real>11480</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>masonry, concrete, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3820</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>351</real>
+		<key>AINSWORTH CODE</key>
+		<real>11510</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>orange grove work, picking fruit</string>
+		<key>ORDER NUMBER</key>
+		<real>3830</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>356</real>
+		<key>AINSWORTH CODE</key>
+		<real>11495</real>
+		<key>METS</key>
+		<real>12</real>
+		<key>NAME</key>
+		<string>skindiving or SCUBA diving as a frogman, Navy Seal</string>
+		<key>ORDER NUMBER</key>
+		<real>3840</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>359</real>
+		<key>AINSWORTH CODE</key>
+		<real>11708</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>steel mill, moderate effort (e.g., fettling, forging, tipping molds)</string>
+		<key>ORDER NUMBER</key>
+		<real>3850</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>360</real>
+		<key>AINSWORTH CODE</key>
+		<real>11710</real>
+		<key>METS</key>
+		<real>8.3000001907348633</real>
+		<key>NAME</key>
+		<string>steel mill, vigorous effort (e.g., hand rolling, merchant mill rolling, removing slag, tending furnace)</string>
+		<key>ORDER NUMBER</key>
+		<real>3860</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>361</real>
+		<key>AINSWORTH CODE</key>
+		<real>11766</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>truck driving, loading and unloading truck, tying down load, standing, walking and carrying heavy loads</string>
+		<key>ORDER NUMBER</key>
+		<real>3870</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>95</real>
+		<key>AINSWORTH CODE</key>
+		<real>2110</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>teaching exercise class (e.g., aerobic, water)</string>
+		<key>ORDER NUMBER</key>
+		<real>3880</real>
+		<key>SUBCATEGORY</key>
+		<string>occupation</string>
+	</dict>
+</array>
+</plist>

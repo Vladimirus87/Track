@@ -1,0 +1,83 @@
+/* 
+  Localizable.strings
+  MetTracker
+
+  Created by Pavel Belevtsev on 13.02.18.
+  Copyright © 2018 Lindenvalley. All rights reserved.
+*/
+
+"onboarding_title_1" = "What is MET?";
+"onboarding_text_1" = "MET stands for metabolic equivalent of task and is a physiological measure expressing the energy cost of phsyical activities.";
+"onboarding_title_2" = "Why track MET?";
+"onboarding_text_2" = "Doing activities equivalent to 18 MET units a week can reduce cancer risk by a significant margin. MET Tracker tries to help you reach that minimum of activity by giving you an overview over your current physical activity for the week and what how much you still need to reach your goal.";
+"onboarding_title_3" = "Personalise your MET";
+"onboarding_text_3" = "In order to give you a personalised MET value we need some data to work with. You can change or delete the data at any time in the settings menu. Furthermore the data will only be stored locally.";
+
+"tracking_title_1" = "Track in real-time!";
+"tracking_text_1" = "Just hit the play button and start your activity. Once you are finished hit pause and then confirm the time.";
+"tracking_title_2" = "Add in retrospect";
+"tracking_text_2" = "Didn’t have your smartphone with you? No problem. Just use the handles to note your time and tap the confirm button.";
+"tracking_title_3" = "Heartrate";
+"tracking_text_3" = "With MET Tracker you can even track your heartrate. If you have a compatible smartwatch or fitness tracker we will keep an eye on your heartrate when tracking in real time.\n\nWanna keep track on your own? No problem, you can easily add your heartrate manually by tapping the heart icon.";
+
+"button_personalise" = "personalise";
+"button_skip" = "SKIP";
+"button_next" = "NEXT";
+"button_done" = "DONE";
+"button_dismiss" = "dismiss";
+
+"track_time" = "track time";
+"choose_activity" = "choose activity";
+"success" = "Success!";
+
+"enter_your_heartrate" = "Enter your heartrate";
+"enter_bpm" = "enter bpm";
+
+"statistics" = "statistics";
+
+"quick_access" = "Quick Access";
+"notifications" = "Notifications";
+"personal_data" = "Personal Data";
+
+"dashboard_design" = "Dashboard Design";
+"colour_options" = "Colour Options";
+"text_size" = "Text Size";
+
+"units" = "Units";
+"language" = "Language";
+
+"misc_activities" = "Misc. Activities";
+"tutorial" = "Tutorial";
+"about" = "About";
+
+"week" = "Week";
+
+"color_default" = "default";
+"color_blue" = "blue";
+"color_red" = "red";
+"color_yellow" = "yellow";
+
+"text_size_standard" = "Standard";
+"text_size_enlarged" = "Enlarged";
+
+"gender" = "gender";
+"male" = "male";
+"female" = "female";
+"height" = "height in cm";
+"weight" = "weight in kg";
+"age" = "age";
+
+"delete_all_data" = "delete all data";
+
+"notification_laziness_title" = "Laziness Alert";
+"notification_laziness_text" = "Notifiy me when I have yet to do something after three days.";
+
+"notification_end_week_title" = "End of Week Warning";
+"notification_end_week_text" = "Notifiy me when the week is about to end and I have yet to reach my MET goal.";
+
+"units_metric" = "Metric";
+"units_imperial" = "Imperial";
+
+"add" = "Add";
+"categories" = "Categories";
+

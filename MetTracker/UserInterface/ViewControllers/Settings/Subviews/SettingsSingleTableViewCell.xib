@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsSingleTableViewCell" rowHeight="56" id="KGk-i7-Jjw" customClass="SettingsSingleTableViewCell" customModule="MetTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_bolt" translatesAutoresizingMaskIntoConstraints="NO" id="v4N-FU-V3V">
+                        <rect key="frame" x="23" y="19" width="10" height="18"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaR-IK-Ezv" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="56" y="15.5" width="228" height="25"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="Jsj-FL-hJN">
+                        <rect key="frame" x="291" y="19" width="10" height="18"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v4N-FU-V3V" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2rk-H4-khS"/>
+                    <constraint firstItem="v4N-FU-V3V" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="A3i-aB-Xf0"/>
+                    <constraint firstAttribute="trailing" secondItem="EaR-IK-Ezv" secondAttribute="trailing" constant="36" id="Ccp-1f-x9H"/>
+                    <constraint firstAttribute="bottom" secondItem="EaR-IK-Ezv" secondAttribute="bottom" constant="15" id="O9Q-Gf-3xt"/>
+                    <constraint firstItem="Jsj-FL-hJN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-24" id="TkE-NK-0Rl"/>
+                    <constraint firstItem="EaR-IK-Ezv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15.5" id="a4O-sL-e4F"/>
+                    <constraint firstItem="Jsj-FL-hJN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hox-tl-RhK"/>
+                    <constraint firstItem="EaR-IK-Ezv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="56" id="vK4-qS-dXc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageArrow" destination="Jsj-FL-hJN" id="lI7-fp-1GW"/>
+                <outlet property="imageIcon" destination="v4N-FU-V3V" id="HJF-3f-WZK"/>
+                <outlet property="labelTitle" destination="EaR-IK-Ezv" id="vjm-Co-w4E"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_bolt" width="10" height="18"/>
+        <image name="settings_arrow_right" width="10" height="18"/>
+    </resources>
+</document>

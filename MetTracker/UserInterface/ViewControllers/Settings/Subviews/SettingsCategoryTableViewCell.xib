@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCategoryTableViewCell" rowHeight="112" id="KGk-i7-Jjw" customClass="SettingsCategoryTableViewCell" customModule="MetTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_bicycling" translatesAutoresizingMaskIntoConstraints="NO" id="ooG-Z7-FGa">
+                        <rect key="frame" x="22" y="39.5" width="36" height="33"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1W-1c-1Qv" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="80" y="40" width="232" height="32.5"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="26"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="fTZ-gZ-DHn">
+                        <rect key="frame" x="331" y="46" width="10" height="18"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G1W-1c-1Qv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CWe-ho-vWt"/>
+                    <constraint firstItem="fTZ-gZ-DHn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-24" id="KEX-56-yd7"/>
+                    <constraint firstItem="fTZ-gZ-DHn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M49-hE-d5Z"/>
+                    <constraint firstItem="G1W-1c-1Qv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="g7e-8I-W6f"/>
+                    <constraint firstItem="ooG-Z7-FGa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ibq-zQ-Bm1"/>
+                    <constraint firstItem="ooG-Z7-FGa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="uym-hE-8lY"/>
+                    <constraint firstAttribute="trailing" secondItem="G1W-1c-1Qv" secondAttribute="trailing" constant="48" id="z2j-M2-36O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageArrow" destination="fTZ-gZ-DHn" id="cdx-Nd-ZSZ"/>
+                <outlet property="imageIcon" destination="ooG-Z7-FGa" id="fxj-1Q-hCK"/>
+                <outlet property="labelTitle" destination="G1W-1c-1Qv" id="0TJ-LO-cwT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="category_bicycling" width="36" height="33"/>
+        <image name="settings_arrow_right" width="10" height="18"/>
+    </resources>
+</document>

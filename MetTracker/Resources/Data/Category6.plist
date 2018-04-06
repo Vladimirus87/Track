@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>302</real>
+		<key>AINSWORTH CODE</key>
+		<real>8125</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>mowing lawn, power mower, light or moderate effort </string>
+		<key>ORDER NUMBER</key>
+		<real>2740</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>303</real>
+		<key>AINSWORTH CODE</key>
+		<real>8110</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>mowing lawn, walk, hand mower</string>
+		<key>ORDER NUMBER</key>
+		<real>2750</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>304</real>
+		<key>AINSWORTH CODE</key>
+		<real>8120</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>mowing lawn, walk, power mower, moderate or vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2760</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>312</real>
+		<key>AINSWORTH CODE</key>
+		<real>8240</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>weeding, cultivating garden </string>
+		<key>ORDER NUMBER</key>
+		<real>2770</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>313</real>
+		<key>AINSWORTH CODE</key>
+		<real>8241</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>weeding, cultivating garden, using a hoe, moderate-to-vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2780</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>314</real>
+		<key>AINSWORTH CODE</key>
+		<real>8255</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>wheelbarrow, pushing garden cart or wheelbarrow</string>
+		<key>ORDER NUMBER</key>
+		<real>2790</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>315</real>
+		<key>AINSWORTH CODE</key>
+		<real>8262</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>yard work, general, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2800</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>305</real>
+		<key>AINSWORTH CODE</key>
+		<real>8248</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>picking fruit off trees, gleaning fruits, picking fruits/vegetables, climbing ladder to pick fruit, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2810</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>306</real>
+		<key>AINSWORTH CODE</key>
+		<real>8145</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>planting crops or garden, stooping, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2820</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>307</real>
+		<key>AINSWORTH CODE</key>
+		<real>8140</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>planting seedlings, shrub, stooping, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2830</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>308</real>
+		<key>AINSWORTH CODE</key>
+		<real>8150</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>planting trees</string>
+		<key>ORDER NUMBER</key>
+		<real>2840</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>290</real>
+		<key>AINSWORTH CODE</key>
+		<real>8010</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>carrying, loading or stacking wood, loading/unloading or carrying lumber</string>
+		<key>ORDER NUMBER</key>
+		<real>2850</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>291</real>
+		<key>AINSWORTH CODE</key>
+		<real>8019</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>chopping wood, splitting logs, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2860</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>292</real>
+		<key>AINSWORTH CODE</key>
+		<real>8020</real>
+		<key>METS</key>
+		<real>6.3000001907348633</real>
+		<key>NAME</key>
+		<string>chopping wood, splitting logs, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2870</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>293</real>
+		<key>AINSWORTH CODE</key>
+		<real>8030</real>
+		<key>METS</key>
+		<real>6.3000001907348633</real>
+		<key>NAME</key>
+		<string>clearing brush/land, undergrowth, or ground, hauling branches, wheelbarrow chores, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2880</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>297</real>
+		<key>AINSWORTH CODE</key>
+		<real>8057</real>
+		<key>METS</key>
+		<real>8.3000001907348633</real>
+		<key>NAME</key>
+		<string>felling trees, large size</string>
+		<key>ORDER NUMBER</key>
+		<real>2890</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>298</real>
+		<key>AINSWORTH CODE</key>
+		<real>8058</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>felling trees, small-medium size</string>
+		<key>ORDER NUMBER</key>
+		<real>2900</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>299</real>
+		<key>AINSWORTH CODE</key>
+		<real>8060</real>
+		<key>METS</key>
+		<real>5.8000001907348633</real>
+		<key>NAME</key>
+		<string>gardening with heavy power tools, tilling a garden, chain saw</string>
+		<key>ORDER NUMBER</key>
+		<real>2910</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>300</real>
+		<key>AINSWORTH CODE</key>
+		<real>8080</real>
+		<key>METS</key>
+		<real>6.3000001907348633</real>
+		<key>NAME</key>
+		<string>laying crushed rock</string>
+		<key>ORDER NUMBER</key>
+		<real>2920</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>301</real>
+		<key>AINSWORTH CODE</key>
+		<real>8090</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>laying sod</string>
+		<key>ORDER NUMBER</key>
+		<real>2930</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>294</real>
+		<key>AINSWORTH CODE</key>
+		<real>8040</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>digging sandbox, shoveling sand</string>
+		<key>ORDER NUMBER</key>
+		<real>2940</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>295</real>
+		<key>AINSWORTH CODE</key>
+		<real>8050</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>digging, spading, filling garden, compositing</string>
+		<key>ORDER NUMBER</key>
+		<real>2950</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>296</real>
+		<key>AINSWORTH CODE</key>
+		<real>8052</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>digging, spading, filling garden, composting, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2960</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>310</real>
+		<key>AINSWORTH CODE</key>
+		<real>8192</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>shoveling dirt or mud</string>
+		<key>ORDER NUMBER</key>
+		<real>2970</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>287</real>
+		<key>AINSWORTH CODE</key>
+		<real>6210</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>spreading dirt with a shovel</string>
+		<key>ORDER NUMBER</key>
+		<real>2980</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>258</real>
+		<key>AINSWORTH CODE</key>
+		<real>19252</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>snow shoveling, by hand, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>2990</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>259</real>
+		<key>AINSWORTH CODE</key>
+		<real>19254</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>snow shoveling, by hand, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3000</real>
+		<key>SUBCATEGORY</key>
+		<string>lawn and garden</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>261</real>
+		<key>AINSWORTH CODE</key>
+		<real>5056</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>carrying groceries upstairs</string>
+		<key>ORDER NUMBER</key>
+		<real>3010</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>262</real>
+		<key>AINSWORTH CODE</key>
+		<real>5110</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>maple syruping/sugar bushing (including carrying buckets, carrying wood)</string>
+		<key>ORDER NUMBER</key>
+		<real>3020</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>263</real>
+		<key>AINSWORTH CODE</key>
+		<real>5120</real>
+		<key>METS</key>
+		<real>5.8000001907348633</real>
+		<key>NAME</key>
+		<string>moving furniture, household items, carrying boxes</string>
+		<key>ORDER NUMBER</key>
+		<real>3030</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>264</real>
+		<key>AINSWORTH CODE</key>
+		<real>5150</real>
+		<key>METS</key>
+		<real>9</real>
+		<key>NAME</key>
+		<string>moving household items upstairs, carrying boxes or furniture</string>
+		<key>ORDER NUMBER</key>
+		<real>3040</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>265</real>
+		<key>AINSWORTH CODE</key>
+		<real>5121</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>moving, lifting light loads</string>
+		<key>ORDER NUMBER</key>
+		<real>3050</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>266</real>
+		<key>AINSWORTH CODE</key>
+		<real>5027</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>multiple household tasks all at once, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3060</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>267</real>
+		<key>AINSWORTH CODE</key>
+		<real>5125</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>organizing room</string>
+		<key>ORDER NUMBER</key>
+		<real>3070</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>268</real>
+		<key>AINSWORTH CODE</key>
+		<real>5024</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>polishing floors, standing, walking slowly, using electric polishing machine</string>
+		<key>ORDER NUMBER</key>
+		<real>3080</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>269</real>
+		<key>AINSWORTH CODE</key>
+		<real>5132</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>scrubbing floors, on hands and knees, scrubbing bathroom, bathtub, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3090</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>270</real>
+		<key>AINSWORTH CODE</key>
+		<real>5194</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>walk/run, playing with animals, vigorous effort, only active periods</string>
+		<key>ORDER NUMBER</key>
+		<real>3100</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>317</real>
+		<key>AINSWORTH CODE</key>
+		<real>21019</real>
+		<key>METS</key>
+		<real>5.8000001907348633</real>
+		<key>NAME</key>
+		<string>walk/run, play with children, vigorous, only active periods</string>
+		<key>ORDER NUMBER</key>
+		<real>3110</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>129</real>
+		<key>AINSWORTH CODE</key>
+		<real>15135</real>
+		<key>METS</key>
+		<real>5.8000001907348633</real>
+		<key>NAME</key>
+		<string>children’s games, adults playing (e.g., hopscotch, 4-square, dodgeball, playground apparatus, t-ball, tetherball, marbles, arcade games), moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3120</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>371</real>
+		<key>AINSWORTH CODE</key>
+		<real>10131</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>marching band, playing an instrument, walking, brisk pace, general</string>
+		<key>ORDER NUMBER</key>
+		<real>3121</real>
+		<key>SUBCATEGORY</key>
+		<string>music playing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>342</real>
+		<key>AINSWORTH CODE</key>
+		<real>11381</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>horse, feeding, watering, cleaning stalls, implied walking and lifting loads</string>
+		<key>ORDER NUMBER</key>
+		<real>3130</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>179</real>
+		<key>AINSWORTH CODE</key>
+		<real>15380</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>horse, saddling, cleaning, grooming, harnessing and unharnessing horse</string>
+		<key>ORDER NUMBER</key>
+		<real>3140</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>344</real>
+		<key>AINSWORTH CODE</key>
+		<real>11380</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>horse, grooming, including feeding, cleaning stalls, bathing, brushing, clipping, longeing and exercising horses</string>
+		<key>ORDER NUMBER</key>
+		<real>3150</real>
+		<key>SUBCATEGORY</key>
+		<string>home activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>271</real>
+		<key>AINSWORTH CODE</key>
+		<real>6050</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>carpentry, outside house, installing rain gutters, building a fence</string>
+		<key>ORDER NUMBER</key>
+		<real>3160</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>275</real>
+		<key>AINSWORTH CODE</key>
+		<real>6100</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>cleaning gutters</string>
+		<key>ORDER NUMBER</key>
+		<real>3170</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>289</real>
+		<key>AINSWORTH CODE</key>
+		<real>6230</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>washing fence, painting fence, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3180</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>276</real>
+		<key>AINSWORTH CODE</key>
+		<real>6110</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>excavating garage</string>
+		<key>ORDER NUMBER</key>
+		<real>3190</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>285</real>
+		<key>AINSWORTH CODE</key>
+		<real>6190</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>sanding floors with a power sander</string>
+		<key>ORDER NUMBER</key>
+		<real>3200</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>281</real>
+		<key>AINSWORTH CODE</key>
+		<real>6130</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>laying or removing carpet</string>
+		<key>ORDER NUMBER</key>
+		<real>3210</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>282</real>
+		<key>AINSWORTH CODE</key>
+		<real>6165</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>painting</string>
+		<key>ORDER NUMBER</key>
+		<real>3220</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>283</real>
+		<key>AINSWORTH CODE</key>
+		<real>6150</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>painting, outside home </string>
+		<key>ORDER NUMBER</key>
+		<real>3230</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>284</real>
+		<key>AINSWORTH CODE</key>
+		<real>6180</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>roofing</string>
+		<key>ORDER NUMBER</key>
+		<real>3240</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>272</real>
+		<key>AINSWORTH CODE</key>
+		<real>6070</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>carpentry, sawing hardwood</string>
+		<key>ORDER NUMBER</key>
+		<real>3250</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>273</real>
+		<key>AINSWORTH CODE</key>
+		<real>6080</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>caulking, chinking log cabin</string>
+		<key>ORDER NUMBER</key>
+		<real>3260</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>274</real>
+		<key>AINSWORTH CODE</key>
+		<real>6090</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>caulking, except log cabin</string>
+		<key>ORDER NUMBER</key>
+		<real>3270</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>277</real>
+		<key>AINSWORTH CODE</key>
+		<real>6122</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>hanging sheet rock inside house</string>
+		<key>ORDER NUMBER</key>
+		<real>3280</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>278</real>
+		<key>AINSWORTH CODE</key>
+		<real>6120</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>hanging storm windows</string>
+		<key>ORDER NUMBER</key>
+		<real>3290</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>286</real>
+		<key>AINSWORTH CODE</key>
+		<real>6200</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>scraping and painting sailboat or powerboat</string>
+		<key>ORDER NUMBER</key>
+		<real>3300</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>288</real>
+		<key>AINSWORTH CODE</key>
+		<real>6220</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>washing and waxing hull of sailboat or airplane</string>
+		<key>ORDER NUMBER</key>
+		<real>3310</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>279</real>
+		<key>AINSWORTH CODE</key>
+		<real>6127</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>home repair, general, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3320</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>280</real>
+		<key>AINSWORTH CODE</key>
+		<real>6128</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>home repair, general, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>3330</real>
+		<key>SUBCATEGORY</key>
+		<string>home repair</string>
+	</dict>
+</array>
+</plist>

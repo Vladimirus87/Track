@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>1</real>
+		<key>AINSWORTH CODE</key>
+		<real>12029</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>running, 4 mph (13 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>10</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>2</real>
+		<key>AINSWORTH CODE</key>
+		<real>12030</real>
+		<key>METS</key>
+		<real>8.3000001907348633</real>
+		<key>NAME</key>
+		<string>walking or running, 5 mph (12 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>20</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>3</real>
+		<key>AINSWORTH CODE</key>
+		<real>12040</real>
+		<key>METS</key>
+		<real>9</real>
+		<key>NAME</key>
+		<string>running, 5.2 mph (11.5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>30</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>4</real>
+		<key>AINSWORTH CODE</key>
+		<real>12050</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>running, 6 mph (10 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>40</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>5</real>
+		<key>AINSWORTH CODE</key>
+		<real>12060</real>
+		<key>METS</key>
+		<real>10.5</real>
+		<key>NAME</key>
+		<string>running, 6.7 mph (9 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>50</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>6</real>
+		<key>AINSWORTH CODE</key>
+		<real>12070</real>
+		<key>METS</key>
+		<real>11</real>
+		<key>NAME</key>
+		<string>running, 7 mph (8.5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>60</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>7</real>
+		<key>AINSWORTH CODE</key>
+		<real>12080</real>
+		<key>METS</key>
+		<real>11.5</real>
+		<key>NAME</key>
+		<string>running, 7.5 mph (8 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>70</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>8</real>
+		<key>AINSWORTH CODE</key>
+		<real>12090</real>
+		<key>METS</key>
+		<real>11.800000190734863</real>
+		<key>NAME</key>
+		<string>running, 8 mph (7.5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>80</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>9</real>
+		<key>AINSWORTH CODE</key>
+		<real>12100</real>
+		<key>METS</key>
+		<real>12.300000190734863</real>
+		<key>NAME</key>
+		<string>running, 8.6 mph (7 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>90</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>10</real>
+		<key>AINSWORTH CODE</key>
+		<real>12110</real>
+		<key>METS</key>
+		<real>12.800000190734863</real>
+		<key>NAME</key>
+		<string>running, 9 mph (6.5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>100</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>11</real>
+		<key>AINSWORTH CODE</key>
+		<real>12120</real>
+		<key>METS</key>
+		<real>14.5</real>
+		<key>NAME</key>
+		<string>running, 10 mph (6 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>110</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>12</real>
+		<key>AINSWORTH CODE</key>
+		<real>12130</real>
+		<key>METS</key>
+		<real>16</real>
+		<key>NAME</key>
+		<string>running, 11 mph (5.5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>120</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>13</real>
+		<key>AINSWORTH CODE</key>
+		<real>12132</real>
+		<key>METS</key>
+		<real>19</real>
+		<key>NAME</key>
+		<string>running, 12 mph (5 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>130</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>14</real>
+		<key>AINSWORTH CODE</key>
+		<real>12134</real>
+		<key>METS</key>
+		<real>19.799999237060547</real>
+		<key>NAME</key>
+		<string>running, 13 mph (4.6 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>140</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>15</real>
+		<key>AINSWORTH CODE</key>
+		<real>12135</real>
+		<key>METS</key>
+		<real>23</real>
+		<key>NAME</key>
+		<string>running, 14 mph (4.3 min/mile)</string>
+		<key>ORDER NUMBER</key>
+		<real>150</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>16</real>
+		<key>AINSWORTH CODE</key>
+		<real>12170</real>
+		<key>METS</key>
+		<real>15</real>
+		<key>NAME</key>
+		<string>running, stairs, up</string>
+		<key>ORDER NUMBER</key>
+		<real>160</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>17</real>
+		<key>AINSWORTH CODE</key>
+		<real>15480</real>
+		<key>METS</key>
+		<real>9</real>
+		<key>NAME</key>
+		<string>orienteering</string>
+		<key>ORDER NUMBER</key>
+		<real>170</real>
+		<key>SUBCATEGORY</key>
+		<string>running</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>18</real>
+		<key>AINSWORTH CODE</key>
+		<real>17134</real>
+		<key>METS</key>
+		<real>8.8000001907348633</real>
+		<key>NAME</key>
+		<string>stair climbing, fast pace</string>
+		<key>ORDER NUMBER</key>
+		<real>180</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>19</real>
+		<key>AINSWORTH CODE</key>
+		<real>17140</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>using crutches</string>
+		<key>ORDER NUMBER</key>
+		<real>190</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>20</real>
+		<key>AINSWORTH CODE</key>
+		<real>17200</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>walking, 3.5 mph, level, brisk, firm surface</string>
+		<key>ORDER NUMBER</key>
+		<real>200</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>21</real>
+		<key>AINSWORTH CODE</key>
+		<real>17210</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>walking, 2.9 to 3.5 mph, uphill, 1 to 5% grade, at a normal pace through fields and hillsides</string>
+		<key>ORDER NUMBER</key>
+		<real>210</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>22</real>
+		<key>AINSWORTH CODE</key>
+		<real>17211</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>walking, 2.9 to 3.5 mph, uphill, 6% to 15% grade</string>
+		<key>ORDER NUMBER</key>
+		<real>220</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>23</real>
+		<key>AINSWORTH CODE</key>
+		<real>17220</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>walking, 4.0 mph, level, firm surface, very brisk pace</string>
+		<key>ORDER NUMBER</key>
+		<real>230</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>24</real>
+		<key>AINSWORTH CODE</key>
+		<real>17230</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>walking, 4.5 mph, level, firm surface, very, very brisk</string>
+		<key>ORDER NUMBER</key>
+		<real>240</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>25</real>
+		<key>AINSWORTH CODE</key>
+		<real>17235</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>walking, 5.0 mph, uphill, 3% grade</string>
+		<key>ORDER NUMBER</key>
+		<real>250</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>26</real>
+		<key>AINSWORTH CODE</key>
+		<real>17262</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>walking, normal pace, plowed field or sand</string>
+		<key>ORDER NUMBER</key>
+		<real>260</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>27</real>
+		<key>AINSWORTH CODE</key>
+		<real>17302</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>Nordic walking, 3.5 to 4 mph</string>
+		<key>ORDER NUMBER</key>
+		<real>270</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>28</real>
+		<key>AINSWORTH CODE</key>
+		<real>17305</real>
+		<key>METS</key>
+		<real>9.5</real>
+		<key>NAME</key>
+		<string>Nordic Walking, 5.0 mph</string>
+		<key>ORDER NUMBER</key>
+		<real>280</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>29</real>
+		<key>AINSWORTH CODE</key>
+		<real>17305</real>
+		<key>METS</key>
+		<real>9.5</real>
+		<key>NAME</key>
+		<string>Nordic Walking, 5.0 mph</string>
+		<key>ORDER NUMBER</key>
+		<real>290</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>30</real>
+		<key>AINSWORTH CODE</key>
+		<real>17310</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>Nordic walking, uphill</string>
+		<key>ORDER NUMBER</key>
+		<real>300</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>31</real>
+		<key>AINSWORTH CODE</key>
+		<real>17320</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>walking, backwards, 3.5 mph, level</string>
+		<key>ORDER NUMBER</key>
+		<real>310</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>32</real>
+		<key>AINSWORTH CODE</key>
+		<real>17325</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>walking, backwards, 3.5 mph, uphill, 5% grade</string>
+		<key>ORDER NUMBER</key>
+		<real>320</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>33</real>
+		<key>AINSWORTH CODE</key>
+		<real>18366</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>water jogging</string>
+		<key>ORDER NUMBER</key>
+		<real>330</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>34</real>
+		<key>AINSWORTH CODE</key>
+		<real>18368</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>water walking, moderate effort, moderate pace</string>
+		<key>ORDER NUMBER</key>
+		<real>340</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>35</real>
+		<key>AINSWORTH CODE</key>
+		<real>18369</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>water walking, vigorous effort, brisk pace</string>
+		<key>ORDER NUMBER</key>
+		<real>350</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>36</real>
+		<key>AINSWORTH CODE</key>
+		<real>0.0</real>
+		<key>METS</key>
+		<real>12.300000190734863</real>
+		<key>NAME</key>
+		<string>Jogging Stroller with ~25lb to 50lb weight inside, 6.0mph, paved urban trail, small elevation changes</string>
+		<key>ORDER NUMBER</key>
+		<real>360</real>
+		<key>SUBCATEGORY</key>
+		<string>walking</string>
+	</dict>
+</array>
+</plist>

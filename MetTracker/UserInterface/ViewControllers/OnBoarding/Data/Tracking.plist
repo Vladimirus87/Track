@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>tracking_onboarding_screen_1</string>
+		<key>title</key>
+		<string>tracking_title_1</string>
+		<key>text</key>
+		<string>tracking_text_1</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tracking_onboarding_screen_2</string>
+		<key>title</key>
+		<string>tracking_title_2</string>
+		<key>text</key>
+		<string>tracking_text_2</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tracking_onboarding_screen_3</string>
+		<key>title</key>
+		<string>tracking_title_3</string>
+		<key>text</key>
+		<string>tracking_text_3</string>
+	</dict>
+</array>
+</plist>

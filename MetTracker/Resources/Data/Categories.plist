@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>1</real>
+		<key>CATEGORY NAME</key>
+		<string>Walking and Running</string>
+		<key>ICON</key>
+		<string>category_walking</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>2</real>
+		<key>CATEGORY NAME</key>
+		<string>Bicycling</string>
+		<key>ICON</key>
+		<string>category_bicycling</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>3</real>
+		<key>CATEGORY NAME</key>
+		<string>Swimming</string>
+		<key>ICON</key>
+		<string>category_swimming</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>4</real>
+		<key>CATEGORY NAME</key>
+		<string>Indoor Sports</string>
+		<key>ICON</key>
+		<string>category_indoor</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>5</real>
+		<key>CATEGORY NAME</key>
+		<string>Outdoor Sports</string>
+		<key>ICON</key>
+		<string>category_outdoor</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>6</real>
+		<key>CATEGORY NAME</key>
+		<string>House and Garden</string>
+		<key>ICON</key>
+		<string>category_house_and_garden</string>
+	</dict>
+	<dict>
+		<key>CATEGORY ID</key>
+		<real>7</real>
+		<key>CATEGORY NAME</key>
+		<string>Occupation</string>
+		<key>ICON</key>
+		<string>category_occupation</string>
+	</dict>
+</array>
+</plist>

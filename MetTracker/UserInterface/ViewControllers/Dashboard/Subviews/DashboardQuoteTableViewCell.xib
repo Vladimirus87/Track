@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardQuoteTableViewCell" id="KGk-i7-Jjw" customClass="DashboardQuoteTableViewCell" customModule="MetTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="232.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMr-I4-m7X" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="156" y="16" width="8" height="8"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="7fd-gl-HtP"/>
+                            <constraint firstAttribute="width" constant="8" id="QP8-eB-NRe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8v-0i-ah6">
+                        <rect key="frame" x="108" y="32" width="104" height="4"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="liU-Sc-kNV"/>
+                            <constraint firstAttribute="width" constant="104" id="z9J-d3-dpy"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Things work out best for those who make the best of how things work out.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-Zu-oCJ" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="48" y="52" width="224" height="100"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                        <color key="textColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="− John Wooden" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-hU-uIH" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="48" y="160" width="224" height="20"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
+                        <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mL1-yw-HOo">
+                        <rect key="frame" x="108" y="196.5" width="104" height="4"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="wUq-Ll-oip"/>
+                            <constraint firstAttribute="height" constant="4" id="z5T-5H-njd"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkP-Rt-aVQ" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="156" y="208.5" width="8" height="8"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Cyy-Ci-Aa6"/>
+                            <constraint firstAttribute="width" constant="8" id="gsL-xD-35D"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vkP-Rt-aVQ" firstAttribute="top" secondItem="mL1-yw-HOo" secondAttribute="bottom" constant="8" id="6lg-7k-fn2"/>
+                    <constraint firstItem="9z4-hU-uIH" firstAttribute="trailing" secondItem="0bl-Zu-oCJ" secondAttribute="trailing" id="EpE-kZ-Ad5"/>
+                    <constraint firstItem="0bl-Zu-oCJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="K2n-aU-bi3"/>
+                    <constraint firstItem="9z4-hU-uIH" firstAttribute="top" secondItem="0bl-Zu-oCJ" secondAttribute="bottom" constant="8" id="QWR-B0-cI1"/>
+                    <constraint firstItem="sMr-I4-m7X" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Qbl-IP-jdY"/>
+                    <constraint firstItem="0bl-Zu-oCJ" firstAttribute="top" secondItem="l8v-0i-ah6" secondAttribute="bottom" constant="16" id="Smh-0d-9oE"/>
+                    <constraint firstAttribute="bottom" secondItem="vkP-Rt-aVQ" secondAttribute="bottom" constant="16" id="TKj-De-MSy"/>
+                    <constraint firstItem="sMr-I4-m7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="YFw-ef-Bqd"/>
+                    <constraint firstAttribute="trailing" secondItem="0bl-Zu-oCJ" secondAttribute="trailing" constant="48" id="c89-Zk-p8p"/>
+                    <constraint firstItem="9z4-hU-uIH" firstAttribute="leading" secondItem="0bl-Zu-oCJ" secondAttribute="leading" id="fia-Cs-y8u"/>
+                    <constraint firstItem="vkP-Rt-aVQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gax-fx-Tv8"/>
+                    <constraint firstItem="mL1-yw-HOo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qky-zx-ofU"/>
+                    <constraint firstItem="l8v-0i-ah6" firstAttribute="top" secondItem="sMr-I4-m7X" secondAttribute="bottom" constant="8" id="vxs-d7-eBu"/>
+                    <constraint firstItem="l8v-0i-ah6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ydu-Hv-aRK"/>
+                    <constraint firstItem="mL1-yw-HOo" firstAttribute="top" secondItem="9z4-hU-uIH" secondAttribute="bottom" constant="16" id="zBT-pF-RgN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelAuthor" destination="9z4-hU-uIH" id="vBu-dM-Pna"/>
+                <outlet property="labelQuote" destination="0bl-Zu-oCJ" id="wUu-gY-9GS"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="173"/>
+        </tableViewCell>
+    </objects>
+</document>

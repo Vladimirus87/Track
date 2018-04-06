@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="Quicksand-Regular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnBoardingCollectionViewCell" id="StW-h6-bcn" customClass="OnBoardingCollectionViewCell" customModule="MetTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0T-PR-8wf">
+                        <rect key="frame" x="0.0" y="-0.5" width="320" height="400.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E24-3b-ATZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="344"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_screen_1" translatesAutoresizingMaskIntoConstraints="NO" id="9fI-m2-wjr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="232" id="jj7-Vn-PaY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why track MET?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojg-gQ-nJs" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="256" width="272" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doing activities equivalent" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egS-ts-32j" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="306" width="272" height="20"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ojg-gQ-nJs" secondAttribute="trailing" constant="24" id="1ss-hl-CXe"/>
+                                    <constraint firstAttribute="trailing" secondItem="egS-ts-32j" secondAttribute="trailing" constant="24" id="D8C-jX-OMr"/>
+                                    <constraint firstAttribute="bottom" secondItem="egS-ts-32j" secondAttribute="bottom" constant="18" id="LGH-XT-V9R"/>
+                                    <constraint firstItem="ojg-gQ-nJs" firstAttribute="leading" secondItem="E24-3b-ATZ" secondAttribute="leading" constant="24" id="Nfl-8E-2PI"/>
+                                    <constraint firstAttribute="trailing" secondItem="9fI-m2-wjr" secondAttribute="trailing" id="cB5-gG-CH3"/>
+                                    <constraint firstItem="9fI-m2-wjr" firstAttribute="leading" secondItem="E24-3b-ATZ" secondAttribute="leading" id="dZe-h0-GT8"/>
+                                    <constraint firstItem="egS-ts-32j" firstAttribute="top" secondItem="ojg-gQ-nJs" secondAttribute="bottom" constant="18" id="mZ0-Gz-Xr5"/>
+                                    <constraint firstItem="ojg-gQ-nJs" firstAttribute="top" secondItem="9fI-m2-wjr" secondAttribute="bottom" constant="24" id="mrh-nK-IA8"/>
+                                    <constraint firstItem="egS-ts-32j" firstAttribute="leading" secondItem="E24-3b-ATZ" secondAttribute="leading" constant="24" id="thA-Tv-gxj"/>
+                                    <constraint firstItem="9fI-m2-wjr" firstAttribute="top" secondItem="E24-3b-ATZ" secondAttribute="top" id="wKJ-C0-hMn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E24-3b-ATZ" secondAttribute="bottom" id="0XY-km-Fo7"/>
+                            <constraint firstItem="E24-3b-ATZ" firstAttribute="leading" secondItem="O0T-PR-8wf" secondAttribute="leading" id="Fdg-b8-M7H"/>
+                            <constraint firstItem="E24-3b-ATZ" firstAttribute="width" secondItem="O0T-PR-8wf" secondAttribute="width" id="pFl-ep-qWd"/>
+                            <constraint firstAttribute="trailing" secondItem="E24-3b-ATZ" secondAttribute="trailing" id="ypt-dV-dgb"/>
+                            <constraint firstItem="E24-3b-ATZ" firstAttribute="top" secondItem="O0T-PR-8wf" secondAttribute="top" id="zAa-Hg-BnW"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="O0T-PR-8wf" secondAttribute="bottom" id="1gF-hN-MMD"/>
+                <constraint firstItem="O0T-PR-8wf" firstAttribute="top" secondItem="StW-h6-bcn" secondAttribute="top" id="ZoN-11-YHa"/>
+                <constraint firstItem="O0T-PR-8wf" firstAttribute="leading" secondItem="StW-h6-bcn" secondAttribute="leading" id="cp8-G9-yxd"/>
+                <constraint firstAttribute="trailing" secondItem="O0T-PR-8wf" secondAttribute="trailing" id="l57-cA-mQY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Hs9-Ls-9eF"/>
+            <size key="customSize" width="320" height="613"/>
+            <connections>
+                <outlet property="imageViewPage" destination="9fI-m2-wjr" id="fdN-zF-kLk"/>
+                <outlet property="labelText" destination="egS-ts-32j" id="XHS-Iw-dYJ"/>
+                <outlet property="labelTitle" destination="ojg-gQ-nJs" id="Ph1-v3-7AY"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="201.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboarding_screen_1" width="301" height="161"/>
+    </resources>
+</document>

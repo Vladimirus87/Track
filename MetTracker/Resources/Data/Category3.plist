@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>58</real>
+		<key>AINSWORTH CODE</key>
+		<real>18240</real>
+		<key>METS</key>
+		<real>5.8000001907348633</real>
+		<key>NAME</key>
+		<string>swimming laps, freestyle, front crawl, slow, light or moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>580</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>59</real>
+		<key>AINSWORTH CODE</key>
+		<real>18230</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>swimming laps, freestyle, fast, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>590</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>60</real>
+		<key>AINSWORTH CODE</key>
+		<real>18255</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>swimming, backstroke, recreational</string>
+		<key>ORDER NUMBER</key>
+		<real>600</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>61</real>
+		<key>AINSWORTH CODE</key>
+		<real>18250</real>
+		<key>METS</key>
+		<real>9.5</real>
+		<key>NAME</key>
+		<string>swimming, backstroke, general, training or competition</string>
+		<key>ORDER NUMBER</key>
+		<real>610</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>62</real>
+		<key>AINSWORTH CODE</key>
+		<real>18265</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>swimming, breaststroke, recreational</string>
+		<key>ORDER NUMBER</key>
+		<real>620</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>63</real>
+		<key>AINSWORTH CODE</key>
+		<real>18260</real>
+		<key>METS</key>
+		<real>10.300000190734863</real>
+		<key>NAME</key>
+		<string>swimming, breaststroke, general, training or competition</string>
+		<key>ORDER NUMBER</key>
+		<real>630</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>64</real>
+		<key>AINSWORTH CODE</key>
+		<real>18270</real>
+		<key>METS</key>
+		<real>13.800000190734863</real>
+		<key>NAME</key>
+		<string>swimming, butterfly, general</string>
+		<key>ORDER NUMBER</key>
+		<real>640</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>65</real>
+		<key>AINSWORTH CODE</key>
+		<real>18290</real>
+		<key>METS</key>
+		<real>8.3000001907348633</real>
+		<key>NAME</key>
+		<string>swimming, crawl, medium speed, ~50 yards/minute, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>650</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>66</real>
+		<key>AINSWORTH CODE</key>
+		<real>18280</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>swimming, crawl, fast speed, ~75 yards/minute, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>660</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>67</real>
+		<key>AINSWORTH CODE</key>
+		<real>18300</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>swimming, lake, ocean, river </string>
+		<key>ORDER NUMBER</key>
+		<real>670</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>68</real>
+		<key>AINSWORTH CODE</key>
+		<real>18310</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>swimming, leisurely, not lap swimming, general</string>
+		<key>ORDER NUMBER</key>
+		<real>680</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>69</real>
+		<key>AINSWORTH CODE</key>
+		<real>18320</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>swimming, sidestroke, general</string>
+		<key>ORDER NUMBER</key>
+		<real>690</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>70</real>
+		<key>AINSWORTH CODE</key>
+		<real>18330</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>swimming, synchronized</string>
+		<key>ORDER NUMBER</key>
+		<real>700</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>71</real>
+		<key>AINSWORTH CODE</key>
+		<real>18340</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>swimming, treading water, fast, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>710</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>72</real>
+		<key>AINSWORTH CODE</key>
+		<real>18355</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>water aerobics, water calisthenics</string>
+		<key>ORDER NUMBER</key>
+		<real>720</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>33</real>
+		<key>AINSWORTH CODE</key>
+		<real>18366</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>water jogging</string>
+		<key>ORDER NUMBER</key>
+		<real>730</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>34</real>
+		<key>AINSWORTH CODE</key>
+		<real>18368</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>water walking, moderate effort, moderate pace</string>
+		<key>ORDER NUMBER</key>
+		<real>740</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>35</real>
+		<key>AINSWORTH CODE</key>
+		<real>18369</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>water walking, vigorous effort, brisk pace</string>
+		<key>ORDER NUMBER</key>
+		<real>750</real>
+		<key>SUBCATEGORY</key>
+		<string>swimming</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>227</real>
+		<key>AINSWORTH CODE</key>
+		<real>18360</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>water polo</string>
+		<key>ORDER NUMBER</key>
+		<real>760</real>
+		<key>SUBCATEGORY</key>
+		<string>water activities</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,1210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>75</real>
+		<key>AINSWORTH CODE</key>
+		<real>2017</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, 51-89 watts, light-to-moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>770</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>49</real>
+		<key>AINSWORTH CODE</key>
+		<real>2012</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, 90-100 watts, moderate to vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>780</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>50</real>
+		<key>AINSWORTH CODE</key>
+		<real>2013</real>
+		<key>METS</key>
+		<real>8.8000001907348633</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, 101-160 watts, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>790</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>51</real>
+		<key>AINSWORTH CODE</key>
+		<real>2014</real>
+		<key>METS</key>
+		<real>11</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, 161-200 watts, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>800</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>52</real>
+		<key>AINSWORTH CODE</key>
+		<real>2015</real>
+		<key>METS</key>
+		<real>14</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, 201-270 watts, very vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>810</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>57</real>
+		<key>AINSWORTH CODE</key>
+		<real>2019</real>
+		<key>METS</key>
+		<real>8.5</real>
+		<key>NAME</key>
+		<string>bicycling, stationary, RPM/Spin bike class</string>
+		<key>ORDER NUMBER</key>
+		<real>820</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>80</real>
+		<key>AINSWORTH CODE</key>
+		<real>2048</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>elliptical trainer, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>830</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>76</real>
+		<key>AINSWORTH CODE</key>
+		<real>2117</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>upper body exercise, stationary bicycle - Airdyne (arms only) 40 rpm, moderate</string>
+		<key>ORDER NUMBER</key>
+		<real>840</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>87</real>
+		<key>AINSWORTH CODE</key>
+		<real>2071</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>rowing, stationary, general, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>850</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>88</real>
+		<key>AINSWORTH CODE</key>
+		<real>2072</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>rowing, stationary, 100 watts, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>860</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>89</real>
+		<key>AINSWORTH CODE</key>
+		<real>2073</real>
+		<key>METS</key>
+		<real>8.5</real>
+		<key>NAME</key>
+		<string>rowing, stationary, 150 watts, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>870</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>90</real>
+		<key>AINSWORTH CODE</key>
+		<real>2074</real>
+		<key>METS</key>
+		<real>12</real>
+		<key>NAME</key>
+		<string>rowing, stationary, 200 watts, very vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>880</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>94</real>
+		<key>AINSWORTH CODE</key>
+		<real>2065</real>
+		<key>METS</key>
+		<real>9</real>
+		<key>NAME</key>
+		<string>stair-treadmill ergometer, general</string>
+		<key>ORDER NUMBER</key>
+		<real>890</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>91</real>
+		<key>AINSWORTH CODE</key>
+		<real>2080</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>ski machine, general</string>
+		<key>ORDER NUMBER</key>
+		<real>900</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>92</real>
+		<key>AINSWORTH CODE</key>
+		<real>2085</real>
+		<key>METS</key>
+		<real>11</real>
+		<key>NAME</key>
+		<string>slide board exercise, general</string>
+		<key>ORDER NUMBER</key>
+		<real>910</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>144</real>
+		<key>AINSWORTH CODE</key>
+		<real>15552</real>
+		<key>METS</key>
+		<real>8.8000001907348633</real>
+		<key>NAME</key>
+		<string>rope jumping, slow pace, &lt; 100 skips/min, 2 foot skip, rhythm bounce</string>
+		<key>ORDER NUMBER</key>
+		<real>920</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>145</real>
+		<key>AINSWORTH CODE</key>
+		<real>15551</real>
+		<key>METS</key>
+		<real>11.800000190734863</real>
+		<key>NAME</key>
+		<string>rope jumping, moderate pace, 100-120 skips/min, general, 2 foot skip, plain bounce</string>
+		<key>ORDER NUMBER</key>
+		<real>930</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>146</real>
+		<key>AINSWORTH CODE</key>
+		<real>15550</real>
+		<key>METS</key>
+		<real>12.300000190734863</real>
+		<key>NAME</key>
+		<string>rope jumping, fast pace, 120-160 skips/min</string>
+		<key>ORDER NUMBER</key>
+		<real>940</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>81</real>
+		<key>AINSWORTH CODE</key>
+		<real>2061</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>health club exercise classes, general, gym/weight training combined in one visit</string>
+		<key>ORDER NUMBER</key>
+		<real>950</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>82</real>
+		<key>AINSWORTH CODE</key>
+		<real>2062</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>health club exercise, conditioning classes</string>
+		<key>ORDER NUMBER</key>
+		<real>960</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>95</real>
+		<key>AINSWORTH CODE</key>
+		<real>2110</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>teaching exercise class (e.g., aerobic, water)</string>
+		<key>ORDER NUMBER</key>
+		<real>970</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>78</real>
+		<key>AINSWORTH CODE</key>
+		<real>2035</real>
+		<key>METS</key>
+		<real>4.3000001907348633</real>
+		<key>NAME</key>
+		<string>circuit training, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>980</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>79</real>
+		<key>AINSWORTH CODE</key>
+		<real>2040</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>circuit training, including kettlebells, some aerobic movement with minimal rest, general, vigorous intensity</string>
+		<key>ORDER NUMBER</key>
+		<real>990</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>135</real>
+		<key>AINSWORTH CODE</key>
+		<real>0.0</real>
+		<key>METS</key>
+		<real>9.8000001907348633</real>
+		<key>NAME</key>
+		<string>kettlebell workout, interval or continuous kettlebell swings</string>
+		<key>ORDER NUMBER</key>
+		<real>1000</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>77</real>
+		<key>AINSWORTH CODE</key>
+		<real>2020</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>calisthenics (e.g., push ups, sit ups, pull-ups, jumping jacks), vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1010</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>85</real>
+		<key>AINSWORTH CODE</key>
+		<real>2052</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>resistance (weight) training, squats , slow or explosive effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1020</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>86</real>
+		<key>AINSWORTH CODE</key>
+		<real>2050</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>resistance training (weight lifting, free weight, nautilus or universal), power lifting or body building, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1030</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>124</real>
+		<key>AINSWORTH CODE</key>
+		<real>15110</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>boxing, punching bag</string>
+		<key>ORDER NUMBER</key>
+		<real>1040</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>125</real>
+		<key>AINSWORTH CODE</key>
+		<real>15120</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>boxing, sparring</string>
+		<key>ORDER NUMBER</key>
+		<real>1050</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>126</real>
+		<key>AINSWORTH CODE</key>
+		<real>15100</real>
+		<key>METS</key>
+		<real>12.800000190734863</real>
+		<key>NAME</key>
+		<string>boxing, in ring, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1060</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>154</real>
+		<key>AINSWORTH CODE</key>
+		<real>15730</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>wrestling (one match = 5 minutes)</string>
+		<key>ORDER NUMBER</key>
+		<real>1070</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>138</real>
+		<key>AINSWORTH CODE</key>
+		<real>15425</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>martial arts, different types, slower pace, novice performers, practice</string>
+		<key>ORDER NUMBER</key>
+		<real>1080</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>139</real>
+		<key>AINSWORTH CODE</key>
+		<real>15430</real>
+		<key>METS</key>
+		<real>10.300000190734863</real>
+		<key>NAME</key>
+		<string>martial arts, different types, moderate pace (e.g., judo, jujitsu, karate, kick boxing, tae kwan do, tai-bo, Muay Thai boxing)</string>
+		<key>ORDER NUMBER</key>
+		<real>1090</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>132</real>
+		<key>AINSWORTH CODE</key>
+		<real>15200</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>fencing</string>
+		<key>ORDER NUMBER</key>
+		<real>1100</real>
+		<key>SUBCATEGORY</key>
+		<string>combat sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>93</real>
+		<key>AINSWORTH CODE</key>
+		<real>2090</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>slimnastics, jazzercise</string>
+		<key>ORDER NUMBER</key>
+		<real>1110</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>97</real>
+		<key>AINSWORTH CODE</key>
+		<real>2120</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>water aerobics, water calisthenics, water exercise</string>
+		<key>ORDER NUMBER</key>
+		<real>1120</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>98</real>
+		<key>AINSWORTH CODE</key>
+		<real>3020</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>aerobic, low impact</string>
+		<key>ORDER NUMBER</key>
+		<real>1130</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>100</real>
+		<key>AINSWORTH CODE</key>
+		<real>3015</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>aerobic, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1140</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>101</real>
+		<key>AINSWORTH CODE</key>
+		<real>3021</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>aerobic, high impact</string>
+		<key>ORDER NUMBER</key>
+		<real>1150</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>99</real>
+		<key>AINSWORTH CODE</key>
+		<real>3018</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>aerobic, step, with 4-inch step</string>
+		<key>ORDER NUMBER</key>
+		<real>1160</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>102</real>
+		<key>AINSWORTH CODE</key>
+		<real>3016</real>
+		<key>METS</key>
+		<real>7.5</real>
+		<key>NAME</key>
+		<string>aerobic, step, with 6 - 8 inch step</string>
+		<key>ORDER NUMBER</key>
+		<real>1170</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>103</real>
+		<key>AINSWORTH CODE</key>
+		<real>3017</real>
+		<key>METS</key>
+		<real>9.5</real>
+		<key>NAME</key>
+		<string>aerobic, step, with 10 - 12 inch step</string>
+		<key>ORDER NUMBER</key>
+		<real>1180</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>110</real>
+		<key>AINSWORTH CODE</key>
+		<real>3019</real>
+		<key>METS</key>
+		<real>8.5</real>
+		<key>NAME</key>
+		<string>bench step class, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1190</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>104</real>
+		<key>AINSWORTH CODE</key>
+		<real>3022</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>aerobic dance wearing 10-15 lb weights</string>
+		<key>ORDER NUMBER</key>
+		<real>1200</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>106</real>
+		<key>AINSWORTH CODE</key>
+		<real>3010</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>ballet, modern, or jazz, general, rehearsal or class</string>
+		<key>ORDER NUMBER</key>
+		<real>1210</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>107</real>
+		<key>AINSWORTH CODE</key>
+		<real>3012</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>ballet, modern, or jazz, performance, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1220</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>108</real>
+		<key>AINSWORTH CODE</key>
+		<real>3030</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>ballroom, fast </string>
+		<key>ORDER NUMBER</key>
+		<real>1230</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>109</real>
+		<key>AINSWORTH CODE</key>
+		<real>3038</real>
+		<key>METS</key>
+		<real>11.300000190734863</real>
+		<key>NAME</key>
+		<string>ballroom dancing, competitive, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1240</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>113</real>
+		<key>AINSWORTH CODE</key>
+		<real>3014</real>
+		<key>METS</key>
+		<real>4.8000001907348633</real>
+		<key>NAME</key>
+		<string>tap</string>
+		<key>ORDER NUMBER</key>
+		<real>1250</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>111</real>
+		<key>AINSWORTH CODE</key>
+		<real>3025</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>ethnic or cultural dancing (e.g., Greek, Middle Eastern, hula, salsa, merengue, bamba y plena, flamenco, belly, and swing)</string>
+		<key>ORDER NUMBER</key>
+		<real>1260</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>105</real>
+		<key>AINSWORTH CODE</key>
+		<real>3050</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>Anishinaabe Jingle Dancing</string>
+		<key>ORDER NUMBER</key>
+		<real>1270</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>83</real>
+		<key>AINSWORTH CODE</key>
+		<real>2200</real>
+		<key>METS</key>
+		<real>5.3000001907348633</real>
+		<key>NAME</key>
+		<string>native New Zealander physical activities (e.g., Haka Powhiri, Moteatea, Waita Tira, Whakawatea, etc.), general, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1280</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>84</real>
+		<key>AINSWORTH CODE</key>
+		<real>2205</real>
+		<key>METS</key>
+		<real>6.8000001907348633</real>
+		<key>NAME</key>
+		<string>native New Zealander physical activities (e.g., Haka, Taiahab), general, vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1290</real>
+		<key>SUBCATEGORY</key>
+		<string>conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>112</real>
+		<key>AINSWORTH CODE</key>
+		<real>3031</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>general dancing (e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country)</string>
+		<key>ORDER NUMBER</key>
+		<real>1300</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>155</real>
+		<key>AINSWORTH CODE</key>
+		<real>0.0</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>Zumba - Cumbia, American Mix</string>
+		<key>ORDER NUMBER</key>
+		<real>1310</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>156</real>
+		<key>AINSWORTH CODE</key>
+		<real>0.0</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>Zumba - Merengue, Salsa</string>
+		<key>ORDER NUMBER</key>
+		<real>1320</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>128</real>
+		<key>AINSWORTH CODE</key>
+		<real>15138</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>cheerleading, gymnastic moves, competitive</string>
+		<key>ORDER NUMBER</key>
+		<real>1330</real>
+		<key>SUBCATEGORY</key>
+		<string>dancing</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>212</real>
+		<key>AINSWORTH CODE</key>
+		<real>15702</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>trampoline, competitive</string>
+		<key>ORDER NUMBER</key>
+		<real>1340</real>
+		<key>SUBCATEGORY</key>
+		<string>sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>117</real>
+		<key>AINSWORTH CODE</key>
+		<real>15070</real>
+		<key>METS</key>
+		<real>4.5</real>
+		<key>NAME</key>
+		<string>basketball, shooting baskets</string>
+		<key>ORDER NUMBER</key>
+		<real>1350</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>118</real>
+		<key>AINSWORTH CODE</key>
+		<real>15050</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>basketball, non-game, general </string>
+		<key>ORDER NUMBER</key>
+		<real>1360</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>119</real>
+		<key>AINSWORTH CODE</key>
+		<real>15055</real>
+		<key>METS</key>
+		<real>6.5</real>
+		<key>NAME</key>
+		<string>basketball, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1370</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>120</real>
+		<key>AINSWORTH CODE</key>
+		<real>15060</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>basketball, officiating </string>
+		<key>ORDER NUMBER</key>
+		<real>1380</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>121</real>
+		<key>AINSWORTH CODE</key>
+		<real>15075</real>
+		<key>METS</key>
+		<real>7.8000001907348633</real>
+		<key>NAME</key>
+		<string>basketball, wheelchair</string>
+		<key>ORDER NUMBER</key>
+		<real>1390</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>122</real>
+		<key>AINSWORTH CODE</key>
+		<real>15040</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>basketball, game</string>
+		<key>ORDER NUMBER</key>
+		<real>1400</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>123</real>
+		<key>AINSWORTH CODE</key>
+		<real>15072</real>
+		<key>METS</key>
+		<real>9.3000001907348633</real>
+		<key>NAME</key>
+		<string>basketball, drills, practice</string>
+		<key>ORDER NUMBER</key>
+		<real>1410</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>133</real>
+		<key>AINSWORTH CODE</key>
+		<real>15330</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>handball, team</string>
+		<key>ORDER NUMBER</key>
+		<real>1420</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>151</real>
+		<key>AINSWORTH CODE</key>
+		<real>15725</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>volleyball, beach, in sand</string>
+		<key>ORDER NUMBER</key>
+		<real>1430</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>152</real>
+		<key>AINSWORTH CODE</key>
+		<real>15711</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>volleyball, competitive, in gymnasium</string>
+		<key>ORDER NUMBER</key>
+		<real>1440</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>153</real>
+		<key>AINSWORTH CODE</key>
+		<real>15731</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>wallyball, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1450</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>136</real>
+		<key>AINSWORTH CODE</key>
+		<real>15450</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>kickball</string>
+		<key>ORDER NUMBER</key>
+		<real>1460</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>127</real>
+		<key>AINSWORTH CODE</key>
+		<real>15130</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>broomball</string>
+		<key>ORDER NUMBER</key>
+		<real>1470</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>140</real>
+		<key>AINSWORTH CODE</key>
+		<real>15500</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>paddleball, casual, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1480</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>141</real>
+		<key>AINSWORTH CODE</key>
+		<real>15490</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>paddleball, competitive</string>
+		<key>ORDER NUMBER</key>
+		<real>1490</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>142</real>
+		<key>AINSWORTH CODE</key>
+		<real>15530</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>racquetball, general </string>
+		<key>ORDER NUMBER</key>
+		<real>1500</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>143</real>
+		<key>AINSWORTH CODE</key>
+		<real>15520</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>racquetball, competitive</string>
+		<key>ORDER NUMBER</key>
+		<real>1510</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>137</real>
+		<key>AINSWORTH CODE</key>
+		<real>15460</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>lacrosse</string>
+		<key>ORDER NUMBER</key>
+		<real>1520</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>148</real>
+		<key>AINSWORTH CODE</key>
+		<real>15680</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>tennis, doubles</string>
+		<key>ORDER NUMBER</key>
+		<real>1530</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>149</real>
+		<key>AINSWORTH CODE</key>
+		<real>15695</real>
+		<key>METS</key>
+		<real>5</real>
+		<key>NAME</key>
+		<string>tennis, hitting balls, non-game play, moderate effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1540</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>150</real>
+		<key>AINSWORTH CODE</key>
+		<real>15690</real>
+		<key>METS</key>
+		<real>8</real>
+		<key>NAME</key>
+		<string>tennis, singles </string>
+		<key>ORDER NUMBER</key>
+		<real>1550</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>115</real>
+		<key>AINSWORTH CODE</key>
+		<real>15020</real>
+		<key>METS</key>
+		<real>7</real>
+		<key>NAME</key>
+		<string>badminton, competitive </string>
+		<key>ORDER NUMBER</key>
+		<real>1560</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>116</real>
+		<key>AINSWORTH CODE</key>
+		<real>15030</real>
+		<key>METS</key>
+		<real>5.5</real>
+		<key>NAME</key>
+		<string>badminton, social singles and doubles, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1570</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>147</real>
+		<key>AINSWORTH CODE</key>
+		<real>15652</real>
+		<key>METS</key>
+		<real>7.3000001907348633</real>
+		<key>NAME</key>
+		<string>squash, general</string>
+		<key>ORDER NUMBER</key>
+		<real>1580</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>134</real>
+		<key>AINSWORTH CODE</key>
+		<real>15420</real>
+		<key>METS</key>
+		<real>12</real>
+		<key>NAME</key>
+		<string>jai alai</string>
+		<key>ORDER NUMBER</key>
+		<real>1590</real>
+		<key>SUBCATEGORY</key>
+		<string>ball sports</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>227</real>
+		<key>AINSWORTH CODE</key>
+		<real>18360</real>
+		<key>METS</key>
+		<real>10</real>
+		<key>NAME</key>
+		<string>water polo</string>
+		<key>ORDER NUMBER</key>
+		<real>1600</real>
+		<key>SUBCATEGORY</key>
+		<string>water activities</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>73</real>
+		<key>AINSWORTH CODE</key>
+		<real>2005</real>
+		<key>METS</key>
+		<real>7.1999998092651367</real>
+		<key>NAME</key>
+		<string>activity promoting video/arcade game (e.g., Exergaming, Dance Dance Revolution), vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1610</real>
+		<key>SUBCATEGORY</key>
+		<string>video conditioning exercise</string>
+	</dict>
+	<dict>
+		<key>ACTIVITY ID</key>
+		<real>96</real>
+		<key>AINSWORTH CODE</key>
+		<real>2146</real>
+		<key>METS</key>
+		<real>6</real>
+		<key>NAME</key>
+		<string>video exercise workouts, TV conditioning programs (e.g., cardio-resistance), vigorous effort</string>
+		<key>ORDER NUMBER</key>
+		<real>1620</real>
+		<key>SUBCATEGORY</key>
+		<string>video assisted conditioning exercise</string>
+	</dict>
+</array>
+</plist>
