@@ -27,35 +27,38 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68f-Ns-1Q3">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="48"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-x3-Eh1" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="13.5" y="6" width="23" height="25"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                        <real key="value" value="24"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnA-2Z-58D" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="20" y="31" width="10" height="15"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1mF-BV-Fke">
+                                <rect key="frame" x="13.5" y="4" width="23" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-x3-Eh1" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="25"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnA-2Z-58D" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="23" height="15"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LIA-x3-Eh1" firstAttribute="centerX" secondItem="68f-Ns-1Q3" secondAttribute="centerX" id="AAY-rR-VfT"/>
-                            <constraint firstItem="LnA-2Z-58D" firstAttribute="centerX" secondItem="68f-Ns-1Q3" secondAttribute="centerX" id="DeC-d8-V9x"/>
-                            <constraint firstItem="LnA-2Z-58D" firstAttribute="top" secondItem="LIA-x3-Eh1" secondAttribute="bottom" id="KYh-cc-Urt"/>
-                            <constraint firstItem="LIA-x3-Eh1" firstAttribute="top" secondItem="68f-Ns-1Q3" secondAttribute="top" constant="6" id="eyA-9u-3ub"/>
+                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerX" secondItem="68f-Ns-1Q3" secondAttribute="centerX" id="6vx-Ds-tZG"/>
+                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerY" secondItem="68f-Ns-1Q3" secondAttribute="centerY" id="fcB-N8-gj4"/>
                         </constraints>
                     </view>
                 </subviews>

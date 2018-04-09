@@ -11,8 +11,9 @@ import UIKit
 class StatisticsViewController: MTViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var labelTitle: UILabel!
-    
     @IBOutlet weak var tableViewData: UITableView!
+    
+    var isWeekStatistics = true
     
     let cellIdentifiers = ["StatisticsTrendTableViewCell", "StatisticsPeaksTableViewCell", "StatisticsFavoriteTableViewCell"]
     
@@ -22,6 +23,8 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
         for cellIdentifier in cellIdentifiers {
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
+        
+        print("isWeekStatistics = ", isWeekStatistics)
         
     }
 
@@ -42,19 +45,18 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StatisticsTableViewCell  else {
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
-        
 
         return cell
-        
     }
+    
     
     // MARK: - Actions
     
     @IBAction func buttonClosePressed(_ sender: UIButton) {
         
         self.dismiss(animated: true, completion: nil)
-
     }
+    
     
     // MARK: - Localization
     

@@ -1544,7 +1544,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTd-aj-fk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="1422"/>
+            <point key="canvasLocation" x="2585" y="2192"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="tot-sb-Hnf">
@@ -1728,6 +1728,9 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="icon_enlarge"/>
+                                <connections>
+                                    <segue destination="Vo6-Kq-Gnf" kind="presentation" id="96P-4q-WWE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKm-lo-wDG">
                                 <rect key="frame" x="0.0" y="595" width="375" height="72"/>
@@ -1773,7 +1776,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Aq-76T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2812" y="1421.7391304347827"/>
+            <point key="canvasLocation" x="2201" y="1422"/>
         </scene>
         <!--Calendar Month View Controller-->
         <scene sceneID="2C2-0Q-3vz">
@@ -1852,6 +1855,9 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="icon_shrink"/>
+                                <connections>
+                                    <action selector="enlargePressed:" destination="Vo6-Kq-Gnf" eventType="touchUpInside" id="R34-IH-hpE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-qH-73Q">
                                 <rect key="frame" x="0.0" y="595" width="375" height="72"/>
@@ -1861,6 +1867,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="icon_statistics"/>
+                                <connections>
+                                    <segue destination="gHM-Kd-3r9" kind="presentation" identifier="fromMonth" id="cjR-27-A2D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1877,10 +1886,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wMc-rK-FPp"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonStatistic" destination="oHD-qH-73Q" id="fH4-QN-JW8"/>
+                        <outlet property="calendarTableView" destination="XrL-NS-B1G" id="l3h-8G-pZr"/>
+                        <outlet property="enlargeBtn" destination="neW-Ra-bgj" id="GbB-Yg-UGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrF-8A-JM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493.5999999999999" y="1421.7391304347827"/>
+            <point key="canvasLocation" x="2937" y="1422"/>
         </scene>
     </scenes>
     <resources>
@@ -1900,4 +1914,7 @@
         <image name="test_picture" width="312" height="232"/>
         <image name="tracking_onboarding_screen_3" width="291" height="116"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cjR-27-A2D"/>
+    </inferredMetricsTieBreakers>
 </document>

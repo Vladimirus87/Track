@@ -90,6 +90,8 @@ class SettingsDashboardDesignViewController: MTViewController {
         
         return sum
     }
+
+    
     
 
     override func didReceiveMemoryWarning() {
