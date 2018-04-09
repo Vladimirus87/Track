@@ -1139,6 +1139,80 @@
             </objects>
             <point key="canvasLocation" x="1372" y="1368"/>
         </scene>
+        <!--Settings Tutorial View Controller-->
+        <scene sceneID="sQl-vA-q23">
+            <objects>
+                <viewController storyboardIdentifier="SettingsTutorialViewController" id="fVG-D7-B7n" customClass="SettingsTutorialViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o2k-xa-4T3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTQ-r0-yfv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3Z-12-CwW">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="1dV-ZO-eL2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" image="icon_back"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="fVG-D7-B7n" eventType="touchUpInside" id="gJW-9r-c7k"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-ft-peg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="15.5" width="303" height="25"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CLu-ft-peg" firstAttribute="centerY" secondItem="RTQ-r0-yfv" secondAttribute="centerY" id="0KZ-Pb-1Ye"/>
+                                    <constraint firstAttribute="trailing" secondItem="CLu-ft-peg" secondAttribute="trailing" constant="16" id="0xu-18-myf"/>
+                                    <constraint firstItem="R3Z-12-CwW" firstAttribute="top" secondItem="RTQ-r0-yfv" secondAttribute="top" id="Bio-XF-1uX"/>
+                                    <constraint firstAttribute="bottom" secondItem="R3Z-12-CwW" secondAttribute="bottom" id="QIg-b6-kDe"/>
+                                    <constraint firstAttribute="height" constant="56" id="YX8-0t-4CF"/>
+                                    <constraint firstItem="R3Z-12-CwW" firstAttribute="leading" secondItem="RTQ-r0-yfv" secondAttribute="leading" id="Zfg-o2-qlu"/>
+                                    <constraint firstItem="CLu-ft-peg" firstAttribute="leading" secondItem="R3Z-12-CwW" secondAttribute="trailing" id="uFm-fO-R77"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C7a-41-9EW">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RTQ-r0-yfv" firstAttribute="trailing" secondItem="Gzh-Dv-gFy" secondAttribute="trailing" id="BIs-10-0Qj"/>
+                            <constraint firstItem="C7a-41-9EW" firstAttribute="bottom" secondItem="Gzh-Dv-gFy" secondAttribute="bottom" id="DBZ-TR-hKv"/>
+                            <constraint firstItem="C7a-41-9EW" firstAttribute="trailing" secondItem="Gzh-Dv-gFy" secondAttribute="trailing" id="Euu-mm-aUA"/>
+                            <constraint firstItem="RTQ-r0-yfv" firstAttribute="leading" secondItem="Gzh-Dv-gFy" secondAttribute="leading" id="Qv7-61-QON"/>
+                            <constraint firstItem="RTQ-r0-yfv" firstAttribute="top" secondItem="Gzh-Dv-gFy" secondAttribute="top" id="e1G-ra-AOp"/>
+                            <constraint firstItem="C7a-41-9EW" firstAttribute="leading" secondItem="Gzh-Dv-gFy" secondAttribute="leading" id="qxv-zF-f7j"/>
+                            <constraint firstItem="C7a-41-9EW" firstAttribute="top" secondItem="RTQ-r0-yfv" secondAttribute="bottom" id="uiK-Ep-2Yq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gzh-Dv-gFy"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoTitle" destination="CLu-ft-peg" id="62i-Uf-LmC"/>
+                        <outlet property="tutorialTextView" destination="C7a-41-9EW" id="QpR-Kg-gZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jg1-xZ-iRv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2061.5999999999999" y="1367.7661169415294"/>
+        </scene>
     </scenes>
     <resources>
         <image name="icon_add" width="16" height="16"/>

@@ -114,6 +114,8 @@
 			<string>Single</string>
 			<key>hide_arrow</key>
 			<true/>
+			<key>controller</key>
+			<string>SettingsTutorialViewController</string>
 		</dict>
 		<dict>
 			<key>icon</key>

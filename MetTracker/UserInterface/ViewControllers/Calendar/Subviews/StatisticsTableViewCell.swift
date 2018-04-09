@@ -10,8 +10,10 @@ import UIKit
 
 class StatisticsTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var viewContent: MTView!
 
+    var isWeekStatistics: Bool?
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -24,8 +24,6 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
         
-        print("isWeekStatistics = ", isWeekStatistics)
-        
     }
 
     // MARK: - UITableView
@@ -45,6 +43,9 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? StatisticsTableViewCell  else {
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
+        
+        cell.isWeekStatistics = isWeekStatistics
+        
 
         return cell
     }

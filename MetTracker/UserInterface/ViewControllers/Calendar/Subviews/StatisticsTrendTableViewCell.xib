@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,12 +38,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20Y-yW-YhG">
+                                <rect key="frame" x="0.0" y="44" width="272" height="196"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="240" id="710-Qd-MjA"/>
                             <constraint firstAttribute="trailing" secondItem="ysu-45-BgT" secondAttribute="trailing" constant="24" id="BPW-kd-mc7"/>
+                            <constraint firstItem="20Y-yW-YhG" firstAttribute="leading" secondItem="nmK-MR-IxE" secondAttribute="leading" id="FQg-YY-sUE"/>
                             <constraint firstItem="ysu-45-BgT" firstAttribute="top" secondItem="nmK-MR-IxE" secondAttribute="top" constant="16" id="Jif-F7-K2G"/>
+                            <constraint firstAttribute="trailing" secondItem="20Y-yW-YhG" secondAttribute="trailing" id="LYg-8j-v2A"/>
+                            <constraint firstAttribute="bottom" secondItem="20Y-yW-YhG" secondAttribute="bottom" id="MEF-Yb-ze5"/>
+                            <constraint firstItem="20Y-yW-YhG" firstAttribute="top" secondItem="ysu-45-BgT" secondAttribute="bottom" constant="8" id="b9U-Fb-DoC"/>
                             <constraint firstItem="ysu-45-BgT" firstAttribute="leading" secondItem="nmK-MR-IxE" secondAttribute="leading" constant="24" id="f9Q-Lb-fnX"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -63,6 +71,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="periodOfStatistics" destination="ysu-45-BgT" id="DrD-An-R6S"/>
+                <outlet property="scheduleView" destination="20Y-yW-YhG" id="gf0-53-dqN"/>
                 <outlet property="viewContent" destination="nmK-MR-IxE" id="fra-oo-VGe"/>
             </connections>
         </tableViewCell>

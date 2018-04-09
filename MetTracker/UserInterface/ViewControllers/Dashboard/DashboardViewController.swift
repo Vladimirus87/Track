@@ -167,7 +167,9 @@ extension DashboardViewController: DashboardHintTableViewCellDelegate {
 
 extension DashboardViewController: DashboardInfoTableViewCellDelegate {
     func infoBtnPressed() {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+        
+        let storyboard = UIStoryboard.init(name: "Settings", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "SettingsTutorialViewController") as! SettingsTutorialViewController
         
         self.navigationController?.pushViewController(controller, animated: true)
     }

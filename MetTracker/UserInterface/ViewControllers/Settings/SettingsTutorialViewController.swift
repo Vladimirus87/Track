@@ -1,5 +1,5 @@
 //
-//  InfoViewController.swift
+//  SettingsTutorialViewController
 //  MetTracker
 //
 //  Created by Pavel Belevtsev on 14.02.18.
@@ -8,20 +8,26 @@
 
 import UIKit
 
-class InfoViewController: MTViewController {
+class SettingsTutorialViewController: MTViewController {
 
     @IBOutlet weak var infoTitle: MTLabel!
-    
-    @IBOutlet weak var tableViewData: UITableView!
+    @IBOutlet weak var tutorialTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableViewData.rowHeight = UITableViewAutomaticDimension
-        tableViewData.estimatedRowHeight = 50
+        
+        tutorialTextView.attributedText = loadRTF(from: "Tutorial")
     }
 
-    
+    func loadRTF(from resource: String) -> NSAttributedString? {
+        guard let url = Bundle.main.url(forResource: resource, withExtension: "rtf") else { return nil }
+        
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        
+        return try? NSAttributedString(data: data,
+                                       options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtf],
+                                       documentAttributes: nil)
+    }
     
     @IBAction func backPressed(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -45,16 +51,3 @@ class InfoViewController: MTViewController {
 }
 
 
-//let tempArr = [String: String]()
-//
-//
-//extension InfoViewController: UITableViewDelegate, UITableViewDataSource {
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        <#code#>
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        <#code#>
-//    }
-//}

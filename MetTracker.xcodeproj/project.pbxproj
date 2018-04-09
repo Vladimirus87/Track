@@ -55,7 +55,7 @@
 		3B3E3716207017E400D210A1 /* TrackingActivityHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */; };
 		3B3E3717207017E400D210A1 /* TrackingActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */; };
 		3B4EABE82050776500AE4124 /* SettingsPersonalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */; };
-		3B50AD4120344728009EC098 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4020344728009EC098 /* InfoViewController.swift */; };
+		3B50AD4120344728009EC098 /* SettingsTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */; };
 		3B50AD4320344866009EC098 /* DashboardVarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4220344865009EC098 /* DashboardVarViewController.swift */; };
 		3B50AD47203476B0009EC098 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD46203476B0009EC098 /* TrackingViewController.swift */; };
 		3B50AD49203494CF009EC098 /* HeartFrequencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD48203494CF009EC098 /* HeartFrequencyViewController.swift */; };
@@ -161,6 +161,7 @@
 		94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */; };
 		94AF93DD20764D32003A5781 /* Design+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */; };
 		94AF93DF2076549A003A5781 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DE2076549A003A5781 /* FileManager.swift */; };
+		94B363D5207BBA0F00C69107 /* Tutorial.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94B363D4207BBA0F00C69107 /* Tutorial.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,7 +213,7 @@
 		3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingActivityHeaderView.swift; sourceTree = "<group>"; };
 		3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingActivityHeaderView.xib; sourceTree = "<group>"; };
 		3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsPersonalData.plist; sourceTree = "<group>"; };
-		3B50AD4020344728009EC098 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTutorialViewController.swift; sourceTree = "<group>"; };
 		3B50AD4220344865009EC098 /* DashboardVarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVarViewController.swift; sourceTree = "<group>"; };
 		3B50AD46203476B0009EC098 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		3B50AD48203494CF009EC098 /* HeartFrequencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartFrequencyViewController.swift; sourceTree = "<group>"; };
@@ -322,6 +323,7 @@
 		94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		94AF93DE2076549A003A5781 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		94B363D4207BBA0F00C69107 /* Tutorial.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Tutorial.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +354,7 @@
 				3B0CBA6C203A0DEA00CFB88D /* SettingsUnitsViewController.swift */,
 				3B0CBA6E203A0E0E00CFB88D /* SettingsTextSizeViewController.swift */,
 				3B0CBA70203A0E3400CFB88D /* SettingsLanguageViewController.swift */,
+				3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */,
 				3BA1E530205443320043EB16 /* SettingsNotifications.plist */,
 				3BA1E53220544B000043EB16 /* SettingsUnits.plist */,
+				94B363D4207BBA0F00C69107 /* Tutorial.rtf */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -645,7 +649,6 @@
 				3B8B0711203315E2009A8B8E /* MainDashboardViewController.swift */,
 				3B8B0715203318E8009A8B8E /* DashboardViewController.swift */,
 				3B50AD4220344865009EC098 /* DashboardVarViewController.swift */,
-				3B50AD4020344728009EC098 /* InfoViewController.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -848,6 +851,7 @@
 				3B6FC2F5203AF798006A1802 /* Category3.plist in Resources */,
 				3B2AFBEA2037293300DB8E35 /* SettingsActivityTableViewCell.xib in Resources */,
 				3B0CBA75203A0EC600CFB88D /* SettingsUnitsTableViewCell.xib in Resources */,
+				94B363D5207BBA0F00C69107 /* Tutorial.rtf in Resources */,
 				3B0C8C982040BB470050D49A /* OnBoardingCollectionViewCell.xib in Resources */,
 				3B2AFBD420371C1B00DB8E35 /* SettingsSingleTableViewCell.xib in Resources */,
 				3B5D9B512038D18A00A2021A /* SettingsColorTableViewCell.xib in Resources */,
@@ -1020,7 +1024,7 @@
 				3B940AA420336137006ABB12 /* DashboardQuoteTableViewCell.swift in Sources */,
 				3B8B06E42032E663009A8B8E /* MetTracker.xcdatamodeld in Sources */,
 				3BCA7EA92034BE3C00933594 /* MTViewController.swift in Sources */,
-				3B50AD4120344728009EC098 /* InfoViewController.swift in Sources */,
+				3B50AD4120344728009EC098 /* SettingsTutorialViewController.swift in Sources */,
 				3B8B07052032F167009A8B8E /* OnBoardingCollectionViewCell.swift in Sources */,
 				3B50AD4B20349600009EC098 /* TrackingSuccessViewController.swift in Sources */,
 				3B8B07032032EED5009A8B8E /* OnBoardingViewController.swift in Sources */,

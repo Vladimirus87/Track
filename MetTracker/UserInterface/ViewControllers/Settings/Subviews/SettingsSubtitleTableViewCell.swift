@@ -44,6 +44,9 @@ class SettingsSubtitleTableViewCell: SettingsTableViewCell {
                 let them = dashData[dashThem]
                 self.labelSubtitle.text = them//LS(size)
                 
+            case "units" :
+                self.labelSubtitle.text = Config.shared.units == 0 ? "Metric" : "Imperial"
+                
             default: self.labelSubtitle.text = ""
             }
         }
