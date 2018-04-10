@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CalendarTableViewCell: UITableViewCell {
 
@@ -17,6 +18,10 @@ class CalendarTableViewCell: UITableViewCell {
     @IBOutlet weak var labelProgress: UILabel!
     @IBOutlet weak var viewProgress: UIView!
     @IBOutlet weak var constraintProgress: NSLayoutConstraint!
+    
+    var data = [Tracking]()
+    
+    let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,10 +42,12 @@ class CalendarTableViewCell: UITableViewCell {
         guard date != nil else {
             return
         }
+        updateProgress(withPredicate: date!)
         
         let calendar = Calendar.current
         let day = calendar.component(.day, from: date!)
-
+        
+        
         labelDay.text = "\(day)."
      
         let df = DateFormatter()
@@ -57,15 +64,40 @@ class CalendarTableViewCell: UITableViewCell {
             labelWeekday.textColor = Config.shared.baseColor()
         }
         
+        // изменить прогресс на данные из корДаты
         let progress = arc4random_uniform(5) + 3
-        self.labelProgress.text = "\(progress)"
+//        self.labelProgress.text = "\(progress)"
         self.constraintProgress.constant = 22.0 * CGFloat(progress)
         self.layoutIfNeeded()
         
         self.viewVerticalBar.backgroundColor = Config.shared.baseColor()
         self.viewProgress.backgroundColor = Config.shared.baseColor()
-        
     }
+    
+    
+    
+    func updateProgress(withPredicate: Date) {
+    
+        do {
+            let datePredicate = NSPredicate(format: "(%@ <= date) AND (date < %@)", argumentArray: [withPredicate.startOfDay, withPredicate.endOfDay])
+            
+            
+            let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
+            fetchRequest.predicate = datePredicate
+            data = try contex.fetch(fetchRequest)
+            var countOfMets: Float = 0
+            for i in data {
+                countOfMets += i.mets
+            }
+            
+            labelProgress.text = "\(countOfMets)"
+            // НУЖНО СДЕЛАТЬ ПРОГРЕСС ПОЛОСКУ СДЕСЬ
+        } catch {
+            print("Fetching Failed")
+        }
+    }
+    
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -74,3 +106,31 @@ class CalendarTableViewCell: UITableViewCell {
     }
 
 }
+
+
+extension Date {
+    
+    var startOfDay : Date {
+        let calendar = Calendar.current
+//        calendar.timeZone = NSTimeZone(forSecondsFromGMT: 0) as TimeZone
+        let unitFlags = Set<Calendar.Component>([.year, .month, .day])
+        let components = calendar.dateComponents(unitFlags, from: self)
+        return calendar.date(from: components)!
+    }
+    
+    var endOfDay : Date {
+        var components = DateComponents()
+        components.day = 1
+        let date = Calendar.current.date(byAdding: components, to: self.startOfDay)
+        return (date?.addingTimeInterval(-1))!
+    }
+    
+    var endOfWeek : Date {
+        var components = DateComponents()
+        components.day = 7
+        let date = Calendar.current.date(byAdding: components, to: self.startOfDay)
+        return (date?.addingTimeInterval(-1))!
+    }
+    
+}
+

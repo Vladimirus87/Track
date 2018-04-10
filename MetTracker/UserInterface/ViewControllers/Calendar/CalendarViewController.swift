@@ -8,6 +8,7 @@
 
 import UIKit
 import Masonry
+import CoreData
 
 class CalendarViewController: MTViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -15,6 +16,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var viewVerticalBar: UIView!
     @IBOutlet weak var viewWeekNumber: MTView!
+    @IBOutlet weak var countOfMets: MTLabel!
     
     @IBOutlet weak var buttonEnlarge: UIButton!
     
@@ -87,7 +89,12 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         
         self.firstDate = self.getWeekFirstDay(from: date)
         
+        
         self.tableViewData.reloadData()
+        
+        if let firstD = firstDate {
+            self.countOfMets.text = "\(summOfMet(firstD))"
+        }
         
     }
     
@@ -111,6 +118,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         }
         
         cell.updateWithDate(date: self.firstDate?.add(days: indexPath.row))
+
         
         return cell
         
@@ -124,6 +132,30 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         self.viewWeekNumber.backgroundColor = Config.shared.baseColor()
         self.buttonStatistics.tintColor = Config.shared.baseColor()
         
+    }
+    
+    
+    
+    func summOfMet(_ first: Date) -> Float {
+        var count: Float = 0
+        do {
+            let datePredicate = NSPredicate(format: "(%@ <= date) AND (date < %@)", argumentArray: [first.startOfDay, first.endOfWeek])
+            
+            
+            let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
+            fetchRequest.predicate = datePredicate
+            let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let data = try contex.fetch(fetchRequest)
+            
+            
+            for i in data {
+                count += i.mets
+            }
+        } catch {
+            print("Fetching Failed")
+           
+        }
+        return count
     }
     
     // MARK: -

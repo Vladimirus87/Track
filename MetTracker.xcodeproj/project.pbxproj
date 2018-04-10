@@ -156,6 +156,7 @@
 		3BF26B0B2040C0620076795D /* OnBoardingButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF26B092040C0620076795D /* OnBoardingButtonCollectionViewCell.swift */; };
 		94053E2B2073ABC300F3E297 /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */; };
 		94053E2C2073ABC300F3E297 /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */; };
+		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
 		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
 		94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AEA1812077A658007366C2 /* InfoTableViewCell.xib */; };
 		94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */; };
@@ -318,6 +319,7 @@
 		70861099382CAD6CA326834D /* Pods-MetTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker.release.xcconfig"; sourceTree = "<group>"; };
 		94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9448BD33207C899F0048485A /* Crabs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crabs.plist; sourceTree = "<group>"; };
 		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		94AEA1812077A658007366C2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -657,6 +659,7 @@
 			isa = PBXGroup;
 			children = (
 				3B8B071720331911009A8B8E /* MainDashboard.plist */,
+				9448BD33207C899F0048485A /* Crabs.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9448BD34207C899F0048485A /* Crabs.plist in Resources */,
 				3B940A9C20335517006ABB12 /* DashboardCrabsTableViewCell.xib in Resources */,
 				3B8B06E92032E663009A8B8E /* LaunchScreen.storyboard in Resources */,
 				3B2AFBC22036E12900DB8E35 /* CalendarWeekTableViewCell.xib in Resources */,
