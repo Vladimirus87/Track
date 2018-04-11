@@ -81,6 +81,13 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     }
     
     
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        DispatchQueue.main.async {
+//            
+//        }
+//        
+//    }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return Calendar.current.monthSymbols[sectionData[section].0 - 1]
     }
@@ -125,9 +132,9 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     
     
-    func getDaysOfWeek(date: Date) -> [String] {
+    func getDaysOfWeek(date: Date) -> [Date] {
         
-        var arr = [String]()
+//        var arr = [Date]()
         
         let calendar = Calendar.current
         let dayOfWeek = calendar.component(.weekday, from: date)
@@ -135,13 +142,13 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
         
         let days = (weekdays.lowerBound ..< weekdays.upperBound).compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: date) }
         
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd"
-        for date in days {
-            arr.append(formatter.string(from: date))
-        }
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "dd"
+//        for date in days {
+//            arr.append(formatter.string(from: date))
+//        }
         
-        return arr
+        return days
     }
     
     

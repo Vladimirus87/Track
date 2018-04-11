@@ -25,6 +25,9 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         return themes[UserDefaults.standard.integer(forKey: "designTheme")]
     }
     
+//
+
+    
     var cellIdentifiers = [String]()
     
     
@@ -44,14 +47,18 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         }
         
         updateUI()
-        
     }
+
+
+
+
 
     override func resizeSubviews() {
         super.resizeSubviews()
         
         
     }
+    
     
      // MARK: - UI
     
@@ -78,10 +85,6 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         let cellIdentifier = cellIdentifiers[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        
-//        if cell is DashboardHintTableViewCell {
-//            (cell as! DashboardHintTableViewCell).delegate = self
-//        }
         
         
         switch cell {

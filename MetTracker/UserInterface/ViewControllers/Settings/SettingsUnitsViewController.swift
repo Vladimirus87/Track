@@ -59,6 +59,7 @@ class SettingsUnitsViewController: MTViewController , UITableViewDelegate, UITab
         Config.shared.units = indexPath.row
         tableView.reloadData()
         
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
     }
     
     

@@ -62,6 +62,8 @@ class SettingsColorViewController: MTViewController, UITableViewDelegate, UITabl
         
         Config.shared.colourOptions = indexPath.row
         tableView.reloadData()
+        
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
     }
     
     

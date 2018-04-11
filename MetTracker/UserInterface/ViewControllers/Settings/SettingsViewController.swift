@@ -26,8 +26,12 @@ class SettingsViewController: MTViewController, UITableViewDelegate, UITableView
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
         
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
     }
+    
+    
+    
+    
     
     // MARK: - UITableView
     
@@ -97,9 +101,13 @@ class SettingsViewController: MTViewController, UITableViewDelegate, UITableView
     // MARK: - Notifications
     
     override func updateTextSize() {
-        
+
+        reload()
+    }
+    
+    
+    @objc func reload() {
         self.tableViewData.reloadData()
-        
     }
     
     

@@ -65,9 +65,19 @@ class CalendarTableViewCell: UITableViewCell {
         }
         
         // изменить прогресс на данные из корДаты
-        let progress = arc4random_uniform(5) + 3
+//        let progress = arc4random_uniform(5) + 3
 //        self.labelProgress.text = "\(progress)"
-        self.constraintProgress.constant = 22.0 * CGFloat(progress)
+//        self.constraintProgress.constant = 22.0 * CGFloat(progress)
+        
+        ///from:
+        //viewProgress.frame.origin.x
+        ///to:
+        //contentView.frame.width - 16
+       
+        
+        
+        
+        
         self.layoutIfNeeded()
         
         self.viewVerticalBar.backgroundColor = Config.shared.baseColor()
@@ -92,6 +102,11 @@ class CalendarTableViewCell: UITableViewCell {
             
             labelProgress.text = "\(countOfMets)"
             // НУЖНО СДЕЛАТЬ ПРОГРЕСС ПОЛОСКУ СДЕСЬ
+            let progMaxWidth = (contentView.frame.width) - viewProgress.frame.origin.x
+            let countMets = countOfMets > 50.0 ? 50.0 : countOfMets
+            let percentFromMets = (countMets * 100) / 50
+            let progressWidth = progMaxWidth * CGFloat(percentFromMets) / 100
+            self.constraintProgress.constant = progressWidth
         } catch {
             print("Fetching Failed")
         }

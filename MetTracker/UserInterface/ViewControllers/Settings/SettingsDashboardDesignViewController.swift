@@ -11,17 +11,20 @@ import UIKit
 class SettingsDashboardDesignViewController: MTViewController {
 
     
+    @IBOutlet weak var chooseBtn: MTButton!
     @IBOutlet weak var tableViewData: UITableView!
     
     var data = ["motivational quotes", "picture", "crustanceans"]
+    
     var pictureData = [Design](){
         didSet {
-            if pictureData.count > 0 {
-                let checked = pictureData.filter { $0.selected == true }
-                
-                if checked.count == 0 {
-                    pictureData.first?.selected = true
-                    (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            DispatchQueue.main.async {
+                if self.pictureData.count > 0 {
+                    let checked = self.pictureData.filter { $0.selected == true }
+                    if checked.count == 0 {
+                        self.pictureData.first?.selected = true
+                        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+                    }
                 }
             }
         }
@@ -44,6 +47,8 @@ class SettingsDashboardDesignViewController: MTViewController {
         tableViewData.dataSource = self
         
         getData()
+        
+        chooseBtn.backgroundColor = Config.shared.baseColor()
     }
 
     
@@ -143,7 +148,7 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
         
         UserDefaults.standard.set(indexPath.row, forKey: "designTheme")
         tableView.reloadData()
-        /// SEND NOTIFICATION !
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
     }
     
 }
@@ -202,7 +207,6 @@ extension SettingsDashboardDesignViewController: SettingsPictureTableViewCellDel
         }
         self.getData()
         self.tableViewData.reloadData()
-        
     }
     
     

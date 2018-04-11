@@ -17,6 +17,8 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var viewVerticalBar: UIView!
     @IBOutlet weak var viewWeekNumber: MTView!
     @IBOutlet weak var countOfMets: MTLabel!
+    @IBOutlet weak var width: NSLayoutConstraint!
+    @IBOutlet weak var height: NSLayoutConstraint!
     
     @IBOutlet weak var buttonEnlarge: UIButton!
     
@@ -31,6 +33,10 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
 
         self.buttonEnlarge.roundCorners()
+        self.width.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
+        self.height.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
+        viewWeekNumber.layer.cornerRadius = self.height.constant / 2
+        
         //labelMonthWeek.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         
     }

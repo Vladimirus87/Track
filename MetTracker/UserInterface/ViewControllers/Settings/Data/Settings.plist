@@ -104,6 +104,8 @@
 			<string>misc_activities</string>
 			<key>type</key>
 			<string>Single</string>
+			<key>controller</key>
+			<string>SettingsMiscActivitiesViewController</string>
 		</dict>
 		<dict>
 			<key>icon</key>

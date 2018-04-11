@@ -12,16 +12,15 @@ class SettingsSubtitleTableViewCell: SettingsTableViewCell {
 
     @IBOutlet weak var labelSubtitle: MTLabel!
     
-    let colorIndex = UserDefaults.standard.value(forKey: "SettingsColor") as? Int ?? 0
-    let textSizeIndex = UserDefaults.standard.value(forKey: "SettingsTextSize") as? Int ?? 0
-
-    let dashThem = UserDefaults.standard.integer(forKey: "designTheme")
     var dashData = ["motivational quotes", "picture", "crustanceans"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
+    
+    
+    
+    
 
     override func updateWithData(data: NSDictionary) {
         super.updateWithData(data: data)
@@ -31,17 +30,17 @@ class SettingsSubtitleTableViewCell: SettingsTableViewCell {
             switch title {
                 
             case "colour_options" :
-                let colourData = Settings.shared.colors[colorIndex] as! [String : Any]
+                let colourData = Settings.shared.colors[UserDefaults.standard.value(forKey: "SettingsColor") as? Int ?? 0] as! [String : Any]
                 let colour = colourData["title"] as! String
                 self.labelSubtitle.text = LS(colour)
                 
             case "text_size" :
-                let textData = Settings.shared.textSizes[textSizeIndex] as! [String : Any]
+                let textData = Settings.shared.textSizes[UserDefaults.standard.value(forKey: "SettingsTextSize") as? Int ?? 0] as! [String : Any]
                 let size = textData["title"] as! String
                 self.labelSubtitle.text = LS(size)
                 
             case "dashboard_design" :
-                let them = dashData[dashThem]
+                let them = dashData[UserDefaults.standard.integer(forKey: "designTheme")]
                 self.labelSubtitle.text = them//LS(size)
                 
             case "units" :

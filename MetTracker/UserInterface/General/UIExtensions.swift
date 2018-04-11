@@ -90,3 +90,29 @@ extension Date {
 
 
 
+extension Date {
+    func string(with format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+}
+
+
+
+
+extension Int {
+    static func random(from: Int, to: Int) -> Int {
+        guard to > from else {
+            assertionFailure("Can not generate negative random numbers")
+            return 0
+        }
+        return Int(arc4random_uniform(UInt32(to - from)) + UInt32(from))
+    }
+}
+
+
+
+
+
+

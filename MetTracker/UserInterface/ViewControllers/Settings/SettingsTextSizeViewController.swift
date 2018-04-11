@@ -63,6 +63,7 @@ class SettingsTextSizeViewController: MTViewController, UITableViewDelegate, UIT
         Config.shared.textSize = indexPath.row
         tableView.reloadData()
         
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
     }
     
     

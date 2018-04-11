@@ -156,6 +156,7 @@
 		3BF26B0B2040C0620076795D /* OnBoardingButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF26B092040C0620076795D /* OnBoardingButtonCollectionViewCell.swift */; };
 		94053E2B2073ABC300F3E297 /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */; };
 		94053E2C2073ABC300F3E297 /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */; };
+		9418A0D0207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */; };
 		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
 		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
 		94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AEA1812077A658007366C2 /* InfoTableViewCell.xib */; };
@@ -319,6 +320,7 @@
 		70861099382CAD6CA326834D /* Pods-MetTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker.release.xcconfig"; sourceTree = "<group>"; };
 		94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMiscActivitiesViewController.swift; sourceTree = "<group>"; };
 		9448BD33207C899F0048485A /* Crabs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crabs.plist; sourceTree = "<group>"; };
 		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		94AEA1812077A658007366C2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -357,6 +359,7 @@
 				3B0CBA6E203A0E0E00CFB88D /* SettingsTextSizeViewController.swift */,
 				3B0CBA70203A0E3400CFB88D /* SettingsLanguageViewController.swift */,
 				3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */,
+				9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -971,6 +974,7 @@
 				3B2AFBBD2036E08400DB8E35 /* CalendarMonthTitleTableViewCell.swift in Sources */,
 				3B5D9B392038BDDF00A2021A /* SettingsPersonalDataViewController.swift in Sources */,
 				3B2AFBCD203718D900DB8E35 /* SettingsViewController.swift in Sources */,
+				9418A0D0207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift in Sources */,
 				3BAF05EC2035B62000D91FF9 /* AchievementTableViewCell.swift in Sources */,
 				3B6FC304203B1CED006A1802 /* MTCategory.swift in Sources */,
 				3B940A9D20335517006ABB12 /* DashboardCrabsTableViewCell.swift in Sources */,

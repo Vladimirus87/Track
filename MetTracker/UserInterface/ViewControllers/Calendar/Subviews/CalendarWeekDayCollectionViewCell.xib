@@ -30,7 +30,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1mF-BV-Fke">
                                 <rect key="frame" x="13.5" y="4" width="23" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-x3-Eh1" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIA-x3-Eh1" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="23" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -53,21 +53,25 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="LIA-x3-Eh1" firstAttribute="centerX" secondItem="1mF-BV-Fke" secondAttribute="centerX" id="QI6-0p-yHP"/>
+                                    <constraint firstItem="LnA-2Z-58D" firstAttribute="centerX" secondItem="1mF-BV-Fke" secondAttribute="centerX" id="VHX-Ga-nAA"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerX" secondItem="68f-Ns-1Q3" secondAttribute="centerX" id="6vx-Ds-tZG"/>
-                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerY" secondItem="68f-Ns-1Q3" secondAttribute="centerY" id="fcB-N8-gj4"/>
+                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerX" secondItem="68f-Ns-1Q3" secondAttribute="centerX" id="No7-oL-yq0"/>
+                            <constraint firstItem="1mF-BV-Fke" firstAttribute="centerY" secondItem="68f-Ns-1Q3" secondAttribute="centerY" id="T2n-jW-ju5"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="68f-Ns-1Q3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2IW-4Y-fG7"/>
-                <constraint firstItem="68f-Ns-1Q3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Erd-X3-MLz"/>
-                <constraint firstAttribute="trailing" secondItem="68f-Ns-1Q3" secondAttribute="trailing" id="OFg-eE-Zyf"/>
-                <constraint firstAttribute="bottom" secondItem="68f-Ns-1Q3" secondAttribute="bottom" id="ncB-18-Y8a"/>
+                <constraint firstAttribute="trailing" secondItem="68f-Ns-1Q3" secondAttribute="trailing" id="K8F-9z-FRC"/>
+                <constraint firstAttribute="bottom" secondItem="68f-Ns-1Q3" secondAttribute="bottom" id="XCQ-9n-f0E"/>
+                <constraint firstItem="68f-Ns-1Q3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y7r-xg-U2h"/>
+                <constraint firstItem="68f-Ns-1Q3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kOv-dG-i6d"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>

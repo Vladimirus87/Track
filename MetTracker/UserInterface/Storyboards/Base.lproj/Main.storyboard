@@ -1505,11 +1505,11 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCP-fy-vrh" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="98" y="18" width="48" height="48"/>
+                                            <rect key="frame" x="98" y="18" width="60" height="60"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jME-3D-D93" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="13" y="12" width="22.5" height="25"/>
-                                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                                    <rect key="frame" x="21" y="19.5" width="19" height="21.5"/>
+                                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <userDefinedRuntimeAttributes>
@@ -1521,14 +1521,14 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="Vzc-aT-iln"/>
+                                                <constraint firstAttribute="width" constant="60" id="Vzc-aT-iln"/>
                                                 <constraint firstItem="jME-3D-D93" firstAttribute="centerY" secondItem="wCP-fy-vrh" secondAttribute="centerY" id="Wu7-6v-rD2"/>
-                                                <constraint firstAttribute="height" constant="48" id="qPX-5F-SAJ"/>
+                                                <constraint firstAttribute="height" constant="60" id="qPX-5F-SAJ"/>
                                                 <constraint firstItem="jME-3D-D93" firstAttribute="centerX" secondItem="wCP-fy-vrh" secondAttribute="centerX" id="uSl-5N-XJP"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="24"/>
+                                                    <integer key="value" value="30"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -1698,10 +1698,12 @@
                         <outlet property="buttonEnlarge" destination="fff-TS-QY9" id="Crc-4D-3pV"/>
                         <outlet property="buttonStatistics" destination="OKm-lo-wDG" id="TIJ-Gf-sMc"/>
                         <outlet property="countOfMets" destination="jME-3D-D93" id="mui-ZC-ff8"/>
+                        <outlet property="height" destination="qPX-5F-SAJ" id="MYC-Sa-CFn"/>
                         <outlet property="tableViewData" destination="ZeB-hk-6DZ" id="vp3-oU-0Se"/>
                         <outlet property="viewMonthWeek" destination="lWt-QQ-6KT" id="mg6-5M-WEj"/>
                         <outlet property="viewVerticalBar" destination="E5f-xF-Eu8" id="Dyp-aO-Pg8"/>
                         <outlet property="viewWeekNumber" destination="wCP-fy-vrh" id="IFi-me-8Nr"/>
+                        <outlet property="width" destination="Vzc-aT-iln" id="6FL-MN-mLT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Aq-76T" userLabel="First Responder" sceneMemberID="firstResponder"/>

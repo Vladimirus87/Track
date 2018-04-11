@@ -9,14 +9,30 @@
 import UIKit
 
 class CalendarWeekDayCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var labelDay: UILabel!
     @IBOutlet weak var labelWeekday: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
     }
-
+    
+    override func prepareForReuse() {
+        backgroundColor = .clear
+    }
+    
+    func configureCell(date: Date, trDates: [Tracking]?, ip: IndexPath) {
+        
+        labelWeekday.text = Calendar.current.shortWeekdaySymbols[ip.row]
+        labelDay.text = date.string(with: "dd")
+        
+        DispatchQueue.main.async {
+            let filteredArray = trDates!.filter { ($0.date as Date?)?.string(with: "ddMMyyyy") == date.string(with: "ddMMyyyy") }
+            if filteredArray.count > 0 {
+                self.backgroundColor = Config.shared.baseColor()
+            }
+        }
+    }
+    
 }
