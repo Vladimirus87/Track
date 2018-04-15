@@ -16,8 +16,15 @@ class DashboardPictureTableViewCell: UITableViewCell {
     
     var pictureData = [Design]()
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        prepareForReuse()
+    }
+    
+    override func prepareForReuse() {
+        
         getData()
         
         for img in pictureData {

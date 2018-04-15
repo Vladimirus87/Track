@@ -763,6 +763,7 @@
                         <viewLayoutGuide key="safeArea" id="deK-zG-JT5"/>
                     </view>
                     <connections>
+                        <outlet property="buttonBackView" destination="4Oe-pz-GC2" id="eMg-pm-jRP"/>
                         <outlet property="chooseBtn" destination="59X-YS-pre" id="beN-Zz-hTt"/>
                         <outlet property="tableViewData" destination="BD2-dj-Weo" id="DtT-DW-goU"/>
                     </connections>

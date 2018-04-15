@@ -158,6 +158,7 @@
 		94053E2C2073ABC300F3E297 /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */; };
 		9418A0D0207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */; };
 		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
+		948DEA8E20838F620098C29C /* SettingsDashboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948DEA8D20838F620098C29C /* SettingsDashboard.plist */; };
 		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
 		94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AEA1812077A658007366C2 /* InfoTableViewCell.xib */; };
 		94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */; };
@@ -322,6 +323,7 @@
 		94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMiscActivitiesViewController.swift; sourceTree = "<group>"; };
 		9448BD33207C899F0048485A /* Crabs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crabs.plist; sourceTree = "<group>"; };
+		948DEA8D20838F620098C29C /* SettingsDashboard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsDashboard.plist; sourceTree = "<group>"; };
 		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		94AEA1812077A658007366C2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */,
 				3BA1E530205443320043EB16 /* SettingsNotifications.plist */,
 				3BA1E53220544B000043EB16 /* SettingsUnits.plist */,
+				948DEA8D20838F620098C29C /* SettingsDashboard.plist */,
 				94B363D4207BBA0F00C69107 /* Tutorial.rtf */,
 			);
 			path = Data;
@@ -837,6 +840,7 @@
 				3B940A992033543F006ABB12 /* DashboardPictureTableViewCell.xib in Resources */,
 				3B8B06E12032E663009A8B8E /* Main.storyboard in Resources */,
 				3B4EABE82050776500AE4124 /* SettingsPersonalData.plist in Resources */,
+				948DEA8E20838F620098C29C /* SettingsDashboard.plist in Resources */,
 				3B8CF807203DF09700A534A3 /* TrackingTimerView.xib in Resources */,
 				3B5D9B4B2038C8E600A2021A /* SettingsPictureCollectionViewCell.xib in Resources */,
 				3BAF06202035EA8400D91FF9 /* StatisticsFavoriteTableViewCell.xib in Resources */,

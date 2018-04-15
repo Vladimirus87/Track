@@ -9,7 +9,8 @@
 import UIKit
 
 class SettingsDashboardDesignViewController: MTViewController {
-
+    
+    @IBOutlet weak var buttonBackView: UIView!
     
     @IBOutlet weak var chooseBtn: MTButton!
     @IBOutlet weak var tableViewData: UITableView!
@@ -30,15 +31,16 @@ class SettingsDashboardDesignViewController: MTViewController {
         }
     }
     
+    
     let cellIdentifiers = ["SettingsDashboardDesignTableViewCell",
-                          "SettingsPictureTableViewCell"]
+                           "SettingsPictureTableViewCell"]
     
     var imagePicker = UIImagePickerController()
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         for cellIdentifier in cellIdentifiers {
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
@@ -49,12 +51,15 @@ class SettingsDashboardDesignViewController: MTViewController {
         getData()
         
         chooseBtn.backgroundColor = Config.shared.baseColor()
+        
+        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
+        buttonBackView.isHidden = selectedIndex == 1 ? false : true
     }
-
+    
     
     
     @IBAction func addPressed(_ sender: MTButton) {
-    
+        
         if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
             
             imagePicker.delegate = self
@@ -66,6 +71,9 @@ class SettingsDashboardDesignViewController: MTViewController {
     }
     
     @IBAction func backPressed(_ sender: UIButton) {
+        
+        NotificationCenter.default.post(name: NSNotification.Name.init("reloadDATA"), object: nil)
+        
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -95,10 +103,10 @@ class SettingsDashboardDesignViewController: MTViewController {
         
         return sum
     }
-
     
     
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -110,23 +118,23 @@ class SettingsDashboardDesignViewController: MTViewController {
 extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count + 1
+        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
+        
+        return selectedIndex == 1 ? data.count + 1 : data.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == data.count {
-        
-        let picturesCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[1], for: indexPath) as! SettingsPictureTableViewCell
             
-            picturesCell.delegate = self
+            let picturesCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[1], for: indexPath) as! SettingsPictureTableViewCell
             
             return picturesCell
             
         } else {
             
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[0], for: indexPath) as! SettingsDashboardDesignTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[0], for: indexPath) as! SettingsDashboardDesignTableViewCell
             
             cell.nameOfDesign.text = data[indexPath.row]
             cell.check.isHidden = UserDefaults.standard.integer(forKey: "designTheme") == indexPath.row ? false : true
@@ -147,8 +155,14 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         UserDefaults.standard.set(indexPath.row, forKey: "designTheme")
-        tableView.reloadData()
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
+        
+        if indexPath.row == 1 {
+            buttonBackView.isHidden = false
+        } else {
+            buttonBackView.isHidden = true
+        }
+        
+        tableViewData.reloadData()
     }
     
 }
@@ -196,10 +210,10 @@ extension SettingsDashboardDesignViewController: UINavigationControllerDelegate,
 extension SettingsDashboardDesignViewController: SettingsPictureTableViewCellDelegate {
     
     func deleteCellWith(indexPath: IndexPath) {
-
+        
         self.contex.delete(self.pictureData[indexPath.row])
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-
+        
         let ip = IndexPath(row: self.data.count, section: 0)
         if let cell = self.tableViewData.cellForRow(at: ip) as? SettingsPictureTableViewCell {
             cell.getData()

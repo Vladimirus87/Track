@@ -26,7 +26,7 @@ class SettingsViewController: MTViewController, UITableViewDelegate, UITableView
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(rawValue: "reloadSubtitle"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name(rawValue: "reloadDATA"), object: nil)
     }
     
     
