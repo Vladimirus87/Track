@@ -149,7 +149,7 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
             return
         }
         
-        if  (config.seconds > 60) {
+        if  (config.seconds > 1) {
          
             if ((trackingTimer.state == .manual) || (trackingTimer.state == .paused)) {
                 self.buttonConfirm.isEnabled = true
