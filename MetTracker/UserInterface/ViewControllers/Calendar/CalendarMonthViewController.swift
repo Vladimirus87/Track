@@ -16,7 +16,6 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var enlargeBtn: UIButton!
     
     var data = [[Date]]()
-    var sectionData = [(04,2018), (05,2018), (06,2018)]
     
     let cellIdentifier = "CalendarWeekTableViewCell"
     let headerIdentifier = "CalendarMonthTitleTableViewCell"
@@ -24,31 +23,44 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calendarTableView.delegate = self
-        calendarTableView.dataSource = self
-        
-        for i in sectionData {
-            guard let arr = mondays(myYear: i.1, myMonth: i.0) else { return }
-            data.append(arr)
+        for i in 0...5 {
+            let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
+            if let mm = Int((month?.string(with: "MM"))!), let yy = Int((month?.string(with: "yyyy"))!) {
+                if let arr = mondays(myYear: yy, myMonth: mm) {
+                    data.insert(arr, at: 0)
+                }
+            }
         }
         
         
-        calendarTableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        calendarTableView.register(UINib.init(nibName: headerIdentifier, bundle: nil), forCellReuseIdentifier: headerIdentifier)
+        calendarTableView.delegate = self
+        calendarTableView.dataSource = self
         
         
         buttonStatistic.tintColor = Config.shared.baseColor()
+
         
-    }
+        calendarTableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        calendarTableView.register(UINib.init(nibName: headerIdentifier, bundle: nil), forCellReuseIdentifier: headerIdentifier)
+       }
+
+    
     
     override func updateColorScheme() {
         enlargeBtn.roundCorners()
     }
 
     
+   
+    
+    override func viewDidLayoutSubviews() {
+        let offsetOfTable = CGPoint(x:0, y:self.calendarTableView.contentSize.height - self.calendarTableView.frame.size.height)
+        self.calendarTableView.contentOffset = offsetOfTable
+    }
+    
     // MARK: - TavleView
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionData.count
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,23 +86,15 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = calendarTableView.dequeueReusableCell(withIdentifier: headerIdentifier) as? CalendarMonthTitleTableViewCell
         
+        let date = data[section].last
+        let mm = date?.string(with: "MMMM") ?? ""
+        let yy = date?.string(with: "yyyy") ?? ""
         
-        header?.labelTitle.text = "\(Calendar.current.standaloneMonthSymbols[sectionData[section].0])" + " " + "\(sectionData[section].1)"
+        header?.labelTitle.text = "\(mm)" + " " + "\(yy)"
         
         return header
     }
-    
-    
-//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//        DispatchQueue.main.async {
-//            
-//        }
-//        
-//    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return Calendar.current.monthSymbols[sectionData[section].0 - 1]
-    }
+
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
@@ -104,7 +108,6 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     
     
-    //-------
     func mondays(myYear: Int, myMonth: Int) -> [Date]? {
         var dates = [Date]()
         

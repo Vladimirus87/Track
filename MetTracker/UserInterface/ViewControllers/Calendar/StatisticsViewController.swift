@@ -44,8 +44,8 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
         
-        cell.isWeekStatistics = isWeekStatistics
         
+        cell.isWeekStatistics = isWeekStatistics
 
         return cell
     }
@@ -73,6 +73,8 @@ class StatisticsViewController: MTViewController, UITableViewDelegate, UITableVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

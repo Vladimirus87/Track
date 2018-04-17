@@ -21,7 +21,7 @@ class CalendarWeekTableViewCell: UITableViewCell, UICollectionViewDelegate, UICo
     var data: [Date]?{
         didSet{
             if data?.count == 7 {
-                collectionViewWeek.reloadData()
+                 self.collectionViewWeek.reloadData()
             }
         }
     }
@@ -33,9 +33,7 @@ class CalendarWeekTableViewCell: UITableViewCell, UICollectionViewDelegate, UICo
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        getTrackData()
         prepareForReuse()
-        
     }
     
     
@@ -45,9 +43,9 @@ class CalendarWeekTableViewCell: UITableViewCell, UICollectionViewDelegate, UICo
         
         collectionViewWeek.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         
-        progressWidth.constant = 0//CGFloat(Int.random(from: 0, to: Int(UIScreen.main.bounds.width - 48)))
+        progressWidth.constant = 0
         
-//        viewProgress.backgroundColor = Config.shared.baseColor()
+        getTrackData()
     }
     
     

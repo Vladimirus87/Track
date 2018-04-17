@@ -86,15 +86,16 @@ extension Date {
         return Calendar.current.date(byAdding: dateComponent, to: self)
         
     }
-}
 
-
-
-extension Date {
+    
     func string(with format: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
+    }
+    
+    func getMonths(_ count: Int) -> Date? {
+        return Calendar.current.date(byAdding: .month, value: count, to: self)
     }
 }
 
@@ -108,6 +109,14 @@ extension Int {
             return 0
         }
         return Int(arc4random_uniform(UInt32(to - from)) + UInt32(from))
+    }
+}
+
+
+extension Float {
+    func rounded(toPlaces places:Int) -> Float {
+        let divisor = pow(10.0, Float(places))
+        return (self * divisor).rounded() / divisor
     }
 }
 

@@ -99,7 +99,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         self.tableViewData.reloadData()
         
         if let firstD = firstDate {
-            self.countOfMets.text = "\(summOfMet(firstD))"
+            self.countOfMets.text = "\(summOfMet(firstD).rounded(toPlaces: 2))"
         }
         
     }
@@ -176,14 +176,20 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
     
     
 
-    /*
+
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "toMonthCallendar", let destVC = segue.destination as? CalendarMonthViewController {
+//            var sectionData = [(Int, Int)]()
+//            for i in 0...5 {
+//                let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
+//                guard let mm = Int((month?.string(with: "MM"))!), let yy = Int((month?.string(with: "yyyy"))!) else { return }
+//                sectionData.insert((mm,yy), at: 0)
+//            }
+//            destVC.sectionData = sectionData
+//        }
+//    }
 
 }

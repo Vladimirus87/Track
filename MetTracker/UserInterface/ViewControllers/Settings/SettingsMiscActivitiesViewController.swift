@@ -11,9 +11,8 @@ import MessageUI
 
 class SettingsMiscActivitiesViewController: MTViewController {
     
-    @IBOutlet weak var tableViewData: UITableView!
     
-    let cellIdentifier = "SettingsMiscActivitiesCell"
+
     var data = [Tracking]()
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -23,12 +22,7 @@ class SettingsMiscActivitiesViewController: MTViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataFullList = DataManager.shared.categoryArray
-        
-        tableViewData.delegate = self
-        tableViewData.dataSource = self
         getData()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,9 +50,6 @@ class SettingsMiscActivitiesViewController: MTViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func exportPressed(_ sender: UIButton) {
-        exportDatabase()
-    }
     
 
     func getDataOfActivity(ctId: Int, actId: Int) -> MTActivity? {
@@ -73,6 +64,10 @@ class SettingsMiscActivitiesViewController: MTViewController {
     }
     
     
+    @IBAction func exportPressed(_ sender: MTButton) {
+        exportDatabase()
+    }
+    
     
     
     
@@ -80,77 +75,87 @@ class SettingsMiscActivitiesViewController: MTViewController {
         let exportString = createExportString()
         sendEmail(exportString: exportString)
     }
-
+    
     
     func createExportString() -> String {
-        var dateItem: String
-        var nameItem: String
-        var metsItem: Float
-        var timeItem: Float
-        var heartItem: Int
+        var name : String
+        var date : Date
+        var heartrate : Int16
+        var time : Float
+        var mets : Float
         
-        var export: String = ""
-        for (index, itemList) in data.enumerated() {
-            if index <= data.count - 1 {
-                let date = itemList.value(forKey: "date") as! Date?
-                let name = getDataOfActivity(ctId: Int(itemList.categoryId), actId: Int(itemList.activityId))
-                let mets = itemList.value(forKey: "mets") as! Float?
-                let time = itemList.value(forKey: "time") as! Float?
-                let heart = itemList.value(forKey: "heartrate") as! Int?
-                
-                dateItem = date?.string(with: "MMM dd, yyyy") ?? "--"
-                nameItem = name?.name ?? "--"
-                metsItem = mets ?? 0.0
-                timeItem = time ?? 0.0
-                heartItem = heart ?? 0
-                
-                export += "Date: \(String(describing: dateItem)) \n Activity: \(String(describing: nameItem)) \n Mets: \(String(describing: metsItem)) \n Time: \(String(describing: timeItem)) \n Heart: \(String(describing: heartItem)) \n \n \n "
-            }
+        var export : String = "ACTIVITY NAME, HEART RATE, START TIME, END TIME, TOTAL TIME, METS, \r"
+        
+        for (_ , itemList ) in data.enumerated() {
+            
+            let _name = getDataOfActivity(ctId: Int(itemList.categoryId), actId: Int(itemList.activityId))
+            name = _name?.name ?? "--"
+            let _date = itemList.date! as Date
+            date = _date
+            heartrate = itemList.heartrate
+            time = itemList.time
+            mets = itemList.mets
+            
+            let promoName = "\(name)"
+            let promoHeartrate = "\(heartrate)"
+            let startTime = date.string(with: "dd-MM-yyyy HH:mm")
+            
+            let min = time * 60 * 60
+            let end = date.addingTimeInterval(Double(min))
+            let endTime = end.string(with: "dd-MM-yyyy HH:mm")
+            
+            let tuple = minutesToHoursMinutes(minutes: min) ?? "--"
+            let totalTime = "\(tuple)"
+            let promoMets = "\(mets.rounded(toPlaces: 2))"
+            
+            export +=
+                  "\"" + promoName      + "\"" + ","
+                + "\"" + promoHeartrate + "\"" + ","
+                + "\"" + startTime      + "\"" + ","
+                + "\"" + endTime        + "\"" + ","
+                + "\"" + totalTime      + "\"" + ","
+                + "\"" + promoMets      + "\"" + "\r"
         }
-        print("This is what the app will export: \(export)")
+        
         return export
     }
+    
+    func minutesToHoursMinutes (minutes : Float) -> String? {
+        
+        
+        let duration: TimeInterval = Double(minutes)
+        
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .positional
+        formatter.allowedUnits = [ .hour, .minute]
+        formatter.zeroFormattingBehavior = [ .pad ]
+        
+        let formattedDuration = formatter.string(from: duration)
+        
+        return formattedDuration
+    }
+    
+    
+
 }
 
 
-
-
-
-
-extension SettingsMiscActivitiesViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activities.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewData.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        
-        cell.detailTextLabel?.text = activities[indexPath.row].name
-        
-        let date = data[indexPath.row].date as Date?
-        cell.textLabel?.text = date?.string(with: "dd-MM-yyyy")
-        return cell
-    }
-}
 
 
 
 extension SettingsMiscActivitiesViewController: MFMailComposeViewControllerDelegate {
-    
+
     
     func sendEmail(exportString: String) {
         
-        let csvData = exportString.data(using: String.Encoding.utf8, allowLossyConversion: false)
-        
+        let data = exportString.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue), allowLossyConversion: false)
         
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients([])
-            mail.setMessageBody("<p>MET Trecker</p>", isHTML: true)
-            mail.addAttachmentData(csvData!, mimeType: "svc", fileName: "TrackingStatistics")
+            mail.setMessageBody("<p>MET Tracker</p>", isHTML: true)
+            mail.addAttachmentData(data!, mimeType: "text/csv", fileName: "MET Tracker.csv")
             
             present(mail, animated: true)
             
@@ -165,6 +170,7 @@ extension SettingsMiscActivitiesViewController: MFMailComposeViewControllerDeleg
             
         }
     }
+    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
     }

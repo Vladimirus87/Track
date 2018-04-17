@@ -13,17 +13,25 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     @IBOutlet weak var periodOfStatistics: MTLabel!
     @IBOutlet weak var scheduleView: UIView!
     
+    
+    var mets = [[Float]]()
+
+    let pointsSize: CGFloat = 10
+    var currentMonths = [Int]()
+    
+    
     var pointsXY = [CGPoint]() {
         didSet {
-            
             let pnt = CGPoint(x: (pointsXY.last?.x)!, y: (pointsXY.last?.y)!)
             let point = createPointWith(frame: CGRect(x: pnt.x, y: pnt.y, width: pointsSize, height: pointsSize))
             scheduleView.addSubview(point)
             
             let lbl = addMonths(point: pnt, index: pointsXY.count - 1)
             scheduleView.addSubview(lbl)
+            let lblMets = addMets(point: pnt, index: pointsXY.count - 1)
+            scheduleView.addSubview(lblMets)
             
-            if pointsXY.count == temp__month.count {
+            if pointsXY.count == currentMonths.count {
                 
                 shapeLayerFill = CAShapeLayer()
                 scheduleView.layer.insertSublayer(shapeLayerFill, at: 0)
@@ -53,29 +61,71 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     }
     
     
-    let pointsSize: CGFloat = 10
-    var temp__month = [3, 4, 5, 6, 7]
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        periodOfStatistics.text = "\(temp__month.count) Month Trend"
+        lastMonthes(count: 6)
+        prepareForReuse()
     }
     
-    override func layoutSubviews() {
-        calculatePoints(temp__month.count, frame: scheduleView.frame)
+
+    
+    override func prepareForReuse() {
+        
+        getData()
+        calculatePoints(currentMonths.count, frame: scheduleView.frame)
+        periodOfStatistics.text = "\(currentMonths.count) Month Trend"
     }
     
+    
+    func lastMonthes(count: Int) {
+        for i in 0...count - 1 {
+            let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
+            if let mm_Month = Int((month?.string(with: "MM"))!){
+                currentMonths.insert(mm_Month, at: 0)
+            }
+        }
+    }
+    
+    
+    func getData() {
+        do {
+            let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let data = try contex.fetch(Tracking.fetchRequest()) as! [Tracking]
+
+            for i in 0...5 {
+               let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
+                var _mets: [Float] = [0]
+                
+                for track in data {
+                    if (track.date as Date?)?.string(with: "MM.yyyy") == month?.string(with: "MM.yyyy") {
+                        _mets.append(track.mets)
+                    }
+                }
+                self.mets.insert(_mets, at: 0)
+            }
+            
+        } catch {
+            print("Fetching Failed")
+        }
+    }
     
     
     func calculatePoints(_ countOfPoints: Int, frame: CGRect) {
+       
         let between = frame.width / CGFloat(countOfPoints - 1)
         for point in 0...countOfPoints - 1 {
             var xY = CGPoint.zero
-            xY.x = between  * CGFloat(point)
-            let height = CGFloat(Int.random(from: 50, to: Int(frame.height - pointsSize)))
+            xY.x = between * CGFloat(point)
+            
+            let progMaxWidth = frame.height - pointsSize - 80.0
+            let countM = mets[point].reduce(0, +).rounded(toPlaces: 2)
+            let countMets = countM > 200.0 ? 200.0 : countM
+            let percentFromMets = (countMets * 100) / 200//?
+            let progressWidth = progMaxWidth * CGFloat(percentFromMets) / 100
+            let height = progMaxWidth - progressWidth + 40.0
+            
             xY.y = height
             pointsXY.append(xY)
         }
@@ -117,7 +167,6 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
         sl.frame = frame
         let myPath = UIBezierPath()
         
-        
         if points.count > 1 {
             
             myPath.move(to: CGPoint(x: points[0].x + (pointsSize / 2), y: points[0].y + (pointsSize / 2)))
@@ -127,8 +176,8 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
             }
             
             myPath.addLine(to: CGPoint(x: (points.last?.x)! + pointsSize / 2, y: (points.last?.y)! + pointsSize / 2))
-            myPath.addLine(to: CGPoint(x: scheduleView.frame.width + pointsSize / 2, y: scheduleView.frame.height))
-            myPath.addLine(to: CGPoint(x: scheduleView.frame.origin.x + (pointsSize / 2), y: scheduleView.frame.height))
+            myPath.addLine(to: CGPoint(x: scheduleView.frame.width + pointsSize / 2, y: scheduleView.frame.height - 40.0))
+            myPath.addLine(to: CGPoint(x: scheduleView.frame.origin.x + (pointsSize / 2), y: scheduleView.frame.height - 40.0))
             myPath.addLine(to: CGPoint(x: (points.first?.x)! + (pointsSize / 2), y: (points.first?.y)! + (pointsSize / 2)))
             
             sl.path = myPath.cgPath
@@ -137,11 +186,27 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
         }
     }
     
+    
     func addMonths(point: CGPoint, index: Int) -> UILabel {
-
+        
         let lb = MTLabel()
-        lb.text = Calendar.current.shortMonthSymbols[index]
-        let lblWidth: CGFloat = 30.0
+        lb.text = Calendar.current.shortMonthSymbols[currentMonths[index] - 1]
+        let lblWidth: CGFloat = Config.shared.textSizeIsEnlarged() ? 40.0 : 30.0
+        let lblHeight: CGFloat = Config.shared.textSizeIsEnlarged() ? 30.0 : 25.0
+        lb.frame = CGRect(x: point.x == 0 ? 0 : point.x - pointsSize, y: scheduleView.frame.height - lblHeight - 10, width: lblWidth, height: lblHeight)
+        lb.textAlignment = .center
+        lb.font = UIFont.medium(Config.shared.textSizeIsEnlarged() ? 18.0 : 14.0)
+        
+        return lb
+    }
+    
+    
+    func addMets(point: CGPoint, index: Int) -> UILabel {
+        
+        let lb = MTLabel()
+        let sumOfMets = mets[index].reduce(0, +).rounded(toPlaces: 2)
+        lb.text = "\(sumOfMets)"
+        let lblWidth: CGFloat = Config.shared.textSizeIsEnlarged() ? 60.0 : 45.0
         lb.frame = CGRect(x: point.x == 0 ? 0 : point.x - pointsSize, y: point.y - 35.0, width: lblWidth, height: 25)
         lb.textAlignment = .center
         lb.font = UIFont.medium(Config.shared.textSizeIsEnlarged() ? 18.0 : 14.0)

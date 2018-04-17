@@ -101,7 +101,7 @@
 			<key>icon</key>
 			<string>icon_more_horiz</string>
 			<key>title</key>
-			<string>misc_activities</string>
+			<string>export_tracks</string>
 			<key>type</key>
 			<string>Single</string>
 			<key>controller</key>

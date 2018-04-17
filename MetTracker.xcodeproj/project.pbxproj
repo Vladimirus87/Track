@@ -780,7 +780,6 @@
 				3B8B06D52032E663009A8B8E /* Frameworks */,
 				3B8B06D62032E663009A8B8E /* Resources */,
 				C53508C00F295D97E4C8AD47 /* [CP] Embed Pods Frameworks */,
-				30C3754E6722A1D52D3D3EE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -900,21 +899,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30C3754E6722A1D52D3D3EE6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4DC5DB534EE03C5275A39BAA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

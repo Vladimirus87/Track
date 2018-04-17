@@ -64,18 +64,6 @@ class CalendarTableViewCell: UITableViewCell {
             labelWeekday.textColor = Config.shared.baseColor()
         }
         
-        // изменить прогресс на данные из корДаты
-//        let progress = arc4random_uniform(5) + 3
-//        self.labelProgress.text = "\(progress)"
-//        self.constraintProgress.constant = 22.0 * CGFloat(progress)
-        
-        ///from:
-        //viewProgress.frame.origin.x
-        ///to:
-        //contentView.frame.width - 16
-       
-        
-        
         
         
         self.layoutIfNeeded()
@@ -100,8 +88,8 @@ class CalendarTableViewCell: UITableViewCell {
                 countOfMets += i.mets
             }
             
-            labelProgress.text = "\(countOfMets)"
-            // НУЖНО СДЕЛАТЬ ПРОГРЕСС ПОЛОСКУ СДЕСЬ
+            labelProgress.text = "\(countOfMets.rounded(toPlaces: 2))"
+
             let progMaxWidth = (contentView.frame.width) - viewProgress.frame.origin.x
             let countMets = countOfMets > 50.0 ? 50.0 : countOfMets
             let percentFromMets = (countMets * 100) / 50

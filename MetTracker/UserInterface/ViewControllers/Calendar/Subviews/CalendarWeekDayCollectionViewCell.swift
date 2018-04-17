@@ -24,15 +24,16 @@ class CalendarWeekDayCollectionViewCell: UICollectionViewCell {
     
     func configureCell(date: Date, trDates: [Tracking]?, ip: IndexPath) {
         
-        labelWeekday.text = Calendar.current.shortWeekdaySymbols[ip.row]
-        labelDay.text = date.string(with: "dd")
+//        DispatchQueue.main.async {
         
-        DispatchQueue.main.async {
+            self.labelWeekday.text = Calendar.current.shortWeekdaySymbols[ip.row]
+            self.labelDay.text = date.string(with: "dd")
+        
             let filteredArray = trDates!.filter { ($0.date as Date?)?.string(with: "ddMMyyyy") == date.string(with: "ddMMyyyy") }
             if filteredArray.count > 0 {
                 self.backgroundColor = Config.shared.baseColor()
             }
         }
-    }
+//    }
     
 }
