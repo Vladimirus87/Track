@@ -42,7 +42,7 @@
                                 <rect key="frame" x="16" y="56" width="240" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bicycling, 10-11.9 mph" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRm-ov-pd7" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="26.5" width="184" height="20"/>
+                                        <rect key="frame" x="16" y="26.5" width="208" height="20"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -52,25 +52,12 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWV-L7-zTW" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="29" width="17" height="15"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="wWV-L7-zTW" secondAttribute="trailing" constant="16" id="5Fp-0o-Xsx"/>
                                     <constraint firstAttribute="height" constant="72" id="EyM-lq-RIo"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZRm-ov-pd7" secondAttribute="trailing" constant="40" id="ILc-KV-cyN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZRm-ov-pd7" secondAttribute="trailing" constant="16" id="ILc-KV-cyN"/>
                                     <constraint firstItem="ZRm-ov-pd7" firstAttribute="leading" secondItem="6T6-yB-PgR" secondAttribute="leading" constant="16" id="Nz7-Sa-O1D"/>
-                                    <constraint firstItem="wWV-L7-zTW" firstAttribute="centerY" secondItem="6T6-yB-PgR" secondAttribute="centerY" id="TsD-od-Bz1"/>
                                     <constraint firstItem="ZRm-ov-pd7" firstAttribute="centerY" secondItem="6T6-yB-PgR" secondAttribute="centerY" id="q7u-hi-5om"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -107,6 +94,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="favouriteAct" destination="ZRm-ov-pd7" id="D0Q-E9-nio"/>
+                <outlet property="favouriteTitle" destination="AKT-pB-GfS" id="H5D-CV-vE2"/>
                 <outlet property="viewActivityInfo" destination="6T6-yB-PgR" id="MiF-4N-dDk"/>
                 <outlet property="viewContent" destination="dHD-7M-8SO" id="vVu-JL-ylG"/>
             </connections>

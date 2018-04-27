@@ -60,7 +60,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         var sourceComp = sourceDate.components
         var comp = DateComponents()
         comp.weekOfYear = sourceComp.weekOfYear
-        comp.weekday = 1
+        comp.weekday = 2
         comp.yearForWeekOfYear = sourceComp.yearForWeekOfYear
         return Calendar.date(from: comp)
     }

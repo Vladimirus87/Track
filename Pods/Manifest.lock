@@ -1,16 +1,20 @@
 PODS:
   - Masonry (1.1.0)
+  - UICircularProgressRing (2.0.0)
 
 DEPENDENCIES:
   - Masonry
+  - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Masonry
+    - UICircularProgressRing
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  UICircularProgressRing: f41663e98c0f40b4794461a4209a67569ea2cc28
 
-PODFILE CHECKSUM: c4bb566c4989fa116eb75d4b6a3576de0ec08d38
+PODFILE CHECKSUM: 4c07017af4013932a84828cc113f17af0075212c
 
 COCOAPODS: 1.5.0.beta.1

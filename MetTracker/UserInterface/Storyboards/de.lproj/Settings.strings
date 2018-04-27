@@ -1,0 +1,66 @@
+
+/* Class = "UITextField"; placeholder = "text placeholder"; ObjectID = "7Gx-08-hD8"; */
+"7Gx-08-hD8.placeholder" = "text placeholder";
+
+/* Class = "UITextField"; text = "text"; ObjectID = "7Gx-08-hD8"; */
+"7Gx-08-hD8.text" = "text";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "CLu-ft-peg"; */
+"CLu-ft-peg.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "DjA-K2-dtQ"; */
+"DjA-K2-dtQ.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Drk-Ri-WIh"; */
+"Drk-Ri-WIh.text" = "Title";
+
+/* Class = "UILabel"; text = "tap and hold to remove images"; ObjectID = "Ikw-VR-diW"; */
+"Ikw-VR-diW.text" = "tap and hold to remove images";
+
+/* Class = "UIButton"; normalTitle = "button"; ObjectID = "J8m-Fs-j2B"; */
+"J8m-Fs-j2B.normalTitle" = "button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "L0q-Ia-s55"; */
+"L0q-Ia-s55.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "LSH-kG-MSd"; */
+"LSH-kG-MSd.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "LZB-uE-nAR"; */
+"LZB-uE-nAR.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "N3A-gW-5YR"; */
+"N3A-gW-5YR.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "text placeholder"; ObjectID = "QnG-MB-9s9"; */
+"QnG-MB-9s9.placeholder" = "text placeholder";
+
+/* Class = "UITextField"; placeholder = "text placeholder"; ObjectID = "SKx-nL-VUd"; */
+"SKx-nL-VUd.placeholder" = "text placeholder";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Vv6-2V-XeE"; */
+"Vv6-2V-XeE.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "SEND TRACKS"; ObjectID = "evF-O0-CZ2"; */
+"evF-O0-CZ2.normalTitle" = "SEND TRACKS";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "oal-hw-Att"; */
+"oal-hw-Att.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "delete"; ObjectID = "qsX-Af-MMz"; */
+"qsX-Af-MMz.normalTitle" = "delete";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "rjk-vN-M9q"; */
+"rjk-vN-M9q.text" = "Title";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "s8b-y8-Vfi"; */
+"s8b-y8-Vfi.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "text placeholder"; ObjectID = "sDt-c8-EzE"; */
+"sDt-c8-EzE.placeholder" = "text placeholder";
+
+/* Class = "UILabel"; text = "You can send your tracking history by email, just click the button"; ObjectID = "vrh-O9-z3g"; */
+"vrh-O9-z3g.text" = "You can send your tracking history by email, just click the button";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "zMs-UT-w93"; */
+"zMs-UT-w93.text" = "Title";

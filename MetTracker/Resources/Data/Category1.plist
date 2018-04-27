@@ -11,8 +11,10 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>running, 4 mph (13 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 6,0 - 6,9 km/h</string>
 		<key>ORDER NUMBER</key>
-		<real>10</real>
+		<integer>10</integer>
 		<key>SUBCATEGORY</key>
 		<string>running</string>
 	</dict>
@@ -22,9 +24,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12030</real>
 		<key>METS</key>
-		<real>8.3000001907348633</real>
+		<real>8.300000190734863</real>
 		<key>NAME</key>
 		<string>walking or running, 5 mph (12 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Gehen oder Laufen 7,0 - 7,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>20</real>
 		<key>SUBCATEGORY</key>
@@ -39,6 +43,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>running, 5.2 mph (11.5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 8,0 - 8,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>30</real>
 		<key>SUBCATEGORY</key>
@@ -50,9 +56,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12050</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>running, 6 mph (10 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 9,0 - 9,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>40</real>
 		<key>SUBCATEGORY</key>
@@ -67,6 +75,8 @@
 		<real>10.5</real>
 		<key>NAME</key>
 		<string>running, 6.7 mph (9 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 10,0 - 10,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>50</real>
 		<key>SUBCATEGORY</key>
@@ -81,6 +91,8 @@
 		<real>11</real>
 		<key>NAME</key>
 		<string>running, 7 mph (8.5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 11,0 - 11,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>60</real>
 		<key>SUBCATEGORY</key>
@@ -95,6 +107,8 @@
 		<real>11.5</real>
 		<key>NAME</key>
 		<string>running, 7.5 mph (8 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 12,0 - 12,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>70</real>
 		<key>SUBCATEGORY</key>
@@ -106,9 +120,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12090</real>
 		<key>METS</key>
-		<real>11.800000190734863</real>
+		<real>11.8</real>
 		<key>NAME</key>
 		<string>running, 8 mph (7.5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 13,0 - 13,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>80</real>
 		<key>SUBCATEGORY</key>
@@ -120,9 +136,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12100</real>
 		<key>METS</key>
-		<real>12.300000190734863</real>
+		<real>12.30000019073486</real>
 		<key>NAME</key>
 		<string>running, 8.6 mph (7 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 14,0 - 14,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>90</real>
 		<key>SUBCATEGORY</key>
@@ -134,9 +152,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12110</real>
 		<key>METS</key>
-		<real>12.800000190734863</real>
+		<real>12.80000019073486</real>
 		<key>NAME</key>
 		<string>running, 9 mph (6.5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 15,0 - 15,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>100</real>
 		<key>SUBCATEGORY</key>
@@ -151,6 +171,8 @@
 		<real>14.5</real>
 		<key>NAME</key>
 		<string>running, 10 mph (6 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 16,0 - 16,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>110</real>
 		<key>SUBCATEGORY</key>
@@ -165,6 +187,8 @@
 		<real>16</real>
 		<key>NAME</key>
 		<string>running, 11 mph (5.5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 17,0 - 18,4 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>120</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>19</real>
 		<key>NAME</key>
 		<string>running, 12 mph (5 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 18,5 - 19,9 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>130</real>
 		<key>SUBCATEGORY</key>
@@ -190,9 +216,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>12134</real>
 		<key>METS</key>
-		<real>19.799999237060547</real>
+		<real>19.79999923706055</real>
 		<key>NAME</key>
 		<string>running, 13 mph (4.6 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 20,0 - 21,4 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>140</real>
 		<key>SUBCATEGORY</key>
@@ -207,6 +235,8 @@
 		<real>23</real>
 		<key>NAME</key>
 		<string>running, 14 mph (4.3 min/mile)</string>
+		<key>NAME_DE</key>
+		<string>Laufen 21,5 - 22,5 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>150</real>
 		<key>SUBCATEGORY</key>
@@ -221,6 +251,8 @@
 		<real>15</real>
 		<key>NAME</key>
 		<string>running, stairs, up</string>
+		<key>NAME_DE</key>
+		<string>Treppenlaufen (treppauf)</string>
 		<key>ORDER NUMBER</key>
 		<real>160</real>
 		<key>SUBCATEGORY</key>
@@ -235,6 +267,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>orienteering</string>
+		<key>NAME_DE</key>
+		<string>Orientierungslauf</string>
 		<key>ORDER NUMBER</key>
 		<real>170</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17134</real>
 		<key>METS</key>
-		<real>8.8000001907348633</real>
+		<real>8.800000190734863</real>
 		<key>NAME</key>
 		<string>stair climbing, fast pace</string>
+		<key>NAME_DE</key>
+		<string>Treppen steigen, schnell</string>
 		<key>ORDER NUMBER</key>
 		<real>180</real>
 		<key>SUBCATEGORY</key>
@@ -263,6 +299,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>using crutches</string>
+		<key>NAME_DE</key>
+		<string>Mit Krücken gehen</string>
 		<key>ORDER NUMBER</key>
 		<real>190</real>
 		<key>SUBCATEGORY</key>
@@ -274,9 +312,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17200</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>walking, 3.5 mph, level, brisk, firm surface</string>
+		<key>NAME_DE</key>
+		<string>Gehen in der Ebene 5,5 km/h, zügig, fester Untergrund</string>
 		<key>ORDER NUMBER</key>
 		<real>200</real>
 		<key>SUBCATEGORY</key>
@@ -288,11 +328,13 @@
 		<key>AINSWORTH CODE</key>
 		<real>17210</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>walking, 2.9 to 3.5 mph, uphill, 1 to 5% grade, at a normal pace through fields and hillsides</string>
+		<key>NAME_DE</key>
+		<string>Gehen bergauf 4,5 bis 5,5 km/h, normale Geschwindigkeit, durch Felder und Hügel, 1-5% Steigung</string>
 		<key>ORDER NUMBER</key>
-		<real>210</real>
+		<integer>210</integer>
 		<key>SUBCATEGORY</key>
 		<string>walking</string>
 	</dict>
@@ -305,6 +347,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>walking, 2.9 to 3.5 mph, uphill, 6% to 15% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen bergauf 4,5 bis 5,5 km/h, 6-15% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>220</real>
 		<key>SUBCATEGORY</key>
@@ -319,6 +363,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>walking, 4.0 mph, level, firm surface, very brisk pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen in der Ebene 6,5 km/h, schnelles Gehen, fester Untergrund</string>
 		<key>ORDER NUMBER</key>
 		<real>230</real>
 		<key>SUBCATEGORY</key>
@@ -333,6 +379,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>walking, 4.5 mph, level, firm surface, very, very brisk</string>
+		<key>NAME_DE</key>
+		<string>Gehen in der Ebene 7,5 km/h, sehr schnelles Gehen, fester Untergrund</string>
 		<key>ORDER NUMBER</key>
 		<real>240</real>
 		<key>SUBCATEGORY</key>
@@ -344,9 +392,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17235</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>walking, 5.0 mph, uphill, 3% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen bergauf 8 km/h, 3% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>250</real>
 		<key>SUBCATEGORY</key>
@@ -361,6 +411,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>walking, normal pace, plowed field or sand</string>
+		<key>NAME_DE</key>
+		<string>Gehen normale Geschwindigkeit, gepflügter Acker oder Sand</string>
 		<key>ORDER NUMBER</key>
 		<real>260</real>
 		<key>SUBCATEGORY</key>
@@ -372,9 +424,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17302</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>Nordic walking, 3.5 to 4 mph</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking 5,5 bis 6,5 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>270</real>
 		<key>SUBCATEGORY</key>
@@ -389,6 +443,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>Nordic Walking, 5.0 mph</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking 8 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>280</real>
 		<key>SUBCATEGORY</key>
@@ -403,6 +459,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>Nordic Walking, 5.0 mph</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking 8 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>290</real>
 		<key>SUBCATEGORY</key>
@@ -414,9 +472,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17310</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>Nordic walking, uphill</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking bergauf</string>
 		<key>ORDER NUMBER</key>
 		<real>300</real>
 		<key>SUBCATEGORY</key>
@@ -431,6 +491,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>walking, backwards, 3.5 mph, level</string>
+		<key>NAME_DE</key>
+		<string>Gehen, rückwärts, 5,7 km/h, in der Ebene</string>
 		<key>ORDER NUMBER</key>
 		<real>310</real>
 		<key>SUBCATEGORY</key>
@@ -445,6 +507,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>walking, backwards, 3.5 mph, uphill, 5% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen, rückwärts, 5,7 km/h, 5% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>320</real>
 		<key>SUBCATEGORY</key>
@@ -456,9 +520,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18366</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>water jogging</string>
+		<key>NAME_DE</key>
+		<string>Aquajogging</string>
 		<key>ORDER NUMBER</key>
 		<real>330</real>
 		<key>SUBCATEGORY</key>
@@ -473,6 +539,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>water walking, moderate effort, moderate pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, mäßig anstrengend, gemäßigte Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>340</real>
 		<key>SUBCATEGORY</key>
@@ -484,9 +552,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18369</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>water walking, vigorous effort, brisk pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, sehr anstrengend, schnelle Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>350</real>
 		<key>SUBCATEGORY</key>
@@ -496,11 +566,13 @@
 		<key>ACTIVITY ID</key>
 		<real>36</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
-		<real>12.300000190734863</real>
+		<real>12.3</real>
 		<key>NAME</key>
 		<string>Jogging Stroller with ~25lb to 50lb weight inside, 6.0mph, paved urban trail, small elevation changes</string>
+		<key>NAME_DE</key>
+		<string>Jogging mit Kinderwagen (10 bis 25 kg schwerer Passagier) 9,5 km/h, asphaltierte Strasse, geringe Höhenunterschiede</string>
 		<key>ORDER NUMBER</key>
 		<real>360</real>
 		<key>SUBCATEGORY</key>

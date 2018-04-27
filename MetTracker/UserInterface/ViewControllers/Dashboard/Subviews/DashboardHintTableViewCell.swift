@@ -18,13 +18,14 @@ protocol DashboardHintTableViewCellDelegate {
 class DashboardHintTableViewCell: UITableViewCell {
 
     @IBOutlet weak var viewBackground : UIView!
+    @IBOutlet weak var textLbl: MTLabel!
     
     var delegate: DashboardHintTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
+        textLbl.text = LS("did_you_know")
         viewBackground.backgroundColor = Config.shared.baseColor()
         
     }

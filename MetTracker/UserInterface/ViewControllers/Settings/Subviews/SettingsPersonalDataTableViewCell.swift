@@ -62,7 +62,8 @@ class SettingsPersonalDataTableViewCell: UITableViewCell, UITextFieldDelegate {
         if let value = profile.value(field) {
             
             self.textFieldValue.text = String(describing: value)
-            self.constraintTitle.constant = -20.0
+//            self.constraintTitle.constant = -20.0
+            labelTitle.isHidden = true
             
         } else {
             self.textFieldValue.text = ""

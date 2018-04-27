@@ -9,39 +9,100 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardPictureTableViewCell" rowHeight="248" id="KGk-i7-Jjw" customClass="DashboardPictureTableViewCell" customModule="MetTracker" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardPictureTableViewCell" rowHeight="592" id="KGk-i7-Jjw" customClass="DashboardPictureTableViewCell" customModule="MetTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="592"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="247.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="325" height="591.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_picture" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-ce-fSs">
-                        <rect key="frame" x="24" y="8" width="272" height="231.5"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <integer key="value" value="8"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img5" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-ce-fSs">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="591.5"/>
                     </imageView>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YO8-rU-9Re">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="592"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAq-2V-k0K" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="102" y="235" width="120" height="120"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="VUd-OJ-l2V"/>
+                            <constraint firstAttribute="height" constant="120" id="zsN-XD-Q3X"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYa-mM-mTx">
+                        <rect key="frame" x="129" y="371" width="67" height="35"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o1L-dd-Nn5">
+                        <rect key="frame" x="16" y="16" width="293" height="56.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uR6-fB-hot" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="293" height="30"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                        <real key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvp-et-pMY" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="30" width="293" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="dvC-ce-fSs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="4nH-Gi-OoA"/>
-                    <constraint firstItem="dvC-ce-fSs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="P6u-KN-4VA"/>
-                    <constraint firstAttribute="trailing" secondItem="dvC-ce-fSs" secondAttribute="trailing" constant="24" id="QFr-15-hXj"/>
-                    <constraint firstAttribute="bottom" secondItem="dvC-ce-fSs" secondAttribute="bottom" constant="8" id="uJH-gu-NTb"/>
+                    <constraint firstItem="IYa-mM-mTx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2pf-Li-erZ"/>
+                    <constraint firstItem="dvC-ce-fSs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4nH-Gi-OoA"/>
+                    <constraint firstItem="jAq-2V-k0K" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7aH-jk-41c"/>
+                    <constraint firstItem="YO8-rU-9Re" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BWJ-op-esr"/>
+                    <constraint firstItem="dvC-ce-fSs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P6u-KN-4VA"/>
+                    <constraint firstItem="IYa-mM-mTx" firstAttribute="top" secondItem="jAq-2V-k0K" secondAttribute="bottom" constant="16" id="P9t-l5-7L3"/>
+                    <constraint firstAttribute="trailing" secondItem="dvC-ce-fSs" secondAttribute="trailing" id="QFr-15-hXj"/>
+                    <constraint firstItem="o1L-dd-Nn5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SG5-kd-y3t"/>
+                    <constraint firstAttribute="trailing" secondItem="YO8-rU-9Re" secondAttribute="trailing" id="Wkk-Jj-ryE"/>
+                    <constraint firstItem="jAq-2V-k0K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="df7-j2-Io0"/>
+                    <constraint firstAttribute="trailing" secondItem="o1L-dd-Nn5" secondAttribute="trailing" constant="16" id="fbi-bs-zeS"/>
+                    <constraint firstItem="o1L-dd-Nn5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="fzj-y7-COv"/>
+                    <constraint firstAttribute="bottom" secondItem="YO8-rU-9Re" secondAttribute="bottom" id="ib4-HF-iYw"/>
+                    <constraint firstItem="YO8-rU-9Re" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ifb-rJ-Nnw"/>
+                    <constraint firstAttribute="bottom" secondItem="dvC-ce-fSs" secondAttribute="bottom" id="uJH-gu-NTb"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dayOfWeek" destination="uvp-et-pMY" id="ajt-ob-YNL"/>
+                <outlet property="metsProgress" destination="IYa-mM-mTx" id="awk-hp-AbJ"/>
                 <outlet property="picture" destination="dvC-ce-fSs" id="Fj6-Lk-6e5"/>
+                <outlet property="roundProgress" destination="jAq-2V-k0K" id="Ahs-K2-jsu"/>
+                <outlet property="weekCounts" destination="uR6-fB-hot" id="8OP-W4-RtI"/>
             </connections>
+            <point key="canvasLocation" x="-69.5" y="-35"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="test_picture" width="312" height="232"/>
+        <image name="img5" width="4096" height="3575"/>
     </resources>
 </document>

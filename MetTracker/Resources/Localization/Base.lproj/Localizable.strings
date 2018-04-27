@@ -6,6 +6,13 @@
   Copyright © 2018 Lindenvalley. All rights reserved.
 */
 
+//--------
+"category_name" = "CATEGORY NAME";
+"activity_name" = "NAME";
+"quote" = "quote_en";
+"about_rtf" = "AboutEn";
+//--------
+
 "onboarding_title_1" = "What is MET?";
 "onboarding_text_1" = "MET stands for metabolic equivalent of task and is a physiological measure expressing the energy cost of phsyical activities.";
 "onboarding_title_2" = "Why track MET?";
@@ -18,7 +25,7 @@
 "tracking_title_2" = "Add in retrospect";
 "tracking_text_2" = "Didn’t have your smartphone with you? No problem. Just use the handles to note your time and tap the confirm button.";
 "tracking_title_3" = "Heartrate";
-"tracking_text_3" = "With MET Tracker you can even track your heartrate. If you have a compatible smartwatch or fitness tracker we will keep an eye on your heartrate when tracking in real time.\n\nWanna keep track on your own? No problem, you can easily add your heartrate manually by tapping the heart icon.";
+"tracking_text_3" = "With MET Tracker you can even track your heartrate. You can easily add your heartrate manually by tapping the heart icon.";
 
 "button_personalise" = "personalise";
 "button_skip" = "SKIP";
@@ -80,4 +87,30 @@
 
 "add" = "Add";
 "categories" = "Categories";
+
+
+
+"want_delete" = "Do you want to delete?";
+"ok" = "Ok";
+"cancel" = "Cancel";
+"photo" = "Photo";
+"gallery" = "Gallery";
+"can_not_delete" = "standard image can not be deleted";
+
+"tap_and_hold" = "tap and hold to remove images";
+"show_random_quotes" = "Show motivational quotes in random order";
+
+
+
+"choose_img" = "Choose a screensaver picture";
+
+"weekly_goal_achived" = "Weekly goal achieved!";
+"did_you_know" = "Did you know? You can adjust your dashboard in settings.";
+"tracking_time" = "Tracking time";
+"month_trend" = "Month Trend";
+"peaks" = "Peaks";
+"average_per_week" = "Average MET per week:";
+"most_collected" = "Most METs collected:";
+"favour_activity" = "Favourite activity";
+
 

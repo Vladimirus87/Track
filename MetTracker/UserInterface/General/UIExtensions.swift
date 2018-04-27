@@ -97,6 +97,24 @@ extension Date {
     func getMonths(_ count: Int) -> Date? {
         return Calendar.current.date(byAdding: .month, value: count, to: self)
     }
+    
+    
+    func getFirstLastDaysOfWeek() -> (Date, Date) {
+        let cal = Calendar.current
+        var comps = cal.dateComponents([.weekOfYear, .yearForWeekOfYear], from: self)
+        comps.weekday = 2 // Monday
+        let mondayInWeek = cal.date(from: comps)!
+        
+        var endOfWeek : Date {
+            var components = DateComponents()
+            components.day = 7
+            let date = Calendar.current.date(byAdding: components, to: mondayInWeek)
+            return (date?.addingTimeInterval(-1))!
+        }
+        
+        return (mondayInWeek, endOfWeek)
+    }
+    
 }
 
 
@@ -120,6 +138,24 @@ extension Float {
     }
 }
 
+
+
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont(name: "Quicksand-Medium", size: 43)!]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        
+        return self
+    }
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        
+        return self
+    }
+}
 
 
 

@@ -8,9 +8,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2017</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 51-89 watts, light-to-moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 51-89 Watt, wenig bis mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>770</real>
 		<key>SUBCATEGORY</key>
@@ -22,9 +24,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2012</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 90-100 watts, moderate to vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 90-100 Watt, mäßig bis sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>780</real>
 		<key>SUBCATEGORY</key>
@@ -36,9 +40,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2013</real>
 		<key>METS</key>
-		<real>8.8000001907348633</real>
+		<real>8.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 101-160 watts, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 101-160 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>790</real>
 		<key>SUBCATEGORY</key>
@@ -53,6 +59,8 @@
 		<real>11</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 161-200 watts, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 161-200 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>800</real>
 		<key>SUBCATEGORY</key>
@@ -67,6 +75,8 @@
 		<real>14</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 201-270 watts, very vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 201-270 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>810</real>
 		<key>SUBCATEGORY</key>
@@ -81,6 +91,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, RPM/Spin bike class</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, Spinning Kurs</string>
 		<key>ORDER NUMBER</key>
 		<real>820</real>
 		<key>SUBCATEGORY</key>
@@ -95,6 +107,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>elliptical trainer, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Crosstrainer/Ellipsentrainer, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>830</real>
 		<key>SUBCATEGORY</key>
@@ -106,9 +120,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2117</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>upper body exercise, stationary bicycle - Airdyne (arms only) 40 rpm, moderate</string>
+		<key>NAME_DE</key>
+		<string>Oberkörper-Ergometer - Airdyne (nur Arme) 40 UPM, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>840</real>
 		<key>SUBCATEGORY</key>
@@ -120,9 +136,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2071</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>rowing, stationary, general, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Rudern, Standgerät, allgemein, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>850</real>
 		<key>SUBCATEGORY</key>
@@ -137,6 +155,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>rowing, stationary, 100 watts, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Rudern, Standgerät, 100 Watt, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>860</real>
 		<key>SUBCATEGORY</key>
@@ -151,6 +171,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>rowing, stationary, 150 watts, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Rudern, Standgerät, 150 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>870</real>
 		<key>SUBCATEGORY</key>
@@ -165,6 +187,8 @@
 		<real>12</real>
 		<key>NAME</key>
 		<string>rowing, stationary, 200 watts, very vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Rudern, Standgerät, 200 Watt, sehr sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>880</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>stair-treadmill ergometer, general</string>
+		<key>NAME_DE</key>
+		<string>Treppenergometer/Stepper, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>890</real>
 		<key>SUBCATEGORY</key>
@@ -190,9 +216,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2080</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>ski machine, general</string>
+		<key>NAME_DE</key>
+		<string>Ski Simulator, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>900</real>
 		<key>SUBCATEGORY</key>
@@ -207,6 +235,8 @@
 		<real>11</real>
 		<key>NAME</key>
 		<string>slide board exercise, general</string>
+		<key>NAME_DE</key>
+		<string>Slide Board Training, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>910</real>
 		<key>SUBCATEGORY</key>
@@ -218,9 +248,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15552</real>
 		<key>METS</key>
-		<real>8.8000001907348633</real>
+		<real>8.800000190734863</real>
 		<key>NAME</key>
 		<string>rope jumping, slow pace, &lt; 100 skips/min, 2 foot skip, rhythm bounce</string>
+		<key>NAME_DE</key>
+		<string>Seilspringen, langsame Geschwindigkeit, &lt; 100 Sprünge pro Minute, beidbeinig, Zwischensprung</string>
 		<key>ORDER NUMBER</key>
 		<real>920</real>
 		<key>SUBCATEGORY</key>
@@ -232,9 +264,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15551</real>
 		<key>METS</key>
-		<real>11.800000190734863</real>
+		<real>11.80000019073486</real>
 		<key>NAME</key>
 		<string>rope jumping, moderate pace, 100-120 skips/min, general, 2 foot skip, plain bounce</string>
+		<key>NAME_DE</key>
+		<string>Seilspringen, mäßige Geschwindigkeit, 100 - 200 Sprünge pro Minute, allgemein, beidbeinig, ohne Zwischensprung</string>
 		<key>ORDER NUMBER</key>
 		<real>930</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15550</real>
 		<key>METS</key>
-		<real>12.300000190734863</real>
+		<real>12.30000019073486</real>
 		<key>NAME</key>
 		<string>rope jumping, fast pace, 120-160 skips/min</string>
+		<key>NAME_DE</key>
+		<string>Seilspringen, schnelle Geschwindigkeit, 120-160 Sprünge pro Minute</string>
 		<key>ORDER NUMBER</key>
 		<real>940</real>
 		<key>SUBCATEGORY</key>
@@ -263,6 +299,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>health club exercise classes, general, gym/weight training combined in one visit</string>
+		<key>NAME_DE</key>
+		<string>Fitness Kurse, allgemein, Gymnastik/Gewichttraining kombiniert</string>
 		<key>ORDER NUMBER</key>
 		<real>950</real>
 		<key>SUBCATEGORY</key>
@@ -274,9 +312,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2062</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>health club exercise, conditioning classes</string>
+		<key>NAME_DE</key>
+		<string>Fitness Kurse, Ausdauer-/Kardiokurse</string>
 		<key>ORDER NUMBER</key>
 		<real>960</real>
 		<key>SUBCATEGORY</key>
@@ -288,9 +328,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2110</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>teaching exercise class (e.g., aerobic, water)</string>
+		<key>NAME_DE</key>
+		<string>Fitnesskurse anleiten (z.B. Wasseraerobic)</string>
 		<key>ORDER NUMBER</key>
 		<real>970</real>
 		<key>SUBCATEGORY</key>
@@ -302,9 +344,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2035</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>circuit training, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Zirkeltraining, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>980</real>
 		<key>SUBCATEGORY</key>
@@ -319,6 +363,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>circuit training, including kettlebells, some aerobic movement with minimal rest, general, vigorous intensity</string>
+		<key>NAME_DE</key>
+		<string>Zirkeltraining, (Kugelhantel/Kettlebells, Gymnastik mit sehr kurzen Pausen) allgemein, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>990</real>
 		<key>SUBCATEGORY</key>
@@ -328,11 +374,13 @@
 		<key>ACTIVITY ID</key>
 		<real>135</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>kettlebell workout, interval or continuous kettlebell swings</string>
+		<key>NAME_DE</key>
+		<string>Kettlebell/Kugelhantel Training, Intervall- oder Dauertraining</string>
 		<key>ORDER NUMBER</key>
 		<real>1000</real>
 		<key>SUBCATEGORY</key>
@@ -347,6 +395,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>calisthenics (e.g., push ups, sit ups, pull-ups, jumping jacks), vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Gymnastikübungen (z.B. Liegestützen, Sit-ups, Klimmzüge, Hampelmann), sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1010</real>
 		<key>SUBCATEGORY</key>
@@ -361,6 +411,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>resistance (weight) training, squats , slow or explosive effort</string>
+		<key>NAME_DE</key>
+		<string>Gewichtstraining, Kniebeugen, langsam oder explosiv</string>
 		<key>ORDER NUMBER</key>
 		<real>1020</real>
 		<key>SUBCATEGORY</key>
@@ -375,6 +427,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>resistance training (weight lifting, free weight, nautilus or universal), power lifting or body building, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Gewichtstraining (Gewichtheben, freie Gewichte, Nautilus oder klassisch), Kraftdreikampf/Power lifting oder Bodybuilding, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1030</real>
 		<key>SUBCATEGORY</key>
@@ -389,6 +443,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>boxing, punching bag</string>
+		<key>NAME_DE</key>
+		<string>Boxen, Boxsack</string>
 		<key>ORDER NUMBER</key>
 		<real>1040</real>
 		<key>SUBCATEGORY</key>
@@ -400,9 +456,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15120</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>boxing, sparring</string>
+		<key>NAME_DE</key>
+		<string>Boxen, Sparring</string>
 		<key>ORDER NUMBER</key>
 		<real>1050</real>
 		<key>SUBCATEGORY</key>
@@ -414,9 +472,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15100</real>
 		<key>METS</key>
-		<real>12.800000190734863</real>
+		<real>12.80000019073486</real>
 		<key>NAME</key>
 		<string>boxing, in ring, general</string>
+		<key>NAME_DE</key>
+		<string>Boxen, Sparring</string>
 		<key>ORDER NUMBER</key>
 		<real>1060</real>
 		<key>SUBCATEGORY</key>
@@ -431,6 +491,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>wrestling (one match = 5 minutes)</string>
+		<key>NAME_DE</key>
+		<string>Wrestling (ein Kampf = 5 min)</string>
 		<key>ORDER NUMBER</key>
 		<real>1070</real>
 		<key>SUBCATEGORY</key>
@@ -442,9 +504,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15425</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>martial arts, different types, slower pace, novice performers, practice</string>
+		<key>NAME_DE</key>
+		<string>Kampfsport, verschiedene Kampfstile, langsame Geschwindigkeit, Anfänger, Training</string>
 		<key>ORDER NUMBER</key>
 		<real>1080</real>
 		<key>SUBCATEGORY</key>
@@ -456,9 +520,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15430</real>
 		<key>METS</key>
-		<real>10.300000190734863</real>
+		<real>10.30000019073486</real>
 		<key>NAME</key>
 		<string>martial arts, different types, moderate pace (e.g., judo, jujitsu, karate, kick boxing, tae kwan do, tai-bo, Muay Thai boxing)</string>
+		<key>NAME_DE</key>
+		<string>Krampfsport, verschiedene Kampfstile, mäßige Geschwindigkeit (z.B. Judo, Jujitsu, Karate, Kickboxen, Tae Kwan Do, Muay Thaiboxen)</string>
 		<key>ORDER NUMBER</key>
 		<real>1090</real>
 		<key>SUBCATEGORY</key>
@@ -473,6 +539,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>fencing</string>
+		<key>NAME_DE</key>
+		<string>Fechten</string>
 		<key>ORDER NUMBER</key>
 		<real>1100</real>
 		<key>SUBCATEGORY</key>
@@ -487,6 +555,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>slimnastics, jazzercise</string>
+		<key>NAME_DE</key>
+		<string>Slimnastik, Jazzercise</string>
 		<key>ORDER NUMBER</key>
 		<real>1110</real>
 		<key>SUBCATEGORY</key>
@@ -498,9 +568,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2120</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>water aerobics, water calisthenics, water exercise</string>
+		<key>NAME_DE</key>
+		<string>Wassergymnastik, Wasserfitness, Wasserübungen</string>
 		<key>ORDER NUMBER</key>
 		<real>1120</real>
 		<key>SUBCATEGORY</key>
@@ -515,6 +587,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>aerobic, low impact</string>
+		<key>NAME_DE</key>
+		<string>Aerobic, wenig dynamisch</string>
 		<key>ORDER NUMBER</key>
 		<real>1130</real>
 		<key>SUBCATEGORY</key>
@@ -526,9 +600,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3015</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>aerobic, general</string>
+		<key>NAME_DE</key>
+		<string>Aerobic, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1140</real>
 		<key>SUBCATEGORY</key>
@@ -540,9 +616,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3021</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>aerobic, high impact</string>
+		<key>NAME_DE</key>
+		<string>Aerobic, sehr dynamisch</string>
 		<key>ORDER NUMBER</key>
 		<real>1150</real>
 		<key>SUBCATEGORY</key>
@@ -557,6 +635,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>aerobic, step, with 4-inch step</string>
+		<key>NAME_DE</key>
+		<string>Aerobic,Steppaerobic, mit 4-inch-Stufe</string>
 		<key>ORDER NUMBER</key>
 		<real>1160</real>
 		<key>SUBCATEGORY</key>
@@ -571,6 +651,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>aerobic, step, with 6 - 8 inch step</string>
+		<key>NAME_DE</key>
+		<string>Aerobic, Steppaerobic, mit 6-8-inch-Stufe</string>
 		<key>ORDER NUMBER</key>
 		<real>1170</real>
 		<key>SUBCATEGORY</key>
@@ -585,6 +667,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>aerobic, step, with 10 - 12 inch step</string>
+		<key>NAME_DE</key>
+		<string>Aerobic, Steppaerobic, mit 10-12-inch-Stufe</string>
 		<key>ORDER NUMBER</key>
 		<real>1180</real>
 		<key>SUBCATEGORY</key>
@@ -599,6 +683,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bench step class, general</string>
+		<key>NAME_DE</key>
+		<string>Step Aerobic Kurs, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1190</real>
 		<key>SUBCATEGORY</key>
@@ -613,6 +699,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>aerobic dance wearing 10-15 lb weights</string>
+		<key>NAME_DE</key>
+		<string>Aerobic Tanz mit 4 - 7 kg Gewichten</string>
 		<key>ORDER NUMBER</key>
 		<real>1200</real>
 		<key>SUBCATEGORY</key>
@@ -627,6 +715,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>ballet, modern, or jazz, general, rehearsal or class</string>
+		<key>NAME_DE</key>
+		<string>Ballet, modern oder Jazz, allgemein, Training oder Unterricht</string>
 		<key>ORDER NUMBER</key>
 		<real>1210</real>
 		<key>SUBCATEGORY</key>
@@ -638,9 +728,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3012</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>ballet, modern, or jazz, performance, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Ballet, modern oder Jazz, Auftritt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1220</real>
 		<key>SUBCATEGORY</key>
@@ -655,6 +747,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>ballroom, fast </string>
+		<key>NAME_DE</key>
+		<string>Turniertanz, schnell</string>
 		<key>ORDER NUMBER</key>
 		<real>1230</real>
 		<key>SUBCATEGORY</key>
@@ -666,9 +760,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3038</real>
 		<key>METS</key>
-		<real>11.300000190734863</real>
+		<real>11.30000019073486</real>
 		<key>NAME</key>
 		<string>ballroom dancing, competitive, general</string>
+		<key>NAME_DE</key>
+		<string>Turniertanz, Wettkampf, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1240</real>
 		<key>SUBCATEGORY</key>
@@ -680,9 +776,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3014</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>tap</string>
+		<key>NAME_DE</key>
+		<string>Stepptanz</string>
 		<key>ORDER NUMBER</key>
 		<real>1250</real>
 		<key>SUBCATEGORY</key>
@@ -697,8 +795,10 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>ethnic or cultural dancing (e.g., Greek, Middle Eastern, hula, salsa, merengue, bamba y plena, flamenco, belly, and swing)</string>
+		<key>NAME_DE</key>
+		<string>Traditionelle und Folkloretänze (z.B. Griechisch, Naher Osten, Hula, Salsa, Merengue, Bomba y Plena, Flamenco, Bauchtanz, Swing)</string>
 		<key>ORDER NUMBER</key>
-		<real>1260</real>
+		<integer>1</integer>
 		<key>SUBCATEGORY</key>
 		<string>dancing</string>
 	</dict>
@@ -711,6 +811,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>Anishinaabe Jingle Dancing</string>
+		<key>NAME_DE</key>
+		<string>Anishanaabe Jingle Dancing</string>
 		<key>ORDER NUMBER</key>
 		<real>1270</real>
 		<key>SUBCATEGORY</key>
@@ -722,9 +824,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2200</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>native New Zealander physical activities (e.g., Haka Powhiri, Moteatea, Waita Tira, Whakawatea, etc.), general, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Traditionelle Sportarten aus Neuseeland (z.B. Haka Powhiri, Moteatea, Waita tira, Whakawatea), mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1280</real>
 		<key>SUBCATEGORY</key>
@@ -736,9 +840,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2205</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>native New Zealander physical activities (e.g., Haka, Taiahab), general, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Traditionelle Sportarten aus Neuseeland (z.B. Haka, Taiahab), allgemein, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1290</real>
 		<key>SUBCATEGORY</key>
@@ -750,9 +856,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>3031</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>general dancing (e.g., disco, folk, Irish step dancing, line dancing, polka, contra, country)</string>
+		<key>NAME_DE</key>
+		<string>Tanzen allgemein (z.B. Disco, Folk, Irish Stepptanz, Line Dance, Polka, Contra Dance, Country)</string>
 		<key>ORDER NUMBER</key>
 		<real>1300</real>
 		<key>SUBCATEGORY</key>
@@ -762,10 +870,12 @@
 		<key>ACTIVITY ID</key>
 		<real>155</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
 		<real>6.5</real>
 		<key>NAME</key>
+		<string>Zumba - Cumbia, American Mix</string>
+		<key>NAME_DE</key>
 		<string>Zumba - Cumbia, American Mix</string>
 		<key>ORDER NUMBER</key>
 		<real>1310</real>
@@ -776,10 +886,12 @@
 		<key>ACTIVITY ID</key>
 		<real>156</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
+		<string>Zumba - Merengue, Salsa</string>
+		<key>NAME_DE</key>
 		<string>Zumba - Merengue, Salsa</string>
 		<key>ORDER NUMBER</key>
 		<real>1320</real>
@@ -795,6 +907,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>cheerleading, gymnastic moves, competitive</string>
+		<key>NAME_DE</key>
+		<string>Cheerleading, Gymnastik, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1330</real>
 		<key>SUBCATEGORY</key>
@@ -809,6 +923,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>trampoline, competitive</string>
+		<key>NAME_DE</key>
+		<string>Trampolin, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1340</real>
 		<key>SUBCATEGORY</key>
@@ -823,6 +939,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>basketball, shooting baskets</string>
+		<key>NAME_DE</key>
+		<string>Basketball, Körbewerfen</string>
 		<key>ORDER NUMBER</key>
 		<real>1350</real>
 		<key>SUBCATEGORY</key>
@@ -837,6 +955,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>basketball, non-game, general </string>
+		<key>NAME_DE</key>
+		<string>Basketball, kein Spiel, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1360</real>
 		<key>SUBCATEGORY</key>
@@ -851,6 +971,8 @@
 		<real>6.5</real>
 		<key>NAME</key>
 		<string>basketball, general</string>
+		<key>NAME_DE</key>
+		<string>Basketball, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1370</real>
 		<key>SUBCATEGORY</key>
@@ -865,6 +987,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>basketball, officiating </string>
+		<key>NAME_DE</key>
+		<string>Basketball, Kampfgericht</string>
 		<key>ORDER NUMBER</key>
 		<real>1380</real>
 		<key>SUBCATEGORY</key>
@@ -876,9 +1000,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15075</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>basketball, wheelchair</string>
+		<key>NAME_DE</key>
+		<string>Basketball, Rollstuhlbasketbal</string>
 		<key>ORDER NUMBER</key>
 		<real>1390</real>
 		<key>SUBCATEGORY</key>
@@ -893,6 +1019,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>basketball, game</string>
+		<key>NAME_DE</key>
+		<string>Basketball, Spiel</string>
 		<key>ORDER NUMBER</key>
 		<real>1400</real>
 		<key>SUBCATEGORY</key>
@@ -904,9 +1032,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15072</real>
 		<key>METS</key>
-		<real>9.3000001907348633</real>
+		<real>9.300000190734863</real>
 		<key>NAME</key>
 		<string>basketball, drills, practice</string>
+		<key>NAME_DE</key>
+		<string>Basketball, Drills, Training</string>
 		<key>ORDER NUMBER</key>
 		<real>1410</real>
 		<key>SUBCATEGORY</key>
@@ -921,6 +1051,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>handball, team</string>
+		<key>NAME_DE</key>
+		<string>Handball</string>
 		<key>ORDER NUMBER</key>
 		<real>1420</real>
 		<key>SUBCATEGORY</key>
@@ -935,6 +1067,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>volleyball, beach, in sand</string>
+		<key>NAME_DE</key>
+		<string>Volleyball, Beachvolleyball, im Sand</string>
 		<key>ORDER NUMBER</key>
 		<real>1430</real>
 		<key>SUBCATEGORY</key>
@@ -949,6 +1083,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>volleyball, competitive, in gymnasium</string>
+		<key>NAME_DE</key>
+		<string>Volleyball, Wettkampf, in der Halle</string>
 		<key>ORDER NUMBER</key>
 		<real>1440</real>
 		<key>SUBCATEGORY</key>
@@ -963,6 +1099,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>wallyball, general</string>
+		<key>NAME_DE</key>
+		<string>Wallyball, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1450</real>
 		<key>SUBCATEGORY</key>
@@ -977,6 +1115,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>kickball</string>
+		<key>NAME_DE</key>
+		<string>Kickball</string>
 		<key>ORDER NUMBER</key>
 		<real>1460</real>
 		<key>SUBCATEGORY</key>
@@ -991,6 +1131,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>broomball</string>
+		<key>NAME_DE</key>
+		<string>Broomball</string>
 		<key>ORDER NUMBER</key>
 		<real>1470</real>
 		<key>SUBCATEGORY</key>
@@ -1005,6 +1147,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>paddleball, casual, general</string>
+		<key>NAME_DE</key>
+		<string>Paddleball, Freizeit, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1480</real>
 		<key>SUBCATEGORY</key>
@@ -1019,6 +1163,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>paddleball, competitive</string>
+		<key>NAME_DE</key>
+		<string>Paddleball, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1490</real>
 		<key>SUBCATEGORY</key>
@@ -1033,6 +1179,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>racquetball, general </string>
+		<key>NAME_DE</key>
+		<string>Racquetball, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1500</real>
 		<key>SUBCATEGORY</key>
@@ -1047,6 +1195,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>racquetball, competitive</string>
+		<key>NAME_DE</key>
+		<string>Racquetball, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1510</real>
 		<key>SUBCATEGORY</key>
@@ -1061,6 +1211,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>lacrosse</string>
+		<key>NAME_DE</key>
+		<string>Lacrosse</string>
 		<key>ORDER NUMBER</key>
 		<real>1520</real>
 		<key>SUBCATEGORY</key>
@@ -1075,6 +1227,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>tennis, doubles</string>
+		<key>NAME_DE</key>
+		<string>Tennis, Doppel</string>
 		<key>ORDER NUMBER</key>
 		<real>1530</real>
 		<key>SUBCATEGORY</key>
@@ -1089,6 +1243,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>tennis, hitting balls, non-game play, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Tennis, Bälleschlagen, Nicht-Spielmodus, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1540</real>
 		<key>SUBCATEGORY</key>
@@ -1103,6 +1259,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>tennis, singles </string>
+		<key>NAME_DE</key>
+		<string>Tennis, Einzel</string>
 		<key>ORDER NUMBER</key>
 		<real>1550</real>
 		<key>SUBCATEGORY</key>
@@ -1117,6 +1275,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>badminton, competitive </string>
+		<key>NAME_DE</key>
+		<string>Badminton, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1560</real>
 		<key>SUBCATEGORY</key>
@@ -1131,6 +1291,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>badminton, social singles and doubles, general</string>
+		<key>NAME_DE</key>
+		<string>Badminton, Einzel und Doppel Freizeit, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1570</real>
 		<key>SUBCATEGORY</key>
@@ -1142,9 +1304,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15652</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>squash, general</string>
+		<key>NAME_DE</key>
+		<string>Squash, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1580</real>
 		<key>SUBCATEGORY</key>
@@ -1159,6 +1323,8 @@
 		<real>12</real>
 		<key>NAME</key>
 		<string>jai alai</string>
+		<key>NAME_DE</key>
+		<string>Jai Alai</string>
 		<key>ORDER NUMBER</key>
 		<real>1590</real>
 		<key>SUBCATEGORY</key>
@@ -1173,6 +1339,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>water polo</string>
+		<key>NAME_DE</key>
+		<string>Wasserpolo</string>
 		<key>ORDER NUMBER</key>
 		<real>1600</real>
 		<key>SUBCATEGORY</key>
@@ -1184,9 +1352,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2005</real>
 		<key>METS</key>
-		<real>7.1999998092651367</real>
+		<real>7.199999809265137</real>
 		<key>NAME</key>
 		<string>activity promoting video/arcade game (e.g., Exergaming, Dance Dance Revolution), vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Videospiele/Spielautomaten/Arcade Games mit Bewegungssteuerung (z.B. Exergaming, Dance Dance Revolution), sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1610</real>
 		<key>SUBCATEGORY</key>
@@ -1201,6 +1371,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>video exercise workouts, TV conditioning programs (e.g., cardio-resistance), vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Tele-/Videogymnastikkurse (z.N. Herz-Kreislauf, Kardio), sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1620</real>
 		<key>SUBCATEGORY</key>

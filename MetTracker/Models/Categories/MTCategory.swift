@@ -18,7 +18,7 @@ class MTCategory: MTSearchObject {
     init(_ data : NSDictionary) {
         
         self.categoryId = data.object(forKey: "CATEGORY ID") as! Int
-        self.name = data.object(forKey: "CATEGORY NAME") as! String
+        self.name = data.object(forKey: LS("category_name")) as! String
         self.icon = data.object(forKey: "ICON") as! String
         
         let fileName = "Category\(self.categoryId)"

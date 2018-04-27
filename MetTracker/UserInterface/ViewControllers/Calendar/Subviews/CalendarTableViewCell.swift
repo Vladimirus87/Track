@@ -91,8 +91,8 @@ class CalendarTableViewCell: UITableViewCell {
             labelProgress.text = "\(countOfMets.rounded(toPlaces: 2))"
 
             let progMaxWidth = (contentView.frame.width) - viewProgress.frame.origin.x
-            let countMets = countOfMets > 50.0 ? 50.0 : countOfMets
-            let percentFromMets = (countMets * 100) / 50
+            let countMets = countOfMets > 18.0 ? 18.0 : countOfMets
+            let percentFromMets = (countMets * 100) / 18
             let progressWidth = progMaxWidth * CGFloat(percentFromMets) / 100
             self.constraintProgress.constant = progressWidth
         } catch {
@@ -115,7 +115,6 @@ extension Date {
     
     var startOfDay : Date {
         let calendar = Calendar.current
-//        calendar.timeZone = NSTimeZone(forSecondsFromGMT: 0) as TimeZone
         let unitFlags = Set<Calendar.Component>([.year, .month, .day])
         let components = calendar.dateComponents(unitFlags, from: self)
         return calendar.date(from: components)!
@@ -127,6 +126,8 @@ extension Date {
         let date = Calendar.current.date(byAdding: components, to: self.startOfDay)
         return (date?.addingTimeInterval(-1))!
     }
+    
+    
     
     var endOfWeek : Date {
         var components = DateComponents()

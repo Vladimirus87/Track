@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>$(PRODUCT_NAME) would like to access your library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) would like to access your camera</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Quicksand-Bold.ttf</string>

@@ -87,6 +87,7 @@ You can adjust your dashboard in settings.</string>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="textLbl" destination="j9Q-Lu-0GQ" id="VtP-Ub-CL8"/>
                 <outlet property="viewBackground" destination="0L2-ze-KcP" id="4rs-Rt-mMK"/>
             </connections>
             <point key="canvasLocation" x="34" y="71"/>

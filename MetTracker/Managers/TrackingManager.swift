@@ -14,6 +14,7 @@ class TrackingManager: NSObject {
     static let shared = TrackingManager()
     
     var config : MTTracking?
+    var savedTrack: Tracking?
     
     override init() {
         super.init()
@@ -44,6 +45,7 @@ class TrackingManager: NSObject {
             
             do {
                 try context.save()
+                savedTrack = newTracking
             } catch {
                 print("Failed saving")
             }

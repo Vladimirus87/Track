@@ -8,9 +8,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17302</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>nordic walking, 3.5 to 4 mph</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking 5,5 bis 6,5 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>1630</real>
 		<key>SUBCATEGORY</key>
@@ -22,9 +24,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17310</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>nordic walking, uphill</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking bergauf</string>
 		<key>ORDER NUMBER</key>
 		<real>1640</real>
 		<key>SUBCATEGORY</key>
@@ -39,6 +43,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>nordic Walking, 5.0 mph</string>
+		<key>NAME_DE</key>
+		<string>Nordic Walking 8 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>1650</real>
 		<key>SUBCATEGORY</key>
@@ -53,6 +59,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>orienteering</string>
+		<key>NAME_DE</key>
+		<string>Orientierungslauf</string>
 		<key>ORDER NUMBER</key>
 		<real>1660</real>
 		<key>SUBCATEGORY</key>
@@ -64,9 +72,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17082</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>hiking or walking at a normal pace through fields and hillsides</string>
+		<key>NAME_DE</key>
+		<string>Spazieren oder Wandern bei normaler Geschwindigkeit durch Felder und Hügel</string>
 		<key>ORDER NUMBER</key>
 		<real>1670</real>
 		<key>SUBCATEGORY</key>
@@ -78,9 +88,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17012</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>backpacking, hiking or organized walking with a daypack</string>
+		<key>NAME_DE</key>
+		<string>Rucksackwandern, wandern oder organisierte Wanderungen mit Tagesrucksack</string>
 		<key>ORDER NUMBER</key>
 		<real>1680</real>
 		<key>SUBCATEGORY</key>
@@ -95,6 +107,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>walking, 2.9 to 3.5 mph, uphill, 6% to 15% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen bergauf 4,5 bis 5,5 km/h, 6-15% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>1690</real>
 		<key>SUBCATEGORY</key>
@@ -106,9 +120,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17235</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>walking, 5.0 mph, uphill, 3% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen bergauf 8 km/h, 3% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>1700</real>
 		<key>SUBCATEGORY</key>
@@ -123,6 +139,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>walking, backwards, 3.5 mph, uphill, 5% grade</string>
+		<key>NAME_DE</key>
+		<string>Gehen, rückwärts, 5,7 km/h, 5% Steigung</string>
 		<key>ORDER NUMBER</key>
 		<real>1710</real>
 		<key>SUBCATEGORY</key>
@@ -137,6 +155,8 @@
 		<real>6.5</real>
 		<key>NAME</key>
 		<string>climbing hills with 0 to 9 lb load</string>
+		<key>NAME_DE</key>
+		<string>Bergwandern mit 0 bis 4 kg Gepäck</string>
 		<key>ORDER NUMBER</key>
 		<real>1720</real>
 		<key>SUBCATEGORY</key>
@@ -148,9 +168,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17040</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>climbing hills with 10 to 20 lb load</string>
+		<key>NAME_DE</key>
+		<string>Bergwandern mit 4,1 bis 9 kg Gepäck</string>
 		<key>ORDER NUMBER</key>
 		<real>1730</real>
 		<key>SUBCATEGORY</key>
@@ -162,9 +184,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>17050</real>
 		<key>METS</key>
-		<real>8.3000001907348633</real>
+		<real>8.300000190734863</real>
 		<key>NAME</key>
 		<string>climbing hills with 21 to 42 lb load</string>
+		<key>NAME_DE</key>
+		<string>Bergwandern mit 9,1 bis 20 kg Gepäck</string>
 		<key>ORDER NUMBER</key>
 		<real>1740</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>climbing hills with 42+ lb load</string>
+		<key>NAME_DE</key>
+		<string>Bergwadern mit Gepäck &gt; 20 kg</string>
 		<key>ORDER NUMBER</key>
 		<real>1750</real>
 		<key>SUBCATEGORY</key>
@@ -190,9 +216,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15537</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>rock climbing, ascending or traversing rock, low-to-moderate difficulty</string>
+		<key>NAME_DE</key>
+		<string>Bergklettern, Aufstieg oder Queren, geringe bis mäßige Schwierigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>1760</real>
 		<key>SUBCATEGORY</key>
@@ -207,6 +235,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>rock climbing, ascending rock, high difficulty</string>
+		<key>NAME_DE</key>
+		<string>Bergklettern, Aufstieg, hohe Schwierigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>1770</real>
 		<key>SUBCATEGORY</key>
@@ -221,6 +251,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>rock climbing, rappelling</string>
+		<key>NAME_DE</key>
+		<string>Bergklettern, Abseilen</string>
 		<key>ORDER NUMBER</key>
 		<real>1780</real>
 		<key>SUBCATEGORY</key>
@@ -235,6 +267,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>rollerblading, in-line skating, 14.4 km/h (9.0 mph), recreational pace</string>
+		<key>NAME_DE</key>
+		<string>Rollerbladen, Inlineskaten, 14 km/h, entspanntes Tempo</string>
 		<key>ORDER NUMBER</key>
 		<real>1790</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15592</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>rollerblading, in-line skating, 17.7 km/h (11.0 mph), moderate pace, exercise training</string>
+		<key>NAME_DE</key>
+		<string>Rollerbladen, Inlineskaten, 17 km/h, moderates Tempo, Training</string>
 		<key>ORDER NUMBER</key>
 		<real>1800</real>
 		<key>SUBCATEGORY</key>
@@ -260,9 +296,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15593</real>
 		<key>METS</key>
-		<real>12.300000190734863</real>
+		<real>12.30000019073486</real>
 		<key>NAME</key>
 		<string>rollerblading, in-line skating, 21.0 to 21.7 km/h (13.0 to 13.6 mph), fast pace, exercise training</string>
+		<key>NAME_DE</key>
+		<string>Rollerbladen, Inlineskaten, 21 km/h, hohes Tempo, Training</string>
 		<key>ORDER NUMBER</key>
 		<real>1810</real>
 		<key>SUBCATEGORY</key>
@@ -277,6 +315,8 @@
 		<real>14</real>
 		<key>NAME</key>
 		<string>rollerblading, in-line skating, 24.0 km/h (15.0 mph), maximal effort</string>
+		<key>NAME_DE</key>
+		<string>Rollerbladen, Inlineskaten, 24 km/h, höchste Anstrengung</string>
 		<key>ORDER NUMBER</key>
 		<real>1820</real>
 		<key>SUBCATEGORY</key>
@@ -286,11 +326,13 @@
 		<key>ACTIVITY ID</key>
 		<real>204</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>self-propelled scooter, 110 meters/minute5</string>
+		<key>NAME_DE</key>
+		<string>Tretroller, 110 Meter/min</string>
 		<key>ORDER NUMBER</key>
 		<real>1830</real>
 		<key>SUBCATEGORY</key>
@@ -300,11 +342,13 @@
 		<key>ACTIVITY ID</key>
 		<real>205</real>
 		<key>AINSWORTH CODE</key>
-		<real>0.0</real>
+		<real>0</real>
 		<key>METS</key>
 		<real>5</real>
 		<key>NAME</key>
 		<string>self-propelled scooter, 140 meters/minute5</string>
+		<key>NAME_DE</key>
+		<string>Tretroller, 140 Meter/min</string>
 		<key>ORDER NUMBER</key>
 		<real>1840</real>
 		<key>SUBCATEGORY</key>
@@ -319,6 +363,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>skateboarding, competitive, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Skateboard, Wettkampf, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1850</real>
 		<key>SUBCATEGORY</key>
@@ -333,6 +379,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>skateboarding, general, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Skateboard, allgemein, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1860</real>
 		<key>SUBCATEGORY</key>
@@ -344,9 +392,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15255</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>golf, general</string>
+		<key>NAME_DE</key>
+		<string>Golf, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1870</real>
 		<key>SUBCATEGORY</key>
@@ -358,9 +408,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15265</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>golf, walking, carrying clubs</string>
+		<key>NAME_DE</key>
+		<string>Golf, Gehen und Tragen der Schläger</string>
 		<key>ORDER NUMBER</key>
 		<real>1880</real>
 		<key>SUBCATEGORY</key>
@@ -372,9 +424,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15285</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>golf, walking, pulling clubs</string>
+		<key>NAME_DE</key>
+		<string>Golf, Gehen und Ziehen der Schläger</string>
 		<key>ORDER NUMBER</key>
 		<real>1890</real>
 		<key>SUBCATEGORY</key>
@@ -389,6 +443,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>tennis, doubles</string>
+		<key>NAME_DE</key>
+		<string>Tennis, Doppel</string>
 		<key>ORDER NUMBER</key>
 		<real>1900</real>
 		<key>SUBCATEGORY</key>
@@ -403,6 +459,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>tennis, hitting balls, non-game play, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Tennis, Bälleschlagen, Nicht-Spielmodus, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>1910</real>
 		<key>SUBCATEGORY</key>
@@ -417,6 +475,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>tennis, singles</string>
+		<key>NAME_DE</key>
+		<string>Tennis, Einzel</string>
 		<key>ORDER NUMBER</key>
 		<real>1920</real>
 		<key>SUBCATEGORY</key>
@@ -431,6 +491,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>soccer, casual, general</string>
+		<key>NAME_DE</key>
+		<string>Fußball, Freizeit, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1930</real>
 		<key>SUBCATEGORY</key>
@@ -445,6 +507,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>soccer, competitive</string>
+		<key>NAME_DE</key>
+		<string>Fußball, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1940</real>
 		<key>SUBCATEGORY</key>
@@ -456,9 +520,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15562</real>
 		<key>METS</key>
-		<real>6.3000001907348633</real>
+		<real>6.300000190734863</real>
 		<key>NAME</key>
 		<string>rugby, touch, non-competitive</string>
+		<key>NAME_DE</key>
+		<string>Touchrugby, kein Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1950</real>
 		<key>SUBCATEGORY</key>
@@ -470,9 +536,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15560</real>
 		<key>METS</key>
-		<real>8.3000001907348633</real>
+		<real>8.300000190734863</real>
 		<key>NAME</key>
 		<string>rugby, union, team, competitive</string>
+		<key>NAME_DE</key>
+		<string>Touchrugby, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1960</real>
 		<key>SUBCATEGORY</key>
@@ -487,6 +555,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>football, competitive</string>
+		<key>NAME_DE</key>
+		<string>Football, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>1970</real>
 		<key>SUBCATEGORY</key>
@@ -501,6 +571,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>football, touch, flag, general</string>
+		<key>NAME_DE</key>
+		<string>Football, Touch, Flag, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1980</real>
 		<key>SUBCATEGORY</key>
@@ -515,6 +587,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>softball or baseball, fast or slow pitch, general</string>
+		<key>NAME_DE</key>
+		<string>Softball oder Baseball, Fast oder Slow Pitch, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>1990</real>
 		<key>SUBCATEGORY</key>
@@ -526,9 +600,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15150</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>cricket, batting, bowling, fielding</string>
+		<key>NAME_DE</key>
+		<string>Kricket, Schlagen, Bowling, Fielding</string>
 		<key>ORDER NUMBER</key>
 		<real>2000</real>
 		<key>SUBCATEGORY</key>
@@ -543,6 +619,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>volleyball, beach, in sand</string>
+		<key>NAME_DE</key>
+		<string>Volleyball, Beachvolleyball, im Sand</string>
 		<key>ORDER NUMBER</key>
 		<real>2010</real>
 		<key>SUBCATEGORY</key>
@@ -554,9 +632,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15350</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>hockey, field</string>
+		<key>NAME_DE</key>
+		<string>Hockey, Feldhockey</string>
 		<key>ORDER NUMBER</key>
 		<real>2020</real>
 		<key>SUBCATEGORY</key>
@@ -571,6 +651,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>lacrosse</string>
+		<key>NAME_DE</key>
+		<string>Lacrosse</string>
 		<key>ORDER NUMBER</key>
 		<real>2030</real>
 		<key>SUBCATEGORY</key>
@@ -582,9 +664,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15010</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>archery, non-hunting</string>
+		<key>NAME_DE</key>
+		<string>Bogenschießen, keine Jagd</string>
 		<key>ORDER NUMBER</key>
 		<real>2040</real>
 		<key>SUBCATEGORY</key>
@@ -599,6 +683,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>track and field (e.g., high jump, long jump, triple jump, javelin, pole vault)</string>
+		<key>NAME_DE</key>
+		<string>Leichtathletik (z.B. Hochsprung, Weitsprung, Dreisprung, Speerwurf, Stabhochsprung)</string>
 		<key>ORDER NUMBER</key>
 		<real>2050</real>
 		<key>SUBCATEGORY</key>
@@ -613,6 +699,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>track and field (e.g., steeplechase, hurdles)</string>
+		<key>NAME_DE</key>
+		<string>Leichathletik (z.B. Hürdenlauf, Hindernisrennen)</string>
 		<key>ORDER NUMBER</key>
 		<real>2060</real>
 		<key>SUBCATEGORY</key>
@@ -627,6 +715,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>kickball</string>
+		<key>NAME_DE</key>
+		<string>Kickball</string>
 		<key>ORDER NUMBER</key>
 		<real>2070</real>
 		<key>SUBCATEGORY</key>
@@ -641,6 +731,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>frisbee, ultimate</string>
+		<key>NAME_DE</key>
+		<string>Frisbee, Ultimate</string>
 		<key>ORDER NUMBER</key>
 		<real>2080</real>
 		<key>SUBCATEGORY</key>
@@ -655,6 +747,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>paddleball, casual, general</string>
+		<key>NAME_DE</key>
+		<string>Paddleball, Freizeit, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2090</real>
 		<key>SUBCATEGORY</key>
@@ -669,6 +763,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>paddleball, competitive</string>
+		<key>NAME_DE</key>
+		<string>Paddleball, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2100</real>
 		<key>SUBCATEGORY</key>
@@ -683,6 +779,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>horseback riding, general</string>
+		<key>NAME_DE</key>
+		<string>Reiten, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2110</real>
 		<key>SUBCATEGORY</key>
@@ -694,9 +792,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15390</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>horseback riding, trotting</string>
+		<key>NAME_DE</key>
+		<string>Reiten, Trab</string>
 		<key>ORDER NUMBER</key>
 		<real>2120</real>
 		<key>SUBCATEGORY</key>
@@ -711,6 +811,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>horseback riding, jumping</string>
+		<key>NAME_DE</key>
+		<string>Reiten, Springreiten</string>
 		<key>ORDER NUMBER</key>
 		<real>2130</real>
 		<key>SUBCATEGORY</key>
@@ -722,9 +824,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15395</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>horseback riding, canter or gallop</string>
+		<key>NAME_DE</key>
+		<string>Reiten, Galopp</string>
 		<key>ORDER NUMBER</key>
 		<real>2140</real>
 		<key>SUBCATEGORY</key>
@@ -739,6 +843,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>polo, on horseback</string>
+		<key>NAME_DE</key>
+		<string>Polo, Reiten</string>
 		<key>ORDER NUMBER</key>
 		<real>2150</real>
 		<key>SUBCATEGORY</key>
@@ -753,6 +859,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>rodeo sports, general, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Rodeo, allgemein, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2160</real>
 		<key>SUBCATEGORY</key>
@@ -767,6 +875,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>rodeo sports, general, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Rodeo, allgemein, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2170</real>
 		<key>SUBCATEGORY</key>
@@ -781,6 +891,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>canoeing, portaging</string>
+		<key>NAME_DE</key>
+		<string>Kanufahren, Tragen</string>
 		<key>ORDER NUMBER</key>
 		<real>2180</real>
 		<key>SUBCATEGORY</key>
@@ -792,9 +904,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18050</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>canoeing, rowing, 4.0-5.9 mph, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Kanufahren, Paddeln, 6 - 10 km/h, mäßige Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2190</real>
 		<key>SUBCATEGORY</key>
@@ -809,6 +923,8 @@
 		<real>12</real>
 		<key>NAME</key>
 		<string>canoeing, rowing, in competition, or crew or sculling (Taylor Code 260)</string>
+		<key>NAME_DE</key>
+		<string>Kanufahren, Paddeln, Wettkampf, Rudern</string>
 		<key>ORDER NUMBER</key>
 		<real>2200</real>
 		<key>SUBCATEGORY</key>
@@ -823,6 +939,8 @@
 		<real>12.5</real>
 		<key>NAME</key>
 		<string>canoeing, rowing, kayaking, competition, &gt;6 mph, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Kanufahren, Paddeln, Wettkampf, &gt; 10 km/h, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2210</real>
 		<key>SUBCATEGORY</key>
@@ -837,6 +955,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>jet skiing, driving, in water</string>
+		<key>NAME_DE</key>
+		<string>Jetski fahren</string>
 		<key>ORDER NUMBER</key>
 		<real>2220</real>
 		<key>SUBCATEGORY</key>
@@ -851,6 +971,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>kayaking, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Kajakfahren, mäßige Anstrengung</string>
 		<key>ORDER NUMBER</key>
 		<real>2230</real>
 		<key>SUBCATEGORY</key>
@@ -865,6 +987,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>paddle boarding, standing</string>
+		<key>NAME_DE</key>
+		<string>Stand Up Paddling</string>
 		<key>ORDER NUMBER</key>
 		<real>2240</real>
 		<key>SUBCATEGORY</key>
@@ -879,6 +1003,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>sailing, in competition</string>
+		<key>NAME_DE</key>
+		<string>Segeln, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2250</real>
 		<key>SUBCATEGORY</key>
@@ -893,6 +1019,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>skiing, water or wakeboarding </string>
+		<key>NAME_DE</key>
+		<string>Wasserski oder Wakeboardfahren</string>
 		<key>ORDER NUMBER</key>
 		<real>2260</real>
 		<key>SUBCATEGORY</key>
@@ -904,9 +1032,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18180</real>
 		<key>METS</key>
-		<real>15.800000190734863</real>
+		<real>15.80000019073486</real>
 		<key>NAME</key>
 		<string>skindiving, fast</string>
+		<key>NAME_DE</key>
+		<string>Skin Diving, Schnorcheln, schnell</string>
 		<key>ORDER NUMBER</key>
 		<real>2270</real>
 		<key>SUBCATEGORY</key>
@@ -918,9 +1048,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18190</real>
 		<key>METS</key>
-		<real>11.800000190734863</real>
+		<real>11.80000019073486</real>
 		<key>NAME</key>
 		<string>skindiving, moderate</string>
+		<key>NAME_DE</key>
+		<string>Skin Diving, Schnorcheln, mäßig</string>
 		<key>ORDER NUMBER</key>
 		<real>2280</real>
 		<key>SUBCATEGORY</key>
@@ -935,6 +1067,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>skindiving, scuba diving, general</string>
+		<key>NAME_DE</key>
+		<string>Schnorcheln, Tauchen, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2290</real>
 		<key>SUBCATEGORY</key>
@@ -949,6 +1083,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>snorkeling</string>
+		<key>NAME_DE</key>
+		<string>Schnorcheln</string>
 		<key>ORDER NUMBER</key>
 		<real>2300</real>
 		<key>SUBCATEGORY</key>
@@ -963,6 +1099,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>surfing, body or board, competitive</string>
+		<key>NAME_DE</key>
+		<string>Surfen (Body, Board), Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2310</real>
 		<key>SUBCATEGORY</key>
@@ -977,6 +1115,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>swimming, lake, ocean, river </string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, See/Meer/Fluß</string>
 		<key>ORDER NUMBER</key>
 		<real>2320</real>
 		<key>SUBCATEGORY</key>
@@ -991,6 +1131,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>water walking, moderate effort, moderate pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, mäßig anstrengend, gemäßigte Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2330</real>
 		<key>SUBCATEGORY</key>
@@ -1002,9 +1144,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18369</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>water walking, vigorous effort, brisk pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, sehr anstrengend, schnelle Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2340</real>
 		<key>SUBCATEGORY</key>
@@ -1019,6 +1163,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>whitewater rafting, kayaking, or canoeing</string>
+		<key>NAME_DE</key>
+		<string>Rafting, Kajakfahren, Kanufahren</string>
 		<key>ORDER NUMBER</key>
 		<real>2350</real>
 		<key>SUBCATEGORY</key>
@@ -1033,6 +1179,8 @@
 		<real>11</real>
 		<key>NAME</key>
 		<string>windsurfing or kitesurfing, crossing trial</string>
+		<key>NAME_DE</key>
+		<string>Windsurfen, Kitesurfen, Kreuzen</string>
 		<key>ORDER NUMBER</key>
 		<real>2360</real>
 		<key>SUBCATEGORY</key>
@@ -1047,6 +1195,8 @@
 		<real>13.5</real>
 		<key>NAME</key>
 		<string>windsurfing, competition, pumping for speed</string>
+		<key>NAME_DE</key>
+		<string>Windsurfen, Wettkampf, Pumpen für Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2370</real>
 		<key>SUBCATEGORY</key>
@@ -1061,6 +1211,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>windsurfing, not pumping for speed</string>
+		<key>NAME_DE</key>
+		<string>Windsurfen, ohne Pumpen für Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2380</real>
 		<key>SUBCATEGORY</key>
@@ -1075,6 +1227,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>fishing in stream, in waders</string>
+		<key>NAME_DE</key>
+		<string>Fischen, Flußfischen, in Stiefeln</string>
 		<key>ORDER NUMBER</key>
 		<real>2390</real>
 		<key>SUBCATEGORY</key>
@@ -1086,9 +1240,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>4010</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>fishing related, digging worms, with shovel</string>
+		<key>NAME_DE</key>
+		<string>Fischen, mit einer Schaufel nach Würmern graben</string>
 		<key>ORDER NUMBER</key>
 		<real>2400</real>
 		<key>SUBCATEGORY</key>
@@ -1103,6 +1259,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>fishing, crab fishing</string>
+		<key>NAME_DE</key>
+		<string>Fischen, Krabbenfischen</string>
 		<key>ORDER NUMBER</key>
 		<real>2410</real>
 		<key>SUBCATEGORY</key>
@@ -1117,6 +1275,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>hunting, rabbit, squirrel, prairie chick, raccoon, small game</string>
+		<key>NAME_DE</key>
+		<string>Jagd, Kaninchen, Eichhörnchen, Präriehuhn, Waschbär, kleine Wildtiere</string>
 		<key>ORDER NUMBER</key>
 		<real>2420</real>
 		<key>SUBCATEGORY</key>
@@ -1131,6 +1291,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>hunting, pheasants or grouse</string>
+		<key>NAME_DE</key>
+		<string>Jagd, Fasan oder Moorhuhn</string>
 		<key>ORDER NUMBER</key>
 		<real>2430</real>
 		<key>SUBCATEGORY</key>
@@ -1145,6 +1307,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>hunting, deer, elk, large game</string>
+		<key>NAME_DE</key>
+		<string>Jagd, Rotwild, Elch, Großwild</string>
 		<key>ORDER NUMBER</key>
 		<real>2440</real>
 		<key>SUBCATEGORY</key>
@@ -1156,9 +1320,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>4081</real>
 		<key>METS</key>
-		<real>11.300000190734863</real>
+		<real>11.30000019073486</real>
 		<key>NAME</key>
 		<string>hunting large game, dragging carcass</string>
+		<key>NAME_DE</key>
+		<string>Jagd, Großwild, Ziehen des ????</string>
 		<key>ORDER NUMBER</key>
 		<real>2450</real>
 		<key>SUBCATEGORY</key>
@@ -1173,6 +1339,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>hunting, hiking with hunting gear</string>
+		<key>NAME_DE</key>
+		<string>Jagd, Gehen mit Jagdausrüstung</string>
 		<key>ORDER NUMBER</key>
 		<real>2460</real>
 		<key>SUBCATEGORY</key>
@@ -1187,6 +1355,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>hunting, general</string>
+		<key>NAME_DE</key>
+		<string>Jagd, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2470</real>
 		<key>SUBCATEGORY</key>
@@ -1198,9 +1368,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19080</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>skiing, cross country, 2.5 mph, slow or light effort, ski walking</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, Skispazierengehen, 4 km/h, langsam, wenig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2480</real>
 		<key>SUBCATEGORY</key>
@@ -1215,6 +1387,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>skiing, cross country, 4.0-4.9 mph, moderate speed and effort, general</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, 6,5 - 8 km/h, mäßige Geschwindigkeit, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2490</real>
 		<key>SUBCATEGORY</key>
@@ -1229,6 +1403,8 @@
 		<real>12.5</real>
 		<key>NAME</key>
 		<string>skiing, cross country, 5.0-7.9 mph, brisk speed, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, 8 - 13 km/h, hohe Geschwindigkeit, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2500</real>
 		<key>SUBCATEGORY</key>
@@ -1240,9 +1416,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19135</real>
 		<key>METS</key>
-		<real>13.300000190734863</real>
+		<real>13.30000019073486</real>
 		<key>NAME</key>
 		<string>skiing, cross-country, skating</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, Skating</string>
 		<key>ORDER NUMBER</key>
 		<real>2510</real>
 		<key>SUBCATEGORY</key>
@@ -1257,6 +1435,8 @@
 		<real>13.5</real>
 		<key>NAME</key>
 		<string>skiing, cross-country, biathlon, skating technique</string>
+		<key>NAME_DE</key>
+		<string>Biathlon, Skating</string>
 		<key>ORDER NUMBER</key>
 		<real>2520</real>
 		<key>SUBCATEGORY</key>
@@ -1271,6 +1451,8 @@
 		<real>15</real>
 		<key>NAME</key>
 		<string>skiing, cross country, &gt;8.0 mph, elite skier, racing</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, Skiroller &gt; 13 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>2530</real>
 		<key>SUBCATEGORY</key>
@@ -1285,6 +1467,8 @@
 		<real>15.5</real>
 		<key>NAME</key>
 		<string>skiing, cross country, hard snow, uphill, maximum, snow mountaineering</string>
+		<key>NAME_DE</key>
+		<string>Skilanglauf, Skibergsteigen</string>
 		<key>ORDER NUMBER</key>
 		<real>2540</real>
 		<key>SUBCATEGORY</key>
@@ -1296,9 +1480,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19150</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>skiing, downhill, alpine or snowboarding, light effort, active time only</string>
+		<key>NAME_DE</key>
+		<string>Skifahren, alpin oder Snowboard, wenig anstrengend, nur aktive Zeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2550</real>
 		<key>SUBCATEGORY</key>
@@ -1310,9 +1496,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19160</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>skiing, downhill, alpine or snowboarding, moderate effort, general, active time only</string>
+		<key>NAME_DE</key>
+		<string>Skifahren, alpin oder Snowboard, mäßig anstrengend, nur aktive Zeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2560</real>
 		<key>SUBCATEGORY</key>
@@ -1327,6 +1515,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>skiing, downhill, vigorous effort, racing</string>
+		<key>NAME_DE</key>
+		<string>Skifahren, Rennen, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2570</real>
 		<key>SUBCATEGORY</key>
@@ -1341,6 +1531,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>skiing, general</string>
+		<key>NAME_DE</key>
+		<string>Skifahren, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2580</real>
 		<key>SUBCATEGORY</key>
@@ -1355,6 +1547,8 @@
 		<real>12.5</real>
 		<key>NAME</key>
 		<string>skiing, roller, elite racers</string>
+		<key>NAME_DE</key>
+		<string>Skiroller</string>
 		<key>ORDER NUMBER</key>
 		<real>2590</real>
 		<key>SUBCATEGORY</key>
@@ -1369,6 +1563,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>ski jumping, climb up carrying skis</string>
+		<key>NAME_DE</key>
+		<string>Skispringen, Aufstieg mit Tragen der Ski</string>
 		<key>ORDER NUMBER</key>
 		<real>2600</real>
 		<key>SUBCATEGORY</key>
@@ -1380,9 +1576,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19190</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>snow shoeing, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Schneeschuhwandern, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2610</real>
 		<key>SUBCATEGORY</key>
@@ -1397,6 +1595,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>snow shoeing, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Schneeschuhwandern, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2620</real>
 		<key>SUBCATEGORY</key>
@@ -1411,6 +1611,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>skating, ice, 9 mph or less</string>
+		<key>NAME_DE</key>
+		<string>Schlittschuhlauf, &lt; 14,5 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>2630</real>
 		<key>SUBCATEGORY</key>
@@ -1425,6 +1627,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>skating, ice, rapidly, more than 9 mph, not competitive</string>
+		<key>NAME_DE</key>
+		<string>Schlittschuhlauf, Eisschnelllauf, &gt; 14,5 km/h, kein Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2640</real>
 		<key>SUBCATEGORY</key>
@@ -1436,9 +1640,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19050</real>
 		<key>METS</key>
-		<real>13.300000190734863</real>
+		<real>13.30000019073486</real>
 		<key>NAME</key>
 		<string>skating, speed, competitive</string>
+		<key>NAME_DE</key>
+		<string>Schlittschuhlauf, Eisschnelllauf, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2650</real>
 		<key>SUBCATEGORY</key>
@@ -1453,6 +1659,8 @@
 		<real>14</real>
 		<key>NAME</key>
 		<string>skating, ice dancing</string>
+		<key>NAME_DE</key>
+		<string>Schlittschuhlauf, Eistanz</string>
 		<key>ORDER NUMBER</key>
 		<real>2660</real>
 		<key>SUBCATEGORY</key>
@@ -1467,6 +1675,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>hockey, ice, competitive</string>
+		<key>NAME_DE</key>
+		<string>Eishockey, Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>2670</real>
 		<key>SUBCATEGORY</key>
@@ -1481,6 +1691,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>hockey, ice, general</string>
+		<key>NAME_DE</key>
+		<string>Eishockey, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>2680</real>
 		<key>SUBCATEGORY</key>
@@ -1495,6 +1707,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>broomball</string>
+		<key>NAME_DE</key>
+		<string>Broomball</string>
 		<key>ORDER NUMBER</key>
 		<real>2690</real>
 		<key>SUBCATEGORY</key>
@@ -1509,6 +1723,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>sledding, tobogganing, bobsledding, luge </string>
+		<key>NAME_DE</key>
+		<string>Rennrodeln, Schlittenfahren, Bobfahren</string>
 		<key>ORDER NUMBER</key>
 		<real>2700</real>
 		<key>SUBCATEGORY</key>
@@ -1523,6 +1739,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>dog sledding, mushing</string>
+		<key>NAME_DE</key>
+		<string>Hundeschlitten</string>
 		<key>ORDER NUMBER</key>
 		<real>2710</real>
 		<key>SUBCATEGORY</key>
@@ -1537,6 +1755,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>drag racing, pushing or driving a car</string>
+		<key>NAME_DE</key>
+		<string>Beschleunigungsrennen/Drag Racing, Auto schieben oder fahren</string>
 		<key>ORDER NUMBER</key>
 		<real>2720</real>
 		<key>SUBCATEGORY</key>
@@ -1551,6 +1771,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>auto racing, open wheel</string>
+		<key>NAME_DE</key>
+		<string>Autorennen, open wheel</string>
 		<key>ORDER NUMBER</key>
 		<real>2730</real>
 		<key>SUBCATEGORY</key>

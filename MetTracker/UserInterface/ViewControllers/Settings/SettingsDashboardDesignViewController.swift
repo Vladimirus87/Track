@@ -12,10 +12,13 @@ class SettingsDashboardDesignViewController: MTViewController {
     
     @IBOutlet weak var buttonBackView: UIView!
     
+    @IBOutlet weak var underButtonText: MTLabel!
+    @IBOutlet weak var switcher: UISwitch!
     @IBOutlet weak var chooseBtn: MTButton!
     @IBOutlet weak var tableViewData: UITableView!
     
-    var data = ["motivational quotes", "picture", "crustanceans"]
+    var data = ["motivational quotes", "picture"]
+    var firstQuote: NSDictionary!
     
     var pictureData = [Design](){
         didSet {
@@ -30,10 +33,10 @@ class SettingsDashboardDesignViewController: MTViewController {
             }
         }
     }
-    
+  
     
     let cellIdentifiers = ["SettingsDashboardDesignTableViewCell",
-                           "SettingsPictureTableViewCell"]
+                           "SettingsPictureTableViewCell", "DashboardQuoteTableViewCell"]
     
     var imagePicker = UIImagePickerController()
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -45,29 +48,84 @@ class SettingsDashboardDesignViewController: MTViewController {
             self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         }
         
+        let path = Bundle.main.path(forResource: "SettingsMotivationalQuotes", ofType: "plist")
+        let quotesArr = NSArray(contentsOfFile: path!)
+        firstQuote = quotesArr?.firstObject as! NSDictionary
+        
         tableViewData.delegate = self
         tableViewData.dataSource = self
+        imagePicker.delegate = self
         
         getData()
+        updateUI()
         
-        chooseBtn.backgroundColor = Config.shared.baseColor()
-        
-        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
-        buttonBackView.isHidden = selectedIndex == 1 ? false : true
     }
     
-    
+    func updateUI() {
+        chooseBtn.backgroundColor = Config.shared.baseColor()
+        switcher.onTintColor = Config.shared.baseColor()
+        
+        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
+        
+        underButtonText.text = selectedIndex == 1 ? LS("tap_and_hold") : LS("show_random_quotes")
+        switcher.isHidden = selectedIndex == 1 ? true : false
+        underButtonText.textAlignment = selectedIndex == 1 ? .center : .left
+        switcher.isOn = UserDefaults.standard.integer(forKey: "randomQuotes") == 1 ? true : false
+    }
     
     @IBAction func addPressed(_ sender: MTButton) {
         
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
+        selectedIndex == 1 ? addPhotoOrImage() : addQuates()
+    }
+    
+    func addQuates() {
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "QuotesAlertController") as? QuotesAlertController {
             
-            imagePicker.delegate = self
-            imagePicker.sourceType = .savedPhotosAlbum
-            imagePicker.allowsEditing = false
+            controller.modalTransitionStyle = .crossDissolve
+            controller.modalPresentationStyle = .overCurrentContext
+            controller.phather = self
             
-            self.present(imagePicker, animated: true, completion: nil)
+            present(controller, animated: true, completion: nil)
         }
+    }
+    
+    
+    func addPhotoOrImage() {
+        
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let photo = UIAlertAction(title: LS("photo"), style: .default) { _ in
+            if UIImagePickerController.isSourceTypeAvailable(.camera){
+                self.imagePicker.allowsEditing = false
+                self.imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+                self.imagePicker.cameraCaptureMode = .photo
+                self.imagePicker.modalPresentationStyle = .fullScreen
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
+        }
+        
+        let gallery = UIAlertAction(title: LS("gallery"), style: .default) { _ in
+            
+            if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+                self.imagePicker.sourceType = .savedPhotosAlbum
+                self.imagePicker.allowsEditing = false
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
+        }
+        let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
+        
+        alertController.addAction(photo)
+        alertController.addAction(gallery)
+        alertController.addAction(cancel)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func switcherPressed(_ sender: UISwitch) {
+        
+        UserDefaults.standard.set(switcher.isOn ? 1 : 0, forKey: "randomQuotes")
     }
     
     @IBAction func backPressed(_ sender: UIButton) {
@@ -105,7 +163,9 @@ class SettingsDashboardDesignViewController: MTViewController {
     }
     
     
-    
+    func indexPathsForRowsInSection(_ section: Int, numberOfRows: Int) -> [IndexPath] {
+        return (0..<numberOfRows).map{IndexPath(row: $0, section: section)}
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -118,9 +178,8 @@ class SettingsDashboardDesignViewController: MTViewController {
 extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
         
-        return selectedIndex == 1 ? data.count + 1 : data.count
+        return data.count + 1
     }
     
     
@@ -128,9 +187,27 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
         
         if indexPath.row == data.count {
             
-            let picturesCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[1], for: indexPath) as! SettingsPictureTableViewCell
+            let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
+            if selectedIndex == 0 {
+                let quoteCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[2], for: indexPath) as! DashboardQuoteTableViewCell
+                
+                let choosedQuote = UserDefaults.standard.object(forKey: "motivationalQuote") as? NSDictionary
+                
+                let quote = choosedQuote?.object(forKey: LS("quote")) ?? firstQuote.object(forKey: LS("quote"))
+                let autor = choosedQuote?.object(forKey: "autor") ?? firstQuote.object(forKey: "autor")
+                
+                quoteCell.labelQuote.text = "\"\(quote ?? "")\""
+                quoteCell.labelAuthor.text = "- \(autor ?? "")"
+                
+                return quoteCell
             
-            return picturesCell
+            } else {
+                
+                let picturesCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifiers[1], for: indexPath) as! SettingsPictureTableViewCell
+                picturesCell.delegate = self
+                
+                return picturesCell
+            }
             
         } else {
             
@@ -147,7 +224,8 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         if indexPath.row == data.count {
-            return lastRowHeight(pictureData.count)
+            
+            return UserDefaults.standard.integer(forKey: "designTheme") == 1 ? lastRowHeight(pictureData.count) : 230
         }
         return 56
     }
@@ -155,16 +233,23 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         UserDefaults.standard.set(indexPath.row, forKey: "designTheme")
+        let ips = indexPathsForRowsInSection(0, numberOfRows: data.count + 1)
         
         if indexPath.row == 1 {
-            buttonBackView.isHidden = false
-        } else {
-            buttonBackView.isHidden = true
+            switcher.isHidden = true
+            underButtonText.text = LS("tap_and_hold")
+            underButtonText.textAlignment = .center
+            tableViewData.reloadRows(at: ips, with: .automatic)
+        } else if indexPath.row == 0 {
+            switcher.isHidden = false
+            underButtonText.text = LS("show_random_quotes")
+            underButtonText.textAlignment = .left
+            tableViewData.reloadRows(at: ips, with: .automatic)
         }
         
-        tableViewData.reloadData()
+        
     }
-    
+
 }
 
 
@@ -172,11 +257,9 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
 
 extension SettingsDashboardDesignViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         guard let chosenImage = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
-        
         
         let rndm = randomString()
         
@@ -206,21 +289,42 @@ extension SettingsDashboardDesignViewController: UINavigationControllerDelegate,
 
 
 
-
 extension SettingsDashboardDesignViewController: SettingsPictureTableViewCellDelegate {
     
     func deleteCellWith(indexPath: IndexPath) {
-        
-        self.contex.delete(self.pictureData[indexPath.row])
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
-        let ip = IndexPath(row: self.data.count, section: 0)
-        if let cell = self.tableViewData.cellForRow(at: ip) as? SettingsPictureTableViewCell {
-            cell.getData()
-            cell.imagesCollectionView.reloadData()
+
+        if indexPath.row > 5 {
+            
+            let alertController = UIAlertController(title: nil, message: LS("want_delete"), preferredStyle: .alert)
+            let ok = UIAlertAction(title: LS("ok"), style: .default) { _ in
+                
+                self.contex.delete(self.pictureData[indexPath.row])
+                (UIApplication.shared.delegate as! AppDelegate).saveContext()
+                
+                let ip = IndexPath(row: self.data.count, section: 0)
+                if let cell = self.tableViewData.cellForRow(at: ip) as? SettingsPictureTableViewCell {
+                    cell.getData()
+                    cell.imagesCollectionView.reloadData()
+                }
+                self.getData()
+                self.tableViewData.reloadData()
+            }
+            let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
+            
+            alertController.addAction(ok)
+            alertController.addAction(cancel)
+            present(alertController, animated: true, completion: nil)
+       
+        } else {
+            
+            let alert = UIAlertController(title: "", message: LS("can_not_delete"), preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+            
+            let when = DispatchTime.now() + 2
+            DispatchQueue.main.asyncAfter(deadline: when){
+                alert.dismiss(animated: true, completion: nil)
+            }
         }
-        self.getData()
-        self.tableViewData.reloadData()
     }
     
     

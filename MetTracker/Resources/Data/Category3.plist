@@ -8,9 +8,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18240</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>swimming laps, freestyle, front crawl, slow, light or moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Bahnenschwimmen, Freistil, Kraul, langsam, wenig bis mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>580</real>
 		<key>SUBCATEGORY</key>
@@ -22,9 +24,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18230</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>swimming laps, freestyle, fast, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Bahnenschwimmen, Freistil, schnell, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>590</real>
 		<key>SUBCATEGORY</key>
@@ -36,9 +40,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18255</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>swimming, backstroke, recreational</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Rückenschwimmen, Freizeit</string>
 		<key>ORDER NUMBER</key>
 		<real>600</real>
 		<key>SUBCATEGORY</key>
@@ -53,6 +59,8 @@
 		<real>9.5</real>
 		<key>NAME</key>
 		<string>swimming, backstroke, general, training or competition</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Rückenschwimmen, allgemein, Training oder Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>610</real>
 		<key>SUBCATEGORY</key>
@@ -64,9 +72,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18265</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>swimming, breaststroke, recreational</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Brustschwimmen, Freizeit</string>
 		<key>ORDER NUMBER</key>
 		<real>620</real>
 		<key>SUBCATEGORY</key>
@@ -78,9 +88,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18260</real>
 		<key>METS</key>
-		<real>10.300000190734863</real>
+		<real>10.30000019073486</real>
 		<key>NAME</key>
 		<string>swimming, breaststroke, general, training or competition</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Brustschwimmen, allgemein, Training oder Wettkampf</string>
 		<key>ORDER NUMBER</key>
 		<real>630</real>
 		<key>SUBCATEGORY</key>
@@ -92,9 +104,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18270</real>
 		<key>METS</key>
-		<real>13.800000190734863</real>
+		<real>13.80000019073486</real>
 		<key>NAME</key>
 		<string>swimming, butterfly, general</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Schmetterling, allgmein</string>
 		<key>ORDER NUMBER</key>
 		<real>640</real>
 		<key>SUBCATEGORY</key>
@@ -106,9 +120,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18290</real>
 		<key>METS</key>
-		<real>8.3000001907348633</real>
+		<real>8.300000190734863</real>
 		<key>NAME</key>
 		<string>swimming, crawl, medium speed, ~50 yards/minute, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Kraul, mittlere Geschwindigkeit, ~45 m/min, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>650</real>
 		<key>SUBCATEGORY</key>
@@ -123,6 +139,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>swimming, crawl, fast speed, ~75 yards/minute, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Kraul, schnelle Geschwindigkeit, ~70 m/min, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>660</real>
 		<key>SUBCATEGORY</key>
@@ -137,6 +155,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>swimming, lake, ocean, river </string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, See/Meer/Fluß</string>
 		<key>ORDER NUMBER</key>
 		<real>670</real>
 		<key>SUBCATEGORY</key>
@@ -151,6 +171,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>swimming, leisurely, not lap swimming, general</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Freizeit, kein Bahnenschwimmen, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>680</real>
 		<key>SUBCATEGORY</key>
@@ -165,6 +187,8 @@
 		<real>7</real>
 		<key>NAME</key>
 		<string>swimming, sidestroke, general</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Seitenschwimmen, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>690</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>swimming, synchronized</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Synchronschwimmen</string>
 		<key>ORDER NUMBER</key>
 		<real>700</real>
 		<key>SUBCATEGORY</key>
@@ -190,9 +216,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18340</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>swimming, treading water, fast, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Schwimmen, Wassertreten, schnell, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>710</real>
 		<key>SUBCATEGORY</key>
@@ -207,6 +235,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>water aerobics, water calisthenics</string>
+		<key>NAME_DE</key>
+		<string>Wassergymnastik</string>
 		<key>ORDER NUMBER</key>
 		<real>720</real>
 		<key>SUBCATEGORY</key>
@@ -218,9 +248,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18366</real>
 		<key>METS</key>
-		<real>9.8000001907348633</real>
+		<real>9.800000190734863</real>
 		<key>NAME</key>
 		<string>water jogging</string>
+		<key>NAME_DE</key>
+		<string>Aquajogging</string>
 		<key>ORDER NUMBER</key>
 		<real>730</real>
 		<key>SUBCATEGORY</key>
@@ -235,6 +267,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>water walking, moderate effort, moderate pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, mäßig anstrengend, gemäßigte Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>740</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>18369</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>water walking, vigorous effort, brisk pace</string>
+		<key>NAME_DE</key>
+		<string>Gehen im Wasser, sehr anstrengend, schnelle Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>750</real>
 		<key>SUBCATEGORY</key>
@@ -263,6 +299,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>water polo</string>
+		<key>NAME_DE</key>
+		<string>Wasserpolo</string>
 		<key>ORDER NUMBER</key>
 		<real>760</real>
 		<key>SUBCATEGORY</key>

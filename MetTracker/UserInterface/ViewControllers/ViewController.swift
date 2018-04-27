@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-//    var isFirstRun = true // instead this var will use bottom var
-///Code for show OnBoardingViewController only once(with first start app)
     var isFirstRun: Bool {
         get { return UserDefaults.standard.value(forKey: "isFirstRun") as? Bool ?? true }
         set {
@@ -21,15 +18,16 @@ class ViewController: UIViewController {
             userDefaults.synchronize()
         }
     }
- 
     
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         DataManager.shared.loadData()
-        UserDefaults.standard.set(true, forKey: "addHint")//temp
+        
     }
 
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -37,11 +35,23 @@ class ViewController: UIViewController {
             
             isFirstRun = false
             
-            /// add in full version
-            addDashBoard(pictures: [UIImage(named: "test_picture")!, UIImage(named: "test_crabs")!, UIImage(named: "test_crabs")!, UIImage(named: "test_crabs")!])
-            UserDefaults.standard.set(true, forKey: "addHint")
+            let path = Bundle.main.path(forResource: "SettingsPictures", ofType: "plist")
+            if let imageData: NSArray = NSArray(contentsOfFile: path!) {
+                var arrOfImgs = [UIImage]()
+                
+                for img in imageData {
+                    if let image = UIImage(named: img as! String) {
+                        arrOfImgs.append(image)
+                    }
+                }
+                addDashBoard(pictures: arrOfImgs)
+            }
             
+            
+            
+            UserDefaults.standard.set(true, forKey: "addHint")
             UserDefaults.standard.set(0, forKey: "designTheme")
+            UserDefaults.standard.set(0, forKey: "MaxWeekResult")
             
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "OnBoardingViewController") as! OnBoardingViewController
             controller.currentPageSet = 0
@@ -57,7 +67,6 @@ class ViewController: UIViewController {
         }
     }
     
-    //add pictures with to dashboard with first run
     
     func addDashBoard(pictures: [UIImage]) {
         
@@ -67,13 +76,13 @@ class ViewController: UIViewController {
             
             let rndm = randomString()
             
-            saveImageDocumentDirectory(image: image, name: rndm)
-            saveImageDocumentDirectory(image: compressImage(image), name: rndm + "small")
+            saveImageDocumentDirectory(image: compressImage(image), name: rndm)
+            saveImageDocumentDirectory(image: strongCompressImage(image), name: rndm + "small")
             
             let newPicture = Design(context: contex)
             newPicture.date = NSDate()
             newPicture.picturePath = rndm
-            newPicture.selected = false//image != pictures.first ? false : true
+            newPicture.selected = false
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
         }
     }

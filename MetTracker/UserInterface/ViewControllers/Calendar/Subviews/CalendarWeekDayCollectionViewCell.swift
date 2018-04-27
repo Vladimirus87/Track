@@ -25,6 +25,7 @@ class CalendarWeekDayCollectionViewCell: UICollectionViewCell {
     func configureCell(date: Date, trDates: [Tracking]?, ip: IndexPath) {
         
 //        DispatchQueue.main.async {
+        var calendar = Calendar.current
         
             self.labelWeekday.text = Calendar.current.shortWeekdaySymbols[ip.row]
             self.labelDay.text = date.string(with: "dd")

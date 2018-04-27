@@ -11,8 +11,10 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>mowing lawn, power mower, light or moderate effort </string>
+		<key>NAME_DE</key>
+		<string>Rasen mähen mit Rasenmäher, wenig bis mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
-		<real>2740</real>
+		<integer>2</integer>
 		<key>SUBCATEGORY</key>
 		<string>lawn and garden</string>
 	</dict>
@@ -25,6 +27,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>mowing lawn, walk, hand mower</string>
+		<key>NAME_DE</key>
+		<string>Rasen mähen, Gehen, Handmähgerät</string>
 		<key>ORDER NUMBER</key>
 		<real>2750</real>
 		<key>SUBCATEGORY</key>
@@ -39,6 +43,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>mowing lawn, walk, power mower, moderate or vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Rasen mähen, Gehen, Rasenmäher, mäßig bis sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2760</real>
 		<key>SUBCATEGORY</key>
@@ -53,6 +59,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>weeding, cultivating garden </string>
+		<key>NAME_DE</key>
+		<string>Jäten, Gartenarbeit</string>
 		<key>ORDER NUMBER</key>
 		<real>2770</real>
 		<key>SUBCATEGORY</key>
@@ -67,6 +75,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>weeding, cultivating garden, using a hoe, moderate-to-vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Jäten, Gartenarbeit, Nutzen einer Gartenhacke, mäßig bis sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2780</real>
 		<key>SUBCATEGORY</key>
@@ -81,6 +91,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>wheelbarrow, pushing garden cart or wheelbarrow</string>
+		<key>NAME_DE</key>
+		<string>Schubkarre, schieben</string>
 		<key>ORDER NUMBER</key>
 		<real>2790</real>
 		<key>SUBCATEGORY</key>
@@ -95,6 +107,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>yard work, general, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Gartenarbeit allgemein, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2800</real>
 		<key>SUBCATEGORY</key>
@@ -109,6 +123,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>picking fruit off trees, gleaning fruits, picking fruits/vegetables, climbing ladder to pick fruit, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Obsternte, Gemüseernte, Leiterklettern zur Ernte, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2810</real>
 		<key>SUBCATEGORY</key>
@@ -120,9 +136,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8145</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>planting crops or garden, stooping, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Nutz- oder Zierpflanzen setzen, sich bücken, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2820</real>
 		<key>SUBCATEGORY</key>
@@ -134,9 +152,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8140</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>planting seedlings, shrub, stooping, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Setzlinge pflanzen, Sträucher, sich bücken, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2830</real>
 		<key>SUBCATEGORY</key>
@@ -151,6 +171,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>planting trees</string>
+		<key>NAME_DE</key>
+		<string>Bäume pflanzen</string>
 		<key>ORDER NUMBER</key>
 		<real>2840</real>
 		<key>SUBCATEGORY</key>
@@ -165,6 +187,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>carrying, loading or stacking wood, loading/unloading or carrying lumber</string>
+		<key>NAME_DE</key>
+		<string>Feuerholz tragen, be- und entladen, stapeln</string>
 		<key>ORDER NUMBER</key>
 		<real>2850</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>chopping wood, splitting logs, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Holzhacken, Stämme spalten, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2860</real>
 		<key>SUBCATEGORY</key>
@@ -190,9 +216,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8020</real>
 		<key>METS</key>
-		<real>6.3000001907348633</real>
+		<real>6.300000190734863</real>
 		<key>NAME</key>
 		<string>chopping wood, splitting logs, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Holzhacken, Stämme spalten, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2870</real>
 		<key>SUBCATEGORY</key>
@@ -204,9 +232,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8030</real>
 		<key>METS</key>
-		<real>6.3000001907348633</real>
+		<real>6.300000190734863</real>
 		<key>NAME</key>
 		<string>clearing brush/land, undergrowth, or ground, hauling branches, wheelbarrow chores, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Entfernen von Unterholz, Arbeiten mit der Schubkarre, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2880</real>
 		<key>SUBCATEGORY</key>
@@ -218,9 +248,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8057</real>
 		<key>METS</key>
-		<real>8.3000001907348633</real>
+		<real>8.300000190734863</real>
 		<key>NAME</key>
 		<string>felling trees, large size</string>
+		<key>NAME_DE</key>
+		<string>Baumfällarbeiten, große Bäume</string>
 		<key>ORDER NUMBER</key>
 		<real>2890</real>
 		<key>SUBCATEGORY</key>
@@ -232,9 +264,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8058</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>felling trees, small-medium size</string>
+		<key>NAME_DE</key>
+		<string>Baumfällarbeiten, kleine bis mittlere Bäume</string>
 		<key>ORDER NUMBER</key>
 		<real>2900</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8060</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>gardening with heavy power tools, tilling a garden, chain saw</string>
+		<key>NAME_DE</key>
+		<string>Gartenarbeit mit schweren Maschinen, Umgraben, Kettensäge</string>
 		<key>ORDER NUMBER</key>
 		<real>2910</real>
 		<key>SUBCATEGORY</key>
@@ -260,9 +296,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8080</real>
 		<key>METS</key>
-		<real>6.3000001907348633</real>
+		<real>6.300000190734863</real>
 		<key>NAME</key>
 		<string>laying crushed rock</string>
+		<key>NAME_DE</key>
+		<string>Kies verlegen</string>
 		<key>ORDER NUMBER</key>
 		<real>2920</real>
 		<key>SUBCATEGORY</key>
@@ -277,6 +315,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>laying sod</string>
+		<key>NAME_DE</key>
+		<string>Rasen verlegen</string>
 		<key>ORDER NUMBER</key>
 		<real>2930</real>
 		<key>SUBCATEGORY</key>
@@ -291,6 +331,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>digging sandbox, shoveling sand</string>
+		<key>NAME_DE</key>
+		<string>Sandkasten graben, Sand schaufeln</string>
 		<key>ORDER NUMBER</key>
 		<real>2940</real>
 		<key>SUBCATEGORY</key>
@@ -305,6 +347,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>digging, spading, filling garden, compositing</string>
+		<key>NAME_DE</key>
+		<string>Graben, Planzen umsetzen, Kompost umsetzen</string>
 		<key>ORDER NUMBER</key>
 		<real>2950</real>
 		<key>SUBCATEGORY</key>
@@ -316,9 +360,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>8052</real>
 		<key>METS</key>
-		<real>7.8000001907348633</real>
+		<real>7.800000190734863</real>
 		<key>NAME</key>
 		<string>digging, spading, filling garden, composting, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Graben, Planzen umsetzen, Kompost umsetzen, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2960</real>
 		<key>SUBCATEGORY</key>
@@ -333,6 +379,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>shoveling dirt or mud</string>
+		<key>NAME_DE</key>
+		<string>Schaufeln von Dreck oder Schlamm</string>
 		<key>ORDER NUMBER</key>
 		<real>2970</real>
 		<key>SUBCATEGORY</key>
@@ -347,6 +395,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>spreading dirt with a shovel</string>
+		<key>NAME_DE</key>
+		<string>Dreck mit einer Schaufel verteilen</string>
 		<key>ORDER NUMBER</key>
 		<real>2980</real>
 		<key>SUBCATEGORY</key>
@@ -358,9 +408,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>19252</real>
 		<key>METS</key>
-		<real>5.3000001907348633</real>
+		<real>5.300000190734863</real>
 		<key>NAME</key>
 		<string>snow shoveling, by hand, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Schneeschaufeln, per Hand, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>2990</real>
 		<key>SUBCATEGORY</key>
@@ -375,6 +427,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>snow shoveling, by hand, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Schneeschaufeln, per Hand, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3000</real>
 		<key>SUBCATEGORY</key>
@@ -389,6 +443,8 @@
 		<real>7.5</real>
 		<key>NAME</key>
 		<string>carrying groceries upstairs</string>
+		<key>NAME_DE</key>
+		<string>Einkäufe die Treppen hoch tragen</string>
 		<key>ORDER NUMBER</key>
 		<real>3010</real>
 		<key>SUBCATEGORY</key>
@@ -403,6 +459,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>maple syruping/sugar bushing (including carrying buckets, carrying wood)</string>
+		<key>NAME_DE</key>
+		<string>Ahornsirup herstellen (inkl. Eimer tragen, Holz tragen)</string>
 		<key>ORDER NUMBER</key>
 		<real>3020</real>
 		<key>SUBCATEGORY</key>
@@ -414,9 +472,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>5120</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>moving furniture, household items, carrying boxes</string>
+		<key>NAME_DE</key>
+		<string>Umziehen, Möbel und Kisten</string>
 		<key>ORDER NUMBER</key>
 		<real>3030</real>
 		<key>SUBCATEGORY</key>
@@ -431,6 +491,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>moving household items upstairs, carrying boxes or furniture</string>
+		<key>NAME_DE</key>
+		<string>Umziehen, Möbel und Kisten die Treppen hoch tragen</string>
 		<key>ORDER NUMBER</key>
 		<real>3040</real>
 		<key>SUBCATEGORY</key>
@@ -445,6 +507,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>moving, lifting light loads</string>
+		<key>NAME_DE</key>
+		<string>Umziehen, leichte Gegenstände heben</string>
 		<key>ORDER NUMBER</key>
 		<real>3050</real>
 		<key>SUBCATEGORY</key>
@@ -456,9 +520,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>5027</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>multiple household tasks all at once, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Mehrere Haushaltstätigkeiten gleichzeitig durchführen, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3060</real>
 		<key>SUBCATEGORY</key>
@@ -470,9 +536,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>5125</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>organizing room</string>
+		<key>NAME_DE</key>
+		<string>Aufräumen, Wohnung</string>
 		<key>ORDER NUMBER</key>
 		<real>3070</real>
 		<key>SUBCATEGORY</key>
@@ -487,6 +555,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>polishing floors, standing, walking slowly, using electric polishing machine</string>
+		<key>NAME_DE</key>
+		<string>Boden polieren, mit elektrischer Reinigungsmaschine</string>
 		<key>ORDER NUMBER</key>
 		<real>3080</real>
 		<key>SUBCATEGORY</key>
@@ -501,6 +571,8 @@
 		<real>6.5</real>
 		<key>NAME</key>
 		<string>scrubbing floors, on hands and knees, scrubbing bathroom, bathtub, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Boden wischen, auf Händen und Knien, Badezimmer wischen, Badewanne reinigen, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3090</real>
 		<key>SUBCATEGORY</key>
@@ -515,6 +587,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>walk/run, playing with animals, vigorous effort, only active periods</string>
+		<key>NAME_DE</key>
+		<string>Gehen/Laufen, mit Haustieren spielen, anstrengend, nur aktive Phasen</string>
 		<key>ORDER NUMBER</key>
 		<real>3100</real>
 		<key>SUBCATEGORY</key>
@@ -526,9 +600,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>21019</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>walk/run, play with children, vigorous, only active periods</string>
+		<key>NAME_DE</key>
+		<string>Gehen/Laufen, mit Kindern spielen, anstrengend, nur aktive Phasen</string>
 		<key>ORDER NUMBER</key>
 		<real>3110</real>
 		<key>SUBCATEGORY</key>
@@ -540,9 +616,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>15135</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>children’s games, adults playing (e.g., hopscotch, 4-square, dodgeball, playground apparatus, t-ball, tetherball, marbles, arcade games), moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Kinderspiele, von Erwachsen durchgeführt (z.B. Himmel-und-Hölle, Four Square, Völkerball, Klettergerüst, Tee-Ball, Tetherball, Murmeln, Arcade Games)</string>
 		<key>ORDER NUMBER</key>
 		<real>3120</real>
 		<key>SUBCATEGORY</key>
@@ -557,6 +635,8 @@
 		<real>5.5</real>
 		<key>NAME</key>
 		<string>marching band, playing an instrument, walking, brisk pace, general</string>
+		<key>NAME_DE</key>
+		<string>Blasmusikkapelle, Umzug, Marching Band, Spielen eines Instruments, zügige Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>3121</real>
 		<key>SUBCATEGORY</key>
@@ -568,9 +648,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>11381</real>
 		<key>METS</key>
-		<real>4.3000001907348633</real>
+		<real>4.300000190734863</real>
 		<key>NAME</key>
 		<string>horse, feeding, watering, cleaning stalls, implied walking and lifting loads</string>
+		<key>NAME_DE</key>
+		<string>Pferde, Füttern, Tränken, Stallarbeit, inklusive Gehen und Heben</string>
 		<key>ORDER NUMBER</key>
 		<real>3130</real>
 		<key>SUBCATEGORY</key>
@@ -585,6 +667,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>horse, saddling, cleaning, grooming, harnessing and unharnessing horse</string>
+		<key>NAME_DE</key>
+		<string>Arbeiten rund um das Pferd (Satteln, Putzen, Anspannen, Abspannen)</string>
 		<key>ORDER NUMBER</key>
 		<real>3140</real>
 		<key>SUBCATEGORY</key>
@@ -596,9 +680,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>11380</real>
 		<key>METS</key>
-		<real>7.3000001907348633</real>
+		<real>7.300000190734863</real>
 		<key>NAME</key>
 		<string>horse, grooming, including feeding, cleaning stalls, bathing, brushing, clipping, longeing and exercising horses</string>
+		<key>NAME_DE</key>
+		<string>Pferde, Versorgung, inkl. Stallreinigung, Striegeln, Hufpflege, Longieren und Trainieren</string>
 		<key>ORDER NUMBER</key>
 		<real>3150</real>
 		<key>SUBCATEGORY</key>
@@ -613,6 +699,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>carpentry, outside house, installing rain gutters, building a fence</string>
+		<key>NAME_DE</key>
+		<string>Zimmermannsarbeiten, Anbringen von Regenrinnen, Zäune errichten</string>
 		<key>ORDER NUMBER</key>
 		<real>3160</real>
 		<key>SUBCATEGORY</key>
@@ -627,6 +715,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>cleaning gutters</string>
+		<key>NAME_DE</key>
+		<string>Ablaufrinnen reinigen</string>
 		<key>ORDER NUMBER</key>
 		<real>3170</real>
 		<key>SUBCATEGORY</key>
@@ -641,6 +731,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>washing fence, painting fence, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Zaun waschen, streichen, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3180</real>
 		<key>SUBCATEGORY</key>
@@ -655,6 +747,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>excavating garage</string>
+		<key>NAME_DE</key>
+		<string>Garage ausheben</string>
 		<key>ORDER NUMBER</key>
 		<real>3190</real>
 		<key>SUBCATEGORY</key>
@@ -669,6 +763,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>sanding floors with a power sander</string>
+		<key>NAME_DE</key>
+		<string>Boden maschinell abschleifen</string>
 		<key>ORDER NUMBER</key>
 		<real>3200</real>
 		<key>SUBCATEGORY</key>
@@ -683,6 +779,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>laying or removing carpet</string>
+		<key>NAME_DE</key>
+		<string>Teppich verlegen oder entfernen</string>
 		<key>ORDER NUMBER</key>
 		<real>3210</real>
 		<key>SUBCATEGORY</key>
@@ -697,6 +795,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>painting</string>
+		<key>NAME_DE</key>
+		<string>Malern</string>
 		<key>ORDER NUMBER</key>
 		<real>3220</real>
 		<key>SUBCATEGORY</key>
@@ -711,6 +811,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>painting, outside home </string>
+		<key>NAME_DE</key>
+		<string>Fassade streichen</string>
 		<key>ORDER NUMBER</key>
 		<real>3230</real>
 		<key>SUBCATEGORY</key>
@@ -725,8 +827,10 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>roofing</string>
+		<key>NAME_DE</key>
+		<string>Dachdecken</string>
 		<key>ORDER NUMBER</key>
-		<real>3240</real>
+		<integer>3</integer>
 		<key>SUBCATEGORY</key>
 		<string>home repair</string>
 	</dict>
@@ -739,6 +843,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>carpentry, sawing hardwood</string>
+		<key>NAME_DE</key>
+		<string>Zimmermannsarbeiten, Hartholz sägen</string>
 		<key>ORDER NUMBER</key>
 		<real>3250</real>
 		<key>SUBCATEGORY</key>
@@ -753,6 +859,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>caulking, chinking log cabin</string>
+		<key>NAME_DE</key>
+		<string>Blockhäuser abdichten</string>
 		<key>ORDER NUMBER</key>
 		<real>3260</real>
 		<key>SUBCATEGORY</key>
@@ -767,6 +875,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>caulking, except log cabin</string>
+		<key>NAME_DE</key>
+		<string>Abdichten, außer Blockhäuser</string>
 		<key>ORDER NUMBER</key>
 		<real>3270</real>
 		<key>SUBCATEGORY</key>
@@ -781,6 +891,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>hanging sheet rock inside house</string>
+		<key>NAME_DE</key>
+		<string>Anbringen von Rigipsplatten</string>
 		<key>ORDER NUMBER</key>
 		<real>3280</real>
 		<key>SUBCATEGORY</key>
@@ -795,6 +907,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>hanging storm windows</string>
+		<key>NAME_DE</key>
+		<string>Anbringen von Sturmfenstern</string>
 		<key>ORDER NUMBER</key>
 		<real>3290</real>
 		<key>SUBCATEGORY</key>
@@ -809,6 +923,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>scraping and painting sailboat or powerboat</string>
+		<key>NAME_DE</key>
+		<string>Segel- oder Motorboot abschleifen und streichen</string>
 		<key>ORDER NUMBER</key>
 		<real>3300</real>
 		<key>SUBCATEGORY</key>
@@ -823,6 +939,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>washing and waxing hull of sailboat or airplane</string>
+		<key>NAME_DE</key>
+		<string>Aussenhülle eines Segelboots oder Flugzeugs waschen und wachsen</string>
 		<key>ORDER NUMBER</key>
 		<real>3310</real>
 		<key>SUBCATEGORY</key>
@@ -837,6 +955,8 @@
 		<real>4.5</real>
 		<key>NAME</key>
 		<string>home repair, general, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Reparaturen im Haushalt, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3320</real>
 		<key>SUBCATEGORY</key>
@@ -851,6 +971,8 @@
 		<real>6</real>
 		<key>NAME</key>
 		<string>home repair, general, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Reparaturen im Haushalt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>3330</real>
 		<key>SUBCATEGORY</key>

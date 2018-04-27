@@ -137,19 +137,11 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     func getDaysOfWeek(date: Date) -> [Date] {
         
-//        var arr = [Date]()
-        
         let calendar = Calendar.current
         let dayOfWeek = calendar.component(.weekday, from: date)
         let weekdays = calendar.range(of: .weekday, in: .month, for: date)!
         
         let days = (weekdays.lowerBound ..< weekdays.upperBound).compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: date) }
-        
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "dd"
-//        for date in days {
-//            arr.append(formatter.string(from: date))
-//        }
         
         return days
     }

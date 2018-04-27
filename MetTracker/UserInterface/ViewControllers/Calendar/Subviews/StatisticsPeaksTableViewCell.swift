@@ -10,12 +10,23 @@ import UIKit
 
 class StatisticsPeaksTableViewCell: StatisticsTableViewCell {
 
-    @IBOutlet weak var gaugeProgress: MTGauge!
+    @IBOutlet weak var titlePeaks: MTLabel!
+    @IBOutlet weak var averagePerWeek: MTLabel!
+    @IBOutlet weak var mostMeets: MTLabel!
+    
+    @IBOutlet weak var AvPerWeekCount: MTLabel!
+    @IBOutlet weak var mostMetsCount: MTLabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        gaugeProgress.updateWithProgress(12.0 / 18.0, width: 8.0, color: Config.shared.baseColor())
+        titlePeaks.text = LS("peaks")
+        averagePerWeek.text = LS("average_per_week")
+        mostMeets.text = LS("most_collected")
+        
+        AvPerWeekCount.text = "\(UserDefaults.standard.float(forKey: "MaxWeekResult"))"
+        mostMetsCount.text = "\(mostMet)"
         
     }
 

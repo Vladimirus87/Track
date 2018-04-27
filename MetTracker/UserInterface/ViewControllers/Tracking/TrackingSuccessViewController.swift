@@ -8,20 +8,23 @@
 
 import UIKit
 
-class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITableViewDataSource {
-
+class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITableViewDataSource, TrackingSuccessImageTableViewCellDelegate {
+    
     @IBOutlet weak var labelTitle: MTLabel!
-    
     @IBOutlet weak var tableViewData: UITableView!
-    
     @IBOutlet weak var buttonOk: MTButton!
     
     var cellIdentifier : String!
     let cellIdentifierText = "TrackingSuccessTextTableViewCell"
     
+    var newTrackMets: Float!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableViewData.delegate = self
+        tableViewData.dataSource = self
+        
         cellIdentifier = "TrackingSuccessImageTableViewCell"
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         self.tableViewData.register(UINib.init(nibName: cellIdentifierText, bundle: nil), forCellReuseIdentifier: cellIdentifierText)
@@ -42,7 +45,13 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
         
         if (indexPath.row == 0) {
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! TrackingSuccessImageTableViewCell
+            cell.delegate = self
+            
+            let metsCount = UserDefaults.standard.object(forKey: "countOfMets") as? Float ?? 0
+            
+            cell.startAnimationWith(lastUserMetsCount: metsCount, newUserMetsCount: newTrackMets + metsCount)
+//            cell.startAnimationWith(lastUserMetsCount: 1, newUserMetsCount: 9)
             
             return cell
             
@@ -58,6 +67,7 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
         
     }
     
+    
     // Mark: - Notifications
     
     override func updateColorScheme() {
@@ -69,15 +79,30 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
     override func updateLocalization() {
         
         self.labelTitle.text = LS("success")
-        
     }
     
-    // MARK: - Actions
     
+    // MARK: - Actions
+
     @IBAction func buttonOkPressed(_ sender: UIButton) {
+        
+        NotificationCenter.default.post(name: NSNotification.Name.init("reloadDashboard"), object: nil)
         
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
+    
+    // MARK: - TrackingSuccessImageTableViewCellDelegate
+    func endAnimation() {
+        
+        let alert = UIAlertController(title: "Great!", message: LS("weekly_goal_achived"), preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     
     // MARK: -
     

@@ -50,8 +50,6 @@
 		3B38BB702042DA7500E9E78B /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38BB6F2042DA7500E9E78B /* DashboardTableViewCell.swift */; };
 		3B38BB722042DB1700E9E78B /* MTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38BB712042DB1700E9E78B /* MTView.swift */; };
 		3B38BB742042EAF500E9E78B /* MTSearchObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38BB732042EAF500E9E78B /* MTSearchObject.swift */; };
-		3B38BB762042F09D00E9E78B /* AchievementsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38BB752042F09D00E9E78B /* AchievementsHeaderView.swift */; };
-		3B38BB782042F0A900E9E78B /* AchievementsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B38BB772042F0A900E9E78B /* AchievementsHeaderView.xib */; };
 		3B3E3716207017E400D210A1 /* TrackingActivityHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */; };
 		3B3E3717207017E400D210A1 /* TrackingActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */; };
 		3B4EABE82050776500AE4124 /* SettingsPersonalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */; };
@@ -156,15 +154,19 @@
 		3BF26B0B2040C0620076795D /* OnBoardingButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF26B092040C0620076795D /* OnBoardingButtonCollectionViewCell.swift */; };
 		94053E2B2073ABC300F3E297 /* Tracking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */; };
 		94053E2C2073ABC300F3E297 /* Tracking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */; };
+		940E7ACE20890C96006C6D8B /* SettingsPictures.plist in Resources */ = {isa = PBXBuildFile; fileRef = 940E7ACD20890C96006C6D8B /* SettingsPictures.plist */; };
 		9418A0D0207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */; };
+		9419E82C208C830C00FFC490 /* QuotesAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419E82B208C830C00FFC490 /* QuotesAlertController.swift */; };
+		9419E82E208C84BB00FFC490 /* SettingsMotivationalQuotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */; };
 		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
 		948DEA8E20838F620098C29C /* SettingsDashboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948DEA8D20838F620098C29C /* SettingsDashboard.plist */; };
+		94A7AB4A2090D40000EAC3D0 /* AboutGe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94A7AB492090D40000EAC3D0 /* AboutGe.rtf */; };
 		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
 		94AEA1832077A658007366C2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AEA1812077A658007366C2 /* InfoTableViewCell.xib */; };
 		94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */; };
 		94AF93DD20764D32003A5781 /* Design+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */; };
 		94AF93DF2076549A003A5781 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF93DE2076549A003A5781 /* FileManager.swift */; };
-		94B363D5207BBA0F00C69107 /* Tutorial.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94B363D4207BBA0F00C69107 /* Tutorial.rtf */; };
+		94B363D5207BBA0F00C69107 /* AboutEn.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94B363D4207BBA0F00C69107 /* AboutEn.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -211,8 +213,6 @@
 		3B38BB6F2042DA7500E9E78B /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		3B38BB712042DB1700E9E78B /* MTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTView.swift; sourceTree = "<group>"; };
 		3B38BB732042EAF500E9E78B /* MTSearchObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSearchObject.swift; sourceTree = "<group>"; };
-		3B38BB752042F09D00E9E78B /* AchievementsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsHeaderView.swift; sourceTree = "<group>"; };
-		3B38BB772042F0A900E9E78B /* AchievementsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementsHeaderView.xib; sourceTree = "<group>"; };
 		3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingActivityHeaderView.swift; sourceTree = "<group>"; };
 		3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingActivityHeaderView.xib; sourceTree = "<group>"; };
 		3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsPersonalData.plist; sourceTree = "<group>"; };
@@ -321,15 +321,23 @@
 		70861099382CAD6CA326834D /* Pods-MetTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker.release.xcconfig"; sourceTree = "<group>"; };
 		94053E292073ABC300F3E297 /* Tracking+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94053E2A2073ABC300F3E297 /* Tracking+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tracking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		940E7ACD20890C96006C6D8B /* SettingsPictures.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsPictures.plist; sourceTree = "<group>"; };
 		9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMiscActivitiesViewController.swift; sourceTree = "<group>"; };
+		9419E82B208C830C00FFC490 /* QuotesAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesAlertController.swift; sourceTree = "<group>"; };
+		9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsMotivationalQuotes.plist; sourceTree = "<group>"; };
 		9448BD33207C899F0048485A /* Crabs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crabs.plist; sourceTree = "<group>"; };
+		9452351320906D4200A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		9452351420906D4200A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
+		9452351520906D4300A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9452351620906D4300A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		948DEA8D20838F620098C29C /* SettingsDashboard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsDashboard.plist; sourceTree = "<group>"; };
+		94A7AB492090D40000EAC3D0 /* AboutGe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AboutGe.rtf; sourceTree = "<group>"; };
 		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 		94AEA1812077A658007366C2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
 		94AF93DA20764D32003A5781 /* Design+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataClass.swift"; sourceTree = "<group>"; };
 		94AF93DB20764D32003A5781 /* Design+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Design+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		94AF93DE2076549A003A5781 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
-		94B363D4207BBA0F00C69107 /* Tutorial.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Tutorial.rtf; sourceTree = "<group>"; };
+		94B363D4207BBA0F00C69107 /* AboutEn.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AboutEn.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,7 +384,10 @@
 				3BA1E530205443320043EB16 /* SettingsNotifications.plist */,
 				3BA1E53220544B000043EB16 /* SettingsUnits.plist */,
 				948DEA8D20838F620098C29C /* SettingsDashboard.plist */,
-				94B363D4207BBA0F00C69107 /* Tutorial.rtf */,
+				940E7ACD20890C96006C6D8B /* SettingsPictures.plist */,
+				9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */,
+				94B363D4207BBA0F00C69107 /* AboutEn.rtf */,
+				94A7AB492090D40000EAC3D0 /* AboutGe.rtf */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -413,6 +424,7 @@
 				3B0CBA77203A0F1C00CFB88D /* SettingsTextSizeTableViewCell.xib */,
 				3B0CBA7B203A102D00CFB88D /* SettingsLanguageTableViewCell.swift */,
 				3B0CBA7A203A102D00CFB88D /* SettingsLanguageTableViewCell.xib */,
+				9419E82B208C830C00FFC490 /* QuotesAlertController.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -705,8 +717,6 @@
 			isa = PBXGroup;
 			children = (
 				3BAF05EB2035B62000D91FF9 /* AchievementTableViewCell.swift */,
-				3B38BB752042F09D00E9E78B /* AchievementsHeaderView.swift */,
-				3B38BB772042F0A900E9E78B /* AchievementsHeaderView.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -813,6 +823,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 3B8B06CF2032E663009A8B8E;
 			productRefGroup = 3B8B06D92032E663009A8B8E /* Products */;
@@ -851,7 +862,6 @@
 				3B2AFBE42037275B00DB8E35 /* SettingsCategoryTableViewCell.xib in Resources */,
 				3B872CF6204DCF4800243F37 /* SettingsColor.plist in Resources */,
 				3B5D9B3D2038C09F00A2021A /* SettingsPersonalDataTableViewCell.xib in Resources */,
-				3B38BB782042F0A900E9E78B /* AchievementsHeaderView.xib in Resources */,
 				3B6FC2F3203AF798006A1802 /* Category1.plist in Resources */,
 				3BAF06182035E96300D91FF9 /* StatisticsTrendTableViewCell.xib in Resources */,
 				3B8B070D2032F777009A8B8E /* Tracking.plist in Resources */,
@@ -861,10 +871,12 @@
 				3B6FC2F5203AF798006A1802 /* Category3.plist in Resources */,
 				3B2AFBEA2037293300DB8E35 /* SettingsActivityTableViewCell.xib in Resources */,
 				3B0CBA75203A0EC600CFB88D /* SettingsUnitsTableViewCell.xib in Resources */,
-				94B363D5207BBA0F00C69107 /* Tutorial.rtf in Resources */,
+				94B363D5207BBA0F00C69107 /* AboutEn.rtf in Resources */,
 				3B0C8C982040BB470050D49A /* OnBoardingCollectionViewCell.xib in Resources */,
 				3B2AFBD420371C1B00DB8E35 /* SettingsSingleTableViewCell.xib in Resources */,
+				94A7AB4A2090D40000EAC3D0 /* AboutGe.rtf in Resources */,
 				3B5D9B512038D18A00A2021A /* SettingsColorTableViewCell.xib in Resources */,
+				940E7ACE20890C96006C6D8B /* SettingsPictures.plist in Resources */,
 				3B6FC2F2203AF798006A1802 /* Categories.plist in Resources */,
 				3B6FC2F7203AF798006A1802 /* Category5.plist in Resources */,
 				3BA1E531205443320043EB16 /* SettingsNotifications.plist in Resources */,
@@ -875,6 +887,7 @@
 				3B940AA520336137006ABB12 /* DashboardQuoteTableViewCell.xib in Resources */,
 				3B8B06F62032EA37009A8B8E /* Quicksand-Bold.ttf in Resources */,
 				3B6FC2F6203AF798006A1802 /* Category4.plist in Resources */,
+				9419E82E208C84BB00FFC490 /* SettingsMotivationalQuotes.plist in Resources */,
 				3B8B07072032F4F8009A8B8E /* OnBoarding.plist in Resources */,
 				3B6FC2F9203AF798006A1802 /* Category7.plist in Resources */,
 				3B2AFBC62036E2BC00DB8E35 /* CalendarWeekDayCollectionViewCell.xib in Resources */,
@@ -925,10 +938,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MetTracker/Pods-MetTracker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -971,7 +986,6 @@
 				3B8B0712203315E2009A8B8E /* MainDashboardViewController.swift in Sources */,
 				3B38BB702042DA7500E9E78B /* DashboardTableViewCell.swift in Sources */,
 				3B6FC302203B1B9C006A1802 /* DataManager.swift in Sources */,
-				3B38BB762042F09D00E9E78B /* AchievementsHeaderView.swift in Sources */,
 				3B6FC306203B1CFE006A1802 /* MTActivity.swift in Sources */,
 				3BAF065E2035FFD300D91FF9 /* CalendarTableViewCell.swift in Sources */,
 				3B2AFBBA2036DF9800DB8E35 /* CalendarMonthViewController.swift in Sources */,
@@ -1018,6 +1032,7 @@
 				3B50AD47203476B0009EC098 /* TrackingViewController.swift in Sources */,
 				3B8C3D632040380000182A83 /* MTTracking.swift in Sources */,
 				3B940AA420336137006ABB12 /* DashboardQuoteTableViewCell.swift in Sources */,
+				9419E82C208C830C00FFC490 /* QuotesAlertController.swift in Sources */,
 				3B8B06E42032E663009A8B8E /* MetTracker.xcdatamodeld in Sources */,
 				3BCA7EA92034BE3C00933594 /* MTViewController.swift in Sources */,
 				3B50AD4120344728009EC098 /* SettingsTutorialViewController.swift in Sources */,
@@ -1045,6 +1060,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B2AFBCF2037192100DB8E35 /* Base */,
+				9452351420906D4200A89E54 /* de */,
 			);
 			name = Settings.storyboard;
 			sourceTree = "<group>";
@@ -1053,6 +1069,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B8B06E02032E663009A8B8E /* Base */,
+				9452351320906D4200A89E54 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1061,6 +1078,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B8B06E82032E663009A8B8E /* Base */,
+				9452351520906D4300A89E54 /* de */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1069,6 +1087,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B8B07092032F67B009A8B8E /* Base */,
+				9452351620906D4300A89E54 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1080,6 +1099,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1139,6 +1159,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

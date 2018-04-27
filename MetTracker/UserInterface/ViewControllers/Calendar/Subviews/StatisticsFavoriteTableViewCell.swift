@@ -10,19 +10,23 @@ import UIKit
 
 class StatisticsFavoriteTableViewCell: StatisticsTableViewCell {
 
+    @IBOutlet weak var favouriteTitle: MTLabel!
+    @IBOutlet weak var favouriteAct: MTLabel!
     @IBOutlet weak var viewActivityInfo: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.viewActivityInfo.backgroundColor = Config.shared.baseColor()
+        favouriteTitle.text = LS("favour_activity")
         
+        self.viewActivityInfo.backgroundColor = Config.shared.baseColor()
+        favouriteAct.text = mostActivity
     }
+
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

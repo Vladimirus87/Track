@@ -10,22 +10,40 @@ import UIKit
 
 class AchievementsViewController: MTViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelProgress: UILabel!
-    
-    @IBOutlet weak var viewProgress: UIView!
-    @IBOutlet weak var viewProgressValue: UIView!
     
     @IBOutlet weak var tableViewData: UITableView!
     
-    let headerIdentifier = "AchievementsHeaderView"
+    var data = [Tracking]()
+    
+     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.tableViewData.register(UINib.init(nibName: headerIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: headerIdentifier)
         
+        getData()
     }
+    
+    func getData() {
+        do {
+            data = try contex.fetch(Tracking.fetchRequest())
+            backgroundForTableView()
+        } catch {
+            print("Fetching Failed")
+        }
+    }
+    
+    func backgroundForTableView() {
+        if data.isEmpty {
+            let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: view.frame.height / 2 - 150), size: CGSize(width: view.frame.width, height: 200)))
+            imageView.contentMode = .scaleAspectFit
+            let image = UIImage(named: "tableViewIsEmpty")!
+            imageView.image = image
+            view.addSubview(imageView)
+            tableViewData.alpha = 0
+        }
+    }
+    
 
     // MARK: - UITableView
     
@@ -33,27 +51,35 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
         return 1
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-    
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerIdentifier)
-        
-        return headerView
-        
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 12
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellIdentifier = "AchievementTableViewCell"
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AchievementTableViewCell
         
+        cell.dataForCell(self.data[indexPath.row])
         
         return cell
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "AchievementDetailsViewController") as? AchievementDetailsViewController {
+            
+            controller.tracking = data[indexPath.row]
+            
+            controller.modalTransitionStyle = .crossDissolve
+            controller.modalPresentationStyle = .overCurrentContext
+            
+            DispatchQueue.main.async {
+                self.present(controller, animated: true, completion: nil)
+            }
+            
+            
+        }
     }
 
     
@@ -61,8 +87,6 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     
     override func updateColorScheme() {
      
-        self.viewProgress.backgroundColor = Config.shared.baseColor(0.2)
-        self.viewProgressValue.backgroundColor = Config.shared.baseColor()
         
     }
     
@@ -75,14 +99,6 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

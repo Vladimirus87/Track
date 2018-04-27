@@ -45,8 +45,8 @@
                             <constraint firstAttribute="width" constant="104" id="z9J-d3-dpy"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Things work out best for those who make the best of how things work out.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-Zu-oCJ" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                        <rect key="frame" x="48" y="52" width="224" height="100"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="&quot;Things work out best for those who make the best of how things work out.&quot;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-Zu-oCJ" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                        <rect key="frame" x="20" y="52" width="280" height="100"/>
                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                         <color key="textColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="− John Wooden" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9z4-hU-uIH" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                        <rect key="frame" x="48" y="160" width="224" height="20"/>
+                        <rect key="frame" x="20" y="160" width="280" height="20"/>
                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="16"/>
                         <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -92,13 +92,13 @@
                 <constraints>
                     <constraint firstItem="vkP-Rt-aVQ" firstAttribute="top" secondItem="mL1-yw-HOo" secondAttribute="bottom" constant="8" id="6lg-7k-fn2"/>
                     <constraint firstItem="9z4-hU-uIH" firstAttribute="trailing" secondItem="0bl-Zu-oCJ" secondAttribute="trailing" id="EpE-kZ-Ad5"/>
-                    <constraint firstItem="0bl-Zu-oCJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="K2n-aU-bi3"/>
+                    <constraint firstItem="0bl-Zu-oCJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="K2n-aU-bi3"/>
                     <constraint firstItem="9z4-hU-uIH" firstAttribute="top" secondItem="0bl-Zu-oCJ" secondAttribute="bottom" constant="8" id="QWR-B0-cI1"/>
                     <constraint firstItem="sMr-I4-m7X" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Qbl-IP-jdY"/>
                     <constraint firstItem="0bl-Zu-oCJ" firstAttribute="top" secondItem="l8v-0i-ah6" secondAttribute="bottom" constant="16" id="Smh-0d-9oE"/>
                     <constraint firstAttribute="bottom" secondItem="vkP-Rt-aVQ" secondAttribute="bottom" constant="16" id="TKj-De-MSy"/>
                     <constraint firstItem="sMr-I4-m7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="YFw-ef-Bqd"/>
-                    <constraint firstAttribute="trailing" secondItem="0bl-Zu-oCJ" secondAttribute="trailing" constant="48" id="c89-Zk-p8p"/>
+                    <constraint firstAttribute="trailing" secondItem="0bl-Zu-oCJ" secondAttribute="trailing" constant="20" symbolic="YES" id="c89-Zk-p8p"/>
                     <constraint firstItem="9z4-hU-uIH" firstAttribute="leading" secondItem="0bl-Zu-oCJ" secondAttribute="leading" id="fia-Cs-y8u"/>
                     <constraint firstItem="vkP-Rt-aVQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gax-fx-Tv8"/>
                     <constraint firstItem="mL1-yw-HOo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qky-zx-ofU"/>

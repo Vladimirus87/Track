@@ -12,12 +12,9 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     
     @IBOutlet weak var periodOfStatistics: MTLabel!
     @IBOutlet weak var scheduleView: UIView!
-    
-    
-    var mets = [[Float]]()
 
     let pointsSize: CGFloat = 10
-    var currentMonths = [Int]()
+    
     
     
     var pointsXY = [CGPoint]() {
@@ -65,7 +62,6 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        lastMonthes(count: 6)
         prepareForReuse()
     }
     
@@ -73,44 +69,11 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     
     override func prepareForReuse() {
         
-        getData()
+        
         calculatePoints(currentMonths.count, frame: scheduleView.frame)
-        periodOfStatistics.text = "\(currentMonths.count) Month Trend"
+        periodOfStatistics.text = "\(currentMonths.count) \(LS("month_trend"))"
     }
-    
-    
-    func lastMonthes(count: Int) {
-        for i in 0...count - 1 {
-            let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
-            if let mm_Month = Int((month?.string(with: "MM"))!){
-                currentMonths.insert(mm_Month, at: 0)
-            }
-        }
-    }
-    
-    
-    func getData() {
-        do {
-            let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-            let data = try contex.fetch(Tracking.fetchRequest()) as! [Tracking]
 
-            for i in 0...5 {
-               let month = Calendar.current.date(byAdding: .month, value: -i, to: Date())
-                var _mets: [Float] = [0]
-                
-                for track in data {
-                    if (track.date as Date?)?.string(with: "MM.yyyy") == month?.string(with: "MM.yyyy") {
-                        _mets.append(track.mets)
-                    }
-                }
-                self.mets.insert(_mets, at: 0)
-            }
-            
-        } catch {
-            print("Fetching Failed")
-        }
-    }
-    
     
     func calculatePoints(_ countOfPoints: Int, frame: CGRect) {
        
@@ -121,8 +84,8 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
             
             let progMaxWidth = frame.height - pointsSize - 80.0
             let countM = mets[point].reduce(0, +).rounded(toPlaces: 2)
-            let countMets = countM > 200.0 ? 200.0 : countM
-            let percentFromMets = (countMets * 100) / 200//?
+            let countMets = countM > 72 ? 72 : countM
+            let percentFromMets = (countMets * 100) / 72
             let progressWidth = progMaxWidth * CGFloat(percentFromMets) / 100
             let height = progMaxWidth - progressWidth + 40.0
             
@@ -191,7 +154,7 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
         
         let lb = MTLabel()
         lb.text = Calendar.current.shortMonthSymbols[currentMonths[index] - 1]
-        let lblWidth: CGFloat = Config.shared.textSizeIsEnlarged() ? 40.0 : 30.0
+        let lblWidth: CGFloat = Config.shared.textSizeIsEnlarged() ? 40.0 : 34.0
         let lblHeight: CGFloat = Config.shared.textSizeIsEnlarged() ? 30.0 : 25.0
         lb.frame = CGRect(x: point.x == 0 ? 0 : point.x - pointsSize, y: scheduleView.frame.height - lblHeight - 10, width: lblWidth, height: lblHeight)
         lb.textAlignment = .center
@@ -215,11 +178,8 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     }
     
     
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        
     }
     
 }

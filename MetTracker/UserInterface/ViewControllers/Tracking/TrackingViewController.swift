@@ -13,7 +13,6 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
 
     @IBOutlet weak var labelTitle: MTLabel!
     
-    
     @IBOutlet weak var viewTopbar: UIView!
     @IBOutlet weak var viewContent: UIView!
     
@@ -31,17 +30,16 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
     var trackingTimer : TrackingTimerView?
     
     
-    var isFirstRun = true// instead this var will use bottom var
-    ///Code for show OnBoardingViewController only once(with first start app)
-    /*    var isFirstRun: Bool {
-     get { return UserDefaults.standard.value(forKey: "isFirstTrackingRun") as? Bool ?? true }
-     set {
-     let userDefaults = UserDefaults.standard
-     userDefaults.set(newValue, forKey: "isFirstTrackingRun")
-     userDefaults.synchronize()
-     }
-     }
-     */
+//    var isFirstRun = true
+    var isFirstRun: Bool {
+        get { return UserDefaults.standard.value(forKey: "isFirstTrackingRun") as? Bool ?? true }
+        set {
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(newValue, forKey: "isFirstTrackingRun")
+            userDefaults.synchronize()
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +71,6 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
             let navigation = UINavigationController.init(rootViewController: controller)
             navigation.setNavigationBarHidden(true, animated: false)
             self.present(navigation, animated: true)
-            
         }
     }
 

@@ -1,5 +1,5 @@
 //
-//  SettingsTutorialViewController
+//  SettingsInfoViewController
 //  MetTracker
 //
 //  Created by Pavel Belevtsev on 14.02.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsTutorialViewController: MTViewController {
+class SettingsInfoViewController: MTViewController {
 
     @IBOutlet weak var infoTitle: MTLabel!
     @IBOutlet weak var tutorialTextView: UITextView!
@@ -16,8 +16,14 @@ class SettingsTutorialViewController: MTViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tutorialTextView.attributedText = loadRTF(from: "Tutorial")
+        tutorialTextView.attributedText = loadRTF(from: LS("about_rtf"))
     }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tutorialTextView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
 
     func loadRTF(from resource: String) -> NSAttributedString? {
         guard let url = Bundle.main.url(forResource: resource, withExtension: "rtf") else { return nil }
@@ -38,15 +44,7 @@ class SettingsTutorialViewController: MTViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

@@ -41,7 +41,30 @@ class MainDashboardViewController: MTViewController, UICollectionViewDelegate, U
         dataArray = NSArray(contentsOfFile: path!)
 
         self.currentTab = 0
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swiped(_:)))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        viewContainer.addGestureRecognizer(swipeRight)
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        viewContainer.addGestureRecognizer(swipeLeft)
     }
+    
+    @objc func swiped(_ sender: UISwipeGestureRecognizer) {
+        if sender.direction == .left {
+            if currentTab < dataArray.count - 1 {
+                currentTab += 1
+            }
+        } else if sender.direction == .right {
+            if currentTab > 0 {
+                currentTab -= 1
+            }
+        }
+        self.collectionViewTabs.reloadData()
+    }
+    
+
 
     override func resizeSubviews() {
         super.resizeSubviews()

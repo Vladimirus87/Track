@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -265,72 +265,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-3L-Bew">
-                                <rect key="frame" x="0.0" y="20" width="375" height="575"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-oG-rHr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-Lc-xSa" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="24" width="56" height="56"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="4x5-pY-d1z"/>
+                                            <constraint firstAttribute="width" constant="56" id="RQE-MM-Mot"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/18" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M35-3U-jAv">
+                                        <rect key="frame" x="102" y="38" width="61.5" height="28"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-iU-BHU" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="265.5" y="32" width="85.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bum-SE-etg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="239" y="57" width="112" height="25"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="XQe-oG-rHr">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-Lc-xSa" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="24" y="24" width="56" height="56"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="56" id="4x5-pY-d1z"/>
-                                                <constraint firstAttribute="width" constant="56" id="RQE-MM-Mot"/>
-                                            </constraints>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M35-3U-jAv">
-                                            <rect key="frame" x="102" y="31.5" width="80.5" height="42"/>
-                                            <attributedString key="attributedText">
-                                                <fragment content="12">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="36"/>
-                                                    </attributes>
-                                                </fragment>
-                                                <fragment content="/18">
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="system" size="28"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-iU-BHU" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="265.5" y="32" width="85.5" height="25"/>
-                                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                    <real key="value" value="24"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bum-SE-etg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="239" y="57" width="112" height="25"/>
-                                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                            <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                    <real key="value" value="24"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="aCa-iU-BHU" secondAttribute="trailing" constant="24" id="5GJ-Bb-lis"/>
-                                        <constraint firstItem="PpX-Lc-xSa" firstAttribute="leading" secondItem="XQe-oG-rHr" secondAttribute="leading" constant="24" id="9RL-vs-0e9"/>
-                                        <constraint firstItem="PpX-Lc-xSa" firstAttribute="top" secondItem="XQe-oG-rHr" secondAttribute="top" constant="24" id="ENh-4d-QLw"/>
-                                        <constraint firstItem="Bum-SE-etg" firstAttribute="top" secondItem="aCa-iU-BHU" secondAttribute="bottom" id="FwN-Tw-PgX"/>
-                                        <constraint firstItem="aCa-iU-BHU" firstAttribute="top" secondItem="XQe-oG-rHr" secondAttribute="top" constant="32" id="Ibf-Zc-i7h"/>
-                                        <constraint firstItem="M35-3U-jAv" firstAttribute="leading" secondItem="PpX-Lc-xSa" secondAttribute="trailing" constant="22" id="Wsg-0W-WHy"/>
-                                        <constraint firstAttribute="trailing" secondItem="Bum-SE-etg" secondAttribute="trailing" constant="24" id="jCo-nh-YXh"/>
-                                        <constraint firstItem="M35-3U-jAv" firstAttribute="centerY" secondItem="PpX-Lc-xSa" secondAttribute="centerY" id="yeJ-2f-mxx"/>
-                                    </constraints>
-                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aCa-iU-BHU" secondAttribute="trailing" constant="24" id="5GJ-Bb-lis"/>
+                                    <constraint firstItem="PpX-Lc-xSa" firstAttribute="leading" secondItem="XQe-oG-rHr" secondAttribute="leading" constant="24" id="9RL-vs-0e9"/>
+                                    <constraint firstItem="PpX-Lc-xSa" firstAttribute="top" secondItem="XQe-oG-rHr" secondAttribute="top" constant="24" id="ENh-4d-QLw"/>
+                                    <constraint firstItem="Bum-SE-etg" firstAttribute="top" secondItem="aCa-iU-BHU" secondAttribute="bottom" id="FwN-Tw-PgX"/>
+                                    <constraint firstItem="aCa-iU-BHU" firstAttribute="top" secondItem="XQe-oG-rHr" secondAttribute="top" constant="32" id="Ibf-Zc-i7h"/>
+                                    <constraint firstItem="M35-3U-jAv" firstAttribute="leading" secondItem="PpX-Lc-xSa" secondAttribute="trailing" constant="22" id="Wsg-0W-WHy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bum-SE-etg" secondAttribute="trailing" constant="24" id="jCo-nh-YXh"/>
+                                    <constraint firstAttribute="height" constant="100" id="jX9-eC-GAX"/>
+                                    <constraint firstItem="M35-3U-jAv" firstAttribute="centerY" secondItem="PpX-Lc-xSa" secondAttribute="centerY" id="yeJ-2f-mxx"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-3L-Bew">
+                                <rect key="frame" x="0.0" y="120" width="375" height="475"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Qtr-3k-WIj" id="Pfi-Cb-WPQ"/>
                                     <outlet property="delegate" destination="Qtr-3k-WIj" id="JRe-ZH-Q5A"/>
@@ -352,27 +342,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jPh-hS-B6K" firstAttribute="leading" secondItem="GQ8-mg-FPl" secondAttribute="leading" id="5tD-kM-tfy"/>
+                            <constraint firstItem="XQe-oG-rHr" firstAttribute="leading" secondItem="GQ8-mg-FPl" secondAttribute="leading" id="9gW-ap-hps"/>
                             <constraint firstItem="hbj-3L-Bew" firstAttribute="leading" secondItem="GQ8-mg-FPl" secondAttribute="leading" id="A9y-rT-L6V"/>
-                            <constraint firstItem="hbj-3L-Bew" firstAttribute="top" secondItem="GQ8-mg-FPl" secondAttribute="top" id="KYd-GR-U4l"/>
+                            <constraint firstItem="XQe-oG-rHr" firstAttribute="trailing" secondItem="GQ8-mg-FPl" secondAttribute="trailing" id="AJN-FD-qRe"/>
                             <constraint firstAttribute="trailing" secondItem="hbj-3L-Bew" secondAttribute="trailing" id="Rds-Co-Wrm"/>
                             <constraint firstItem="jPh-hS-B6K" firstAttribute="bottom" secondItem="GQ8-mg-FPl" secondAttribute="bottom" id="YBY-Mu-rvU"/>
                             <constraint firstItem="jPh-hS-B6K" firstAttribute="trailing" secondItem="GQ8-mg-FPl" secondAttribute="trailing" id="ZoF-Qv-MCi"/>
                             <constraint firstItem="jPh-hS-B6K" firstAttribute="top" secondItem="hbj-3L-Bew" secondAttribute="bottom" id="eDb-q2-W0D"/>
+                            <constraint firstItem="hbj-3L-Bew" firstAttribute="top" secondItem="XQe-oG-rHr" secondAttribute="bottom" id="fYD-jX-ZWR"/>
+                            <constraint firstItem="XQe-oG-rHr" firstAttribute="top" secondItem="GQ8-mg-FPl" secondAttribute="top" id="tqf-Tv-V3I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GQ8-mg-FPl"/>
                     </view>
                     <connections>
+                        <outlet property="bottomView" destination="XQe-oG-rHr" id="ZEw-Nt-Gt8"/>
+                        <outlet property="bottomViewHeight" destination="jX9-eC-GAX" id="ynO-XW-ey3"/>
                         <outlet property="buttonPlus" destination="jPh-hS-B6K" id="tjG-U9-Ccn"/>
                         <outlet property="gaugeProgress" destination="PpX-Lc-xSa" id="dxc-Hs-I5F"/>
                         <outlet property="labelWeek" destination="aCa-iU-BHU" id="Xc2-LO-gM0"/>
                         <outlet property="labelWeekday" destination="Bum-SE-etg" id="ham-Co-pRY"/>
+                        <outlet property="metsProgress" destination="M35-3U-jAv" id="7bH-7X-e7x"/>
                         <outlet property="tableViewData" destination="hbj-3L-Bew" id="Rkd-Oc-tJI"/>
                         <segue destination="uwE-hN-gR9" kind="presentation" identifier="toTrackingVC" id="Ci4-yv-Cng"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOH-7P-YRu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="34"/>
+            <point key="canvasLocation" x="2112.8000000000002" y="33.733133433283363"/>
         </scene>
         <!--Dashboard Var View Controller-->
         <scene sceneID="aXb-yk-IJJ">
@@ -385,7 +381,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rg-wr-9v5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="575"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_picture" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Hv-cS2">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Hv-cS2">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="575"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-KR-dkz">
@@ -870,14 +866,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4c-PO-1Ms">
                                 <rect key="frame" x="0.0" y="92" width="375" height="575"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qJX-Hl-8f4">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="471"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="jj1-i2-2gR" id="bUQ-ts-0S6"/>
-                                            <outlet property="delegate" destination="jj1-i2-2gR" id="TOb-ct-0Ua"/>
-                                        </connections>
-                                    </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-Bb-r4X" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="24" y="495" width="327" height="56"/>
                                         <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -895,16 +883,20 @@
                                             <action selector="buttonOkPressed:" destination="jj1-i2-2gR" eventType="touchUpInside" id="CKz-T1-dGw"/>
                                         </connections>
                                     </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lDp-D2-RCv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="487"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="lDp-D2-RCv" firstAttribute="top" secondItem="c4c-PO-1Ms" secondAttribute="top" id="0NF-6l-trw"/>
                                     <constraint firstAttribute="bottom" secondItem="FJK-Bb-r4X" secondAttribute="bottom" constant="24" id="1JT-nt-mbt"/>
-                                    <constraint firstItem="qJX-Hl-8f4" firstAttribute="top" secondItem="c4c-PO-1Ms" secondAttribute="top" id="1gV-NJ-qlr"/>
+                                    <constraint firstItem="FJK-Bb-r4X" firstAttribute="top" secondItem="lDp-D2-RCv" secondAttribute="bottom" constant="8" id="Btq-l0-buZ"/>
                                     <constraint firstAttribute="trailing" secondItem="FJK-Bb-r4X" secondAttribute="trailing" constant="24" id="MeO-lj-i6P"/>
-                                    <constraint firstItem="FJK-Bb-r4X" firstAttribute="top" secondItem="qJX-Hl-8f4" secondAttribute="bottom" constant="24" id="adb-co-13c"/>
+                                    <constraint firstAttribute="trailing" secondItem="lDp-D2-RCv" secondAttribute="trailing" id="Qla-te-5qN"/>
+                                    <constraint firstItem="lDp-D2-RCv" firstAttribute="leading" secondItem="c4c-PO-1Ms" secondAttribute="leading" id="js4-q3-KK0"/>
                                     <constraint firstItem="FJK-Bb-r4X" firstAttribute="leading" secondItem="c4c-PO-1Ms" secondAttribute="leading" constant="24" id="ksk-lG-kLV"/>
-                                    <constraint firstItem="qJX-Hl-8f4" firstAttribute="leading" secondItem="c4c-PO-1Ms" secondAttribute="leading" id="nib-rI-0jt"/>
-                                    <constraint firstAttribute="trailing" secondItem="qJX-Hl-8f4" secondAttribute="trailing" id="xU7-aE-kI0"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -923,14 +915,14 @@
                     <connections>
                         <outlet property="buttonOk" destination="FJK-Bb-r4X" id="En4-iw-mNc"/>
                         <outlet property="labelTitle" destination="nSE-mB-q3K" id="mBh-r8-tA3"/>
-                        <outlet property="tableViewData" destination="qJX-Hl-8f4" id="DdF-5y-gX3"/>
+                        <outlet property="tableViewData" destination="lDp-D2-RCv" id="hkK-k1-oKV"/>
                         <segue destination="O85-U4-DVw" kind="unwind" identifier="unwindToDashboard" unwindAction="unwindToDashboardWithSegue:" id="Rj3-fe-Ufs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fU-vS-2EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="O85-U4-DVw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="767"/>
+            <point key="canvasLocation" x="2269.5999999999999" y="725.48725637181417"/>
         </scene>
         <!--TrackingActivityViewController-->
         <scene sceneID="wXE-yb-76o">
@@ -1065,7 +1057,7 @@
                                                 <state key="normal" image="icon_confirm"/>
                                                 <connections>
                                                     <action selector="buttonConfirmPressed:" destination="Jh6-08-xY4" eventType="touchUpInside" id="wlM-bI-smm"/>
-                                                    <segue destination="jj1-i2-2gR" kind="show" id="D7L-rS-zJN"/>
+                                                    <segue destination="jj1-i2-2gR" kind="show" identifier="ToSuccessVC" id="l8e-Vg-WEc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1120,154 +1112,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="32" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-73-pxd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="108" estimatedRowHeight="-1" sectionHeaderHeight="32" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-73-pxd">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="jkz-a8-goB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="230"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 MONTH CHALLENGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKV-Gf-XvX" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="36" width="295" height="25"/>
-                                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                    <real key="value" value="24"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 weeks passed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTT-Sf-bxg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="61" width="295" height="25"/>
-                                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                            <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                    <real key="value" value="24"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-CY-SFW" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="112" width="295" height="16"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpR-Pk-ef7" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="206.5" height="16"/>
-                                                    <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="8"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.047058823529411764" green="0.89411764705882346" blue="0.6705882352941176" alpha="0.20411531690140844" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="16" id="5de-pn-UUC"/>
-                                                <constraint firstAttribute="bottom" secondItem="tpR-Pk-ef7" secondAttribute="bottom" id="9PI-Ef-e81"/>
-                                                <constraint firstItem="tpR-Pk-ef7" firstAttribute="leading" secondItem="IKX-CY-SFW" secondAttribute="leading" id="aC6-iL-DOE"/>
-                                                <constraint firstItem="tpR-Pk-ef7" firstAttribute="top" secondItem="IKX-CY-SFW" secondAttribute="top" id="ehA-uT-zo8"/>
-                                                <constraint firstItem="tpR-Pk-ef7" firstAttribute="width" secondItem="IKX-CY-SFW" secondAttribute="width" multiplier="0.7" id="usb-vC-2NN"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="8"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reach your goal every week for 6 months to pass this challenge!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaP-aq-nWg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                            <rect key="frame" x="40" y="154" width="295" height="40"/>
-                                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                    <real key="value" value="20"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstItem="DKV-Gf-XvX" firstAttribute="leading" secondItem="jkz-a8-goB" secondAttribute="leading" constant="40" id="1mM-gx-9i4"/>
-                                        <constraint firstAttribute="trailing" secondItem="RTT-Sf-bxg" secondAttribute="trailing" constant="40" id="3ZF-Gj-knv"/>
-                                        <constraint firstItem="JaP-aq-nWg" firstAttribute="top" secondItem="IKX-CY-SFW" secondAttribute="bottom" constant="26" id="Cpa-Sz-sA9"/>
-                                        <constraint firstItem="IKX-CY-SFW" firstAttribute="leading" secondItem="jkz-a8-goB" secondAttribute="leading" constant="40" id="DTn-jN-TaU"/>
-                                        <constraint firstItem="IKX-CY-SFW" firstAttribute="top" secondItem="RTT-Sf-bxg" secondAttribute="bottom" constant="26" id="Fxf-ch-zbI"/>
-                                        <constraint firstItem="RTT-Sf-bxg" firstAttribute="leading" secondItem="jkz-a8-goB" secondAttribute="leading" constant="40" id="Gu0-U6-FL6"/>
-                                        <constraint firstAttribute="trailing" secondItem="IKX-CY-SFW" secondAttribute="trailing" constant="40" id="Ipw-ft-BkO"/>
-                                        <constraint firstAttribute="trailing" secondItem="JaP-aq-nWg" secondAttribute="trailing" constant="40" id="l1E-kb-cUf"/>
-                                        <constraint firstItem="DKV-Gf-XvX" firstAttribute="top" secondItem="jkz-a8-goB" secondAttribute="top" constant="36" id="pi5-n8-8t7"/>
-                                        <constraint firstItem="RTT-Sf-bxg" firstAttribute="top" secondItem="DKV-Gf-XvX" secondAttribute="bottom" id="s6Y-Ak-KAc"/>
-                                        <constraint firstItem="JaP-aq-nWg" firstAttribute="leading" secondItem="jkz-a8-goB" secondAttribute="leading" constant="40" id="y84-5A-89L"/>
-                                        <constraint firstAttribute="trailing" secondItem="DKV-Gf-XvX" secondAttribute="trailing" constant="40" id="zTe-rO-OdI"/>
-                                    </constraints>
-                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AchievementTableViewCell" id="lUh-SB-e6o" customClass="AchievementTableViewCell" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="262" width="375" height="88"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AchievementTableViewCell" rowHeight="108" id="lUh-SB-e6o" customClass="AchievementTableViewCell" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="32" width="375" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lUh-SB-e6o" id="zul-8a-k0p">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-xr-SZP" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="16" width="56" height="56"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bicycling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5m-FD-D02" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="40" width="255" height="29"/>
+                                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                            <real key="value" value="27"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30-03:30 | Tracking time 02:00:00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YR-Ce-GKm" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="71" width="351" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
+                                                    <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                            <real key="value" value="17"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.60 METS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNP-Wy-CSc" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="279" y="45.5" width="80" height="17.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="56" id="K9Q-4L-YZg"/>
-                                                        <constraint firstAttribute="height" constant="56" id="ec9-XK-vA9"/>
+                                                        <constraint firstAttribute="width" constant="80" id="AoZ-SD-lxS"/>
                                                     </constraints>
-                                                </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EOP-vO-ocr">
-                                                    <rect key="frame" x="88" y="19" width="271" height="50"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Month Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5m-FD-D02" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="271" height="20"/>
-                                                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                                    <real key="value" value="20"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach your weekly goal for 6 months in a row to unlock this achivement." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YR-Ce-GKm" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="20" width="271" height="30"/>
-                                                            <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                                            <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                                                    <real key="value" value="16"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="i5m-FD-D02" firstAttribute="leading" secondItem="EOP-vO-ocr" secondAttribute="leading" id="5Pj-ez-lwl"/>
-                                                        <constraint firstItem="i5m-FD-D02" firstAttribute="top" secondItem="EOP-vO-ocr" secondAttribute="top" id="Esj-95-f6q"/>
-                                                        <constraint firstAttribute="trailing" secondItem="i5m-FD-D02" secondAttribute="trailing" id="GHl-Gt-M4Y"/>
-                                                        <constraint firstAttribute="bottom" secondItem="5YR-Ce-GKm" secondAttribute="bottom" id="SOB-7E-1ZO"/>
-                                                        <constraint firstItem="5YR-Ce-GKm" firstAttribute="leading" secondItem="EOP-vO-ocr" secondAttribute="leading" id="XkV-Sc-Hzu"/>
-                                                        <constraint firstItem="5YR-Ce-GKm" firstAttribute="top" secondItem="i5m-FD-D02" secondAttribute="bottom" id="ZnH-yb-UJ6"/>
-                                                        <constraint firstAttribute="trailing" secondItem="5YR-Ce-GKm" secondAttribute="trailing" id="f5S-AS-ig4"/>
-                                                    </constraints>
-                                                </view>
+                                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                            <real key="value" value="18"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.04.2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsK-sa-43A" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="17" width="64.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                            <real key="value" value="17"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="EOP-vO-ocr" secondAttribute="trailing" constant="16" id="1gj-XC-Rum"/>
-                                                <constraint firstItem="GZt-xr-SZP" firstAttribute="centerX" secondItem="zul-8a-k0p" secondAttribute="leading" constant="44" id="3bf-pE-YIp"/>
-                                                <constraint firstItem="GZt-xr-SZP" firstAttribute="centerY" secondItem="zul-8a-k0p" secondAttribute="centerY" id="Dz0-Ze-RXP"/>
-                                                <constraint firstItem="EOP-vO-ocr" firstAttribute="leading" secondItem="zul-8a-k0p" secondAttribute="leading" constant="88" id="Y9S-Sd-e25"/>
-                                                <constraint firstItem="EOP-vO-ocr" firstAttribute="centerY" secondItem="zul-8a-k0p" secondAttribute="centerY" id="YzF-aW-5Ko"/>
+                                                <constraint firstItem="i5m-FD-D02" firstAttribute="leading" secondItem="zul-8a-k0p" secondAttribute="leading" constant="16" id="FZg-Ko-2p7"/>
+                                                <constraint firstItem="5YR-Ce-GKm" firstAttribute="leading" secondItem="zul-8a-k0p" secondAttribute="leading" constant="16" id="IQB-px-omc"/>
+                                                <constraint firstItem="i5m-FD-D02" firstAttribute="centerY" secondItem="zul-8a-k0p" secondAttribute="centerY" id="Pyh-2z-JGI"/>
+                                                <constraint firstItem="i5m-FD-D02" firstAttribute="top" secondItem="CsK-sa-43A" secondAttribute="bottom" constant="6" id="W8U-V9-G12"/>
+                                                <constraint firstItem="CsK-sa-43A" firstAttribute="leading" secondItem="zul-8a-k0p" secondAttribute="leading" constant="16" id="X08-ze-gyx"/>
+                                                <constraint firstItem="VNP-Wy-CSc" firstAttribute="centerY" secondItem="zul-8a-k0p" secondAttribute="centerY" id="b1S-L2-MAi"/>
+                                                <constraint firstItem="VNP-Wy-CSc" firstAttribute="leading" secondItem="i5m-FD-D02" secondAttribute="trailing" constant="8" id="iAe-rD-Zdz"/>
+                                                <constraint firstItem="CsK-sa-43A" firstAttribute="top" secondItem="zul-8a-k0p" secondAttribute="topMargin" constant="6" id="j7d-lX-Tga"/>
+                                                <constraint firstItem="5YR-Ce-GKm" firstAttribute="top" secondItem="VNP-Wy-CSc" secondAttribute="bottom" constant="8" id="mG7-XM-x1V"/>
+                                                <constraint firstAttribute="trailing" secondItem="5YR-Ce-GKm" secondAttribute="trailing" constant="8" id="pbr-g8-hFv"/>
+                                                <constraint firstAttribute="trailing" secondItem="VNP-Wy-CSc" secondAttribute="trailing" constant="16" id="uvP-m7-mP4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="gaugeProgress" destination="GZt-xr-SZP" id="pOF-jV-zof"/>
+                                            <outlet property="Category" destination="i5m-FD-D02" id="Qxs-6j-hov"/>
+                                            <outlet property="date" destination="CsK-sa-43A" id="V9Q-lz-8YD"/>
+                                            <outlet property="mets" destination="VNP-Wy-CSc" id="n9E-w1-7gd"/>
+                                            <outlet property="time" destination="5YR-Ce-GKm" id="1VM-S5-g9z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1287,16 +1209,12 @@
                         <viewLayoutGuide key="safeArea" id="lWV-rQ-OVY"/>
                     </view>
                     <connections>
-                        <outlet property="labelProgress" destination="RTT-Sf-bxg" id="Qvf-Eh-zh1"/>
-                        <outlet property="labelTitle" destination="DKV-Gf-XvX" id="dAb-E3-phC"/>
                         <outlet property="tableViewData" destination="Ugt-73-pxd" id="TR0-OI-JPi"/>
-                        <outlet property="viewProgress" destination="IKX-CY-SFW" id="81x-6T-8Cc"/>
-                        <outlet property="viewProgressValue" destination="tpR-Pk-ef7" id="GcJ-or-FIH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BE8-0P-bRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="1422"/>
+            <point key="canvasLocation" x="728.79999999999995" y="1421.7391304347827"/>
         </scene>
         <!--Achievement Details View Controller-->
         <scene sceneID="AcW-h5-EcI">
@@ -1306,28 +1224,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-BO-EXq">
-                                <rect key="frame" x="24" y="44" width="327" height="599"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-BO-EXq" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
+                                <rect key="frame" x="24" y="164" width="327" height="339"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eas-eG-SoO">
-                                        <rect key="frame" x="119" y="64" width="88" height="88"/>
-                                        <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="0.19886113559999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="88" id="72f-b8-AOn"/>
-                                            <constraint firstAttribute="width" constant="88" id="dIx-2D-ofN"/>
-                                        </constraints>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Month Challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X30-gF-P2P">
-                                        <rect key="frame" x="16" y="188" width="295" height="25"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Month Challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X30-gF-P2P" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="45" width="295" height="29"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 weeks / 24 weeks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-Zf-wYn" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="105" y="82" width="116" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="116" id="Yux-vY-wnS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unlocked on: not yet unlocked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-zM-Qe3" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="129" width="279" height="19"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach your weekly goal for 6 months in a row to unlock this achievement." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvm-2l-2xx" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="156" width="279" height="64"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIb-Zp-Vjk" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="519" width="279" height="56"/>
+                                        <rect key="frame" x="24" y="256" width="279" height="56"/>
                                         <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="akj-6G-dZg"/>
+                                            <constraint firstAttribute="height" constant="56" id="Xmq-4N-OxA"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="icon_confirm"/>
@@ -1336,56 +1287,51 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="okBtnPressed:" destination="nM9-98-9Bq" eventType="touchUpInside" id="eBP-i0-TPG"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 weeks / 24 weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jld-Zf-wYn">
-                                        <rect key="frame" x="105.5" y="221" width="116" height="15"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unlocked on: not yet unlocked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QY-zM-Qe3">
-                                        <rect key="frame" x="24" y="268" width="279" height="15"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach your weekly goal for 6 months in a row to unlock this achievement." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvm-2l-2xx">
-                                        <rect key="frame" x="24" y="291" width="279" height="40"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Eas-eG-SoO" firstAttribute="top" secondItem="ePg-BO-EXq" secondAttribute="top" constant="64" id="3Dp-V5-0q5"/>
-                                    <constraint firstAttribute="trailing" secondItem="5QY-zM-Qe3" secondAttribute="trailing" constant="24" id="9IJ-aJ-yIb"/>
-                                    <constraint firstAttribute="bottom" secondItem="lIb-Zp-Vjk" secondAttribute="bottom" constant="24" id="DDS-46-GHF"/>
-                                    <constraint firstItem="Eas-eG-SoO" firstAttribute="centerX" secondItem="ePg-BO-EXq" secondAttribute="centerX" id="Gu6-lb-idV"/>
-                                    <constraint firstItem="Gvm-2l-2xx" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="ICG-Hb-wr9"/>
-                                    <constraint firstAttribute="trailing" secondItem="Gvm-2l-2xx" secondAttribute="trailing" constant="24" id="NX7-oV-O1n"/>
-                                    <constraint firstItem="Jld-Zf-wYn" firstAttribute="top" secondItem="X30-gF-P2P" secondAttribute="bottom" constant="8" id="Tf8-Fp-mlO"/>
-                                    <constraint firstItem="X30-gF-P2P" firstAttribute="top" secondItem="Eas-eG-SoO" secondAttribute="bottom" constant="36" id="Up2-1j-JtI"/>
-                                    <constraint firstItem="Gvm-2l-2xx" firstAttribute="top" secondItem="5QY-zM-Qe3" secondAttribute="bottom" constant="8" id="W2F-M7-j4Y"/>
-                                    <constraint firstItem="X30-gF-P2P" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="16" id="Y04-vd-tka"/>
-                                    <constraint firstAttribute="trailing" secondItem="lIb-Zp-Vjk" secondAttribute="trailing" constant="24" id="cNk-5a-I5L"/>
-                                    <constraint firstItem="lIb-Zp-Vjk" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="cNt-Fa-1Hr"/>
-                                    <constraint firstItem="5QY-zM-Qe3" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="hHs-2b-SRe"/>
-                                    <constraint firstItem="Jld-Zf-wYn" firstAttribute="centerX" secondItem="ePg-BO-EXq" secondAttribute="centerX" id="oev-Me-duo"/>
-                                    <constraint firstAttribute="trailing" secondItem="X30-gF-P2P" secondAttribute="trailing" constant="16" id="uwA-DT-doI"/>
-                                    <constraint firstItem="5QY-zM-Qe3" firstAttribute="top" secondItem="Jld-Zf-wYn" secondAttribute="bottom" constant="32" id="vn6-kM-Zqb"/>
+                                    <constraint firstItem="X30-gF-P2P" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="16" id="8SV-4j-ipp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gvm-2l-2xx" secondAttribute="trailing" constant="24" id="A7s-qh-eHF"/>
+                                    <constraint firstItem="X30-gF-P2P" firstAttribute="top" secondItem="ePg-BO-EXq" secondAttribute="top" constant="45" id="Euq-ob-dj1"/>
+                                    <constraint firstAttribute="trailing" secondItem="5QY-zM-Qe3" secondAttribute="trailing" constant="24" id="F5I-x7-mXk"/>
+                                    <constraint firstItem="Gvm-2l-2xx" firstAttribute="top" secondItem="5QY-zM-Qe3" secondAttribute="bottom" constant="8" id="HbM-70-4ek"/>
+                                    <constraint firstItem="5QY-zM-Qe3" firstAttribute="top" secondItem="Jld-Zf-wYn" secondAttribute="bottom" constant="28" id="Jr8-MX-aOL"/>
+                                    <constraint firstItem="lIb-Zp-Vjk" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="Q4p-85-S8q"/>
+                                    <constraint firstAttribute="bottom" secondItem="lIb-Zp-Vjk" secondAttribute="bottom" constant="27" id="QNc-AC-NNg"/>
+                                    <constraint firstAttribute="width" constant="327" id="Uhq-OW-sST"/>
+                                    <constraint firstItem="Gvm-2l-2xx" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="V7C-iP-5PO"/>
+                                    <constraint firstAttribute="height" constant="339" id="aZz-CS-w3h"/>
+                                    <constraint firstAttribute="trailing" secondItem="X30-gF-P2P" secondAttribute="trailing" constant="16" id="d96-6a-sru"/>
+                                    <constraint firstItem="Jld-Zf-wYn" firstAttribute="centerX" secondItem="ePg-BO-EXq" secondAttribute="centerX" id="dI4-4K-rD3"/>
+                                    <constraint firstItem="5QY-zM-Qe3" firstAttribute="leading" secondItem="ePg-BO-EXq" secondAttribute="leading" constant="24" id="jkt-ig-2DP"/>
+                                    <constraint firstItem="Jld-Zf-wYn" firstAttribute="top" secondItem="X30-gF-P2P" secondAttribute="bottom" constant="8" id="tyk-ZC-vIR"/>
+                                    <constraint firstAttribute="trailing" secondItem="lIb-Zp-Vjk" secondAttribute="trailing" constant="24" id="uum-q0-FUe"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ePg-BO-EXq" firstAttribute="top" secondItem="Wwr-2l-f2K" secondAttribute="top" constant="24" id="9Bb-AM-l7e"/>
-                            <constraint firstItem="ePg-BO-EXq" firstAttribute="leading" secondItem="Wwr-2l-f2K" secondAttribute="leading" constant="24" id="9wR-jl-C0s"/>
-                            <constraint firstItem="Wwr-2l-f2K" firstAttribute="bottom" secondItem="ePg-BO-EXq" secondAttribute="bottom" constant="24" id="lyN-Mk-3t5"/>
-                            <constraint firstItem="Wwr-2l-f2K" firstAttribute="trailing" secondItem="ePg-BO-EXq" secondAttribute="trailing" constant="24" id="vTs-dT-A9Y"/>
+                            <constraint firstItem="ePg-BO-EXq" firstAttribute="centerX" secondItem="DZl-rK-u7l" secondAttribute="centerX" id="9OJ-hl-K1I"/>
+                            <constraint firstItem="ePg-BO-EXq" firstAttribute="centerX" secondItem="DZl-rK-u7l" secondAttribute="centerX" id="ZJw-Vm-VSh"/>
+                            <constraint firstItem="ePg-BO-EXq" firstAttribute="centerY" secondItem="DZl-rK-u7l" secondAttribute="centerY" id="p0C-EB-Tlk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wwr-2l-f2K"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryTitle" destination="X30-gF-P2P" id="Zpi-46-eiK"/>
+                        <outlet property="countOfMets" destination="Jld-Zf-wYn" id="f0A-MN-wSl"/>
+                        <outlet property="fullDescription" destination="Gvm-2l-2xx" id="zHs-Gj-bWB"/>
+                        <outlet property="trackingTime" destination="5QY-zM-Qe3" id="nEv-WG-BFD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MnW-hw-bCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1842,8 +1788,8 @@
         <image name="icon_search" width="18" height="18"/>
         <image name="icon_shrink" width="24" height="24"/>
         <image name="icon_statistics" width="18" height="18"/>
+        <image name="img3" width="4250" height="2836"/>
         <image name="main_tab_1" width="18" height="18"/>
-        <image name="test_picture" width="312" height="232"/>
         <image name="tracking_onboarding_screen_3" width="291" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>

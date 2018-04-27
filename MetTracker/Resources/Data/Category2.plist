@@ -8,9 +8,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>1013</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, on dirt or farm road, moderate pace</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, unbefestigte Strasse, moderate Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>370</real>
 		<key>SUBCATEGORY</key>
@@ -22,9 +24,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>1019</real>
 		<key>METS</key>
-		<real>5.8000001907348633</real>
+		<real>5.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, leisure, 9.4 mph</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Freizeit, 15 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>380</real>
 		<key>SUBCATEGORY</key>
@@ -36,9 +40,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>1011</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, to/from work, self selected pace</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren in die/aus der Arbeit, selbst gewählte Geschwindigkeit</string>
 		<key>ORDER NUMBER</key>
 		<real>390</real>
 		<key>SUBCATEGORY</key>
@@ -50,9 +56,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>1020</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, 10-11.9 mph, leisure, slow, light effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren 16 - 19,3 km/h, Freizeit, langsam, wenig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>400</real>
 		<key>SUBCATEGORY</key>
@@ -67,6 +75,8 @@
 		<real>8</real>
 		<key>NAME</key>
 		<string>bicycling, 12-13.9 mph, leisure, moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren 19,4-22,4 km/h, Freizeit, mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>410</real>
 		<key>SUBCATEGORY</key>
@@ -81,6 +91,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bicycling, 12 mph, seated, hands on brake hoods or bar drops, 80 rpm</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren 19,3 km/h, sitzend, Hände am Lenker, 80 UPM</string>
 		<key>ORDER NUMBER</key>
 		<real>420</real>
 		<key>SUBCATEGORY</key>
@@ -95,6 +107,8 @@
 		<real>9</real>
 		<key>NAME</key>
 		<string>bicycling, 12 mph, standing, hands on brake hoods, 60 rpm</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren 19,3 km/h, stehend, Hände am Lenker, 60 UPM</string>
 		<key>ORDER NUMBER</key>
 		<real>430</real>
 		<key>SUBCATEGORY</key>
@@ -109,6 +123,8 @@
 		<real>10</real>
 		<key>NAME</key>
 		<string>bicycling, 14-15.9 mph, racing or leisure, fast, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren 22,5 - 25,6 km/h, Wettkampf oder Freizeit, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>440</real>
 		<key>SUBCATEGORY</key>
@@ -123,6 +139,8 @@
 		<real>12</real>
 		<key>NAME</key>
 		<string>bicycling, 16-19 mph, racing/not drafting or &gt; 19 mph drafting, very fast, racing general</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren Wettkampf, 25,8 - 32,1 km/h ohne Windschatten oder &gt; 30,6 km/h im Windschatten, sehr schnell</string>
 		<key>ORDER NUMBER</key>
 		<real>450</real>
 		<key>SUBCATEGORY</key>
@@ -134,9 +152,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>1060</real>
 		<key>METS</key>
-		<real>15.800000190734863</real>
+		<real>15.8</real>
 		<key>NAME</key>
 		<string>bicycling, &gt; 20 mph, racing, not drafting</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren Wettkampf, ohne Windschatten, &gt; 32,2 km/h</string>
 		<key>ORDER NUMBER</key>
 		<real>460</real>
 		<key>SUBCATEGORY</key>
@@ -151,6 +171,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bicycling, mountain, general</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Mountainbiking, allgemein</string>
 		<key>ORDER NUMBER</key>
 		<real>470</real>
 		<key>SUBCATEGORY</key>
@@ -165,6 +187,8 @@
 		<real>14</real>
 		<key>NAME</key>
 		<string>bicycling, mountain, uphill, vigorous</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Mountainbiking, bergauf, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>480</real>
 		<key>SUBCATEGORY</key>
@@ -179,6 +203,8 @@
 		<real>16</real>
 		<key>NAME</key>
 		<string>bicycling, mountain, competitive, racing</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Mountainbiking, Wettkampf, Rennen</string>
 		<key>ORDER NUMBER</key>
 		<real>490</real>
 		<key>SUBCATEGORY</key>
@@ -193,6 +219,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bicycling, BMX</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, BMX</string>
 		<key>ORDER NUMBER</key>
 		<real>500</real>
 		<key>SUBCATEGORY</key>
@@ -207,6 +235,8 @@
 		<real>5</real>
 		<key>NAME</key>
 		<string>unicycling</string>
+		<key>NAME_DE</key>
+		<string>Einradfahren</string>
 		<key>ORDER NUMBER</key>
 		<real>510</real>
 		<key>SUBCATEGORY</key>
@@ -218,9 +248,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2017</real>
 		<key>METS</key>
-		<real>4.8000001907348633</real>
+		<real>4.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 51-89 watts, light-to-moderate effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 51-89 Watt, wenig bis mäßig anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>520</real>
 		<key>SUBCATEGORY</key>
@@ -232,9 +264,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2012</real>
 		<key>METS</key>
-		<real>6.8000001907348633</real>
+		<real>6.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 90-100 watts, moderate to vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 90-100 Watt, mäßig bis sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>530</real>
 		<key>SUBCATEGORY</key>
@@ -246,9 +280,11 @@
 		<key>AINSWORTH CODE</key>
 		<real>2013</real>
 		<key>METS</key>
-		<real>8.8000001907348633</real>
+		<real>8.800000190734863</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 101-160 watts, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 101-160 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>540</real>
 		<key>SUBCATEGORY</key>
@@ -263,6 +299,8 @@
 		<real>11</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 161-200 watts, vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 161-200 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>550</real>
 		<key>SUBCATEGORY</key>
@@ -277,6 +315,8 @@
 		<real>14</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, 201-270 watts, very vigorous effort</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, 201-270 Watt, sehr anstrengend</string>
 		<key>ORDER NUMBER</key>
 		<real>560</real>
 		<key>SUBCATEGORY</key>
@@ -291,6 +331,8 @@
 		<real>8.5</real>
 		<key>NAME</key>
 		<string>bicycling, stationary, RPM/Spin bike class</string>
+		<key>NAME_DE</key>
+		<string>Fahrradfahren, Standfahrrad, Spinning Kurs</string>
 		<key>ORDER NUMBER</key>
 		<real>570</real>
 		<key>SUBCATEGORY</key>

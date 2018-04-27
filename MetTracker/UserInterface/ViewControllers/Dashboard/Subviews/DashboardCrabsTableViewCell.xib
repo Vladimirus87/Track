@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_crabs" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-ce-fSs">
-                        <rect key="frame" x="24" y="8" width="272" height="295.5"/>
+                        <rect key="frame" x="8" y="8" width="304" height="295.5"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="dvC-ce-fSs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="4nH-Gi-OoA"/>
+                    <constraint firstItem="dvC-ce-fSs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4nH-Gi-OoA"/>
                     <constraint firstItem="dvC-ce-fSs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="P6u-KN-4VA"/>
-                    <constraint firstAttribute="trailing" secondItem="dvC-ce-fSs" secondAttribute="trailing" constant="24" id="QFr-15-hXj"/>
+                    <constraint firstAttribute="trailing" secondItem="dvC-ce-fSs" secondAttribute="trailing" constant="8" id="QFr-15-hXj"/>
                     <constraint firstAttribute="bottom" secondItem="dvC-ce-fSs" secondAttribute="bottom" constant="8" id="uJH-gu-NTb"/>
                 </constraints>
             </tableViewCellContentView>

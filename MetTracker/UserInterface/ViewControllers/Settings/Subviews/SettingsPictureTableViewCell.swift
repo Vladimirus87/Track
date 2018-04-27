@@ -16,20 +16,24 @@ protocol SettingsPictureTableViewCellDelegate {
 class SettingsPictureTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imagesCollectionView: UICollectionView!
+    @IBOutlet weak var sectionTitle: MTLabel!
     
     var delegate: SettingsPictureTableViewCellDelegate?
     
     let cellIdentifier = "SettingsPictureCollectionViewCell"
     var data = [Design]()
+    
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
 
+        sectionTitle.text = LS("choose_img")
+        
         imagesCollectionView.delegate = self
         imagesCollectionView.dataSource = self
-        
+
         self.imagesCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
         
         getData()
@@ -44,6 +48,7 @@ class SettingsPictureTableViewCell: UITableViewCell {
     
     
     @objc func handleLongPress(gesture : UILongPressGestureRecognizer!) {
+
         if gesture.state == .ended {
             return
         }
@@ -114,7 +119,7 @@ extension SettingsPictureTableViewCell: PictureCellDelegate {
         }
         
         for image in data {
-            if image.selected == true {
+            if image.selected == true && image != data[ip.row] {
                 image.selected = false
                 let index = data.index(of: image)
                 lastCheckIP = IndexPath(row: index!, section: 0)

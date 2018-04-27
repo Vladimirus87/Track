@@ -4,5 +4,6 @@ target "MetTracker" do
     use_frameworks!
     platform :ios, '9.0'
     pod 'Masonry'
+    pod 'UICircularProgressRing'
     
 end

@@ -1,0 +1,90 @@
+
+/* Class = "UIButton"; normalTitle = "LEFT"; ObjectID = "0ee-ZV-CLF"; */
+"0ee-ZV-CLF.normalTitle" = "LEFT";
+
+/* Class = "UILabel"; text = "Mo"; ObjectID = "2SL-U1-s3s"; */
+"2SL-U1-s3s.text" = "Mo";
+
+/* Class = "UILabel"; text = "11."; ObjectID = "4UI-7l-BTd"; */
+"4UI-7l-BTd.text" = "11.";
+
+/* Class = "UILabel"; text = "unlocked on: not yet unlocked"; ObjectID = "5QY-zM-Qe3"; */
+"5QY-zM-Qe3.text" = "unlocked on: not yet unlocked";
+
+/* Class = "UILabel"; text = "03:30-03:30 | Tracking time 02:00:00"; ObjectID = "5YR-Ce-GKm"; */
+"5YR-Ce-GKm.text" = "03:30-03:30 | Tracking time 02:00:00";
+
+/* Class = "UIButton"; normalTitle = "button"; ObjectID = "78F-I0-kLF"; */
+"78F-I0-kLF.normalTitle" = "button";
+
+/* Class = "UIButton"; normalTitle = "Title"; ObjectID = "7cK-rb-Gbv"; */
+"7cK-rb-Gbv.normalTitle" = "Title";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "7ty-ly-6Aq"; */
+"7ty-ly-6Aq.text" = "title";
+
+/* Class = "UILabel"; text = "Wednesday"; ObjectID = "Bum-SE-etg"; */
+"Bum-SE-etg.text" = "Wednesday";
+
+/* Class = "UILabel"; text = "20.04.2018"; ObjectID = "CsK-sa-43A"; */
+"CsK-sa-43A.text" = "20.04.2018";
+
+/* Class = "UIButton"; normalTitle = "RIGHT"; ObjectID = "Gi8-Ot-cAu"; */
+"Gi8-Ot-cAu.normalTitle" = "RIGHT";
+
+/* Class = "UILabel"; text = "Reach your weekly goal for 6 months in a row to unlock this achievement."; ObjectID = "Gvm-2l-2xx"; */
+"Gvm-2l-2xx.text" = "Reach your weekly goal for 6 months in a row to unlock this achievement.";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "HCw-bH-qh4"; */
+"HCw-bH-qh4.text" = "3";
+
+/* Class = "UILabel"; text = "18 weeks / 24 weeks"; ObjectID = "Jld-Zf-wYn"; */
+"Jld-Zf-wYn.text" = "18 weeks / 24 weeks";
+
+/* Class = "UILabel"; text = "12/18"; ObjectID = "M35-3U-jAv"; */
+"M35-3U-jAv.text" = "12/18";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "PVj-dX-DIL"; */
+"PVj-dX-DIL.text" = "Title";
+
+/* Class = "UILabel"; text = "11.60 METS"; ObjectID = "VNP-Wy-CSc"; */
+"VNP-Wy-CSc.text" = "11.60 METS";
+
+/* Class = "UILabel"; text = "6 Month Challenge"; ObjectID = "X30-gF-P2P"; */
+"X30-gF-P2P.text" = "6 Month Challenge";
+
+/* Class = "UILabel"; text = "M"; ObjectID = "Xrn-ie-Dm5"; */
+"Xrn-ie-Dm5.text" = "M";
+
+/* Class = "UILabel"; text = "WEEK 48"; ObjectID = "aCa-iU-BHU"; */
+"aCa-iU-BHU.text" = "WEEK 48";
+
+/* Class = "UITextField"; placeholder = "text placeholder"; ObjectID = "cMc-aa-HOy"; */
+"cMc-aa-HOy.placeholder" = "text placeholder";
+
+/* Class = "UILabel"; text = "WEEK 48"; ObjectID = "gJH-uM-w9R"; */
+"gJH-uM-w9R.text" = "WEEK 48";
+
+/* Class = "UILabel"; text = "00:00"; ObjectID = "hWZ-MZ-vxH"; */
+"hWZ-MZ-vxH.text" = "00:00";
+
+/* Class = "UILabel"; text = "Bicycling"; ObjectID = "i5m-FD-D02"; */
+"i5m-FD-D02.text" = "Bicycling";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "jME-3D-D93"; */
+"jME-3D-D93.text" = "25";
+
+/* Class = "UITextField"; placeholder = "placeholder"; ObjectID = "kro-eu-vnd"; */
+"kro-eu-vnd.placeholder" = "placeholder";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "nSE-mB-q3K"; */
+"nSE-mB-q3K.text" = "Title";
+
+/* Class = "UILabel"; text = "11"; ObjectID = "qUN-R8-bPo"; */
+"qUN-R8-bPo.text" = "11";
+
+/* Class = "UILabel"; text = "title"; ObjectID = "rJs-QK-1XN"; */
+"rJs-QK-1XN.text" = "title";
+
+/* Class = "UILabel"; text = "Wednesday"; ObjectID = "uzV-gY-d4c"; */
+"uzV-gY-d4c.text" = "Wednesday";

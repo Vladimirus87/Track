@@ -15,16 +15,6 @@
 		</dict>
 		<dict>
 			<key>icon</key>
-			<string>icon_bell</string>
-			<key>title</key>
-			<string>notifications</string>
-			<key>type</key>
-			<string>Single</string>
-			<key>controller</key>
-			<string>SettingsNotificationsViewController</string>
-		</dict>
-		<dict>
-			<key>icon</key>
 			<string>icon_sheet</string>
 			<key>title</key>
 			<string>personal_data</string>
@@ -75,30 +65,6 @@
 	<array>
 		<dict>
 			<key>icon</key>
-			<string>icon_scale</string>
-			<key>title</key>
-			<string>units</string>
-			<key>type</key>
-			<string>Subtitle</string>
-			<key>data</key>
-			<string>units</string>
-			<key>controller</key>
-			<string>SettingsUnitsViewController</string>
-		</dict>
-		<dict>
-			<key>icon</key>
-			<string>icon_language</string>
-			<key>title</key>
-			<string>language</string>
-			<key>type</key>
-			<string>Subtitle</string>
-			<key>data</key>
-			<string>language</string>
-		</dict>
-	</array>
-	<array>
-		<dict>
-			<key>icon</key>
 			<string>icon_more_horiz</string>
 			<key>title</key>
 			<string>export_tracks</string>
@@ -114,10 +80,6 @@
 			<string>tutorial</string>
 			<key>type</key>
 			<string>Single</string>
-			<key>hide_arrow</key>
-			<true/>
-			<key>controller</key>
-			<string>SettingsTutorialViewController</string>
 		</dict>
 		<dict>
 			<key>icon</key>
@@ -126,6 +88,8 @@
 			<string>about</string>
 			<key>type</key>
 			<string>Single</string>
+			<key>controller</key>
+			<string>SettingsInfoViewController</string>
 		</dict>
 	</array>
 </array>

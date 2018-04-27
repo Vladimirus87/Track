@@ -7,6 +7,8 @@
 		<real>1</real>
 		<key>CATEGORY NAME</key>
 		<string>Walking and Running</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Gehen und laufen</string>
 		<key>ICON</key>
 		<string>category_walking</string>
 	</dict>
@@ -15,6 +17,8 @@
 		<real>2</real>
 		<key>CATEGORY NAME</key>
 		<string>Bicycling</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Radfahren</string>
 		<key>ICON</key>
 		<string>category_bicycling</string>
 	</dict>
@@ -23,6 +27,8 @@
 		<real>3</real>
 		<key>CATEGORY NAME</key>
 		<string>Swimming</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Schwimmen</string>
 		<key>ICON</key>
 		<string>category_swimming</string>
 	</dict>
@@ -31,6 +37,8 @@
 		<real>4</real>
 		<key>CATEGORY NAME</key>
 		<string>Indoor Sports</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Indoor Sport</string>
 		<key>ICON</key>
 		<string>category_indoor</string>
 	</dict>
@@ -39,6 +47,8 @@
 		<real>5</real>
 		<key>CATEGORY NAME</key>
 		<string>Outdoor Sports</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Outdoor Sport</string>
 		<key>ICON</key>
 		<string>category_outdoor</string>
 	</dict>
@@ -47,6 +57,8 @@
 		<real>6</real>
 		<key>CATEGORY NAME</key>
 		<string>House and Garden</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Haus und Garten</string>
 		<key>ICON</key>
 		<string>category_house_and_garden</string>
 	</dict>
@@ -55,6 +67,8 @@
 		<real>7</real>
 		<key>CATEGORY NAME</key>
 		<string>Occupation</string>
+		<key>CATEGORY NAME_DE</key>
+		<string>Beruf</string>
 		<key>ICON</key>
 		<string>category_occupation</string>
 	</dict>

@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Medium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -19,25 +24,40 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="231.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="entry_success" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-14-cgB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lj1-WF-EkA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJl-FQ-NKo">
+                                <rect key="frame" x="129.5" y="177" width="60" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="SEL-uP-1mR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="231" id="vVW-fw-ahD"/>
+                            <constraint firstAttribute="bottom" secondItem="tJl-FQ-NKo" secondAttribute="bottom" constant="16" id="4DY-M8-iVR"/>
+                            <constraint firstItem="tJl-FQ-NKo" firstAttribute="centerX" secondItem="lj1-WF-EkA" secondAttribute="centerX" id="6dh-TE-gXh"/>
+                            <constraint firstAttribute="height" constant="232" id="qts-W0-drd"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
-                <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="5y4-14-cgB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Q6V-3n-oqH"/>
-                    <constraint firstAttribute="bottom" secondItem="5y4-14-cgB" secondAttribute="bottom" id="U19-Xc-KAV"/>
-                    <constraint firstAttribute="trailing" secondItem="5y4-14-cgB" secondAttribute="trailing" id="lzI-Rb-wGh"/>
-                    <constraint firstItem="5y4-14-cgB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vgc-mE-60q"/>
+                    <constraint firstAttribute="trailing" secondItem="lj1-WF-EkA" secondAttribute="trailing" id="YC5-hy-BLr"/>
+                    <constraint firstAttribute="bottom" secondItem="lj1-WF-EkA" secondAttribute="bottom" id="YFk-Mb-Awz"/>
+                    <constraint firstItem="lj1-WF-EkA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lGS-6E-g40"/>
+                    <constraint firstItem="lj1-WF-EkA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xrE-d2-mNS"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellHeight" destination="qts-W0-drd" id="HPI-VP-z8k"/>
+                <outlet property="metsCount" destination="tJl-FQ-NKo" id="VZy-qP-yHi"/>
+            </connections>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="entry_success" width="360" height="165"/>
-    </resources>
 </document>

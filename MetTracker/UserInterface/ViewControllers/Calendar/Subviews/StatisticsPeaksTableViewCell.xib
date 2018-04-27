@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,49 +41,76 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mh8-zj-gpC" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="24" y="56" width="56" height="56"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="EFw-KV-u64"/>
-                                    <constraint firstAttribute="height" constant="56" id="dcs-fL-eqo"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average MET per week:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-jS-u7D" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="96" y="63" width="133" height="15"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most METs collected:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnS-jc-W8P" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="96" y="86" width="117" height="15"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
-                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="JS7-6k-YLX">
+                                <rect key="frame" x="24" y="64" width="224" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55n-So-hdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="224" height="17.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average MET per week:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-jS-u7D" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-e2-w4v" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                <rect key="frame" x="133" y="0.0" width="91" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDf-z1-8jh">
+                                        <rect key="frame" x="0.0" y="26.5" width="224" height="17.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most METs collected:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnS-jc-W8P" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
+                                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfz-Fp-pPL" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                <rect key="frame" x="117" y="0.0" width="107" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textSizeEnlarged">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jnS-jc-W8P" firstAttribute="leading" secondItem="Mh8-zj-gpC" secondAttribute="trailing" constant="16" id="1e6-LV-CZ4"/>
                             <constraint firstItem="nem-r6-yZo" firstAttribute="top" secondItem="Tmr-hg-4UC" secondAttribute="top" constant="16" id="322-m9-0vp"/>
-                            <constraint firstItem="lMW-jS-u7D" firstAttribute="leading" secondItem="Mh8-zj-gpC" secondAttribute="trailing" constant="16" id="EJu-e5-dsm"/>
-                            <constraint firstAttribute="bottom" secondItem="Mh8-zj-gpC" secondAttribute="bottom" constant="24" id="F0x-IR-vLZ"/>
                             <constraint firstAttribute="trailing" secondItem="nem-r6-yZo" secondAttribute="trailing" constant="24" id="Ilt-ib-3OG"/>
-                            <constraint firstItem="jnS-jc-W8P" firstAttribute="top" secondItem="Mh8-zj-gpC" secondAttribute="centerY" constant="2" id="OcZ-CJ-Oa2"/>
-                            <constraint firstItem="Mh8-zj-gpC" firstAttribute="leading" secondItem="Tmr-hg-4UC" secondAttribute="leading" constant="24" id="eJF-DU-vww"/>
+                            <constraint firstAttribute="trailing" secondItem="JS7-6k-YLX" secondAttribute="trailing" constant="24" id="e8E-JS-y4I"/>
                             <constraint firstItem="nem-r6-yZo" firstAttribute="leading" secondItem="Tmr-hg-4UC" secondAttribute="leading" constant="24" id="kDN-Vt-aoH"/>
                             <constraint firstAttribute="height" constant="136" id="oR7-ud-CzF"/>
-                            <constraint firstItem="lMW-jS-u7D" firstAttribute="bottom" secondItem="Mh8-zj-gpC" secondAttribute="centerY" constant="-6" id="r0n-rb-0DO"/>
+                            <constraint firstItem="JS7-6k-YLX" firstAttribute="leading" secondItem="Tmr-hg-4UC" secondAttribute="leading" constant="24" id="vTP-Pl-god"/>
+                            <constraint firstItem="JS7-6k-YLX" firstAttribute="top" secondItem="nem-r6-yZo" secondAttribute="bottom" constant="28" id="w8X-qU-Qma"/>
+                            <constraint firstAttribute="bottom" secondItem="JS7-6k-YLX" secondAttribute="bottom" constant="27.5" id="wHr-B9-Uig"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -103,7 +129,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="gaugeProgress" destination="Mh8-zj-gpC" id="N6f-GF-jDv"/>
+                <outlet property="AvPerWeekCount" destination="4ho-e2-w4v" id="3Cf-KO-tM9"/>
+                <outlet property="averagePerWeek" destination="lMW-jS-u7D" id="8jM-5a-qb9"/>
+                <outlet property="mostMeets" destination="jnS-jc-W8P" id="6C6-S7-ZBJ"/>
+                <outlet property="mostMetsCount" destination="Lfz-Fp-pPL" id="qoD-Fu-1Zu"/>
+                <outlet property="titlePeaks" destination="nem-r6-yZo" id="Z6M-xf-QlH"/>
                 <outlet property="viewContent" destination="Tmr-hg-4UC" id="Z7b-TO-Wm2"/>
             </connections>
         </tableViewCell>
