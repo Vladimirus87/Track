@@ -17,8 +17,8 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     var data = [[Date]]()
     
-    let cellIdentifier = "CalendarWeekTableViewCell"
-    let headerIdentifier = "CalendarMonthTitleTableViewCell"
+    let identifiers = ["CalendarWeekTableViewCell",
+                       "CalendarMonthTitleTableViewCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +39,11 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
         
         buttonStatistic.tintColor = Config.shared.baseColor()
 
+        for identifier in identifiers {
+            calendarTableView.register(UINib.init(nibName: identifier, bundle: nil), forCellReuseIdentifier: identifier)
+        }
         
-        calendarTableView.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        calendarTableView.register(UINib.init(nibName: headerIdentifier, bundle: nil), forCellReuseIdentifier: headerIdentifier)
-       }
+    }
 
     
     
@@ -69,7 +70,7 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = calendarTableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CalendarWeekTableViewCell
+        let cell = calendarTableView.dequeueReusableCell(withIdentifier: identifiers[0], for: indexPath) as! CalendarWeekTableViewCell
         
         cell.data = getDaysOfWeek(date: data[indexPath.section][indexPath.row])
         
@@ -84,7 +85,7 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = calendarTableView.dequeueReusableCell(withIdentifier: headerIdentifier) as? CalendarMonthTitleTableViewCell
+        let header = calendarTableView.dequeueReusableCell(withIdentifier: identifiers[1]) as? CalendarMonthTitleTableViewCell
         
         let date = data[section].last
         let mm = date?.string(with: "MMMM") ?? ""
@@ -100,6 +101,9 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
         return 50
     }
     
+    
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -111,15 +115,20 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     func mondays(myYear: Int, myMonth: Int) -> [Date]? {
         var dates = [Date]()
         
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.firstWeekday = 2
+        var calendar = Calendar.current
+        //calendar.firstWeekday = 2
         
         var comps = DateComponents(year: myYear, month: myMonth,
                                    weekday: calendar.firstWeekday, weekdayOrdinal: 1)
+        comps.timeZone = TimeZone(secondsFromGMT: 1)
+        comps.weekday = 2
+        
         guard let first = calendar.date(from: comps)  else { return nil }
+    
         comps.weekdayOrdinal = -1
         guard let last = calendar.date(from: comps) else { return nil }
         guard let weeks = calendar.dateComponents([.weekOfMonth], from: first, to: last).weekOfMonth else { return nil }
+        
         
         for i in 1...(weeks + 1) {
             comps.weekdayOrdinal = -i
@@ -135,15 +144,23 @@ class CalendarMonthViewController: MTViewController, UITableViewDelegate, UITabl
     
     
     
-    func getDaysOfWeek(date: Date) -> [Date] {
+    func getDaysOfWeek(date: Date) -> [String] {
         
-        let calendar = Calendar.current
+        var calendar = Calendar.current
+        calendar.timeZone = TimeZone(secondsFromGMT: 2)!
+//        let component = DateComponents(.weekday, from: date)
+        
         let dayOfWeek = calendar.component(.weekday, from: date)
+//        dayOfWeek.we
         let weekdays = calendar.range(of: .weekday, in: .month, for: date)!
         
-        let days = (weekdays.lowerBound ..< weekdays.upperBound).compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek, to: date) }
+        let days = (weekdays.lowerBound ..< weekdays.upperBound).compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeek + 1, to: date) }
         
-        return days
+        let stringDays = days.map { (date) -> String in
+            return date.string(with: "ddMMyyyy")
+        }
+        
+        return stringDays
     }
     
     

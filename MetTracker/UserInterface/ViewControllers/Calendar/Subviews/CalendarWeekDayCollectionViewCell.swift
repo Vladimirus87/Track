@@ -22,15 +22,12 @@ class CalendarWeekDayCollectionViewCell: UICollectionViewCell {
         backgroundColor = .clear
     }
     
-    func configureCell(date: Date, trDates: [Tracking]?, ip: IndexPath) {
+    func configureCell(date: String, trDates: [Tracking]?, weekday: String) {
         
-//        DispatchQueue.main.async {
-        var calendar = Calendar.current
+        self.labelWeekday.text = weekday
+        self.labelDay.text = String(date.prefix(2))
         
-            self.labelWeekday.text = Calendar.current.shortWeekdaySymbols[ip.row]
-            self.labelDay.text = date.string(with: "dd")
-        
-            let filteredArray = trDates!.filter { ($0.date as Date?)?.string(with: "ddMMyyyy") == date.string(with: "ddMMyyyy") }
+            let filteredArray = trDates!.filter { ($0.date as Date?)?.string(with: "ddMMyyyy") == date }
             if filteredArray.count > 0 {
                 self.backgroundColor = Config.shared.baseColor()
             }

@@ -39,6 +39,7 @@ class SettingsDashboardDesignViewController: MTViewController {
                            "SettingsPictureTableViewCell", "DashboardQuoteTableViewCell"]
     
     var imagePicker = UIImagePickerController()
+    
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
@@ -56,9 +57,10 @@ class SettingsDashboardDesignViewController: MTViewController {
         tableViewData.dataSource = self
         imagePicker.delegate = self
         
-        getData()
-        updateUI()
-        
+        DispatchQueue.main.async {
+            self.getData()
+            self.updateUI()
+        }
     }
     
     func updateUI() {

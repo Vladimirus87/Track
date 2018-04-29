@@ -59,11 +59,11 @@ class StatisticsTrendTableViewCell: StatisticsTableViewCell {
     
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    override func valueWasChanged() {
         prepareForReuse()
     }
+    
+    
     
 
     

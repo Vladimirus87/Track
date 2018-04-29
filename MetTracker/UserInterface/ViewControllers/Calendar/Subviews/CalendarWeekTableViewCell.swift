@@ -18,10 +18,12 @@ class CalendarWeekTableViewCell: UITableViewCell, UICollectionViewDelegate, UICo
     @IBOutlet weak var collectionViewWeek: UICollectionView!
 
     var trackingData : [Tracking]?
-    var data: [Date]?{
+    var data: [String]?{
         didSet{
             if data?.count == 7 {
-                 self.collectionViewWeek.reloadData()
+                DispatchQueue.main.async {
+                    self.collectionViewWeek.reloadData()
+                }
             }
         }
     }
@@ -68,11 +70,24 @@ class CalendarWeekTableViewCell: UITableViewCell, UICollectionViewDelegate, UICo
         
         let cell = collectionViewWeek.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! CalendarWeekDayCollectionViewCell
 
+        let symbolwOfWeek = getWeekDay()
+        
+        
         if let day = data?[indexPath.row] {
-            cell.configureCell(date: day, trDates: trackingData,  ip: indexPath)
+            cell.configureCell(date: day, trDates: trackingData,  weekday: symbolwOfWeek[indexPath.row])
         }
         
         return cell
+    }
+    
+    
+    func getWeekDay() -> [String] {
+        
+        let firstWeekday = 2
+        let arr = Calendar.current.shortWeekdaySymbols
+        let symbols = Array(arr[firstWeekday-1..<arr.count]) + arr[0..<firstWeekday-1]
+        
+        return symbols
     }
     
     

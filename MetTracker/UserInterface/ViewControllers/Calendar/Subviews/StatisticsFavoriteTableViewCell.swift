@@ -20,6 +20,9 @@ class StatisticsFavoriteTableViewCell: StatisticsTableViewCell {
         favouriteTitle.text = LS("favour_activity")
         
         self.viewActivityInfo.backgroundColor = Config.shared.baseColor()
+    }
+    
+    override func valueWasChanged() {
         favouriteAct.text = mostActivity
     }
 

@@ -24,10 +24,11 @@ class StatisticsPeaksTableViewCell: StatisticsTableViewCell {
         titlePeaks.text = LS("peaks")
         averagePerWeek.text = LS("average_per_week")
         mostMeets.text = LS("most_collected")
-        
+    }
+    
+    override func valueWasChanged() {
         AvPerWeekCount.text = "\(UserDefaults.standard.float(forKey: "MaxWeekResult"))"
         mostMetsCount.text = "\(mostMet)"
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
