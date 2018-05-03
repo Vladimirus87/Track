@@ -124,9 +124,10 @@ class SettingsDashboardDesignViewController: MTViewController {
         alertController.addAction(gallery)
         alertController.addAction(cancel)
         
-        
+        // for IPad
         alertController.popoverPresentationController?.sourceView = self.view
-        
+        alertController.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        alertController.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         
         present(alertController, animated: true, completion: nil)
     }
