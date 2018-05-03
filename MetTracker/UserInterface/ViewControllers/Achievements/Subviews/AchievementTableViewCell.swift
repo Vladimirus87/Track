@@ -32,7 +32,7 @@ class AchievementTableViewCell: UITableViewCell {
         let end = trackDate.addingTimeInterval(Double(min))
         let trackTime = minutesToHoursMinutes(minutes: min) ?? "--"
         
-        category.text = categoryList[Int(track.categoryId)].name
+        category.text = categoryList[Int(track.categoryId - 1)].name
         date.text = trackDate.string(with: "dd-MM-yyyy")
         mets.text = "\(track.mets.rounded(toPlaces: 2))"
         time.text = "\(trackDate.string(with: "HH:mm"))-\(end.string(with: "HH:mm")) | \(LS("tracking_time")) \(trackTime)"

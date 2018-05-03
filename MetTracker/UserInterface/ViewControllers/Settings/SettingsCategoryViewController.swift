@@ -16,6 +16,7 @@ class SettingsCategoryViewController: MTViewController, MTSearchBarDelegate, UIT
     @IBOutlet weak var constraintTableViewData: NSLayoutConstraint!
     @IBOutlet weak var searchBar: MTSearchBar!
     @IBOutlet weak var viewTopbar: UIView!
+    @IBOutlet weak var searchTxtField: UITextField!
     
     var dataArray : NSMutableArray!
     var dataFullList : NSArray!
@@ -31,6 +32,8 @@ class SettingsCategoryViewController: MTViewController, MTSearchBarDelegate, UIT
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         
         searchBarText(nil)
+        
+        searchTxtField.placeholder = LS("search")
     }
 
     

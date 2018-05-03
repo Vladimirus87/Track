@@ -12,7 +12,10 @@ import MessageUI
 class SettingsMiscActivitiesViewController: MTViewController {
     
     
-
+    @IBOutlet weak var exportBtn: MTButton!
+    @IBOutlet weak var labelTitle: MTLabel!
+    @IBOutlet weak var infoLbl: MTLabel!
+    
     var data = [Tracking]()
     let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -23,6 +26,10 @@ class SettingsMiscActivitiesViewController: MTViewController {
         super.viewDidLoad()
         self.dataFullList = DataManager.shared.categoryArray
         getData()
+        
+        self.labelTitle.text = LS("export_tracks")
+        self.infoLbl.text = LS("you_can_send_your_tracking")
+        self.exportBtn.setTitle(LS("send_tracks"), for: .normal)
     }
     
     override func didReceiveMemoryWarning() {
@@ -136,7 +143,11 @@ class SettingsMiscActivitiesViewController: MTViewController {
     }
     
     
-
+    
+    override func updateColorScheme() {
+        exportBtn.backgroundColor = Config.shared.baseColor()
+    }
+    
 }
 
 

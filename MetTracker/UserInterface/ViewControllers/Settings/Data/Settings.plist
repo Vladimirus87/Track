@@ -13,16 +13,6 @@
 			<key>controller</key>
 			<string>SettingsQuickAccessViewController</string>
 		</dict>
-		<dict>
-			<key>icon</key>
-			<string>icon_sheet</string>
-			<key>title</key>
-			<string>personal_data</string>
-			<key>type</key>
-			<string>Single</string>
-			<key>controller</key>
-			<string>SettingsPersonalDataViewController</string>
-		</dict>
 	</array>
 	<array>
 		<dict>
@@ -80,6 +70,8 @@
 			<string>tutorial</string>
 			<key>type</key>
 			<string>Single</string>
+			<key>controller</key>
+			<string>SettingsTutorialViewController</string>
 		</dict>
 		<dict>
 			<key>icon</key>

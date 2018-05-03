@@ -23,7 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your activity was entered sucessfully! Only 4 more METs to go this week." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8t-oe-Rfs" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your activity was entered sucessfully! Only 4 more METs to go this week." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8t-oe-Rfs" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
                         <rect key="frame" x="24" y="24" width="327" height="73.5"/>
                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
                         <nil key="textColor"/>
@@ -42,6 +42,9 @@
                     <constraint firstItem="n8t-oe-Rfs" firstAttribute="top" secondItem="tfC-9o-tbI" secondAttribute="top" constant="24" id="swS-zo-xbu"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLbl" destination="n8t-oe-Rfs" id="MDB-Xi-gCt"/>
+            </connections>
             <point key="canvasLocation" x="-56.5" y="-115"/>
         </tableViewCell>
     </objects>

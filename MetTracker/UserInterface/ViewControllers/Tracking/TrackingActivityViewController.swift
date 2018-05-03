@@ -24,6 +24,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var viewTopbar: UIView!
     
+    @IBOutlet weak var searchTxtField: UITextField!
     @IBOutlet weak var buttonTitle: MTButton!
     @IBOutlet weak var buttonClose: UIButton!
     @IBOutlet weak var buttonBack: UIButton!
@@ -59,7 +60,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
         self.tableViewData.register(UINib.init(nibName: headerIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: headerIdentifier)
         
         searchBarText(nil)
-        
+        searchTxtField.placeholder = LS("search")
     }
 
     // MARK: - MTSearchBarDelegate

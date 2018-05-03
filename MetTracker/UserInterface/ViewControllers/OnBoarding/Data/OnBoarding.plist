@@ -18,15 +18,5 @@
 		<key>text</key>
 		<string>onboarding_text_2</string>
 	</dict>
-	<dict>
-		<key>image</key>
-		<string>onboarding_screen_3</string>
-		<key>title</key>
-		<string>onboarding_title_3</string>
-		<key>text</key>
-		<string>onboarding_text_3</string>
-		<key>button</key>
-		<string>button_personalise</string>
-	</dict>
 </array>
 </plist>

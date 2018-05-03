@@ -11,7 +11,6 @@ import UIKit
 class SettingsPersonalDataViewController: MTViewController, UITableViewDelegate, UITableViewDataSource, SettingsPersonalDataTableViewCellDelegate {
     
     @IBOutlet weak var labelTitle: MTLabel!
-    
     @IBOutlet weak var tableViewData: UITableView!
     @IBOutlet weak var constraintTableViewData: NSLayoutConstraint!
     
@@ -130,6 +129,11 @@ class SettingsPersonalDataViewController: MTViewController, UITableViewDelegate,
     override func updateLocalization() {
         self.labelTitle.text = LS("personal_data")
         self.buttonDeleteAllData.setTitle(LS("delete_all_data"), for: .normal)
+    }
+    
+    
+    override func updateColorScheme() {
+        buttonConfirm.backgroundColor = Config.shared.baseColor()
     }
     
     // MARK: -

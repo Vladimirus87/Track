@@ -1,51 +1,80 @@
 //
-//  SettingsInfoViewController
+//  SettingsTutorialViewController.swift
 //  MetTracker
 //
-//  Created by Pavel Belevtsev on 14.02.18.
+//  Created by Владимир Моисеев on 03.05.2018.
 //  Copyright © 2018 Lindenvalley. All rights reserved.
 //
 
 import UIKit
 
-class SettingsInfoViewController: MTViewController {
+class SettingsTutorialViewController: MTViewController {
+    
+    @IBOutlet weak var tableViewData: UITableView!
+    @IBOutlet weak var titleLbl: MTLabel!
 
-    @IBOutlet weak var infoTitle: MTLabel!
-    @IBOutlet weak var tutorialTextView: UITextView!
+    var dataArray: NSArray!
+    let cellIdentifier = "SettingsSingleTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tutorialTextView.attributedText = loadRTF(from: LS("about_rtf"))
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tutorialTextView.setContentOffset(CGPoint.zero, animated: false)
-    }
-    
-
-    func loadRTF(from resource: String) -> NSAttributedString? {
-        guard let url = Bundle.main.url(forResource: resource, withExtension: "rtf") else { return nil }
+        tableViewData.dataSource = self
+        tableViewData.delegate = self
         
-        guard let data = try? Data(contentsOf: url) else { return nil }
+        let path = Bundle.main.path(forResource: "SettingsTutorials", ofType: "plist")
+        dataArray = NSArray(contentsOfFile: path!)
         
-        return try? NSAttributedString(data: data,
-                                       options: [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.rtf],
-                                       documentAttributes: nil)
+        tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        
+        self.titleLbl.text = LS("tutorial")
     }
     
-    @IBAction func backPressed(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
-    }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func backBtnPressed(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 
+extension SettingsTutorialViewController : UITableViewDelegate,  UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SettingsSingleTableViewCell
+        
+        let data = dataArray[indexPath.row] as! NSDictionary
+        
+        let cellTitle = data.object(forKey: "title") as! String
+        
+        if let img = UIImage(named: data.object(forKey: "image") as? String ?? "") {
+            cell.imageIcon.image = img
+        }
+        cell.labelTitle.text = LS(cellTitle)
+        cell.imageArrow.isHidden = true
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableViewData.deselectRow(at: indexPath, animated: true)
+        
+        let data = dataArray[indexPath.row] as! NSDictionary
+        guard let controllerIndex = data.object(forKey: "controller") as? Int else {return}
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(withIdentifier: "OnBoardingViewController") as! OnBoardingViewController
+        controller.currentPageSet = controllerIndex
+        self.present(controller, animated: true)
+    }
+    
+}

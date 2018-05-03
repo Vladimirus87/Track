@@ -11,13 +11,13 @@ import UIKit
 class SettingsDashboardDesignViewController: MTViewController {
     
     @IBOutlet weak var buttonBackView: UIView!
-    
+    @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var underButtonText: MTLabel!
     @IBOutlet weak var switcher: UISwitch!
     @IBOutlet weak var chooseBtn: MTButton!
     @IBOutlet weak var tableViewData: UITableView!
     
-    var data = ["motivational quotes", "picture"]
+    var data = [LS("motivational_quotes"), LS("picture")]
     var firstQuote: NSDictionary!
     
     var pictureData = [Design](){
@@ -61,6 +61,8 @@ class SettingsDashboardDesignViewController: MTViewController {
             self.getData()
             self.updateUI()
         }
+        
+        self.labelTitle.text = LS("dashboard_design")
     }
     
     func updateUI() {

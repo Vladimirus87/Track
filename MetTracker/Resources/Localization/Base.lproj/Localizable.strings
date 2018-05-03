@@ -15,38 +15,48 @@
 
 "onboarding_title_1" = "What is MET?";
 "onboarding_text_1" = "MET stands for metabolic equivalent of task and is a physiological measure expressing the energy cost of phsyical activities.";
+
 "onboarding_title_2" = "Why track MET?";
 "onboarding_text_2" = "Doing activities equivalent to 18 MET units a week can reduce cancer risk by a significant margin. MET Tracker tries to help you reach that minimum of activity by giving you an overview over your current physical activity for the week and what how much you still need to reach your goal.";
+
 "onboarding_title_3" = "Personalise your MET";
 "onboarding_text_3" = "In order to give you a personalised MET value we need some data to work with. You can change or delete the data at any time in the settings menu. Furthermore the data will only be stored locally.";
 
+
 "tracking_title_1" = "Track in real-time!";
 "tracking_text_1" = "Just hit the play button and start your activity. Once you are finished hit pause and then confirm the time.";
+
 "tracking_title_2" = "Add in retrospect";
 "tracking_text_2" = "Didn’t have your smartphone with you? No problem. Just use the handles to note your time and tap the confirm button.";
+
 "tracking_title_3" = "Heartrate";
 "tracking_text_3" = "With MET Tracker you can even track your heartrate. You can easily add your heartrate manually by tapping the heart icon.";
+//---------
 
-"button_personalise" = "personalise";
+"button_personalise" = "Personalise";
 "button_skip" = "SKIP";
 "button_next" = "NEXT";
 "button_done" = "DONE";
-"button_dismiss" = "dismiss";
+"button_dismiss" = "Dismiss";
 
-"track_time" = "track time";
-"choose_activity" = "choose activity";
+"track_time" = "Track time";
+"choose_activity" = "Choose activity";
 "success" = "Success!";
 
 "enter_your_heartrate" = "Enter your heartrate";
-"enter_bpm" = "enter bpm";
+"enter_bpm" = "Enter bpm";
 
-"statistics" = "statistics";
+"statistics" = "Statistics";
 
 "quick_access" = "Quick Access";
 "notifications" = "Notifications";
 "personal_data" = "Personal Data";
 
 "dashboard_design" = "Dashboard Design";
+
+"motivational_quotes" = "Motivational quotes";
+"picture" = "Picture";
+
 "colour_options" = "Colour Options";
 "text_size" = "Text Size";
 
@@ -55,26 +65,30 @@
 
 "export_tracks" = "Export Tracks";
 "tutorial" = "Tutorial";
+
+"first_tutorial" = "What makes this app?";
+"second_tutorial" = "How do I track time?";
+
 "about" = "About";
 
 "week" = "Week";
 
-"color_default" = "default";
-"color_blue" = "blue";
-"color_red" = "red";
-"color_yellow" = "yellow";
+"color_default" = "Default";
+"color_blue" = "Blue";
+"color_red" = "Red";
+"color_yellow" = "Yellow";
 
 "text_size_standard" = "Standard";
 "text_size_enlarged" = "Enlarged";
 
-"gender" = "gender";
-"male" = "male";
-"female" = "female";
-"height" = "height in cm";
-"weight" = "weight in kg";
-"age" = "age";
+"gender" = "Gender";
+"male" = "Male";
+"female" = "Female";
+"height" = "Height in cm";
+"weight" = "Weight in kg";
+"age" = "Age";
 
-"delete_all_data" = "delete all data";
+"delete_all_data" = "Delete all data";
 
 "notification_laziness_title" = "Laziness Alert";
 "notification_laziness_text" = "Notifiy me when I have yet to do something after three days.";
@@ -95,9 +109,9 @@
 "cancel" = "Cancel";
 "photo" = "Photo";
 "gallery" = "Gallery";
-"can_not_delete" = "standard image can not be deleted";
+"can_not_delete" = "Standard image can not be deleted";
 
-"tap_and_hold" = "tap and hold to remove images";
+"tap_and_hold" = "Tap and hold to remove images";
 "show_random_quotes" = "Show motivational quotes in random order";
 
 
@@ -112,5 +126,10 @@
 "average_per_week" = "Average MET per week:";
 "most_collected" = "Most METs collected:";
 "favour_activity" = "Favourite activity";
+//______
+"entered_succeessfully" = "Your activity was entered sucessfully! Only 4 more METs to go this week.";
+"you_can_send_your_tracking" = "You can send your tracking history by email, just click the button";
+"send_tracks" = "Send tracks";
+"search" = "Search";
 
 

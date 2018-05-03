@@ -21,7 +21,7 @@ class MTActivity: MTSearchObject {
         
         self.activityId = data.object(forKey: "ACTIVITY ID") as! Int
         self.ainsworthCode = data.object(forKey: "AINSWORTH CODE") as! Int
-        self.mets = data.object(forKey: "METS") as? Float ?? 0
+        self.mets = Float(data.object(forKey: "METS") as? Double ?? 0)
         self.name = data.object(forKey: LS("activity_name")) as! String
         self.orderNumber = data.object(forKey: "ORDER NUMBER") as! Int
         self.subcategory = data.object(forKey: "SUBCATEGORY") as! String

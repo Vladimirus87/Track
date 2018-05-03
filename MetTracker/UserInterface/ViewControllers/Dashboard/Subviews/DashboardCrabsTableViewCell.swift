@@ -53,7 +53,6 @@ class DashboardCrabsTableViewCell: UITableViewCell {
             let points = randomPoint(for: side, crabs: dataArray.count - 1)
             for point in points {
                 let img = images[counter]
-                print(point)
                 img.frame = CGRect(x: point.x, y: point.y, width: sizeForCrab(days: daysWithoutActivity), height: sizeForCrab(days: daysWithoutActivity))
                 self.addSubview(img)
                 counter += 1
@@ -69,7 +68,6 @@ class DashboardCrabsTableViewCell: UITableViewCell {
 
         let part = Double(count) / 4.0
         let crabsInPart = Double(Int(part)) + Double(side) * 0.25 <= part ? Int(part) + 1 : Int(part)
-        print(crabsInPart)
         
         switch side {
         case 0:

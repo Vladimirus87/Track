@@ -1,20 +1,29 @@
 PODS:
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
+  - Fabric (1.7.6)
   - Masonry (1.1.0)
   - UICircularProgressRing (2.0.0)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - Masonry
   - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Crashlytics
+    - Fabric
     - Masonry
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   UICircularProgressRing: f41663e98c0f40b4794461a4209a67569ea2cc28
 
-PODFILE CHECKSUM: 4c07017af4013932a84828cc113f17af0075212c
+PODFILE CHECKSUM: 92782fc62a405b4c390ea95ee71379b534ddd768
 
 COCOAPODS: 1.5.0.beta.1

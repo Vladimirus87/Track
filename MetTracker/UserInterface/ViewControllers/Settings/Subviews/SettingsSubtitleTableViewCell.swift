@@ -12,7 +12,7 @@ class SettingsSubtitleTableViewCell: SettingsTableViewCell {
 
     @IBOutlet weak var labelSubtitle: MTLabel!
     
-    var dashData = ["motivational quotes", "picture", "crustanceans"]
+    var dashData = [LS("motivational_quotes"), LS("picture"), "crustanceans"]
     
     override func awakeFromNib() {
         super.awakeFromNib()

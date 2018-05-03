@@ -9,11 +9,15 @@
 import UIKit
 
 class TrackingSuccessTextTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var infoLbl: MTLabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    
+    infoLbl.text = LS("entered_succeessfully")
     }
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

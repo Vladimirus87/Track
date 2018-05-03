@@ -10,6 +10,7 @@ import UIKit
 
 class AchievementDetailsViewController: MTViewController {
 
+    @IBOutlet weak var okButton: MTButton!
     @IBOutlet weak var categoryTitle: MTLabel!
     @IBOutlet weak var countOfMets: MTLabel!
     @IBOutlet weak var trackingTime: MTLabel!
@@ -34,13 +35,16 @@ class AchievementDetailsViewController: MTViewController {
         let end = trackDate.addingTimeInterval(Double(min))
         let trackTime = minutesToHoursMinutes(minutes: min) ?? "--"
         
-        categoryTitle.text = categoryList[Int(track.categoryId)].name
+        
+        categoryTitle.text = categoryList[Int(track.categoryId - 1)].name
         countOfMets.text = "\(track.mets.rounded(toPlaces: 2)) METS"
-        trackingTime.text = "\(trackDate.string(with: "HH:mm"))-\(end.string(with: "HH:mm")) | Tracking time \(trackTime)"
+        trackingTime.text = "\(trackDate.string(with: "HH:mm"))-\(end.string(with: "HH:mm")) | \(LS("tracking_time")) \(trackTime)"
         
         guard let actId = tracking?.activityId, let catId = tracking?.categoryId else {
             return
         }
+        
+        
         let activivty = DataManager.shared.activity(Int(actId), fromCategory: Int(catId))
         fullDescription.text = "\(activivty?.name ?? "--")"
     }
@@ -68,6 +72,10 @@ class AchievementDetailsViewController: MTViewController {
 
     @IBAction func okBtnPressed(_ sender: MTButton) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func updateColorScheme() {
+        okButton.backgroundColor = Config.shared.baseColor()
     }
     
 }

@@ -1094,6 +1094,7 @@
                         <outlet property="buttonConfirm" destination="vwo-R5-bmp" id="Bx6-RU-iOD"/>
                         <outlet property="buttonTitle" destination="7cK-rb-Gbv" id="kkG-IF-ckS"/>
                         <outlet property="searchBar" destination="mwn-My-TnA" id="sKc-WR-TMj"/>
+                        <outlet property="searchTxtField" destination="cMc-aa-HOy" id="j9G-7h-AZn"/>
                         <outlet property="tableViewData" destination="hIJ-Pl-d7g" id="HA3-f0-sDJ"/>
                         <outlet property="viewTopbar" destination="k0R-vu-cFC" id="gIN-wW-qa7"/>
                         <segue destination="rsu-jD-SLo" kind="unwind" identifier="unwindToTrackingScreen" unwindAction="unwindToTrackingWithSegue:" id="5QW-2s-CQA"/>
@@ -1330,6 +1331,7 @@
                         <outlet property="categoryTitle" destination="X30-gF-P2P" id="Zpi-46-eiK"/>
                         <outlet property="countOfMets" destination="Jld-Zf-wYn" id="f0A-MN-wSl"/>
                         <outlet property="fullDescription" destination="Gvm-2l-2xx" id="zHs-Gj-bWB"/>
+                        <outlet property="okButton" destination="lIb-Zp-Vjk" id="qbo-Rb-LJ2"/>
                         <outlet property="trackingTime" destination="5QY-zM-Qe3" id="nEv-WG-BFD"/>
                     </connections>
                 </viewController>

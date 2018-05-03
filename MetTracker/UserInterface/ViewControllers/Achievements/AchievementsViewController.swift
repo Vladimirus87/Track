@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AchievementsViewController: MTViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -25,8 +26,12 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     }
     
     func getData() {
+        
         do {
-            data = try contex.fetch(Tracking.fetchRequest())
+            let sortDescr = NSSortDescriptor(key: "date", ascending: false)
+            let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
+            fetchRequest.sortDescriptors = [sortDescr]
+            data = try contex.fetch(fetchRequest)
             backgroundForTableView()
         } catch {
             print("Fetching Failed")
@@ -34,6 +39,7 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     }
     
     func backgroundForTableView() {
+        
         if data.isEmpty {
             let imageView = UIImageView(frame: CGRect(origin: CGPoint(x: 0, y: view.frame.height / 2 - 150), size: CGSize(width: view.frame.width, height: 200)))
             imageView.contentMode = .scaleAspectFit

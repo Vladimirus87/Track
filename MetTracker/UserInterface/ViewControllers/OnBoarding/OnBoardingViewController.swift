@@ -45,6 +45,8 @@ class OnBoardingViewController: MTViewController, UICollectionViewDelegate, UICo
     
     func updateUIWithPageSet(_ pageSet: NSInteger) {
         
+        pageControl.numberOfPages = pageSet == 0 ? 2 : 3
+        
         self.currentPageSet = pageSet
         let fileName = pageSets[self.currentPageSet]
         let path = Bundle.main.path(forResource: fileName, ofType: "plist")
@@ -61,19 +63,19 @@ class OnBoardingViewController: MTViewController, UICollectionViewDelegate, UICo
     func updateUIWithPage(_ page: NSInteger) {
         
         self.currentPage = page
-        self.collectionViewPages.scrollToItem(at: IndexPath.init(row: self.currentPage, section: 0), at: UICollectionViewScrollPosition.left, animated: true);
-        
-        self.buttonSkip.setTitle(LS("button_skip"), for: UIControlState.normal)
-        self.buttonSkip.isHidden = (self.currentPage >= (dataArray.count - 1))
-        
-        self.pageControl.currentPage = self.currentPage
-        
+
         if (self.currentPage < (dataArray.count - 1)) {
             self.buttonNext.setTitle(LS("button_next"), for: UIControlState.normal)
         } else {
             self.buttonNext.setTitle(LS("button_done"), for: UIControlState.normal)
         }
+
+        self.collectionViewPages.scrollToItem(at: IndexPath.init(row: self.currentPage, section: 0), at: UICollectionViewScrollPosition.left, animated: true)
         
+        self.buttonSkip.setTitle(LS("button_skip"), for: UIControlState.normal)
+        self.buttonSkip.isHidden = (self.currentPage >= (dataArray.count - 1))
+
+        self.pageControl.currentPage = self.currentPage
     }
     
     // MARK: - Button Actions
@@ -83,12 +85,14 @@ class OnBoardingViewController: MTViewController, UICollectionViewDelegate, UICo
 //        if (self.currentPageSet < (pageSets.count - 1)) {
 //            updateUIWithPageSet(self.currentPageSet + 1)
 //        } else {
-//
-        if currentPageSet == 0 {
-            performSegue(withIdentifier: "unwindToStartScreen", sender: self)
-        } else {
+
+        
+        ///#убрал чтоб можно было использовать в настройках
+//        if currentPageSet == 0 {
+//            performSegue(withIdentifier: "unwindToStartScreen", sender: self)
+//        } else {
             dismiss(animated: true, completion: nil)
-        }
+//        }
         
 //        }
         

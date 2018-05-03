@@ -14,100 +14,121 @@
 "about_rtf" = "AboutGe";
 ///--------
 
-"onboarding_title_1" = "What is MET?";
-"onboarding_text_1" = "MET stands for metabolic equivalent of task and is a physiological measure expressing the energy cost of phsyical activities.";
-"onboarding_title_2" = "Why track MET?";
-"onboarding_text_2" = "Doing activities equivalent to 18 MET units a week can reduce cancer risk by a significant margin. MET Tracker tries to help you reach that minimum of activity by giving you an overview over your current physical activity for the week and what how much you still need to reach your goal.";
-"onboarding_title_3" = "Personalise your MET";
-"onboarding_text_3" = "In order to give you a personalised MET value we need some data to work with. You can change or delete the data at any time in the settings menu. Furthermore the data will only be stored locally.";
+"onboarding_title_1" = "Was ist MET?";
+"onboarding_text_1" = "MET steht für metabolisches Äquivalent der Aufgabe und ist ein physiologisches Maß, das die Energiekosten physikalischer Aktivitäten darstellt.";
 
-"tracking_title_1" = "Track in real-time!";
-"tracking_text_1" = "Just hit the play button and start your activity. Once you are finished hit pause and then confirm the time.";
-"tracking_title_2" = "Add in retrospect";
-"tracking_text_2" = "Didn’t have your smartphone with you? No problem. Just use the handles to note your time and tap the confirm button.";
-"tracking_title_3" = "Heartrate";
-"tracking_text_3" = "With MET Tracker you can even track your heartrate. You can easily add your heartrate manually by tapping the heart icon.";
+"onboarding_title_2" = "Warum soll MET aufgezeichnet werden?";
+"onboarding_text_2" = "Aktivitäten, die 18 MET-Einheiten pro Woche entsprechen, können das Krebsrisiko deutlich senken. MET Tracker versucht Ihnen zu helfen, dieses Minimum an Aktivität zu erreichen, indem es Ihnen einen Überblick über Ihre aktuelle körperliche Aktivität für die Woche gibt und darüber, wie viel Sie noch brauchen, um Ihr Ziel zu erreichen.";
 
-"button_personalise" = "personalise";
-"button_skip" = "SKIP";
-"button_next" = "NEXT";
-"button_done" = "DONE";
-"button_dismiss" = "dismiss";
+"onboarding_title_3" = "MET personalisieren";
+"onboarding_text_3" = "Um Ihnen einen personalisierten MET-Wert zu geben, benötigen wir einige Daten, mit denen wir arbeiten können. Sie können die Daten jederzeit im Einstellungsmenü ändern oder löschen. Außerdem werden die Daten nur lokal gespeichert.";
 
-"track_time" = "track time";
-"choose_activity" = "choose activity";
-"success" = "Success!";
 
-"enter_your_heartrate" = "Enter your heartrate";
-"enter_bpm" = "enter bpm";
+"tracking_title_1" = "In Echtzeit aufzeichnen!";
+"tracking_text_1" = "Drücken Sie einfach den Play-Button und starten Sie Ihre Aktivität. Wenn Sie fertig sind, drücken Sie Stop und bestätigen Sie die Uhrzeit.";
 
-"statistics" = "statistics";
+"tracking_title_2" = "Nachträglich aufzeichnen";
+"tracking_text_2" = "Sie hatten Ihr Smartphone nicht dabei? Kein Problem. Benutzen Sie einfach die Regeler, um Ihre Zeit nachträglich zu notieren und tippen Sie auf die Bestätigungsschaltfläche.";
 
-"quick_access" = "Quick Access";
-"notifications" = "Notifications";
-"personal_data" = "Personal Data";
+"tracking_title_3" = "Herzfrequenz";
+"tracking_text_3" = "Mit MET Tracker können Sie sogar Ihre Herzfrequenz verfolgen. Sie können Ihren Herzschlag ganz einfach manuell hinzufügen, indem Sie auf das Herz-Symbol tippen.";
+///--------
 
-"dashboard_design" = "Dashboard Design";
-"colour_options" = "Colour Options";
-"text_size" = "Text Size";
+"button_personalise" = "Individualisieren";
+"button_skip" = "Überspringen";
+"button_next" = "Weiter";
+"button_done" = "Fertig";
+"button_dismiss" = "Abweisen";
 
-"units" = "Units";
-"language" = "Language";
+"track_time" = "Zeit erfassen";
+"choose_activity" = "Aktivität auswählen";
+"success" = "Erfolg!";
 
-"export_tracks" = "Export Tracks";
+"enter_your_heartrate" = "Geben Sie Ihren Puls ein";
+"enter_bpm" = "Bpm eingeben";
+
+"statistics" = "Statistik";
+
+"quick_access" = "Schnellzugriff";
+"notifications" = "Benachrichtigungen";
+"personal_data" = "Persönliche Informationen";
+
+"dashboard_design" = "Startbildschirm Design";
+
+"motivational_quotes" = "Motivationszitate";
+"picture" = "Bildschirmschoner-Bild";
+
+
+"colour_options" = "Farben";
+"text_size" = "Textgrösse";
+
+"units" = "Einheiten";
+"language" = "Sprache";
+
+"export_tracks" = "Export der Trackingdaten";
 "tutorial" = "Tutorial";
-"about" = "About";
 
-"week" = "Week";
+"first_tutorial" = "Was macht die App?";
+"second_tutorial" = "Wie tracke ich die Zeit?";
 
-"color_default" = "default";
-"color_blue" = "blue";
-"color_red" = "red";
-"color_yellow" = "yellow";
+"about" = "Über die App";
+
+"week" = "Woche";
+
+"color_default" = "Standard";
+"color_blue" = "Blau";
+"color_red" = "Rot";
+"color_yellow" = "Gelb";
 
 "text_size_standard" = "Standard";
-"text_size_enlarged" = "Enlarged";
+"text_size_enlarged" = "Vergrößert";
 
-"gender" = "gender";
-"male" = "male";
-"female" = "female";
-"height" = "height in cm";
-"weight" = "weight in kg";
-"age" = "age";
+"gender" = "Geschlecht";
+"male" = "Männlich";
+"female" = "Weiblich";
+"height" = "Körpergrösse in cm";
+"weight" = "Gewicht in kg";
+"age" = "Alter";
 
-"delete_all_data" = "delete all data";
+"delete_all_data" = "Alle Daten löschen";
 
-"notification_laziness_title" = "Laziness Alert";
-"notification_laziness_text" = "Notifiy me when I have yet to do something after three days.";
+"notification_laziness_title" = "Erinnerung bei Inaktivität";
+"notification_laziness_text" = "Benachrichtigen, wenn ich nach drei Tagen noch etwas zu tun habe..";
 
-"notification_end_week_title" = "End of Week Warning";
-"notification_end_week_text" = "Notifiy me when the week is about to end and I have yet to reach my MET goal.";
+"notification_end_week_title" = "Warnung am Ende der Woche";
+"notification_end_week_text" = "Benachrichtigen, wenn die Woche zu Ende geht und ich mein MET-Ziel noch nicht erreicht habe.";
 
-"units_metric" = "Metric";
-"units_imperial" = "Imperial";
+"units_metric" = "Metrisch";
+"units_imperial" = "US Maße";
 
-"add" = "Add";
-"categories" = "Categories";
+"add" = "Hinzufügen";
+"categories" = "Kategorien";
 
 
-"want_delete" = "Do you want to delete?";
+"want_delete" = "Möchten Sie löschen?";
 "ok" = "Ok";
-"cancel" = "Cancel";
-"photo" = "Photo";
-"gallery" = "Gallery";
-"can_not_delete" = "standard image can not be deleted";
+"cancel" = "Abbrechen";
+"photo" = "Foto";
+"gallery" = "Gallerie";
+"can_not_delete" = "Standardbild kann nicht gelöscht werden";
 
-"tap_and_hold" = "tap and hold to remove images";
-"show_random_quotes" = "Show motivational quotes in random order";
+"tap_and_hold" = "Tippen und halten, um Bilder zu entfernen";
+"show_random_quotes" = "Motivationszitate in zufälliger Reihenfolge anzeigen";
 
 
-"choose_img" = "Choose a screensaver picture";
+"choose_img" = "Wählen Sie ein Bildschirmschoner-Bild aus";
 
-"weekly_goal_achived" = "Weekly goal achieved!";
-"did_you_know" = "Did you know? You can adjust your dashboard in settings.";
-"tracking_time" = "Tracking time";
-"month_trend" = "Month Trend";
-"peaks" = "Peaks";
-"average_per_week" = "Average MET per week:";
-"most_collected" = "Most METs collected:";
-"favour_activity" = "Favourite activity";
+"weekly_goal_achived" = "Wochenziel erreicht!";
+"did_you_know" = "Wussten Sie schon? Sie können Ihr Dashboard in den Einstellungen anpassen.";
+"tracking_time" = "Trackingzeit";
+"month_trend" = "Monats-Trend";
+"peaks" = "Spitzenwerte";
+"average_per_week" = "Durchschnittlicher MET Wert pro Woche:";
+"most_collected" = "Die meisten MET Werte gesammelt:";
+"favour_activity" = "Bevorzugte Aktivität";
+//_____
+"entered_succeessfully" = "Ihre Aktivität wurde erfolgreich eingetragen! Nur noch 4 weitere METs diese Woche.";
+"you_can_send_your_tracking" = "Sie können Ihren Tracking-Verlauf per E-Mail versenden, klicken Sie einfach auf die Schaltfläche.";
+"send_tracks" = "Tracks senden";
+"search" = "Suche";
+

@@ -16,6 +16,7 @@ class SettingsQuickAccessViewController: MTViewController, MTSearchBarDelegate, 
     @IBOutlet weak var constraintTableViewData: NSLayoutConstraint!
     @IBOutlet weak var searchBar: MTSearchBar!
     @IBOutlet weak var viewTopbar: UIView!
+    @IBOutlet weak var searchTxtField: UITextField!
     
     var dataArray : NSMutableArray!
     
@@ -28,6 +29,7 @@ class SettingsQuickAccessViewController: MTViewController, MTSearchBarDelegate, 
         
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         self.tableViewData.setEditing(true, animated: false)
+        searchTxtField.placeholder = LS("search")
     }
 
     override func viewWillAppear(_ animated: Bool) {

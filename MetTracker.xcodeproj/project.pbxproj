@@ -28,7 +28,6 @@
 		3B2AFBC22036E12900DB8E35 /* CalendarWeekTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AFBC02036E12900DB8E35 /* CalendarWeekTableViewCell.xib */; };
 		3B2AFBC52036E2BC00DB8E35 /* CalendarWeekDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AFBC32036E2BC00DB8E35 /* CalendarWeekDayCollectionViewCell.swift */; };
 		3B2AFBC62036E2BC00DB8E35 /* CalendarWeekDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AFBC42036E2BC00DB8E35 /* CalendarWeekDayCollectionViewCell.xib */; };
-		3B2AFBCB2037188000DB8E35 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AFBCA2037188000DB8E35 /* Settings.plist */; };
 		3B2AFBCD203718D900DB8E35 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AFBCC203718D900DB8E35 /* SettingsViewController.swift */; };
 		3B2AFBD02037192100DB8E35 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AFBCE2037192100DB8E35 /* Settings.storyboard */; };
 		3B2AFBD320371C1B00DB8E35 /* SettingsSingleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2AFBD120371C1B00DB8E35 /* SettingsSingleTableViewCell.swift */; };
@@ -53,7 +52,7 @@
 		3B3E3716207017E400D210A1 /* TrackingActivityHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */; };
 		3B3E3717207017E400D210A1 /* TrackingActivityHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */; };
 		3B4EABE82050776500AE4124 /* SettingsPersonalData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */; };
-		3B50AD4120344728009EC098 /* SettingsTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */; };
+		3B50AD4120344728009EC098 /* SettingsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4020344728009EC098 /* SettingsInfoViewController.swift */; };
 		3B50AD4320344866009EC098 /* DashboardVarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD4220344865009EC098 /* DashboardVarViewController.swift */; };
 		3B50AD47203476B0009EC098 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD46203476B0009EC098 /* TrackingViewController.swift */; };
 		3B50AD49203494CF009EC098 /* HeartFrequencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50AD48203494CF009EC098 /* HeartFrequencyViewController.swift */; };
@@ -159,6 +158,9 @@
 		9419E82C208C830C00FFC490 /* QuotesAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419E82B208C830C00FFC490 /* QuotesAlertController.swift */; };
 		9419E82E208C84BB00FFC490 /* SettingsMotivationalQuotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */; };
 		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
+		947ED172209B081F00BCE03B /* SettingsTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947ED171209B081F00BCE03B /* SettingsTutorialViewController.swift */; };
+		947ED174209B090700BCE03B /* SettingsTutorials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 947ED173209B090700BCE03B /* SettingsTutorials.plist */; };
+		947ED175209B15A600BCE03B /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B2AFBCA2037188000DB8E35 /* Settings.plist */; };
 		948DEA8E20838F620098C29C /* SettingsDashboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948DEA8D20838F620098C29C /* SettingsDashboard.plist */; };
 		94A7AB4A2090D40000EAC3D0 /* AboutGe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94A7AB492090D40000EAC3D0 /* AboutGe.rtf */; };
 		94AEA1822077A658007366C2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AEA1802077A658007366C2 /* InfoTableViewCell.swift */; };
@@ -216,7 +218,7 @@
 		3B3E3714207017E300D210A1 /* TrackingActivityHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingActivityHeaderView.swift; sourceTree = "<group>"; };
 		3B3E3715207017E400D210A1 /* TrackingActivityHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrackingActivityHeaderView.xib; sourceTree = "<group>"; };
 		3B4EABE72050776500AE4124 /* SettingsPersonalData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsPersonalData.plist; sourceTree = "<group>"; };
-		3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTutorialViewController.swift; sourceTree = "<group>"; };
+		3B50AD4020344728009EC098 /* SettingsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoViewController.swift; sourceTree = "<group>"; };
 		3B50AD4220344865009EC098 /* DashboardVarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVarViewController.swift; sourceTree = "<group>"; };
 		3B50AD46203476B0009EC098 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		3B50AD48203494CF009EC098 /* HeartFrequencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartFrequencyViewController.swift; sourceTree = "<group>"; };
@@ -330,6 +332,8 @@
 		9452351420906D4200A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
 		9452351520906D4300A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9452351620906D4300A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		947ED171209B081F00BCE03B /* SettingsTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTutorialViewController.swift; sourceTree = "<group>"; };
+		947ED173209B090700BCE03B /* SettingsTutorials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsTutorials.plist; sourceTree = "<group>"; };
 		948DEA8D20838F620098C29C /* SettingsDashboard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsDashboard.plist; sourceTree = "<group>"; };
 		94A7AB492090D40000EAC3D0 /* AboutGe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = AboutGe.rtf; sourceTree = "<group>"; };
 		94AEA1802077A658007366C2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -368,7 +372,8 @@
 				3B0CBA6C203A0DEA00CFB88D /* SettingsUnitsViewController.swift */,
 				3B0CBA6E203A0E0E00CFB88D /* SettingsTextSizeViewController.swift */,
 				3B0CBA70203A0E3400CFB88D /* SettingsLanguageViewController.swift */,
-				3B50AD4020344728009EC098 /* SettingsTutorialViewController.swift */,
+				3B50AD4020344728009EC098 /* SettingsInfoViewController.swift */,
+				947ED171209B081F00BCE03B /* SettingsTutorialViewController.swift */,
 				9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */,
 			);
 			path = Settings;
@@ -386,6 +391,7 @@
 				948DEA8D20838F620098C29C /* SettingsDashboard.plist */,
 				940E7ACD20890C96006C6D8B /* SettingsPictures.plist */,
 				9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */,
+				947ED173209B090700BCE03B /* SettingsTutorials.plist */,
 				94B363D4207BBA0F00C69107 /* AboutEn.rtf */,
 				94A7AB492090D40000EAC3D0 /* AboutGe.rtf */,
 			);
@@ -435,8 +441,8 @@
 				3B50AD4520347651009EC098 /* Subviews */,
 				3B50AD46203476B0009EC098 /* TrackingViewController.swift */,
 				3B50AD48203494CF009EC098 /* HeartFrequencyViewController.swift */,
-				3B50AD4A20349600009EC098 /* TrackingSuccessViewController.swift */,
 				3BAF05DB20358BBB00D91FF9 /* TrackingActivityViewController.swift */,
+				3B50AD4A20349600009EC098 /* TrackingSuccessViewController.swift */,
 			);
 			path = Tracking;
 			sourceTree = "<group>";
@@ -790,6 +796,7 @@
 				3B8B06D52032E663009A8B8E /* Frameworks */,
 				3B8B06D62032E663009A8B8E /* Resources */,
 				C53508C00F295D97E4C8AD47 /* [CP] Embed Pods Frameworks */,
+				947ED170209B05DD00BCE03B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -845,6 +852,7 @@
 				3B8B06E92032E663009A8B8E /* LaunchScreen.storyboard in Resources */,
 				3B2AFBC22036E12900DB8E35 /* CalendarWeekTableViewCell.xib in Resources */,
 				3B8B06E62032E663009A8B8E /* Assets.xcassets in Resources */,
+				947ED175209B15A600BCE03B /* Settings.plist in Resources */,
 				3BAF05E020358F7E00D91FF9 /* TrackingCategoryTableViewCell.xib in Resources */,
 				3B8B06F92032EA37009A8B8E /* Quicksand-Regular.ttf in Resources */,
 				3B940A992033543F006ABB12 /* DashboardPictureTableViewCell.xib in Resources */,
@@ -856,9 +864,9 @@
 				3BAF06202035EA8400D91FF9 /* StatisticsFavoriteTableViewCell.xib in Resources */,
 				3B8B070A2032F67B009A8B8E /* Localizable.strings in Resources */,
 				3B2AFBBE2036E08400DB8E35 /* CalendarMonthTitleTableViewCell.xib in Resources */,
+				947ED174209B090700BCE03B /* SettingsTutorials.plist in Resources */,
 				3B5D9B432038C6DA00A2021A /* SettingsDashboardDesignTableViewCell.xib in Resources */,
 				3B3E3717207017E400D210A1 /* TrackingActivityHeaderView.xib in Resources */,
-				3B2AFBCB2037188000DB8E35 /* Settings.plist in Resources */,
 				3B2AFBE42037275B00DB8E35 /* SettingsCategoryTableViewCell.xib in Resources */,
 				3B872CF6204DCF4800243F37 /* SettingsColor.plist in Resources */,
 				3B5D9B3D2038C09F00A2021A /* SettingsPersonalDataTableViewCell.xib in Resources */,
@@ -929,6 +937,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		947ED170209B05DD00BCE03B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 64badab75fd141d16b4333ea5c76f12b3052b1d3 85743bb7d1f11b6e076ded5692843a6fe7afeb11f4d83d2a0b5fd9ddf71ec420";
 		};
 		C53508C00F295D97E4C8AD47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1030,12 +1051,13 @@
 				3B0CBA6F203A0E0E00CFB88D /* SettingsTextSizeViewController.swift in Sources */,
 				94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */,
 				3B50AD47203476B0009EC098 /* TrackingViewController.swift in Sources */,
+				947ED172209B081F00BCE03B /* SettingsTutorialViewController.swift in Sources */,
 				3B8C3D632040380000182A83 /* MTTracking.swift in Sources */,
 				3B940AA420336137006ABB12 /* DashboardQuoteTableViewCell.swift in Sources */,
 				9419E82C208C830C00FFC490 /* QuotesAlertController.swift in Sources */,
 				3B8B06E42032E663009A8B8E /* MetTracker.xcdatamodeld in Sources */,
 				3BCA7EA92034BE3C00933594 /* MTViewController.swift in Sources */,
-				3B50AD4120344728009EC098 /* SettingsTutorialViewController.swift in Sources */,
+				3B50AD4120344728009EC098 /* SettingsInfoViewController.swift in Sources */,
 				3B8B07052032F167009A8B8E /* OnBoardingCollectionViewCell.swift in Sources */,
 				3B50AD4B20349600009EC098 /* TrackingSuccessViewController.swift in Sources */,
 				3B8B07032032EED5009A8B8E /* OnBoardingViewController.swift in Sources */,
@@ -1215,6 +1237,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VG66R4G4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MetTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTracker;
@@ -1231,6 +1257,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3VG66R4G4L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MetTracker/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.MetTracker;
