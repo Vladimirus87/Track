@@ -60,6 +60,7 @@ class SettingsDashboardDesignViewController: MTViewController {
         DispatchQueue.main.async {
             self.getData()
             self.updateUI()
+            self.tableViewData.reloadData()
         }
         
         self.labelTitle.text = LS("dashboard_design")
@@ -123,6 +124,10 @@ class SettingsDashboardDesignViewController: MTViewController {
         alertController.addAction(gallery)
         alertController.addAction(cancel)
         
+        
+        alertController.popoverPresentationController?.sourceView = self.view
+        
+        
         present(alertController, animated: true, completion: nil)
     }
     
@@ -150,6 +155,7 @@ class SettingsDashboardDesignViewController: MTViewController {
     
     func roundToInt(_ double: Double) -> Int {
         let number = Int(double)
+
         if Double(number) < double {
             return Int(double) + 1
         }
