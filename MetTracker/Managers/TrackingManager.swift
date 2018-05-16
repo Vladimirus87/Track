@@ -26,7 +26,7 @@ class TrackingManager: NSObject {
     }
     
     
-    func saveTracking(tracking: MTTracking) {
+    func saveTracking(tracking: MTTracking, castomDate: NSDate?) {
         
         if let activity = DataManager.shared.activity(tracking.activityId, fromCategory: tracking.categoryId) {
             
@@ -36,7 +36,7 @@ class TrackingManager: NSObject {
             let entity = NSEntityDescription.entity(forEntityName: "Tracking", in: context)
             let newTracking = NSManagedObject(entity: entity!, insertInto: context) as! Tracking
             
-            newTracking.date = NSDate.init()
+            newTracking.date = castomDate ?? NSDate.init()
             newTracking.activityId = Int64(tracking.activityId)
             newTracking.categoryId = Int64(tracking.categoryId)
             newTracking.time = Float(Double(tracking.seconds) / 3600.0)

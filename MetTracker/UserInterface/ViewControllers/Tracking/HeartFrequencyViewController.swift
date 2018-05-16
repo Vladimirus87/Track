@@ -88,7 +88,6 @@ class HeartFrequencyViewController: MTViewController, UITextFieldDelegate {
         self.labelTitle.text = LS("enter_your_heartrate")
         self.textFieldHeartrate.placeholder = LS("enter_bpm")
         self.buttonDismiss.setTitle(LS("button_dismiss"), for: .normal)
-        
     }
     
     // MARK: -

@@ -63,11 +63,7 @@ class CalendarTableViewCell: UITableViewCell {
             viewWeekday.isHidden = false;
             labelWeekday.textColor = Config.shared.baseColor()
         }
-        
-        
-        
         self.layoutIfNeeded()
-        
         self.viewVerticalBar.backgroundColor = Config.shared.baseColor()
         self.viewProgress.backgroundColor = Config.shared.baseColor()
     }
@@ -79,18 +75,18 @@ class CalendarTableViewCell: UITableViewCell {
         do {
             let datePredicate = NSPredicate(format: "(%@ <= date) AND (date < %@)", argumentArray: [withPredicate.startOfDay, withPredicate.endOfDay])
             
-            
             let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
             fetchRequest.predicate = datePredicate
             data = try contex.fetch(fetchRequest)
             var countOfMets: Float = 0
+            
             for i in data {
                 countOfMets += i.mets
             }
             
             labelProgress.text = "\(countOfMets.rounded(toPlaces: 2))"
 
-            let progMaxWidth = (contentView.frame.width) - viewProgress.frame.origin.x
+            let progMaxWidth = (UIScreen.main.bounds.width - 96) - viewProgress.frame.origin.x
             let countMets = countOfMets > 18.0 ? 18.0 : countOfMets
             let percentFromMets = (countMets * 100) / 18
             let progressWidth = progMaxWidth * CGFloat(percentFromMets) / 100

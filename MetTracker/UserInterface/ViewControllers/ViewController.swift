@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             
             
             UserDefaults.standard.set(true, forKey: "addHint")
-            UserDefaults.standard.set(0, forKey: "designTheme")
+            UserDefaults.standard.set(1, forKey: "designTheme")
             UserDefaults.standard.set(0, forKey: "MaxWeekResult")
             
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "OnBoardingViewController") as! OnBoardingViewController
@@ -72,6 +72,8 @@ class ViewController: UIViewController {
         
         let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
+        var selected = true
+        
         for image in pictures {
             
             let rndm = randomString()
@@ -82,7 +84,8 @@ class ViewController: UIViewController {
             let newPicture = Design(context: contex)
             newPicture.date = NSDate()
             newPicture.picturePath = rndm
-            newPicture.selected = false
+            newPicture.selected = selected
+            selected = false
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
         }
     }

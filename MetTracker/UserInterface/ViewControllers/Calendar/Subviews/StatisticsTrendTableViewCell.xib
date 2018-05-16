@@ -29,6 +29,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Month Trend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysu-45-BgT" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
                                 <rect key="frame" x="24" y="16" width="224" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="f5y-dH-a5a"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

@@ -54,7 +54,7 @@
 
 "dashboard_design" = "Dashboard Design";
 
-"motivational_quotes" = "Motivational quotes";
+"motivational_quotes" = "Quotes";
 "picture" = "Picture";
 
 "colour_options" = "Colour Options";
@@ -69,7 +69,7 @@
 "first_tutorial" = "What makes this app?";
 "second_tutorial" = "How do I track time?";
 
-"about" = "About";
+"about" = "Good to know";
 
 "week" = "Week";
 
@@ -127,7 +127,7 @@
 "most_collected" = "Most METs collected:";
 "favour_activity" = "Favourite activity";
 //______
-"entered_succeessfully" = "Your activity was entered sucessfully! Only 4 more METs to go this week.";
+"entered_succeessfully" = "Your activity was entered sucessfully!";
 "you_can_send_your_tracking" = "You can send your tracking history by email, just click the button";
 "send_tracks" = "Send tracks";
 "search" = "Search";

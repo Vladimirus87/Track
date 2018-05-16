@@ -153,7 +153,7 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
             
             let formattedString = NSMutableAttributedString()
             
-            metsProgress.attributedText = formattedString.bold("\(countOfMets.rounded(toPlaces: 1))").normal("/18")
+            metsProgress.attributedText = formattedString.bold("\(countOfMets.rounded(toPlaces: 2))").normal("/18")
             
             UserDefaults.standard.set(countOfMets, forKey: "countOfMets")
             

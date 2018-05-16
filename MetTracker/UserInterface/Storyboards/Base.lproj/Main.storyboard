@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F86-Sk-nyU">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -47,7 +47,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,11 +63,11 @@
             <objects>
                 <viewController storyboardIdentifier="OnBoardingViewController" id="d3q-hr-f0W" customClass="OnBoardingViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uVz-vy-BiP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GVn-6I-adE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="583"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="grC-6W-mhb">
                                     <size key="itemSize" width="320" height="400"/>
@@ -82,10 +82,10 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-TX-ZwC">
-                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_white" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-Wd-Zdu">
-                                        <rect key="frame" x="16" y="-24" width="343" height="24"/>
+                                        <rect key="frame" x="16" y="-24" width="288" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="TeE-37-jlp"/>
                                         </constraints>
@@ -105,12 +105,12 @@
                                         </connections>
                                     </button>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="h4M-1i-UAg">
-                                        <rect key="frame" x="168.5" y="14" width="39" height="37"/>
+                                        <rect key="frame" x="141" y="14" width="39" height="37"/>
                                         <color key="pageIndicatorTintColor" red="0.047058823529411764" green="0.89411764705882346" blue="0.6705882352941176" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="currentPageIndicatorTintColor" red="0.047058823529411764" green="0.89411764705882346" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </pageControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-Ot-cAu" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="302" y="16" width="49" height="32"/>
+                                        <rect key="frame" x="247" y="16" width="49" height="32"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                         <color key="tintColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="RIGHT"/>
@@ -164,19 +164,27 @@
             </objects>
             <point key="canvasLocation" x="730" y="34"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="l6m-3r-Hlj">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="doA-Y4-2EY" customClass="PageViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D77-mB-GRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="-810"/>
+        </scene>
         <!--Main Dashboard View Controller-->
         <scene sceneID="ZLH-jk-WBw">
             <objects>
                 <viewController storyboardIdentifier="MainDashboardViewController" id="yj6-An-rdf" customClass="MainDashboardViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="es0-U8-hbt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O28-fY-HbD">
-                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="72"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NHd-rz-FEq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="OF7-9q-Jkk">
                                             <size key="itemSize" width="96" height="72"/>
@@ -233,7 +241,10 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLU-Br-BTm">
-                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
+                                <connections>
+                                    <segue destination="doA-Y4-2EY" kind="embed" id="Nlg-CU-0es"/>
+                                </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -262,11 +273,11 @@
             <objects>
                 <viewController storyboardIdentifier="DashboardViewController" id="Qtr-3k-WIj" customClass="DashboardViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="obN-EL-Zj7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQe-oG-rHr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PpX-Lc-xSa" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="24" y="24" width="56" height="56"/>
@@ -283,7 +294,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-iU-BHU" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="265.5" y="32" width="85.5" height="25"/>
+                                        <rect key="frame" x="210.5" y="32" width="85.5" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -294,7 +305,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bum-SE-etg" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="239" y="57" width="112" height="25"/>
+                                        <rect key="frame" x="184" y="57" width="112" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -319,7 +330,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hbj-3L-Bew">
-                                <rect key="frame" x="0.0" y="120" width="375" height="475"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="376"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Qtr-3k-WIj" id="Pfi-Cb-WPQ"/>
@@ -327,7 +338,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPh-hS-B6K">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="496" width="320" height="72"/>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.89411764705882346" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="Qsb-Q6-c9O"/>
@@ -375,20 +386,20 @@
             <objects>
                 <viewController storyboardIdentifier="DashboardVarViewController" id="h6D-J2-GVe" customClass="DashboardVarViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y54-9D-fkY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rg-wr-9v5">
-                                <rect key="frame" x="0.0" y="20" width="375" height="575"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="476"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="zvc-Hv-cS2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="575"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="476"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-KR-dkz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="575"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="476"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJH-uM-w9R" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="28" width="327" height="25"/>
+                                                <rect key="frame" x="24" y="28" width="272" height="25"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -399,7 +410,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-gY-d4c" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="53" width="327" height="25"/>
+                                                <rect key="frame" x="24" y="53" width="272" height="25"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -410,7 +421,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIm-7l-vD3">
-                                                <rect key="frame" x="127" y="227" width="120" height="120"/>
+                                                <rect key="frame" x="99.5" y="177.5" width="120" height="120"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="4ch-g9-e6b"/>
@@ -418,7 +429,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-Rx-NdS">
-                                                <rect key="frame" x="147.5" y="363" width="80.5" height="42"/>
+                                                <rect key="frame" x="120" y="313.5" width="80.5" height="42"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="12">
                                                         <attributes>
@@ -466,7 +477,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXd-iu-L25">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="496" width="320" height="72"/>
                                 <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="3ZQ-yT-CTQ"/>
@@ -513,14 +524,14 @@
             <objects>
                 <viewController storyboardIdentifier="TrackingViewController" id="qGa-lR-yr8" customClass="TrackingViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0pl-7c-dYY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44O-fa-Lya">
-                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ty-ly-6Aq" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="23.5" width="303" height="25"/>
+                                        <rect key="frame" x="16" y="23.5" width="248" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -531,7 +542,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asZ-Gx-PxT">
-                                        <rect key="frame" x="319" y="8" width="56" height="56"/>
+                                        <rect key="frame" x="264" y="8" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="pJZ-SQ-dVX"/>
                                             <constraint firstAttribute="height" constant="56" id="vtd-yT-ZlG"/>
@@ -554,40 +565,81 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31R-gW-nLL">
-                                <rect key="frame" x="0.0" y="92" width="375" height="519"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="420"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-MZ-vxH">
-                                        <rect key="frame" x="55.5" y="69.5" width="224" height="70"/>
-                                        <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1i-Yg-UOg">
-                                        <rect key="frame" x="279.5" y="85" width="40" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ixg-Bp-t2w">
+                                        <rect key="frame" x="20" y="35.5" width="280" height="48"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5d3-gj-K0U">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="icon_heart"/>
-                                                <connections>
-                                                    <segue destination="ibb-9q-5HJ" kind="presentation" identifier="ShowHeartratePopover" id="Txg-pB-Lgd"/>
-                                                </connections>
-                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-MZ-vxH">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="d8a-Sb-iHY"/>
+                                                    <constraint firstAttribute="width" constant="181" id="unZ-KG-usr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="47"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-y6-Zke">
+                                                <rect key="frame" x="193" y="4" width="87" height="40"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqH-LI-pLW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7M-mO-8lr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="ic_date"/>
+                                                                <connections>
+                                                                    <action selector="calendarPressed:" destination="qGa-lR-yr8" eventType="touchUpInside" id="Q6r-3B-7vd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="o7M-mO-8lr" firstAttribute="top" secondItem="GqH-LI-pLW" secondAttribute="top" id="6Gs-t1-aOh"/>
+                                                            <constraint firstItem="o7M-mO-8lr" firstAttribute="leading" secondItem="GqH-LI-pLW" secondAttribute="leading" id="6XA-Wm-XWQ"/>
+                                                            <constraint firstAttribute="width" constant="40" id="LKd-jm-EgA"/>
+                                                            <constraint firstAttribute="trailing" secondItem="o7M-mO-8lr" secondAttribute="trailing" id="RVm-xJ-yIp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="o7M-mO-8lr" secondAttribute="bottom" id="VGd-lS-2M6"/>
+                                                            <constraint firstAttribute="height" constant="40" id="mOW-mJ-zfN"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o1i-Yg-UOg">
+                                                        <rect key="frame" x="47" y="0.0" width="40" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5d3-gj-K0U">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <color key="backgroundColor" red="0.047058823530000002" green="0.89411764709999997" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="icon_heart"/>
+                                                                <connections>
+                                                                    <segue destination="ibb-9q-5HJ" kind="presentation" identifier="ShowHeartratePopover" id="Txg-pB-Lgd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="5d3-gj-K0U" secondAttribute="bottom" id="BZQ-3v-0Cl"/>
+                                                            <constraint firstItem="5d3-gj-K0U" firstAttribute="top" secondItem="o1i-Yg-UOg" secondAttribute="top" id="Zo8-Av-BTk"/>
+                                                            <constraint firstAttribute="trailing" secondItem="5d3-gj-K0U" secondAttribute="trailing" id="b5k-LJ-IsR"/>
+                                                            <constraint firstAttribute="width" constant="40" id="qPB-o8-tzM"/>
+                                                            <constraint firstItem="5d3-gj-K0U" firstAttribute="leading" secondItem="o1i-Yg-UOg" secondAttribute="leading" id="un5-8W-djl"/>
+                                                            <constraint firstAttribute="height" constant="40" id="zNt-Jy-KfE"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="5d3-gj-K0U" secondAttribute="bottom" id="0Qa-3j-AuP"/>
-                                            <constraint firstAttribute="trailing" secondItem="5d3-gj-K0U" secondAttribute="trailing" id="7yy-e2-VUD"/>
-                                            <constraint firstItem="5d3-gj-K0U" firstAttribute="top" secondItem="o1i-Yg-UOg" secondAttribute="top" id="H6n-YY-aKR"/>
-                                            <constraint firstAttribute="height" constant="40" id="Rlq-BU-doG"/>
-                                            <constraint firstItem="5d3-gj-K0U" firstAttribute="leading" secondItem="o1i-Yg-UOg" secondAttribute="leading" id="Tu0-C6-B52"/>
-                                            <constraint firstAttribute="width" constant="40" id="cZq-rc-ChK"/>
+                                            <constraint firstAttribute="height" constant="48" id="J8e-if-gaw"/>
                                         </constraints>
-                                    </view>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRS-mp-kIx">
-                                        <rect key="frame" x="43.5" y="139.5" width="288" height="288"/>
+                                        <rect key="frame" x="16" y="90" width="288" height="288"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="288" id="UXk-3T-H7x"/>
@@ -595,7 +647,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zX-AV-mhA">
-                                        <rect key="frame" x="159" y="255.5" width="56" height="56"/>
+                                        <rect key="frame" x="131.5" y="206" width="56" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-yS-jil">
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -619,26 +671,24 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.039215686274509803" green="0.78823529411764703" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="o1i-Yg-UOg" firstAttribute="leading" secondItem="hWZ-MZ-vxH" secondAttribute="trailing" id="3S9-Vf-nWc"/>
-                                    <constraint firstItem="IRS-mp-kIx" firstAttribute="top" secondItem="hWZ-MZ-vxH" secondAttribute="bottom" id="3eJ-pp-0YK"/>
                                     <constraint firstItem="IRS-mp-kIx" firstAttribute="centerX" secondItem="31R-gW-nLL" secondAttribute="centerX" id="5xq-Ec-hJq"/>
+                                    <constraint firstItem="Ixg-Bp-t2w" firstAttribute="leading" secondItem="31R-gW-nLL" secondAttribute="leading" constant="20" id="Ji9-pE-xyu"/>
+                                    <constraint firstItem="IRS-mp-kIx" firstAttribute="top" secondItem="Ixg-Bp-t2w" secondAttribute="bottom" constant="6.5" id="OYP-Qx-pn9"/>
                                     <constraint firstItem="5zX-AV-mhA" firstAttribute="centerY" secondItem="IRS-mp-kIx" secondAttribute="centerY" id="ZqM-63-dzv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ixg-Bp-t2w" secondAttribute="trailing" constant="20" id="aAz-pU-UyB"/>
                                     <constraint firstItem="5zX-AV-mhA" firstAttribute="centerX" secondItem="IRS-mp-kIx" secondAttribute="centerX" id="cGQ-8k-qQ0"/>
-                                    <constraint firstItem="hWZ-MZ-vxH" firstAttribute="leading" secondItem="IRS-mp-kIx" secondAttribute="leading" constant="12" id="eY0-ie-hSU"/>
-                                    <constraint firstItem="o1i-Yg-UOg" firstAttribute="centerY" secondItem="hWZ-MZ-vxH" secondAttribute="centerY" id="hip-aj-2IA"/>
                                     <constraint firstItem="IRS-mp-kIx" firstAttribute="centerY" secondItem="31R-gW-nLL" secondAttribute="centerY" constant="24" id="mxm-AX-k8l"/>
-                                    <constraint firstItem="o1i-Yg-UOg" firstAttribute="trailing" secondItem="IRS-mp-kIx" secondAttribute="trailing" constant="-12" id="vfy-J4-vE2"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-rc-DkT">
-                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="512" width="320" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c89-MF-sb9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="icon_confirm"/>
                                         <connections>
-                                            <segue destination="Jh6-08-xY4" kind="show" id="dqC-Cq-kya"/>
+                                            <segue destination="Jh6-08-xY4" kind="show" identifier="toTrackActivity" id="dqC-Cq-kya"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -674,6 +724,7 @@
                         <outlet property="buttonTimerControl" destination="Dgc-yS-jil" id="PxT-cT-bvn"/>
                         <outlet property="labelTimer" destination="hWZ-MZ-vxH" id="0xf-L4-WYJ"/>
                         <outlet property="labelTitle" destination="7ty-ly-6Aq" id="5AU-2i-OeY"/>
+                        <outlet property="viewCalendar" destination="GqH-LI-pLW" id="QUB-ZG-ukh"/>
                         <outlet property="viewContent" destination="31R-gW-nLL" id="HQD-1e-LBt"/>
                         <outlet property="viewHeart" destination="o1i-Yg-UOg" id="bF5-vI-Rmd"/>
                         <outlet property="viewTimer" destination="IRS-mp-kIx" id="AFP-ww-KzP"/>
@@ -690,20 +741,20 @@
             <objects>
                 <viewController storyboardIdentifier="HeartFrequencyViewController" id="ibb-9q-5HJ" customClass="HeartFrequencyViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B3K-fd-NI4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JT-HY-tYf" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="24" y="48" width="327" height="555"/>
+                                <rect key="frame" x="24" y="48" width="272" height="456"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6c4-Ak-gXl">
-                                        <rect key="frame" x="0.0" y="0.0" width="327" height="443"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="344"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tracking_onboarding_screen_3" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-FX-WVl">
-                                                <rect key="frame" x="0.0" y="0.0" width="327" height="221.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="172"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVj-dX-DIL" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="221.5" width="279" height="25"/>
+                                                <rect key="frame" x="24" y="172" width="224" height="25"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -714,7 +765,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPL-cv-Oey" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="266.5" width="136" height="40"/>
+                                                <rect key="frame" x="68" y="217" width="136" height="40"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="placeholder" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kro-eu-vnd">
                                                         <rect key="frame" x="0.0" y="0.0" width="136" height="40"/>
@@ -756,7 +807,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-a2-eI3" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="443" width="279" height="56"/>
+                                        <rect key="frame" x="24" y="344" width="224" height="56"/>
                                         <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="EPp-JQ-J48"/>
@@ -773,7 +824,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78F-I0-kLF" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="503" width="279" height="48"/>
+                                        <rect key="frame" x="24" y="404" width="224" height="48"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="button"/>
@@ -837,14 +888,14 @@
             <objects>
                 <viewController storyboardIdentifier="TrackingSuccessViewController" id="jj1-i2-2gR" customClass="TrackingSuccessViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d5V-SV-mIF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-lS-7gf">
-                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSE-mB-q3K" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="23.5" width="343" height="25"/>
+                                        <rect key="frame" x="16" y="23.5" width="288" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -864,10 +915,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4c-PO-1Ms">
-                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-Bb-r4X" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="495" width="327" height="56"/>
+                                        <rect key="frame" x="24" y="396" width="272" height="56"/>
                                         <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="rNZ-j6-vGL"/>
@@ -884,7 +935,7 @@
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lDp-D2-RCv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="487"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="388"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>
@@ -929,11 +980,11 @@
             <objects>
                 <viewController storyboardIdentifier="TrackingActivityViewController" id="Jh6-08-xY4" userLabel="TrackingActivityViewController" customClass="TrackingActivityViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Udu-rD-OsW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0R-vu-cFC">
-                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="72"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cK-rb-Gbv" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="16" y="24" width="81" height="25"/>
@@ -950,7 +1001,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEZ-SH-M8D">
-                                        <rect key="frame" x="319" y="8" width="56" height="56"/>
+                                        <rect key="frame" x="264" y="8" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="GGY-lW-XKu"/>
                                             <constraint firstAttribute="height" constant="56" id="vLK-vZ-4yY"/>
@@ -972,14 +1023,14 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="32" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIJ-Pl-d7g">
-                                <rect key="frame" x="0.0" y="92" width="375" height="519"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="420"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.78823529410000004" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="mwn-My-TnA" customClass="MTSearchBar" customModule="MetTracker" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0i-Md-PYx">
-                                            <rect key="frame" x="16" y="16" width="343" height="40"/>
+                                            <rect key="frame" x="16" y="16" width="288" height="40"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_search" translatesAutoresizingMaskIntoConstraints="NO" id="auc-BJ-90j">
                                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -988,7 +1039,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="text placeholder" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cMc-aa-HOy">
-                                                    <rect key="frame" x="46" y="0.0" width="289" height="40"/>
+                                                    <rect key="frame" x="46" y="0.0" width="234" height="40"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="12"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -1024,10 +1075,10 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackingActivity" id="qXc-WN-tpn">
-                                        <rect key="frame" x="0.0" y="104" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="104" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qXc-WN-tpn" id="Ocl-8O-9bc">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1038,13 +1089,13 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3T-PF-Utq">
-                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="512" width="320" height="56"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CCA-aw-nM6">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uE-CT-s4u">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="56"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="icon_back"/>
                                                 <connections>
@@ -1052,7 +1103,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwo-R5-bmp">
-                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="56"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="56"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="icon_confirm"/>
                                                 <connections>
@@ -1110,22 +1161,22 @@
             <objects>
                 <viewController storyboardIdentifier="AchievementsViewController" id="msA-vU-hBS" customClass="AchievementsViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X81-VA-CY0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="108" estimatedRowHeight="-1" sectionHeaderHeight="32" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-73-pxd">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AchievementTableViewCell" rowHeight="108" id="lUh-SB-e6o" customClass="AchievementTableViewCell" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="32" width="375" height="108"/>
+                                        <rect key="frame" x="0.0" y="32" width="320" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lUh-SB-e6o" id="zul-8a-k0p">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bicycling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5m-FD-D02" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="40" width="255" height="29"/>
+                                                    <rect key="frame" x="16" y="40" width="237" height="29"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1136,7 +1187,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:30-03:30 | Tracking time 02:00:00" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YR-Ce-GKm" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="71" width="351" height="19"/>
+                                                    <rect key="frame" x="16" y="71" width="296" height="19"/>
                                                     <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="15"/>
                                                     <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -1146,10 +1197,10 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.60 METS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNP-Wy-CSc" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                                    <rect key="frame" x="279" y="45.5" width="80" height="17.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.60 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNP-Wy-CSc" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="261" y="45.5" width="43" height="18"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="80" id="AoZ-SD-lxS"/>
+                                                        <constraint firstAttribute="width" constant="43" id="AoZ-SD-lxS"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -1222,11 +1273,11 @@
             <objects>
                 <viewController storyboardIdentifier="AchievementDetailsViewController" id="nM9-98-9Bq" customClass="AchievementDetailsViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DZl-rK-u7l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePg-BO-EXq" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
-                                <rect key="frame" x="24" y="164" width="327" height="339"/>
+                                <rect key="frame" x="-3.5" y="114.5" width="327" height="339"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Month Challenge" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X30-gF-P2P" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="16" y="45" width="295" height="29"/>
@@ -1277,7 +1328,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIb-Zp-Vjk" customClass="MTButton" customModule="MetTracker" customModuleProvider="target">
                                         <rect key="frame" x="24" y="256" width="279" height="56"/>
-                                        <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.047058823529411764" green="0.89411764705882346" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="Xmq-4N-OxA"/>
                                         </constraints>
@@ -1344,14 +1395,14 @@
             <objects>
                 <viewController storyboardIdentifier="StatisticsViewController" id="gHM-Kd-3r9" customClass="StatisticsViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mtb-D9-Qd5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZI-i7-aHN">
-                                <rect key="frame" x="0.0" y="20" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJs-QK-1XN" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="23" width="303" height="25"/>
+                                        <rect key="frame" x="16" y="23" width="248" height="25"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -1361,7 +1412,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fr-ic-NCI">
-                                        <rect key="frame" x="319" y="8" width="56" height="56"/>
+                                        <rect key="frame" x="264" y="8" width="56" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="mwZ-GR-qAH"/>
                                             <constraint firstAttribute="height" constant="56" id="nWK-lB-eRD"/>
@@ -1384,15 +1435,15 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dks-RI-8vn">
-                                <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="476"/>
                                 <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="NUz-B5-h78">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="16"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="16"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="HSA-aq-0r8">
-                                    <rect key="frame" x="0.0" y="16" width="375" height="16"/>
+                                    <rect key="frame" x="0.0" y="16" width="320" height="16"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </view>
@@ -1428,28 +1479,25 @@
             <objects>
                 <viewController storyboardIdentifier="CalendarViewController" id="xJA-MZ-PyH" customClass="CalendarViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9j-oa-huy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5f-xF-Eu8">
-                                <rect key="frame" x="88" y="0.0" width="40" height="595"/>
+                                <rect key="frame" x="88" y="0.0" width="40" height="496"/>
                                 <color key="backgroundColor" red="0.047059483829999998" green="0.89411777260000003" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="b8m-fb-2HM"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWt-QQ-6KT">
-                                <rect key="frame" x="0.0" y="16" width="48" height="563"/>
+                                <rect key="frame" x="0.0" y="16" width="48" height="464"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZeB-hk-6DZ">
-                                <rect key="frame" x="48" y="20" width="272" height="575"/>
+                                <rect key="frame" x="48" y="20" width="244" height="476"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="272" id="1YU-cx-WUg"/>
-                                </constraints>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="vou-Sx-Fcl">
-                                    <rect key="frame" x="0.0" y="68" width="272" height="80"/>
+                                    <rect key="frame" x="0.0" y="68" width="244" height="80"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCP-fy-vrh" customClass="MTView" customModule="MetTracker" customModuleProvider="target">
@@ -1489,10 +1537,10 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CalendarTableViewCell" id="bXd-Mv-HSf" customClass="CalendarTableViewCell" customModule="MetTracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="272" height="40"/>
+                                        <rect key="frame" x="0.0" y="28" width="244" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bXd-Mv-HSf" id="4Lc-rv-QaH">
-                                            <rect key="frame" x="0.0" y="0.0" width="272" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="244" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UI-7l-BTd" customClass="MTLabel" customModule="MetTracker" customModuleProvider="target">
@@ -1580,6 +1628,7 @@
                                                 <constraint firstItem="HCw-bH-qh4" firstAttribute="centerY" secondItem="4Lc-rv-QaH" secondAttribute="centerY" constant="4" id="zWd-ci-nwc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="constraintProgress" destination="vet-IZ-Yd2" id="rYH-l4-2s7"/>
                                             <outlet property="labelDay" destination="4UI-7l-BTd" id="R75-O1-9Ei"/>
@@ -1596,8 +1645,21 @@
                                     <outlet property="delegate" destination="xJA-MZ-PyH" id="yzN-0f-QU7"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xk9-6Z-Cxf">
+                                <rect key="frame" x="16" y="424" width="56" height="56"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="4rl-R5-XPi"/>
+                                    <constraint firstAttribute="width" constant="56" id="EvR-gc-IvX"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="ic_date"/>
+                                <connections>
+                                    <action selector="changeDatePressed:" destination="xJA-MZ-PyH" eventType="touchUpInside" id="IoQ-3X-t0p"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fff-TS-QY9">
-                                <rect key="frame" x="303" y="523" width="56" height="56"/>
+                                <rect key="frame" x="248" y="424" width="56" height="56"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Zez-Qb-TSi"/>
@@ -1610,7 +1672,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKm-lo-wDG">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="496" width="320" height="72"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="C3r-M7-Ty9"/>
@@ -1632,6 +1694,7 @@
                             <constraint firstItem="OKm-lo-wDG" firstAttribute="leading" secondItem="BNC-y7-8UD" secondAttribute="leading" id="8Pe-c9-LMV"/>
                             <constraint firstItem="lWt-QQ-6KT" firstAttribute="top" secondItem="f9j-oa-huy" secondAttribute="top" constant="16" id="Cta-CG-leF"/>
                             <constraint firstItem="BNC-y7-8UD" firstAttribute="trailing" secondItem="fff-TS-QY9" secondAttribute="trailing" constant="16" id="Kkj-mj-ErP"/>
+                            <constraint firstItem="xk9-6Z-Cxf" firstAttribute="leading" secondItem="BNC-y7-8UD" secondAttribute="leading" constant="16" id="R8e-c8-MxV"/>
                             <constraint firstItem="lWt-QQ-6KT" firstAttribute="leading" secondItem="BNC-y7-8UD" secondAttribute="leading" id="U7O-vi-iEl"/>
                             <constraint firstItem="BNC-y7-8UD" firstAttribute="bottom" secondItem="OKm-lo-wDG" secondAttribute="bottom" id="eMq-8R-cPU"/>
                             <constraint firstItem="ZeB-hk-6DZ" firstAttribute="leading" secondItem="BNC-y7-8UD" secondAttribute="leading" constant="48" id="hHv-e8-0Im"/>
@@ -1639,10 +1702,13 @@
                             <constraint firstItem="ZeB-hk-6DZ" firstAttribute="top" secondItem="BNC-y7-8UD" secondAttribute="top" id="oRN-nF-l7U"/>
                             <constraint firstItem="ZeB-hk-6DZ" firstAttribute="leading" secondItem="lWt-QQ-6KT" secondAttribute="trailing" id="qBp-AK-485"/>
                             <constraint firstItem="OKm-lo-wDG" firstAttribute="top" secondItem="lWt-QQ-6KT" secondAttribute="bottom" constant="16" id="sSz-fX-tYq"/>
+                            <constraint firstItem="OKm-lo-wDG" firstAttribute="top" secondItem="xk9-6Z-Cxf" secondAttribute="bottom" constant="16" id="spv-1G-Jqg"/>
+                            <constraint firstItem="BNC-y7-8UD" firstAttribute="trailing" secondItem="ZeB-hk-6DZ" secondAttribute="trailing" constant="28" id="xFE-8L-CuD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BNC-y7-8UD"/>
                     </view>
                     <connections>
+                        <outlet property="buttonChangeDate" destination="xk9-6Z-Cxf" id="kL1-43-hgh"/>
                         <outlet property="buttonEnlarge" destination="fff-TS-QY9" id="Crc-4D-3pV"/>
                         <outlet property="buttonStatistics" destination="OKm-lo-wDG" id="TIJ-Gf-sMc"/>
                         <outlet property="countOfMets" destination="jME-3D-D93" id="mui-ZC-ff8"/>
@@ -1656,29 +1722,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5G-Aq-76T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="1422"/>
+            <point key="canvasLocation" x="2200.8000000000002" y="1421.7391304347827"/>
         </scene>
         <!--Calendar Month View Controller-->
         <scene sceneID="2C2-0Q-3vz">
             <objects>
                 <viewController storyboardIdentifier="CalendarMonthViewController" id="Vo6-Kq-Gnf" customClass="CalendarMonthViewController" customModule="MetTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gqa-Ek-QLc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XrL-NS-B1G">
-                                <rect key="frame" x="0.0" y="20" width="375" height="575"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="476"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="64" id="ymW-SF-yXE">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="64"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ymW-SF-yXE" id="hfN-3o-etU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bk3-xj-Fzf">
-                                                    <rect key="frame" x="24" y="8" width="327" height="48"/>
+                                                    <rect key="frame" x="24" y="8" width="272" height="48"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gkl-01-fxp">
                                                             <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
@@ -1727,7 +1793,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neW-Ra-bgj">
-                                <rect key="frame" x="303" y="523" width="56" height="56"/>
+                                <rect key="frame" x="248" y="424" width="56" height="56"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="pVJ-Kv-RQK"/>
@@ -1740,7 +1806,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHD-qH-73Q">
-                                <rect key="frame" x="0.0" y="595" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="496" width="320" height="72"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="4t8-EQ-3tA"/>
@@ -1780,6 +1846,7 @@
     <resources>
         <image name="category_back" width="40" height="24"/>
         <image name="gradient_white" width="24" height="24"/>
+        <image name="ic_date" width="18" height="18"/>
         <image name="icon_add" width="16" height="16"/>
         <image name="icon_back" width="10" height="18"/>
         <image name="icon_close" width="12" height="12"/>
@@ -1795,6 +1862,6 @@
         <image name="tracking_onboarding_screen_3" width="291" height="116"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cjR-27-A2D"/>
+        <segue reference="8kf-uD-cna"/>
     </inferredMetricsTieBreakers>
 </document>

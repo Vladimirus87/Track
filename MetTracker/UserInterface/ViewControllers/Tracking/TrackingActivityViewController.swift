@@ -18,18 +18,17 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
     var dataArray : NSMutableArray!
     var dataQuickAccessArray : NSMutableArray!
     
+    var castomDate: Date?
+    
     var cellIdentifier = "TrackingActivityTableViewCell"
     
     @IBOutlet weak var tableViewData: UITableView!
-    
     @IBOutlet weak var viewTopbar: UIView!
-    
     @IBOutlet weak var searchTxtField: UITextField!
     @IBOutlet weak var buttonTitle: MTButton!
     @IBOutlet weak var buttonClose: UIButton!
     @IBOutlet weak var buttonBack: UIButton!
     @IBOutlet weak var buttonConfirm: UIButton!
-    
     @IBOutlet weak var searchBar: MTSearchBar!
     
     let headerIdentifier = "TrackingActivityHeaderView"
@@ -203,6 +202,8 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
             
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TrackingActivityViewController") as! TrackingActivityViewController
             controller.selectedCategory = (dataArray[indexPath.row] as! MTCategory)
+            controller.castomDate = castomDate
+            
             self.navigationController?.pushViewController(controller, animated: true)
             
         } else {
@@ -259,7 +260,8 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
             config.activityId = self.selectedActivityId!
             config.categoryId = self.selectedCategoryId!
             
-            TrackingManager.shared.saveTracking(tracking: config)
+            TrackingManager.shared.saveTracking(tracking: config, castomDate: castomDate as NSDate?)
+            print("castomDate", castomDate)
         }
         
     }
@@ -298,6 +300,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
             
             let track = TrackingManager.shared.savedTrack
             destVC.newTrackMets = track?.mets ?? 0
+            destVC.castomDate = castomDate
         }
     }
  

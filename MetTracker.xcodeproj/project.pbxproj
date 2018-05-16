@@ -157,6 +157,7 @@
 		9418A0D0207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */; };
 		9419E82C208C830C00FFC490 /* QuotesAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419E82B208C830C00FFC490 /* QuotesAlertController.swift */; };
 		9419E82E208C84BB00FFC490 /* SettingsMotivationalQuotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */; };
+		943EB20720AB24E70077EC65 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943EB20620AB24E70077EC65 /* PageViewController.swift */; };
 		9448BD34207C899F0048485A /* Crabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9448BD33207C899F0048485A /* Crabs.plist */; };
 		947ED172209B081F00BCE03B /* SettingsTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947ED171209B081F00BCE03B /* SettingsTutorialViewController.swift */; };
 		947ED174209B090700BCE03B /* SettingsTutorials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 947ED173209B090700BCE03B /* SettingsTutorials.plist */; };
@@ -327,6 +328,7 @@
 		9418A0CF207DDC2900185CC8 /* SettingsMiscActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMiscActivitiesViewController.swift; sourceTree = "<group>"; };
 		9419E82B208C830C00FFC490 /* QuotesAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesAlertController.swift; sourceTree = "<group>"; };
 		9419E82D208C84BB00FFC490 /* SettingsMotivationalQuotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingsMotivationalQuotes.plist; sourceTree = "<group>"; };
+		943EB20620AB24E70077EC65 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		9448BD33207C899F0048485A /* Crabs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Crabs.plist; sourceTree = "<group>"; };
 		9452351320906D4200A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		9452351420906D4200A89E54 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
@@ -672,6 +674,7 @@
 			children = (
 				3B8B070F203315BB009A8B8E /* Data */,
 				3B8B0710203315BB009A8B8E /* Subviews */,
+				943EB20620AB24E70077EC65 /* PageViewController.swift */,
 				3B8B0711203315E2009A8B8E /* MainDashboardViewController.swift */,
 				3B8B0715203318E8009A8B8E /* DashboardViewController.swift */,
 				3B50AD4220344865009EC098 /* DashboardVarViewController.swift */,
@@ -813,6 +816,10 @@
 		3B8B06D02032E663009A8B8E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Lindenvalley;
@@ -1049,6 +1056,7 @@
 				3B2AFBE92037293300DB8E35 /* SettingsActivityTableViewCell.swift in Sources */,
 				3B940A942033520C006ABB12 /* DashboardHintTableViewCell.swift in Sources */,
 				3B0CBA6F203A0E0E00CFB88D /* SettingsTextSizeViewController.swift in Sources */,
+				943EB20720AB24E70077EC65 /* PageViewController.swift in Sources */,
 				94AF93DC20764D32003A5781 /* Design+CoreDataClass.swift in Sources */,
 				3B50AD47203476B0009EC098 /* TrackingViewController.swift in Sources */,
 				947ED172209B081F00BCE03B /* SettingsTutorialViewController.swift in Sources */,

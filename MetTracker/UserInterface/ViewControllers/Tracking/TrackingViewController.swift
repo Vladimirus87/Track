@@ -19,6 +19,8 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
     @IBOutlet weak var labelTimer: UILabel!
     
     @IBOutlet weak var viewHeart: UIView!
+    @IBOutlet weak var viewCalendar: UIView!
+    
     @IBOutlet weak var buttonHeart: UIButton!
     
     @IBOutlet weak var viewTimer: UIView!
@@ -28,7 +30,7 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
     @IBOutlet weak var buttonConfirm: UIButton!
     
     var trackingTimer : TrackingTimerView?
-    
+    var pickerDate: Date?
     
 //    var isFirstRun = true
     var isFirstRun: Bool {
@@ -43,12 +45,15 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.labelTimer.text = "0:00:00"
         TrackingManager.shared.reset()
         
         self.viewHeart.roundCorners()
+        self.viewCalendar.roundCorners()
         self.viewTimerControl.roundCorners()
+        
+        self.viewCalendar.isHidden = true
         
         trackingTimer = (Bundle.main.loadNibNamed("TrackingTimerView", owner: nil, options: nil)![0] as! TrackingTimerView)
         trackingTimer?.delegate = self
@@ -85,7 +90,6 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
         super.resizeSubviews()
         
         updateUI()
-        
     }
     
     // MARK: - TrackingTimerViewDelegate
@@ -152,6 +156,10 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
                 self.buttonConfirm.isEnabled = true
             }
             
+            if trackingTimer.state == .manual {
+                self.viewCalendar.isHidden = false
+            }
+            
         }
         
     }
@@ -191,12 +199,42 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
         
     }
     
+    
+    @IBAction func calendarPressed(_ sender: UIButton) {
+    
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .dateAndTime
+        
+        let alert = UIAlertController(title: "\n\n\n\n\n\n\n\n\n\n\n", message: nil, preferredStyle: .actionSheet)
+        alert.view.addSubview(datePicker)
+        
+        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        datePicker.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor, constant:0).isActive = true
+        datePicker.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 8).isActive = true
+        
+        let ok = UIAlertAction(title: LS("ok"), style: .default) { (action) in
+            self.pickerDate = datePicker.date
+            
+            sender.backgroundColor = .white
+            sender.tintColor = Config.shared.baseColor()
+        }
+        
+        let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
+        
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
     @IBAction func buttonClosePressed(_ sender: UIButton) {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
-    // MARK: - Navigation
     
+    // MARK: - Navigation
     @IBAction func unwindToTracking(segue:UIStoryboardSegue) {
         
         if segue.identifier == "unwindToTrackingFromHeartrate" {
@@ -205,12 +243,15 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
         
     }
     
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
         if segue.identifier == "ShowHeartratePopover" {
             segue.destination.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             segue.destination.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        } else if segue.identifier == "toTrackActivity", let destVC = segue.destination as? TrackingActivityViewController {
+            destVC.castomDate = pickerDate
         }
         
     }

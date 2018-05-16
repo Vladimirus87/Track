@@ -28,10 +28,10 @@
 "tracking_text_1" = "Drücken Sie einfach den Play-Button und starten Sie Ihre Aktivität. Wenn Sie fertig sind, drücken Sie Stop und bestätigen Sie die Uhrzeit.";
 
 "tracking_title_2" = "Nachträglich aufzeichnen";
-"tracking_text_2" = "Sie hatten Ihr Smartphone nicht dabei? Kein Problem. Benutzen Sie einfach die Regeler, um Ihre Zeit nachträglich zu notieren und tippen Sie auf die Bestätigungsschaltfläche.";
+"tracking_text_2" = "Sie hatten Ihr Smartphone nicht dabei? Kein Problem. Benutzen Sie einfach die Regler, um Ihre Zeit nachträglich zu notieren und tippen Sie auf die Bestätigungsschaltfläche.";
 
 "tracking_title_3" = "Herzfrequenz";
-"tracking_text_3" = "Mit MET Tracker können Sie sogar Ihre Herzfrequenz verfolgen. Sie können Ihren Herzschlag ganz einfach manuell hinzufügen, indem Sie auf das Herz-Symbol tippen.";
+"tracking_text_3" = "Mit MET Tracker können sie auch Ihre Herzfrequenz aufzeichnen";
 ///--------
 
 "button_personalise" = "Individualisieren";
@@ -71,7 +71,7 @@
 "first_tutorial" = "Was macht die App?";
 "second_tutorial" = "Wie tracke ich die Zeit?";
 
-"about" = "Über die App";
+"about" = "Wissenswertes";
 
 "week" = "Woche";
 
@@ -127,7 +127,7 @@
 "most_collected" = "Die meisten MET Werte gesammelt:";
 "favour_activity" = "Bevorzugte Aktivität";
 //_____
-"entered_succeessfully" = "Ihre Aktivität wurde erfolgreich eingetragen! Nur noch 4 weitere METs diese Woche.";
+"entered_succeessfully" = "Ihre Aktivität wurde erfolgreich eingetragen!";
 "you_can_send_your_tracking" = "Sie können Ihren Tracking-Verlauf per E-Mail versenden, klicken Sie einfach auf die Schaltfläche.";
 "send_tracks" = "Tracks senden";
 "search" = "Suche";

@@ -24,27 +24,27 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yq1-xz-LoT" customClass="MTGauge" customModule="MetTracker" customModuleProvider="target">
-                    <rect key="frame" x="36" y="36" width="216" height="216"/>
+                    <rect key="frame" x="54" y="54" width="180" height="180"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="216" id="CaR-Sd-rQh"/>
-                        <constraint firstAttribute="height" constant="216" id="tdc-qw-Rvn"/>
+                        <constraint firstAttribute="width" constant="180" id="CaR-Sd-rQh"/>
+                        <constraint firstAttribute="height" constant="180" id="tdc-qw-Rvn"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJ4-Zf-Hju">
-                    <rect key="frame" x="136" y="8" width="16" height="16"/>
+                    <rect key="frame" x="129" y="1" width="30" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="16" id="R9R-7u-GGr"/>
-                        <constraint firstAttribute="height" constant="16" id="eHc-NW-6S0"/>
+                        <constraint firstAttribute="width" constant="30" id="R9R-7u-GGr"/>
+                        <constraint firstAttribute="height" constant="30" id="eHc-NW-6S0"/>
                     </constraints>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0k-yb-1Aj">
-                    <rect key="frame" x="136" y="32" width="16" height="16"/>
+                    <rect key="frame" x="129" y="43" width="30" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="16" id="bti-y0-YOh"/>
-                        <constraint firstAttribute="height" constant="16" id="ned-Kg-JrA"/>
+                        <constraint firstAttribute="width" constant="30" id="bti-y0-YOh"/>
+                        <constraint firstAttribute="height" constant="30" id="ned-Kg-JrA"/>
                     </constraints>
                 </button>
             </subviews>
@@ -57,7 +57,7 @@
                 <constraint firstItem="dJ4-Zf-Hju" firstAttribute="centerX" secondItem="Ujn-9c-VnU" secondAttribute="centerX" id="Apq-T7-NMh"/>
                 <constraint firstItem="Ujn-9c-VnU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Gd7-eh-8qe"/>
                 <constraint firstItem="dJ4-Zf-Hju" firstAttribute="centerY" secondItem="Ujn-9c-VnU" secondAttribute="centerY" constant="-128" id="IVy-S4-XhW"/>
-                <constraint firstItem="N0k-yb-1Aj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-104" id="rz0-0S-PUp"/>
+                <constraint firstItem="N0k-yb-1Aj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-86" id="rz0-0S-PUp"/>
                 <constraint firstItem="Ujn-9c-VnU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zzW-rd-P1h"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

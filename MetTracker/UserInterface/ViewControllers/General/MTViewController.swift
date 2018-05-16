@@ -69,7 +69,6 @@ class MTViewController: UIViewController, UIGestureRecognizerDelegate {
     
     func resizeSubviews() {
         
-        
     }
     
     func updateLocalization() {
@@ -79,7 +78,6 @@ class MTViewController: UIViewController, UIGestureRecognizerDelegate {
     @objc func closeKeyboard() {
         
         self.view.endEditing(true)
-        
     }
     
     @objc func keyboardWillShow(_ notification : NSNotification) {

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITableViewDataSource, TrackingSuccessImageTableViewCellDelegate {
     
@@ -18,6 +19,8 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
     let cellIdentifierText = "TrackingSuccessTextTableViewCell"
     
     var newTrackMets: Float!
+    
+    var castomDate: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +51,11 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! TrackingSuccessImageTableViewCell
             cell.delegate = self
             
-            let metsCount = UserDefaults.standard.object(forKey: "countOfMets") as? Float ?? 0
+            let metsCount = castomDate != nil ?
+                updateProgress(withPredicate: castomDate!) :
+                UserDefaults.standard.object(forKey: "countOfMets") as? Float ?? 0
             
             cell.startAnimationWith(lastUserMetsCount: metsCount, newUserMetsCount: newTrackMets + metsCount)
-//            cell.startAnimationWith(lastUserMetsCount: 1, newUserMetsCount: 9)
             
             return cell
             
@@ -101,6 +105,32 @@ class TrackingSuccessViewController: MTViewController, UITableViewDelegate, UITa
         DispatchQueue.main.asyncAfter(deadline: when){
             alert.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    
+    func updateProgress(withPredicate: Date) -> Float {
+        let contex = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do {
+            let firstLastDays = withPredicate.getFirstLastDaysOfWeek()
+            
+            let datePredicate = NSPredicate(format: "(%@ <= date) AND (date < %@)", argumentArray: [firstLastDays.0, firstLastDays.1])
+            
+            let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
+            fetchRequest.predicate = datePredicate
+            
+            let metsData = try contex.fetch(fetchRequest)
+            
+            var countOfMets: Float = 0
+            for i in metsData {
+                countOfMets += i.mets
+            }
+            
+            return countOfMets
+        } catch {
+            print("Fetching Failed")
+        }
+        return 0
     }
     
     

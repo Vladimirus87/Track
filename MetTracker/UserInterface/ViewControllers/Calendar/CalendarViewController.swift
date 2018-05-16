@@ -17,11 +17,12 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var viewVerticalBar: UIView!
     @IBOutlet weak var viewWeekNumber: MTView!
     @IBOutlet weak var countOfMets: MTLabel!
+    
     @IBOutlet weak var width: NSLayoutConstraint!
     @IBOutlet weak var height: NSLayoutConstraint!
     
     @IBOutlet weak var buttonEnlarge: UIButton!
-    
+    @IBOutlet weak var buttonChangeDate: UIButton!
     @IBOutlet weak var buttonStatistics: UIButton!
     
     @IBOutlet weak var tableViewData: UITableView!
@@ -33,6 +34,8 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
 
         self.buttonEnlarge.roundCorners()
+        self.buttonChangeDate.roundCorners()
+        
         self.width.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
         self.height.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
         viewWeekNumber.layer.cornerRadius = self.height.constant / 2
@@ -103,6 +106,34 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         }
         
     }
+    
+    
+    
+    @IBAction func changeDatePressed(_ sender: UIButton) {
+        
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        
+        let alert = UIAlertController(title: "\n\n\n\n\n\n\n\n\n\n\n", message: nil, preferredStyle: .actionSheet)
+        alert.view.addSubview(datePicker)
+        
+        datePicker.translatesAutoresizingMaskIntoConstraints = false
+        datePicker.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor, constant:0).isActive = true
+        datePicker.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 8).isActive = true
+        
+        let ok = UIAlertAction(title: LS("ok"), style: .default) { (action) in
+            self.updateUIForDate(datePicker.date)
+        }
+        
+        let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
+        
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
     
     // MARK: - UITableView
     

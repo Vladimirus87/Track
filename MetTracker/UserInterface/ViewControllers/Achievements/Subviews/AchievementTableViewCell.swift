@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AchievementsTableViewCellDelegate {
+    func delete(cell: UITableViewCell)
+}
+
 class AchievementTableViewCell: UITableViewCell {
     
     @IBOutlet weak var date: MTLabel!
@@ -17,11 +21,15 @@ class AchievementTableViewCell: UITableViewCell {
     
     var categoryList  = DataManager.shared.categoryArray
     
+    var delegate: AchievementsTableViewCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
 
         date.textColor = Config.shared.baseColor()
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(longGesture))
+        self.addGestureRecognizer(gesture)
     }
     
     
@@ -51,6 +59,12 @@ class AchievementTableViewCell: UITableViewCell {
         let formattedDuration = formatter.string(from: duration)
         
         return formattedDuration
+    }
+    
+    @objc func longGesture() {
+        if let delegate = delegate {
+            delegate.delete(cell: self)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

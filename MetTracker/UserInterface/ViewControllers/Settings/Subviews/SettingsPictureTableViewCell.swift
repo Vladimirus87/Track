@@ -111,6 +111,7 @@ extension SettingsPictureTableViewCell: PictureCellDelegate {
     func picturePressed(cell: UICollectionViewCell) {
 
         guard let ip = imagesCollectionView.indexPath(for: cell) else { return }
+        
         var arrForReload = [ip]
         var lastCheckIP: IndexPath? {
             didSet {
@@ -125,6 +126,7 @@ extension SettingsPictureTableViewCell: PictureCellDelegate {
                 lastCheckIP = IndexPath(row: index!, section: 0)
             }
         }
+        
         data[ip.row].selected = true
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         

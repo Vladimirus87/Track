@@ -68,6 +68,7 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AchievementTableViewCell
         
         cell.dataForCell(self.data[indexPath.row])
+        cell.delegate = self
         
         return cell
     }
@@ -88,6 +89,8 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
         }
     }
 
+
+    
     
     // MARK: - Notifications
     
@@ -103,8 +106,30 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+
+extension AchievementsViewController: AchievementsTableViewCellDelegate {
     
+    func delete(cell: UITableViewCell) {
 
-
-
+        guard let indexPath = tableViewData.indexPath(for: cell) else {return}
+        
+        let alertController = UIAlertController(title: nil, message: LS("want_delete"), preferredStyle: .alert)
+        let ok = UIAlertAction(title: LS("ok"), style: .default) { _ in
+            
+            self.contex.delete(self.data[indexPath.row])
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            self.getData()
+            self.tableViewData.beginUpdates()
+            self.tableViewData.deleteRows(at: [indexPath], with: .middle)
+            self.tableViewData.endUpdates()
+        }
+        let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
+        
+        alertController.addAction(ok)
+        alertController.addAction(cancel)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
