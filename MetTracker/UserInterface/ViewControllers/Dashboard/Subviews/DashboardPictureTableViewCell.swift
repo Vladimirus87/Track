@@ -50,6 +50,7 @@ class DashboardPictureTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    
     }
     
     override func prepareForReuse() {

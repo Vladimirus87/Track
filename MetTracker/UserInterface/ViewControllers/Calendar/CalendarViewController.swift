@@ -29,6 +29,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
     
     let cellIdentifier = "CalendarTableViewCell"
     var firstDate : Date?
+    var carrentDate: Date?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,6 +124,7 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         
         let ok = UIAlertAction(title: LS("ok"), style: .default) { (action) in
             self.updateUIForDate(datePicker.date)
+            self.carrentDate = datePicker.date
         }
         
         let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
@@ -155,7 +157,9 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         }
         
         cell.updateWithDate(date: self.firstDate?.add(days: indexPath.row))
-
+        cell.labelWeekday.updateTextSize()
+        cell.labelDay.updateTextSize()
+        cell.labelProgress.updateTextSize()
         
         return cell
         
@@ -169,6 +173,21 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         self.viewWeekNumber.backgroundColor = Config.shared.baseColor()
         self.buttonStatistics.tintColor = Config.shared.baseColor()
         
+        tableViewData.reloadData()
+        
+    }
+    
+    
+    override func updateTextSize() {
+       
+        self.countOfMets.updateTextSize()
+        self.buttonEnlarge.roundCorners()
+        self.buttonChangeDate.roundCorners()
+        self.width.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
+        self.height.constant = Config.shared.textSizeIsEnlarged() ? 80 : 60
+        viewWeekNumber.layer.cornerRadius = self.height.constant / 2
+        updateUIForDate(carrentDate ?? Date())
+        tableViewData.reloadData()
     }
     
     

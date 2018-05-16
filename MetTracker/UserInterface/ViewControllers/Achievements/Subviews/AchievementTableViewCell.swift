@@ -27,7 +27,7 @@ class AchievementTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
 
-        date.textColor = Config.shared.baseColor()
+        
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(longGesture))
         self.addGestureRecognizer(gesture)
     }

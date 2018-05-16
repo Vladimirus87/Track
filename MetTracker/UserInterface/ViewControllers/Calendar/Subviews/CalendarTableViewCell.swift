@@ -11,11 +11,11 @@ import CoreData
 
 class CalendarTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var labelDay: UILabel!
+    @IBOutlet weak var labelDay: MTLabel!
     @IBOutlet weak var viewVerticalBar: UIView!
     @IBOutlet weak var viewWeekday: UIView!
-    @IBOutlet weak var labelWeekday: UILabel!
-    @IBOutlet weak var labelProgress: UILabel!
+    @IBOutlet weak var labelWeekday: MTLabel!
+    @IBOutlet weak var labelProgress: MTLabel!
     @IBOutlet weak var viewProgress: UIView!
     @IBOutlet weak var constraintProgress: NSLayoutConstraint!
     

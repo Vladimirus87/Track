@@ -68,6 +68,11 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! AchievementTableViewCell
         
         cell.dataForCell(self.data[indexPath.row])
+        cell.date.textColor = Config.shared.baseColor()
+        cell.category.updateTextSize()
+        cell.date.updateTextSize()
+        cell.mets.updateTextSize()
+        cell.time.updateTextSize()
         cell.delegate = self
         
         return cell
@@ -95,8 +100,11 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     // MARK: - Notifications
     
     override func updateColorScheme() {
-     
-        
+        self.tableViewData.reloadData()
+    }
+    
+    override func updateTextSize() {
+        self.tableViewData.reloadData()
     }
     
     // MARK: -
@@ -124,6 +132,8 @@ extension AchievementsViewController: AchievementsTableViewCellDelegate {
             self.tableViewData.beginUpdates()
             self.tableViewData.deleteRows(at: [indexPath], with: .middle)
             self.tableViewData.endUpdates()
+            
+            NotificationCenter.default.post(Notification(name: NSNotification.Name.init("reloadDashboard")))
         }
         let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
         

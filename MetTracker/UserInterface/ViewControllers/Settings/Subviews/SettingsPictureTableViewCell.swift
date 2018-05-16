@@ -97,6 +97,7 @@ extension SettingsPictureTableViewCell : UICollectionViewDataSource, UICollectio
         
         cell.imageURL = data[indexPath.row].picturePath
         cell.checkBox.isHidden = data[indexPath.row].selected ? false : true
+        cell.checkBox.backgroundColor = Config.shared.baseColor()
         cell.delegate = self
         
         return cell

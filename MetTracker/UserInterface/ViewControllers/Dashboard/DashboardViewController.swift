@@ -52,7 +52,6 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         
         NotificationCenter.default.addObserver(self, selector: #selector(reload), name: NSNotification.Name.init("reloadDashboard"), object: nil)
     
-        
         getDesignData()
     }
     
@@ -107,7 +106,6 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         
         labelWeekday.text = today.string(with: "EEEE")
         labelWeek.text = "\(LS("week")) \(weekCounts ?? 0)".uppercased()
-        
     }
     
     
@@ -227,6 +225,8 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
             pictureCell._roundProgress = self.roundProgress
             pictureCell._weekCounts = self.weekCounts
             pictureCell.pictureData = self.pictureData
+            pictureCell.weekCounts.updateTextSize()
+            pictureCell.dayOfWeek.updateTextSize()
         case is DashboardQuoteTableViewCell :
             let quoteCell = cell as! DashboardQuoteTableViewCell
             let random = UserDefaults.standard.integer(forKey: "randomQuotes")
@@ -271,6 +271,11 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
 //        updateUI()
         
         buttonPlus.backgroundColor = Config.shared.baseColor()
+//        tableViewData.reloadData()
+    }
+    
+    override func updateTextSize() {
+        self.tableViewData.reloadData()
     }
     
     // MARK: -

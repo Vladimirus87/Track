@@ -22,6 +22,7 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
     @IBOutlet weak var viewCalendar: UIView!
     
     @IBOutlet weak var buttonHeart: UIButton!
+    @IBOutlet weak var buttonCallendar: UIButton!
     
     @IBOutlet weak var viewTimer: UIView!
     @IBOutlet weak var viewTimerControl: UIView!
@@ -53,7 +54,9 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
         self.viewCalendar.roundCorners()
         self.viewTimerControl.roundCorners()
         
+        self.buttonCallendar.backgroundColor = Config.shared.baseColor()
         self.viewCalendar.isHidden = true
+        
         
         trackingTimer = (Bundle.main.loadNibNamed("TrackingTimerView", owner: nil, options: nil)![0] as! TrackingTimerView)
         trackingTimer?.delegate = self

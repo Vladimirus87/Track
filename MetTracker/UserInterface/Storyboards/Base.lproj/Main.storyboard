@@ -719,6 +719,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Xo-6U-YwU"/>
                     <connections>
+                        <outlet property="buttonCallendar" destination="o7M-mO-8lr" id="eGC-Jk-kUA"/>
                         <outlet property="buttonConfirm" destination="c89-MF-sb9" id="QBG-sh-p4v"/>
                         <outlet property="buttonHeart" destination="5d3-gj-K0U" id="R38-ea-QUa"/>
                         <outlet property="buttonTimerControl" destination="Dgc-yS-jil" id="PxT-cT-bvn"/>

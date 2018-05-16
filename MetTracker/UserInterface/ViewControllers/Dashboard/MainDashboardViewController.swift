@@ -21,7 +21,11 @@ class MainDashboardViewController: MTViewController, UICollectionViewDelegate, U
     }
     
     var dataArray : NSArray!
-    var currentTab: Int = 0 //1) подписаться на делегат PageVC 2) реализовать свой метод в didSelectitem для скрола 3) почистить ВС 4) заменить свайп на gesture
+    var currentTab: Int = 0 {
+        didSet{
+            print(currentTab)
+        }
+    } //1) подписаться на делегат PageVC 2) реализовать свой метод в didSelectitem для скрола 3) почистить ВС 4) заменить свайп на gesture
 // {
 //        didSet {
 //            if (self.dataArray != nil) {
@@ -45,7 +49,7 @@ class MainDashboardViewController: MTViewController, UICollectionViewDelegate, U
         let path = Bundle.main.path(forResource: "MainDashboard", ofType: "plist")
         dataArray = NSArray(contentsOfFile: path!)
 
-        self.currentTab = 0
+//        self.currentTab = 0
         
 //        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swiped(_:)))
 //        swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -171,6 +175,8 @@ class MainDashboardViewController: MTViewController, UICollectionViewDelegate, U
     override func updateColorScheme() {
         self.collectionViewTabs.reloadData()
     }
+    
+    
     
     // MARK: - Navigation
     
