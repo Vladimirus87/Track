@@ -58,7 +58,9 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-
+    
+    
+    
 
     
     func registerCells() {
@@ -216,8 +218,8 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
         switch cell {
         case is DashboardHintTableViewCell :
             (cell as! DashboardHintTableViewCell).delegate = self
-//        case is DashboardInfoTableViewCell :
-//            (cell as! DashboardInfoTableViewCell).delegate = self
+            (cell as! DashboardHintTableViewCell).viewBackground.backgroundColor = Config.shared.baseColor()
+            (cell as! DashboardHintTableViewCell).textLbl.updateTextSize()
         case is DashboardPictureTableViewCell :
             let pictureCell = cell as! DashboardPictureTableViewCell
             pictureCell._countOfMeets = self.countOfMeets
@@ -235,6 +237,7 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
             let _autor =  quote?.object(forKey: "autor") as? String
             quoteCell.labelQuote.text =  "\"\(_quote ?? "Be the change you wish for this world.")\""
             quoteCell.labelAuthor.text = "- \(_autor ?? "Mahatma Ghandi")"
+        case is DashboardCrabsTableViewCell: (cell as! DashboardCrabsTableViewCell).countOfMets = self.countOfMeets
             
         default: break
         }
@@ -271,11 +274,14 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
 //        updateUI()
         
         buttonPlus.backgroundColor = Config.shared.baseColor()
-//        tableViewData.reloadData()
+        gaugeProgress.updateWithProgress((roundProgress ?? 0) / 18.0, width: 8.0, color: Config.shared.baseColor())
     }
     
     override func updateTextSize() {
-        self.tableViewData.reloadData()
+        
+        labelWeekday.updateTextSize()
+        labelWeek.updateTextSize()
+//        self.tableViewData.reloadData()
     }
     
     // MARK: -

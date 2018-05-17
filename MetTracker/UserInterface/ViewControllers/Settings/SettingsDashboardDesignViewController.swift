@@ -17,7 +17,7 @@ class SettingsDashboardDesignViewController: MTViewController {
     @IBOutlet weak var chooseBtn: MTButton!
     @IBOutlet weak var tableViewData: UITableView!
     
-    var data = [LS("motivational_quotes"), LS("picture")]
+    var data = [LS("motivational_quotes"), LS("picture"), "Crustanceans"]
     var firstQuote: NSDictionary!
     
     var pictureData = [Design](){
@@ -72,16 +72,38 @@ class SettingsDashboardDesignViewController: MTViewController {
         
         let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
         
-        underButtonText.text = selectedIndex == 1 ? LS("tap_and_hold") : LS("show_random_quotes")
-        switcher.isHidden = selectedIndex == 1 ? true : false
-        underButtonText.textAlignment = selectedIndex == 1 ? .center : .left
+        switch selectedIndex {
+        
+        case 0:
+            buttonBackView.isHidden = false
+            underButtonText.text = LS("show_random_quotes")
+            underButtonText.textAlignment = .left
+            switcher.isHidden = false
+        case 1:
+            buttonBackView.isHidden = false
+            underButtonText.text = LS("tap_and_hold")
+            underButtonText.textAlignment = .center
+            switcher.isHidden = true
+        case 2:
+            buttonBackView.isHidden = true
+        default:
+            break
+        }
+        
+//        underButtonText.text = selectedIndex == 1 ? LS("tap_and_hold") : LS("show_random_quotes")
+//        switcher.isHidden = selectedIndex == 1 ? true : false
+//        underButtonText.textAlignment = selectedIndex == 1 ? .center : .left
         switcher.isOn = UserDefaults.standard.integer(forKey: "randomQuotes") == 1 ? true : false
     }
     
     @IBAction func addPressed(_ sender: MTButton) {
         
         let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
-        selectedIndex == 1 ? addPhotoOrImage() : addQuates()
+        if selectedIndex == 0 {
+            addQuates()
+        } else if selectedIndex == 1 {
+            addPhotoOrImage()
+        }
     }
     
     func addQuates() {
@@ -190,7 +212,7 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return data.count + 1
+        return UserDefaults.standard.integer(forKey: "designTheme") == 2 ? data.count : data.count + 1
     }
     
     
@@ -241,26 +263,38 @@ extension SettingsDashboardDesignViewController: UITableViewDataSource, UITableV
         return 56
     }
     
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let selectedIndex = UserDefaults.standard.integer(forKey: "designTheme")
         UserDefaults.standard.set(indexPath.row, forKey: "designTheme")
-        let ips = indexPathsForRowsInSection(0, numberOfRows: data.count + 1)
+        let ips = indexPathsForRowsInSection(0, numberOfRows: indexPath.row == 2 ? data.count : data.count + 1)
         
         if indexPath.row == 1 {
             switcher.isHidden = true
             underButtonText.text = LS("tap_and_hold")
             underButtonText.textAlignment = .center
+            if selectedIndex == 2 {
+                tableViewData.insertRows(at: [IndexPath(row: data.count, section: 0)], with: .none)
+                buttonBackView.isHidden = false
+            }
             tableViewData.reloadRows(at: ips, with: .automatic)
         } else if indexPath.row == 0 {
             switcher.isHidden = false
             underButtonText.text = LS("show_random_quotes")
             underButtonText.textAlignment = .left
+            if selectedIndex == 2 {
+                tableViewData.insertRows(at: [IndexPath(row: data.count, section: 0)], with: .none)
+                buttonBackView.isHidden = false
+            }
             tableViewData.reloadRows(at: ips, with: .automatic)
+        }  else if indexPath.row == 2, selectedIndex != 2 {
+            self.buttonBackView.isHidden = true
+            tableView.reloadData()
         }
-        
-        
     }
-
+    
 }
 
 

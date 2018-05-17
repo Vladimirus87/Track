@@ -78,7 +78,7 @@ class ViewController: UIViewController {
             
             let rndm = randomString()
             
-            saveImageDocumentDirectory(image: compressImage(image), name: rndm)
+            saveImageDocumentDirectory(image: image, name: rndm)
             saveImageDocumentDirectory(image: strongCompressImage(image), name: rndm + "small")
             
             let newPicture = Design(context: contex)

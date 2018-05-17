@@ -21,11 +21,7 @@ class MainDashboardViewController: MTViewController, UICollectionViewDelegate, U
     }
     
     var dataArray : NSArray!
-    var currentTab: Int = 0 {
-        didSet{
-            print(currentTab)
-        }
-    } //1) подписаться на делегат PageVC 2) реализовать свой метод в didSelectitem для скрола 3) почистить ВС 4) заменить свайп на gesture
+    var currentTab: Int = 0  //1) подписаться на делегат PageVC 2) реализовать свой метод в didSelectitem для скрола 3) почистить ВС 4) заменить свайп на gesture
 // {
 //        didSet {
 //            if (self.dataArray != nil) {

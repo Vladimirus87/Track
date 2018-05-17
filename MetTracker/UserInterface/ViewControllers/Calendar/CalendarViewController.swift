@@ -42,7 +42,18 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         viewWeekNumber.layer.cornerRadius = self.height.constant / 2
         
         //labelMonthWeek.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       
+        DispatchQueue.main.async {
+            self.updateUIForDate(Date())
+        }
         
+        if let _ = carrentDate {
+            carrentDate = nil
+        }
     }
     
     override func resizeSubviews() {
@@ -125,12 +136,25 @@ class CalendarViewController: MTViewController, UITableViewDelegate, UITableView
         let ok = UIAlertAction(title: LS("ok"), style: .default) { (action) in
             self.updateUIForDate(datePicker.date)
             self.carrentDate = datePicker.date
+            
+//            if self.getWeek(datePicker.date) != self.getWeek(Date()) {
+//                sender.backgroundColor = Config.shared.baseColor()
+//                sender.tintColor = .white
+//            } else {
+//                sender.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9490196078, blue: 0.9490196078, alpha: 1)
+//                sender.tintColor = .black
+//                self.carrentDate = nil
+//            }
         }
         
         let cancel = UIAlertAction(title: LS("cancel"), style: .cancel, handler: nil)
         
         alert.addAction(ok)
         alert.addAction(cancel)
+        
+        alert.popoverPresentationController?.sourceView = self.view
+        alert.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        alert.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         
         present(alert, animated: true, completion: nil)
     }

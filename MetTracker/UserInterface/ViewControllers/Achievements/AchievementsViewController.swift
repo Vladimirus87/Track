@@ -22,8 +22,20 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getData()
+        
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        DispatchQueue.main.async {
+            self.getData()
+            self.tableViewData.reloadData()
+        }
+    }
+
+    
     
     func getData() {
         

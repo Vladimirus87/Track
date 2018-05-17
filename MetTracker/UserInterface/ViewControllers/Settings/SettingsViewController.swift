@@ -101,7 +101,6 @@ class SettingsViewController: MTViewController, UITableViewDelegate, UITableView
     // MARK: - Notifications
     
     override func updateTextSize() {
-
         reload()
     }
     

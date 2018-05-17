@@ -142,7 +142,7 @@ extension Float {
 
 extension NSMutableAttributedString {
     @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
-        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont(name: "Quicksand-Medium", size: 43)!]
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont(name: "Quicksand-Medium", size: 35)!]
         let boldString = NSMutableAttributedString(string:text, attributes: attrs)
         append(boldString)
         
