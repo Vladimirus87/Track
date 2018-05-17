@@ -21,6 +21,7 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.getData()
     }
     
     

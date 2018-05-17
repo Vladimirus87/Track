@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             
             
             UserDefaults.standard.set(true, forKey: "addHint")
-            UserDefaults.standard.set(1, forKey: "designTheme")
+            UserDefaults.standard.set(2, forKey: "designTheme")
             UserDefaults.standard.set(0, forKey: "MaxWeekResult")
             
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "OnBoardingViewController") as! OnBoardingViewController

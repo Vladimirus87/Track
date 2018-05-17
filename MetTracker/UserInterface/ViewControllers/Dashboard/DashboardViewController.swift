@@ -247,11 +247,11 @@ class DashboardViewController: MTViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let imageForDshd = UserDefaults.standard.integer(forKey: "designTheme")
+//        let imageForDshd = UserDefaults.standard.integer(forKey: "designTheme")
         
-        if indexPath.row == 1, cellIdentifiers.count == 2 && indexPath.row == 0, cellIdentifiers.count == 1, imageForDshd == 0 {
+        if indexPath.row == 1, cellIdentifiers.count == 2 && indexPath.row == 0, cellIdentifiers.count == 1, UserDefaults.standard.integer(forKey: "designTheme") == 0 {
             return 248
-        } else if indexPath.row == 0, cellIdentifiers.count == 1, imageForDshd == 1 {
+        } else if indexPath.row == 0, cellIdentifiers.count == 1, UserDefaults.standard.integer(forKey: "designTheme") == 1 && UserDefaults.standard.integer(forKey: "designTheme") == 2 {
             return self.tableViewData.frame.height
         } 
         
@@ -305,6 +305,7 @@ extension DashboardViewController: DashboardHintTableViewCellDelegate {
         
         UserDefaults.standard.set(false, forKey: "addHint")
         cellIdentifiers.remove(at: 0)
+//        tableViewData.deleteRows(at: [IndexPath(row: 0, section: 0)], with: .none)
         tableViewData.reloadData()
     }
     
