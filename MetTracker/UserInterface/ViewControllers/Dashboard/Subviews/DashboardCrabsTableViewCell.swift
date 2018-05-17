@@ -25,8 +25,6 @@ class DashboardCrabsTableViewCell: UITableViewCell {
                         } else {
                             tempInt = Int(self.countOfMets ?? 3)
                         }
-                        print("countOfMets", Int(self.countOfMets!))
-                        print("jjjjj", tempInt/3)
                         return tempInt/3
                     }
                     

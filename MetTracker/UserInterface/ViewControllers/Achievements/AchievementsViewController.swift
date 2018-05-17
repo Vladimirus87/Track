@@ -21,8 +21,6 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     
@@ -44,7 +42,7 @@ class AchievementsViewController: MTViewController, UITableViewDelegate, UITable
             let fetchRequest : NSFetchRequest<Tracking> = Tracking.fetchRequest()
             fetchRequest.sortDescriptors = [sortDescr]
             data = try contex.fetch(fetchRequest)
-            backgroundForTableView()
+//            backgroundForTableView()
         } catch {
             print("Fetching Failed")
         }
