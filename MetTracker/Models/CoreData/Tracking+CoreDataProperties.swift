@@ -22,5 +22,5 @@ extension Tracking {
     @NSManaged public var time: Float
     @NSManaged public var mets: Float
     @NSManaged public var heartrate: Int16
-
+    @NSManaged public var isManual: Bool
 }

@@ -26,7 +26,7 @@ class TrackingManager: NSObject {
     }
     
     
-    func saveTracking(tracking: MTTracking, castomDate: NSDate?) {
+    func saveTracking(tracking: MTTracking, castomDate: NSDate?, isManual: Bool) {
         
         if let activity = DataManager.shared.activity(tracking.activityId, fromCategory: tracking.categoryId) {
             
@@ -42,6 +42,7 @@ class TrackingManager: NSObject {
             newTracking.time = Float(Double(tracking.seconds) / 3600.0)
             newTracking.mets = newTracking.time * activity.mets
             newTracking.heartrate = Int16(tracking.heartrate)
+            newTracking.isManual = isManual
             
             do {
                 try context.save()

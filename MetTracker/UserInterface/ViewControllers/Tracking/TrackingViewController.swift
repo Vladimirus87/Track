@@ -259,6 +259,13 @@ class TrackingViewController: MTViewController, TrackingTimerViewDelegate {
             segue.destination.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         } else if segue.identifier == "toTrackActivity", let destVC = segue.destination as? TrackingActivityViewController {
             destVC.castomDate = pickerDate
+            
+            guard let trackingTimer = self.trackingTimer else {
+                return
+            }
+            if trackingTimer.state == .manual {
+                destVC.isManualTrack = true
+            }
         }
         
     }

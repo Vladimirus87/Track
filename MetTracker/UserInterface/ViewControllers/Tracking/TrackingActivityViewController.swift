@@ -19,6 +19,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
     var dataQuickAccessArray : NSMutableArray!
     
     var castomDate: Date?
+    var isManualTrack = false
     
     var cellIdentifier = "TrackingActivityTableViewCell"
     
@@ -203,6 +204,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
             let controller = self.storyboard?.instantiateViewController(withIdentifier: "TrackingActivityViewController") as! TrackingActivityViewController
             controller.selectedCategory = (dataArray[indexPath.row] as! MTCategory)
             controller.castomDate = castomDate
+            controller.isManualTrack = isManualTrack
             
             self.navigationController?.pushViewController(controller, animated: true)
             
@@ -260,8 +262,7 @@ class TrackingActivityViewController: MTViewController, UITableViewDelegate, UIT
             config.activityId = self.selectedActivityId!
             config.categoryId = self.selectedCategoryId!
             
-            TrackingManager.shared.saveTracking(tracking: config, castomDate: castomDate as NSDate?)
-            print("castomDate", castomDate)
+            TrackingManager.shared.saveTracking(tracking: config, castomDate: castomDate as NSDate?, isManual: self.isManualTrack)
         }
         
     }

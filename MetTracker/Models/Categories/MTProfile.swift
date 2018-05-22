@@ -119,8 +119,8 @@ class MTProfile: NSObject, NSCopying, NSCoding {
         } else {
             return false
         }
-        
     }
+   
     
 }
 
